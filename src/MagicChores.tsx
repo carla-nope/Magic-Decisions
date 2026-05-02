@@ -1,5 +1,37 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Sparkles, Wand2, Plus, Trash2, Check, Clock, Star, Crown, Flame, ChevronDown, ChevronUp, Castle, Shield, Swords, Timer, Gift, Info } from 'lucide-react'
+import { Sparkles, Wand2, Plus, Trash2, Check, Clock, Star, Crown, Flame, ChevronDown, ChevronUp, Castle, Shield, Swords, Timer, Gift, Info, RefreshCw } from 'lucide-react'
+
+// ============================================
+// MOTIVATIONAL QUOTES (Magical + Plain)
+// ============================================
+
+const MOTIVATIONAL_QUOTES = [
+  { magical: "Every spell you cast builds your magical power!", plain: "Every task you complete makes you stronger!" },
+  { magical: "The greatest wizards started with simple spells.", plain: "Everyone starts somewhere. You're doing great!" },
+  { magical: "A single act of magic brightens the whole realm.", plain: "One good deed can make someone's whole day!" },
+  { magical: "The timer clock ticks not to frighten, but to excite!", plain: "Deadlines help us do our best work!" },
+  { magical: "Your wand grows mightier with each quest completed!", plain: "You're getting better at this every day!" },
+  { magical: "Even dragons were once baby drakes learning to breathe fire.", plain: "Nobody's perfect at first. Keep practicing!" },
+  { magical: "The stars align for those who complete their quests.", plain: "Great things happen when you follow through!" },
+  { magical: "An enchanted realm is built one spell at a time.", plain: "Big achievements come from small steps!" },
+  { magical: "Your magic grows brighter when you help others.", plain: "Teamwork makes the dream work!" },
+  { magical: "The ancient scrolls say: 'Done is better than perfect.'", plain: "Finished is better than perfect!" },
+  { magical: "Every completed quest adds a star to your crown.", plain: "Every task you finish counts!" },
+  { magical: "The crystal ball sees great things in your future.", plain: "You're capable of amazing things!" },
+  { magical: "Today's small magic becomes tomorrow's legendary feat.", plain: "Small wins lead to big victories!" },
+  { magical: "The wise wizard knows: progress, not perfection.", plain: "Focus on progress, not perfection!" },
+  { magical: "Your magical stamina grows with each challenge.", plain: "You're building great habits!" },
+  { magical: "The enchanted forest rewards those who venture forth.", plain: "Taking action leads to rewards!" },
+  { magical: "A quest in motion casts its own protective spell.", plain: "Starting is the hardest part—and you're doing it!" },
+  { magical: "The magic within you is stronger than any obstacle.", plain: "You've got this inside you!" },
+  { magical: "Phoenixes rise because they never give up trying.", plain: "Failure is just practice for success!" },
+  { magical: "The ancient wisdom whispers: 'You've got this!'", plain: "Trust yourself—you can do it!" },
+  { magical: "Each completed task summons a bit more joy.", plain: "Finishing tasks feels really good!" },
+  { magical: "The kingdom's magic flows through your completed works.", plain: "Your effort makes a real difference!" },
+  { magical: "Even the mightiest spell started as a single incantation.", plain: "Big things start small!" },
+  { magical: "The stars celebrate your courage to begin.", plain: "Starting is an act of courage!" },
+  { magical: "Your magical journey continues—one quest at a time.", plain: "Keep going—you're making progress!" },
+]
 
 // ============================================
 // MAGIC CHORE CATEGORIES & NAMING SYSTEM
@@ -140,6 +172,12 @@ export default function MagicChores() {
   const [elapsedSeconds, setElapsedSeconds] = useState(0)
   const [timerInterval, setTimerInterval] = useState<NodeJS.Timeout | null>(null)
   const [showStickers, setShowStickers] = useState(false)
+  const [currentQuote, setCurrentQuote] = useState(() => MOTIVATIONAL_QUOTES[Math.floor(Math.random() * MOTIVATIONAL_QUOTES.length)])
+
+  const refreshQuote = () => {
+    const randomQuote = MOTIVATIONAL_QUOTES[Math.floor(Math.random() * MOTIVATIONAL_QUOTES.length)]
+    setCurrentQuote(randomQuote)
+  }
 
   // Effects
   useEffect(() => {
@@ -321,6 +359,26 @@ export default function MagicChores() {
             </div>
             <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-sm">
               {incompleteTasks.length} Tasks
+            </div>
+          </div>
+
+          {/* Motivational Quote */}
+          <div className="mt-4 px-4">
+            <div className="bg-gradient-to-r from-purple-900/40 to-indigo-900/40 border border-purple-500/30 rounded-xl p-4 max-w-xl mx-auto">
+              <div className="flex items-start gap-3">
+                <Sparkles className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <div className="flex-1 text-center">
+                  <p className="text-purple-200 italic text-sm md:text-base">"{currentQuote.magical}"</p>
+                  <p className="text-slate-400 text-xs mt-2">(or, in plain words: "{currentQuote.plain}")</p>
+                </div>
+                <button
+                  onClick={refreshQuote}
+                  className="flex-shrink-0 p-1.5 rounded-full bg-purple-500/30 hover:bg-purple-500/50 text-purple-400 hover:text-purple-300 transition-all"
+                  aria-label="Get new inspiration"
+                >
+                  <RefreshCw className="w-4 h-4" />
+                </button>
+              </div>
             </div>
           </div>
         </div>

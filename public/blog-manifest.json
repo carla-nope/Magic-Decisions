@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "slug": "psychology-behind-decision-fatigue",
+      "title": "The Psychology Behind Decision Fatigue",
+      "date": "2026-05-02",
+      "excerpt": "Why do we struggle with simple choices? Learn about cognitive load and how randomization tools can help preserve mental energy.",
+      "category": "Psychology",
+      "featured": true,
+      "readTime": "5 min read"
+    },
+    {
+      "slug": "when-to-use-randomness-vs-logic",
+      "title": "When to Use Randomness vs Logic",
+      "date": "2026-05-01",
+      "excerpt": "Not every decision needs deep analysis. Discover when it makes sense to let chance decide and when to think it through.",
+      "category": "Strategy",
+      "featured": true,
+      "readTime": "4 min read"
+    },
+    {
+      "slug": "10-decisions-you-should-never-overthink",
+      "title": "10 Decisions You Should Never Overthink",
+      "date": "2026-04-28",
+      "excerpt": "From what to eat for dinner to who drives—some choices deserve quick decisions, not hours of deliberation.",
+      "category": "Lifestyle",
+      "featured": false,
+      "readTime": "3 min read"
+    },
+    {
+      "slug": "the-science-of-randomness",
+      "title": "The Science of Randomness",
+      "date": "2026-04-25",
+      "excerpt": "How computers generate random numbers and why true randomness matters for fair decision-making tools.",
+      "category": "Technology",
+      "featured": false,
+      "readTime": "6 min read"
+    },
+    {
+      "slug": "breaking-analysis-paralysis",
+      "title": "Breaking Analysis Paralysis",
+      "date": "2026-04-20",
+      "excerpt": "When you have too many options and cannot choose, a random selector can be your best friend. Here's why.",
+      "category": "Psychology",
+      "featured": false,
+      "readTime": "4 min read"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Media storage settings
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+# Enable editorial workflow for draft/review/publish
+publish_mode: editorial_workflow
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    frontmatter_delimiter: "---"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        required: false
+      - label: "Category"
+        name: "category"
+        widget: "string"
+        required: false
+      - label: "Featured"
+        name: "featured"
+        widget: "boolean"
+        default: false
+        required: false
+      - label: "Author"
+        name: "author"
+        widget: "string"
+        default: "MagicDecisions"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
