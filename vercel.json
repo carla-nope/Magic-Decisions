@@ -19,6 +19,7 @@
     { "source": "/should-i-buy-it-calculator", "destination": "/index.html" },
     { "source": "/about-us", "destination": "/index.html" },
     { "source": "/privacy-policy", "destination": "/index.html" },
-    { "source": "/terms-of-service", "destination": "/index.html" }
+    { "source": "/terms-of-service", "destination": "/index.html" },
+    { "source": "/admin/:path*", "destination": "/admin/index.html" }
   ]
 }
