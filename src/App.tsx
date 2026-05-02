@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Sparkles, History, Share2, Copy, Check, RefreshCw, Trash2, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Home, Shield, FileText, Info, Mail, BookOpen, Wand2, FileText as BioIcon, Shirt, Brain, Target, CreditCard, Flame } from 'lucide-react'
+import { Sparkles, History, Share2, Copy, Check, RefreshCw, Trash2, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Home, Shield, FileText, Info, Mail, BookOpen, Wand2, Shirt, Brain, Target, CreditCard, Flame } from 'lucide-react'
 import SpinWheel from './SpinWheel'
 import CoinFlip from './CoinFlip'
 import RandomPicker from './RandomPicker'
@@ -10,7 +10,6 @@ import NamePicker from './NamePicker'
 import LandingPage from './LandingPage'
 import BlogPage from './BlogPage'
 import UsernameGenerator from './UsernameGenerator'
-import RandomBioGenerator from './RandomBioGenerator'
 import OutfitIdeaGenerator from './OutfitIdeaGenerator'
 import MaximizerQuiz from './MaximizerQuiz'
 import CognitiveBiasTest from './CognitiveBiasTest'
@@ -20,7 +19,7 @@ import SEOContent from './SEOContent'
 import { PrivacyPolicy, TermsConditions, AboutPage, ContactPage } from './LegalPages'
 import './index.css'
 
-type Tool = 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner' | 'rps' | 'names' | 'username' | 'bio' | 'outfit' | 'maximizer' | 'bias' | 'buyit' | 'chores' | 'blog' | 'privacy' | 'terms' | 'about' | 'contact'
+type Tool = 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner' | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit' | 'chores' | 'blog' | 'privacy' | 'terms' | 'about' | 'contact'
 
 interface HistoryItem {
   id: number;
@@ -365,30 +364,38 @@ function App() {
 
   const toolCategories = [
     {
-      id: 'decisions',
-      name: 'Decisions',
+      id: 'simple',
+      name: 'Quick Tools',
       icon: Sparkles,
       color: 'purple',
       tools: [
         { id: 'oracle' as Tool, name: 'Yes No Oracle', icon: Sparkles, color: 'purple' },
         { id: 'spin' as Tool, name: 'Spin Wheel', icon: RefreshCw, color: 'amber' },
+        { id: 'rps' as Tool, name: 'Rock Paper Scissors', icon: Hand, color: 'cyan' },
         { id: 'coin' as Tool, name: 'Coin Flip', icon: Circle, color: 'blue' },
         { id: 'picker' as Tool, name: 'Random Picker', icon: CircleDot, color: 'emerald' },
+      ]
+    },
+    {
+      id: 'picks',
+      name: 'Quick Picks',
+      icon: Wand2,
+      color: 'amber',
+      tools: [
         { id: 'activity' as Tool, name: 'Activity Picker', icon: Lightbulb, color: 'yellow' },
         { id: 'dinner' as Tool, name: 'Dinner Decider', icon: UtensilsCrossed, color: 'orange' },
-        { id: 'rps' as Tool, name: 'Rock Paper Scissors', icon: Hand, color: 'cyan' },
+        { id: 'outfit' as Tool, name: 'Outfit Picker', icon: Shirt, color: 'cyan' },
+        { id: 'username' as Tool, name: 'Username Picker', icon: Wand2, color: 'purple' },
         { id: 'names' as Tool, name: 'Name Picker', icon: User, color: 'rose' },
       ]
     },
     {
-      id: 'generators',
-      name: 'Generators',
-      icon: Wand2,
-      color: 'purple',
+      id: 'chores',
+      name: 'Magic Chores',
+      icon: Flame,
+      color: 'red',
       tools: [
-        { id: 'username' as Tool, name: 'Username Generator', icon: Wand2, color: 'purple' },
-        { id: 'bio' as Tool, name: 'Bio Generator', icon: BioIcon, color: 'rose' },
-        { id: 'outfit' as Tool, name: 'Outfit Ideas', icon: Shirt, color: 'cyan' },
+        { id: 'chores' as Tool, name: 'Magic Chores', icon: Flame, color: 'red' },
       ]
     },
     {
@@ -400,7 +407,7 @@ function App() {
         { id: 'maximizer' as Tool, name: 'Decision Style', icon: Brain, color: 'purple' },
         { id: 'bias' as Tool, name: 'Bias Test', icon: Target, color: 'amber' },
         { id: 'buyit' as Tool, name: 'Should I Buy It', icon: CreditCard, color: 'emerald' },
-        { id: 'chores' as Tool, name: 'Magic Chores', icon: Flame, color: 'red' },
+        { id: 'blog' as Tool, name: 'Blog', icon: BookOpen, color: 'emerald' },
       ]
     },
     {
@@ -409,7 +416,6 @@ function App() {
       icon: Info,
       color: 'emerald',
       tools: [
-        { id: 'blog' as Tool, name: 'Blog', icon: BookOpen, color: 'emerald' },
         { id: 'about' as Tool, name: 'About', icon: Info, color: 'emerald' },
         { id: 'contact' as Tool, name: 'Contact', icon: Mail, color: 'cyan' },
         { id: 'privacy' as Tool, name: 'Privacy', icon: Shield, color: 'purple' },
@@ -515,7 +521,6 @@ function App() {
         {activeTool === 'rps' && <RockPaperScissors />}
         {activeTool === 'names' && <NamePicker />}
         {activeTool === 'username' && <UsernameGenerator />}
-        {activeTool === 'bio' && <RandomBioGenerator />}
         {activeTool === 'outfit' && <OutfitIdeaGenerator />}
         {activeTool === 'maximizer' && <MaximizerQuiz />}
         {activeTool === 'bias' && <CognitiveBiasTest />}

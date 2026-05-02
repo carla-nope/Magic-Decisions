@@ -111,13 +111,13 @@ function UsernameGenerator() {
         <div className="text-center mb-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 border border-purple-200 text-purple-700 text-sm mb-4">
             <Wand2 className="w-4 h-4" />
-            Username Creator
+            Decision Maker
           </div>
           <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
-            Generate Perfect Usernames
+            Perfect Username Picker
           </h1>
           <p className="text-slate-500 max-w-md mx-auto">
-            Create unique handles for TikTok, gaming, or your social media. Click to copy instantly!
+            Can't decide on a username? Let fate choose for you! Get unique handles for TikTok, gaming, or social media in seconds.
           </p>
         </div>
 
@@ -153,7 +153,7 @@ function UsernameGenerator() {
           className="generate-btn flex items-center gap-2 mb-8"
         >
           <Wand2 className="w-5 h-5" />
-          Generate Usernames
+          Pick Usernames
         </button>
 
         {/* Generated Usernames */}

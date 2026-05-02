@@ -100,13 +100,13 @@ function OutfitIdeaGenerator() {
         <div className="text-center mb-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-100 border border-cyan-200 text-cyan-700 text-sm mb-4">
             <Shirt className="w-4 h-4" />
-            Outfit Creator
+            Decision Maker
           </div>
           <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
-            Get Outfit Inspiration
+            Outfit Decision Picker
           </h1>
           <p className="text-slate-500 max-w-md mx-auto">
-            Find the perfect outfit based on your vibe, weather, and occasion!
+            Can't decide what to wear? Let the magic choose for you! Get perfect outfit ideas based on your vibe, weather, and occasion.
           </p>
         </div>
 
@@ -199,7 +199,7 @@ function OutfitIdeaGenerator() {
           className="outfit-btn flex items-center gap-2 mb-8"
         >
           <RefreshCw className="w-5 h-5" />
-          Get Outfit Ideas
+          Decide My Outfit
         </button>
 
         {/* Generated Outfits */}

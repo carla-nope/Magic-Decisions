@@ -1,4 +1,4 @@
-import { Sparkles, RefreshCw, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Star, ArrowRight, Zap, Globe, Wand2, FileText, Shirt, Brain, Target, CreditCard } from 'lucide-react'
+import { Sparkles, RefreshCw, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Star, ArrowRight, Zap, Globe, Wand2, Shirt, Brain, Target, CreditCard, Flame } from 'lucide-react'
 import './index.css'
 
 const tools = [
@@ -19,6 +19,15 @@ const tools = [
     emoji: '🎡',
     description: 'Create a custom wheel and let it decide for you',
     keyword: 'wheel spinner'
+  },
+  {
+    id: 'rps',
+    name: 'Rock Paper Scissors',
+    icon: Hand,
+    color: 'cyan',
+    emoji: '✂️',
+    description: 'Battle the computer in classic RPS',
+    keyword: 'rock paper scissors game'
   },
   {
     id: 'coin',
@@ -57,13 +66,22 @@ const tools = [
     keyword: 'what should I eat'
   },
   {
-    id: 'rps',
-    name: 'Rock Paper Scissors',
-    icon: Hand,
+    id: 'username',
+    name: 'Username Picker',
+    icon: Wand2,
+    color: 'purple',
+    emoji: '✨',
+    description: "Can't decide on a username? Let fate choose for you!",
+    keyword: 'username picker'
+  },
+  {
+    id: 'outfit',
+    name: 'Outfit Picker',
+    icon: Shirt,
     color: 'cyan',
-    emoji: '✂️',
-    description: 'Battle the computer in classic RPS',
-    keyword: 'rock paper scissors game'
+    emoji: '👗',
+    description: "Can't decide what to wear? Let the magic choose!",
+    keyword: 'outfit picker'
   },
   {
     id: 'names',
@@ -75,31 +93,13 @@ const tools = [
     keyword: 'random name picker'
   },
   {
-    id: 'username',
-    name: 'Username Generator',
-    icon: Wand2,
-    color: 'purple',
-    emoji: '✨',
-    description: 'Generate unique handles for TikTok, gaming, social',
-    keyword: 'username generator'
-  },
-  {
-    id: 'bio',
-    name: 'Bio Generator',
-    icon: FileText,
-    color: 'rose',
-    emoji: '📝',
-    description: 'Create catchy bios for Instagram & dating apps',
-    keyword: 'bio generator'
-  },
-  {
-    id: 'outfit',
-    name: 'Outfit Ideas',
-    icon: Shirt,
-    color: 'cyan',
-    emoji: '👗',
-    description: 'Get outfit inspiration by vibe & weather',
-    keyword: 'outfit generator'
+    id: 'chores',
+    name: 'Magic Chores',
+    icon: Flame,
+    color: 'red',
+    emoji: '🔥',
+    description: 'Gamify your tasks with magical rewards',
+    keyword: 'chore tracker'
   },
   {
     id: 'maximizer',
@@ -174,7 +174,7 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
               </p>
               <div className="flex items-center justify-center gap-2 text-slate-500 text-sm">
                 <Zap className="w-4 h-4 text-amber-500" />
-                <span>15 free tools</span>
+                <span>14 free tools</span>
                 <span>•</span>
                 <Globe className="w-4 h-4" />
                 <span>Works everywhere</span>
@@ -327,19 +327,18 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
               {[
                 { emoji: '🔮', name: 'Yes No Oracle', use: 'Simple yes/no decisions with mystical flair' },
                 { emoji: '🎡', name: 'Spin Wheel', use: 'Multi-option choices with visual excitement' },
+                { emoji: '✂️', name: 'Rock Paper Scissors', use: 'Settle disputes with quick games' },
                 { emoji: '🪙', name: 'Coin Flip', use: 'Binary 50/50 decisions' },
                 { emoji: '🎯', name: 'Random Picker', use: 'Pick one from your custom list' },
                 { emoji: '💡', name: 'Activity Picker', use: 'Find something fun to do' },
                 { emoji: '🍽️', name: 'Dinner Decider', use: 'Decide what to eat' },
-                { emoji: '✂️', name: 'Rock Paper Scissors', use: 'Settle disputes with game' },
+                { emoji: '✨', name: 'Username Picker', use: 'Pick unique handles for social' },
+                { emoji: '👗', name: 'Outfit Picker', use: 'Decide what to wear' },
                 { emoji: '👤', name: 'Name Picker', use: 'Random selection or team assignment' },
-                { emoji: '✨', name: 'Username Generator', use: 'Create unique handles for social' },
-                { emoji: '📝', name: 'Bio Generator', use: 'Craft catchy social media bios' },
-                { emoji: '👗', name: 'Outfit Ideas', use: 'Get outfit inspiration by vibe' },
+                { emoji: '🔥', name: 'Magic Chores', use: 'Gamify tasks with magic rewards' },
                 { emoji: '🧠', name: 'Decision Style Quiz', use: 'Discover your decision style' },
                 { emoji: '🎯', name: 'Cognitive Bias Test', use: 'Test your mental shortcuts' },
                 { emoji: '🛒', name: 'Should I Buy It', use: 'Make smarter purchases' },
-                { emoji: '🔥', name: 'Magic Chores', use: 'Gamify tasks with magic rewards' },
               ].map((tool) => (
                 <div key={tool.name} className="mystical-card p-4 text-center">
                   <span className="text-2xl mb-2 block">{tool.emoji}</span>
@@ -353,7 +352,7 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
           {/* Statistics */}
           <div className="flex flex-wrap justify-center gap-8 py-6 border-y border-slate-200">
             <div className="text-center">
-              <p className="text-3xl font-bold text-purple-600">15</p>
+              <p className="text-3xl font-bold text-purple-600">14</p>
               <p className="text-slate-500 text-sm">Decision Tools</p>
             </div>
             <div className="text-center">

@@ -12,12 +12,11 @@
     { "source": "/rock-paper-scissors", "destination": "/index.html" },
     { "source": "/random-name-generator", "destination": "/index.html" },
     { "source": "/random-username-generator", "destination": "/index.html" },
-    { "source": "/random-bio-generator", "destination": "/index.html" },
     { "source": "/what-to-wear-randomizer", "destination": "/index.html" },
+    { "source": "/magic-chores-list", "destination": "/index.html" },
     { "source": "/decision-maximizer", "destination": "/index.html" },
     { "source": "/cognitive-bias-checker", "destination": "/index.html" },
     { "source": "/should-i-buy-it-calculator", "destination": "/index.html" },
-    { "source": "/magic-chores-list", "destination": "/index.html" },
     { "source": "/about-us", "destination": "/index.html" },
     { "source": "/privacy-policy", "destination": "/index.html" },
     { "source": "/terms-of-service", "destination": "/index.html" }
