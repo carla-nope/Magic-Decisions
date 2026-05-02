@@ -12,10 +12,14 @@ publish_mode: editorial_workflow
 
 collections:
   - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
     folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
     extension: "md"
     frontmatter_delimiter: "---"
-        fields:
+    fields:
       - label: "Title"
         name: "title"
         widget: "string"
