@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: carla-nope/Magic-Decisions
   branch: main
 
 # Media storage settings
@@ -17,7 +18,6 @@ collections:
     create: true
     slug: "{{slug}}"
     extension: "md"
-    format: "frontmatter"
     frontmatter_delimiter: "---"
     fields:
       - label: "Title"
