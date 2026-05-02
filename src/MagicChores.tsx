@@ -1,0 +1,664 @@
+import { useState, useEffect, useCallback } from 'react'
+import { Sparkles, Wand2, Plus, Trash2, Check, Clock, Star, Crown, Flame, ChevronDown, ChevronUp, Castle, Shield, Swords, Timer, Gift, Info } from 'lucide-react'
+
+// ============================================
+// MAGIC CHORE CATEGORIES & NAMING SYSTEM
+// ============================================
+
+interface MagicTask {
+  id: string
+  originalName: string
+  magicName: string
+  category: MagicCategory
+  completed: boolean
+}
+
+type MagicCategory = 'castle' | 'alchemy' | 'druid' | 'wizard' | 'transformation' | 'hero'
+
+interface CategoryInfo {
+  id: MagicCategory
+  name: string
+  icon: React.ReactNode
+  color: string
+  bgColor: string
+  borderColor: string
+}
+
+const CATEGORIES: CategoryInfo[] = [
+  { id: 'castle', name: 'Castle Upkeep', icon: <Castle className="w-4 h-4" />, color: 'text-purple-400', bgColor: 'bg-purple-100', borderColor: 'border-purple-300' },
+  { id: 'alchemy', name: 'Alchemy Kitchen', icon: <Flame className="w-4 h-4" />, color: 'text-amber-400', bgColor: 'bg-amber-100', borderColor: 'border-amber-300' },
+  { id: 'druid', name: 'Druid Nature', icon: <Sparkles className="w-4 h-4" />, color: 'text-emerald-400', bgColor: 'bg-emerald-100', borderColor: 'border-emerald-300' },
+  { id: 'wizard', name: 'Wizard Training', icon: <Star className="w-4 h-4" />, color: 'text-blue-400', bgColor: 'bg-blue-100', borderColor: 'border-blue-300' },
+  { id: 'transformation', name: 'Transformation', icon: <Wand2 className="w-4 h-4" />, color: 'text-pink-400', bgColor: 'bg-pink-100', borderColor: 'border-pink-300' },
+  { id: 'hero', name: 'Hero Quests', icon: <Swords className="w-4 h-4" />, color: 'text-red-400', bgColor: 'bg-red-100', borderColor: 'border-red-300' },
+]
+
+const PRESET_TASKS: { originalName: string; magicName: string; category: MagicCategory }[] = [
+  // Castle Upkeep
+  { originalName: 'Clean room', magicName: 'Chamber Restoration Spell', category: 'castle' },
+  { originalName: 'Make bed', magicName: 'Royal Bedcharm Ritual', category: 'castle' },
+  { originalName: 'Vacuum', magicName: 'Dust Dragon Sweep', category: 'castle' },
+  { originalName: 'Wipe surfaces', magicName: 'Enchantment Polish', category: 'castle' },
+  { originalName: 'Do laundry', magicName: 'Garment Cleansing Quest', category: 'castle' },
+  // Alchemy Kitchen
+  { originalName: 'Help cook', magicName: 'Potion Brewing Session', category: 'alchemy' },
+  { originalName: 'Set table', magicName: 'Feast Preparation Rite', category: 'alchemy' },
+  { originalName: 'Clear table', magicName: 'After-Feast Reset', category: 'alchemy' },
+  { originalName: 'Load dishwasher', magicName: 'Dish Summoning Cycle', category: 'alchemy' },
+  { originalName: 'Put away groceries', magicName: 'Ingredient Sorting Spell', category: 'alchemy' },
+  // Druid Nature
+  { originalName: 'Water plants', magicName: 'Life Growth Blessing', category: 'druid' },
+  { originalName: 'Yard cleanup', magicName: 'Forest Tending Quest', category: 'druid' },
+  { originalName: 'Take care of pets', magicName: 'Creature Care Pact', category: 'druid' },
+  { originalName: 'Take out trash', magicName: 'Waste Vanishing Quest', category: 'druid' },
+  // Wizard Training
+  { originalName: 'Homework', magicName: 'Spell Study Session', category: 'wizard' },
+  { originalName: 'Reading', magicName: 'Ancient Tome Reading', category: 'wizard' },
+  { originalName: 'Practice skills', magicName: 'Magic Mastery Drill', category: 'wizard' },
+  { originalName: 'Pack backpack', magicName: 'Quest Prep Kit', category: 'wizard' },
+  // Transformation
+  { originalName: 'Brush teeth', magicName: 'Sparkle Smile Spell', category: 'transformation' },
+  { originalName: 'Shower', magicName: 'Cleansing Ritual', category: 'transformation' },
+  { originalName: 'Get dressed', magicName: 'Armor Equipping', category: 'transformation' },
+  { originalName: 'Brush hair', magicName: 'Tangle Taming Charm', category: 'transformation' },
+  // Hero Quests
+  { originalName: 'Help sibling', magicName: 'Ally Assist Mission', category: 'hero' },
+  { originalName: 'Extra chore', magicName: 'Side Quest Challenge', category: 'hero' },
+  { originalName: 'Organize', magicName: 'Order Restoration', category: 'hero' },
+  { originalName: 'Be kind', magicName: 'Kindness Enchantment', category: 'hero' },
+]
+
+const STICKERS = [
+  { name: 'Crown', path: '/stickers/medieval/crown.png', rarity: 'Legendary' },
+  { name: 'Sword', path: '/stickers/medieval/sword.png', rarity: 'Common' },
+  { name: 'Shield', path: '/stickers/medieval/shield.png', rarity: 'Common' },
+  { name: 'Dragon', path: '/stickers/medieval/dragon.png', rarity: 'Rare' },
+  { name: 'Unicorn', path: '/stickers/medieval/unicorn.png', rarity: 'Rare' },
+  { name: 'Phoenix', path: '/stickers/medieval/phoenix.png', rarity: 'Legendary' },
+]
+
+// ============================================
+// STORAGE KEYS
+// ============================================
+
+const STORAGE_KEYS = {
+  tasks: 'magic_chores_tasks_v2',
+  stickers: 'magic_chores_stickers_v2',
+  streak: 'magic_chores_streak_v2',
+}
+
+// ============================================
+// MAIN COMPONENT
+// ============================================
+
+interface StickerReward {
+  id: string
+  name: string
+  path: string
+  earnedAt: number
+  taskName: string
+}
+
+export default function MagicChores() {
+  // Task State
+  const [tasks, setTasks] = useState<MagicTask[]>(() => {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEYS.tasks)
+      return saved ? JSON.parse(saved) : []
+    } catch {
+      return []
+    }
+  })
+
+  // Sticker Collection
+  const [stickers, setStickers] = useState<StickerReward[]>(() => {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEYS.stickers)
+      return saved ? JSON.parse(saved) : []
+    } catch {
+      return []
+    }
+  })
+
+  // Streak State
+  const [streak, setStreak] = useState(() => {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEYS.streak)
+      return saved ? parseInt(saved) : 0
+    } catch {
+      return 0
+    }
+  })
+
+  // UI State
+  const [customTask, setCustomTask] = useState('')
+  const [showPresetPicker, setShowPresetPicker] = useState(false)
+  const [summonedTask, setSummonedTask] = useState<MagicTask | null>(null)
+  const [showQuestModal, setShowQuestModal] = useState(false)
+  const [gameState, setGameState] = useState<'idle' | 'estimating' | 'running' | 'finished'>('idle')
+  const [estimatedMinutes, setEstimatedMinutes] = useState('')
+  const [elapsedSeconds, setElapsedSeconds] = useState(0)
+  const [timerInterval, setTimerInterval] = useState<NodeJS.Timeout | null>(null)
+  const [showStickers, setShowStickers] = useState(false)
+
+  // Effects
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEYS.tasks, JSON.stringify(tasks))
+  }, [tasks])
+
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEYS.stickers, JSON.stringify(stickers))
+  }, [stickers])
+
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEYS.streak, streak.toString())
+  }, [streak])
+
+  useEffect(() => {
+    return () => {
+      if (timerInterval) clearInterval(timerInterval)
+    }
+  }, [timerInterval])
+
+  // Task Actions
+  const addTask = useCallback((originalName: string, magicName: string, category: MagicCategory) => {
+    if (tasks.some(t => t.originalName.toLowerCase() === originalName.toLowerCase())) return false
+
+    const newTask: MagicTask = {
+      id: crypto.randomUUID(),
+      originalName,
+      magicName,
+      category,
+      completed: false,
+    }
+    setTasks(prev => [...prev, newTask])
+    return true
+  }, [tasks])
+
+  const removeTask = (id: string) => {
+    setTasks(prev => prev.filter(t => t.id !== id))
+  }
+
+  const toggleComplete = (id: string) => {
+    setTasks(prev => prev.map(t =>
+      t.id === id ? { ...t, completed: !t.completed } : t
+    ))
+    setStreak(prev => prev + 1)
+  }
+
+  // Summon Random Task
+  const summonQuest = () => {
+    const incompleteTasks = tasks.filter(t => !t.completed)
+    if (incompleteTasks.length === 0) return
+    const randomTask = incompleteTasks[Math.floor(Math.random() * incompleteTasks.length)]
+    setSummonedTask(randomTask)
+    setShowQuestModal(true)
+    setGameState('estimating')
+  }
+
+  // Timer Functions
+  const startTimer = () => {
+    if (!estimatedMinutes || isNaN(Number(estimatedMinutes)) || Number(estimatedMinutes) <= 0) {
+      alert('Please enter a valid number of minutes')
+      return
+    }
+    setGameState('running')
+    setElapsedSeconds(0)
+
+    const interval = setInterval(() => {
+      setElapsedSeconds(prev => prev + 1)
+    }, 1000)
+    setTimerInterval(interval)
+  }
+
+  const stopTimer = () => {
+    if (timerInterval) {
+      clearInterval(timerInterval)
+      setTimerInterval(null)
+    }
+    setGameState('finished')
+  }
+
+  const formatTime = (seconds: number) => {
+    const mins = Math.floor(seconds / 60)
+    const secs = seconds % 60
+    return `${mins}:${secs.toString().padStart(2, '0')}`
+  }
+
+  const finishQuest = () => {
+    if (summonedTask) {
+      // Mark task complete
+      setTasks(prev => prev.map(t =>
+        t.id === summonedTask.id ? { ...t, completed: true } : t
+      ))
+      setStreak(prev => prev + 1)
+
+      // Award sticker based on whether they beat the timer
+      const beatTimer = elapsedSeconds <= Number(estimatedMinutes) * 60
+      const wonReward = beatTimer ? Math.random() < 0.9 : Math.random() < 0.3
+
+      if (wonReward) {
+        const randomSticker = STICKERS[Math.floor(Math.random() * STICKERS.length)]
+        const newSticker: StickerReward = {
+          id: crypto.randomUUID(),
+          name: randomSticker.name,
+          path: randomSticker.path,
+          earnedAt: Date.now(),
+          taskName: summonedTask.magicName,
+        }
+        setStickers(prev => [newSticker, ...prev])
+
+        // Show success message
+        if (beatTimer) {
+          alert(`Amazing! You beat the timer and earned a ${randomSticker.name} sticker!`)
+        } else {
+          alert(`You completed the quest and got lucky! A ${randomSticker.name} sticker is yours!`)
+        }
+      } else {
+        alert(beatTimer ? "So close! You beat the timer but didn't get a sticker this time." : "Quest complete! No sticker this time, but you still earned a streak!")
+      }
+    }
+    resetQuest()
+  }
+
+  const resetQuest = () => {
+    if (timerInterval) {
+      clearInterval(timerInterval)
+      setTimerInterval(null)
+    }
+    setGameState('idle')
+    setEstimatedMinutes('')
+    setElapsedSeconds(0)
+    setSummonedTask(null)
+    setShowQuestModal(false)
+  }
+
+  // Group tasks by category
+  const incompleteTasks = tasks.filter(t => !t.completed)
+  const tasksByCategory = CATEGORIES.map(cat => ({
+    ...cat,
+    tasks: tasks.filter(t => t.category === cat.id),
+  }))
+
+  return (
+    <div className="min-h-screen relative overflow-hidden bg-slate-900">
+      {/* Magical Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-purple-950 to-slate-900" />
+      <div className="absolute inset-0 opacity-30">
+        {[...Array(30)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-purple-300 rounded-full animate-pulse"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+            }}
+          />
+        ))}
+      </div>
+
+      <div className="relative z-10 min-h-screen flex flex-col">
+        {/* Header */}
+        <div className="p-4 text-center border-b border-purple-500/20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/20 border border-purple-400/30 text-purple-300 text-sm mb-2">
+            <Sparkles className="w-4 h-4" />
+            Magic Decisions
+          </div>
+          <h1 className="text-2xl md:text-3xl font-bold text-white">
+            ✨ Magic Chores ✨
+          </h1>
+
+          {/* Stats */}
+          <div className="flex items-center justify-center gap-4 mt-3">
+            <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-400/30 text-amber-300 text-sm">
+              <Crown className="w-4 h-4" />
+              {streak} Spells
+            </div>
+            <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-500/20 border border-purple-400/30 text-purple-300 text-sm">
+              <Gift className="w-4 h-4" />
+              {stickers.length} Stickers
+            </div>
+            <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-sm">
+              {incompleteTasks.length} Tasks
+            </div>
+          </div>
+        </div>
+
+        {/* How It Works Section */}
+        <div className="px-4 py-4 border-b border-purple-500/20">
+          <div className="bg-purple-900/30 border border-purple-500/30 rounded-xl p-4 max-w-2xl mx-auto">
+            <div className="flex items-center gap-2 mb-3">
+              <Info className="w-5 h-5 text-purple-400" />
+              <h2 className="font-semibold text-purple-200">How It Works</h2>
+            </div>
+            <div className="grid sm:grid-cols-3 gap-4 text-sm">
+              <div className="text-center">
+                <div className="w-10 h-10 rounded-full bg-purple-500/30 flex items-center justify-center mx-auto mb-2">
+                  <Wand2 className="w-5 h-5 text-purple-300" />
+                </div>
+                <p className="text-purple-200 font-medium">Add Tasks</p>
+                <p className="text-slate-400 text-xs mt-1">Pick presets or create custom magical tasks</p>
+              </div>
+              <div className="text-center">
+                <div className="w-10 h-10 rounded-full bg-purple-500/30 flex items-center justify-center mx-auto mb-2">
+                  <Timer className="w-5 h-5 text-purple-300" />
+                </div>
+                <p className="text-purple-200 font-medium">Start Timer</p>
+                <p className="text-slate-400 text-xs mt-1">Estimate time, then race the clock to earn rewards</p>
+              </div>
+              <div className="text-center">
+                <div className="w-10 h-10 rounded-full bg-purple-500/30 flex items-center justify-center mx-auto mb-2">
+                  <Gift className="w-5 h-5 text-purple-300" />
+                </div>
+                <p className="text-purple-200 font-medium">Earn Stickers</p>
+                <p className="text-slate-400 text-xs mt-1">Beat the timer to collect magical rewards</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Content */}
+        <div className="flex-1 px-4 py-4 pb-24 max-w-2xl mx-auto w-full space-y-4">
+          {/* Summon Quest Button */}
+          <div className="text-center">
+            <button
+              onClick={summonQuest}
+              disabled={incompleteTasks.length === 0}
+              className="w-full max-w-md mx-auto px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white rounded-xl text-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-purple-500/30 flex items-center justify-center gap-2"
+            >
+              <Sparkles className="w-5 h-5" />
+              Summon a Quest
+            </button>
+            {incompleteTasks.length === 0 && (
+              <p className="text-purple-300/70 text-sm mt-2">Add tasks below to begin your magical journey!</p>
+            )}
+          </div>
+
+          {/* Add Task Section */}
+          <div className="bg-slate-800/80 border border-slate-700 rounded-xl p-4">
+            <div className="flex items-center gap-2 mb-3">
+              <Wand2 className="w-5 h-5 text-purple-400" />
+              <h2 className="text-lg font-semibold text-white">Conjure a New Spell</h2>
+            </div>
+
+            {/* Preset Tasks Picker */}
+            <div className="mb-4">
+              <button
+                onClick={() => setShowPresetPicker(!showPresetPicker)}
+                className="w-full flex items-center justify-between px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-purple-300 hover:bg-slate-700 transition-colors"
+              >
+                <span>Choose from Magical Presets</span>
+                {showPresetPicker ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+              </button>
+
+              {showPresetPicker && (
+                <div className="mt-2 max-h-80 overflow-y-auto bg-slate-900/90 rounded-lg border border-slate-700 p-2 space-y-1">
+                  {PRESET_TASKS.map((preset, idx) => {
+                    const isAdded = tasks.some(t => t.originalName.toLowerCase() === preset.originalName.toLowerCase())
+                    return (
+                      <button
+                        key={idx}
+                        onClick={() => {
+                          addTask(preset.originalName, preset.magicName, preset.category)
+                          setShowPresetPicker(false)
+                        }}
+                        disabled={isAdded}
+                        className={`w-full text-left p-3 rounded-lg transition-all ${
+                          isAdded
+                            ? 'bg-slate-800/50 text-slate-500 cursor-not-allowed'
+                            : 'bg-slate-800 hover:bg-slate-700 text-purple-200 border border-slate-700 hover:border-purple-500/50'
+                        }`}
+                      >
+                        <div className="font-medium text-sm">{preset.originalName}</div>
+                        <div className="text-xs text-purple-400/70 mt-0.5">→ {preset.magicName}</div>
+                        <div className="text-xs text-slate-500 mt-0.5">{CATEGORIES.find(c => c.id === preset.category)?.name}</div>
+                      </button>
+                    )
+                  })}
+                </div>
+              )}
+            </div>
+
+            {/* Custom Task Input */}
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={customTask}
+                onChange={(e) => setCustomTask(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && customTask.trim()) {
+                    const magicName = `${customTask.trim()} Enchantment`
+                    addTask(customTask.trim(), magicName, 'castle')
+                    setCustomTask('')
+                  }
+                }}
+                placeholder="Enter any chore..."
+                className="flex-1 px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-purple-500 focus:outline-none"
+              />
+              <button
+                onClick={() => {
+                  if (customTask.trim()) {
+                    const magicName = `${customTask.trim()} Enchantment`
+                    addTask(customTask.trim(), magicName, 'castle')
+                    setCustomTask('')
+                  }
+                }}
+                className="px-4 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-lg transition-colors"
+              >
+                <Plus className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+
+          {/* Collection Button */}
+          <div className="flex justify-center">
+            <button
+              onClick={() => setShowStickers(!showStickers)}
+              className="px-4 py-2 rounded-full bg-amber-500/20 border border-amber-400/30 text-amber-300 hover:bg-amber-500/30 transition-colors flex items-center gap-2"
+            >
+              <Shield className="w-4 h-4" />
+              My Collection ({stickers.length})
+            </button>
+          </div>
+
+          {/* Sticker Collection Modal */}
+          {showStickers && (
+            <div className="bg-slate-800/80 border border-amber-500/30 rounded-xl p-4">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-2">
+                  <Crown className="w-5 h-5 text-amber-400" />
+                  <h2 className="text-lg font-semibold text-white">Spell Collection</h2>
+                </div>
+                <button onClick={() => setShowStickers(false)} className="text-slate-400 hover:text-white text-xl leading-none">
+                  ✕
+                </button>
+              </div>
+
+              {stickers.length === 0 ? (
+                <div className="text-center py-8">
+                  <Gift className="w-12 h-12 mx-auto text-slate-600 mb-3" />
+                  <p className="text-slate-400">Complete quests to earn magical rewards!</p>
+                  <p className="text-slate-500 text-sm mt-1">Beat the timer when completing tasks for a chance to win stickers</p>
+                </div>
+              ) : (
+                <div className="grid grid-cols-3 gap-3">
+                  {stickers.map((sticker) => (
+                    <div key={sticker.id} className="aspect-square bg-slate-900/80 rounded-lg border border-amber-500/30 p-3 flex flex-col items-center justify-center">
+                      <img src={sticker.path} alt={sticker.name} className="w-full h-full object-contain" />
+                      <span className="text-xs text-amber-300 mt-1 text-center">{sticker.name}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Task List by Category */}
+          <div className="space-y-3">
+            {tasksByCategory.map(category => (
+              category.tasks.length > 0 && (
+                <div key={category.id} className="bg-slate-800/80 border border-slate-700 rounded-xl p-4">
+                  <div className={`flex items-center gap-2 mb-3 pb-2 border-b border-slate-700 ${category.color}`}>
+                    {category.icon}
+                    <h3 className="font-semibold">{category.name}</h3>
+                    <span className="text-xs text-slate-400 ml-auto">{category.tasks.filter(t => !t.completed).length} remaining</span>
+                  </div>
+
+                  <div className="space-y-2">
+                    {category.tasks.map(task => (
+                      <div
+                        key={task.id}
+                        className={`flex items-center gap-3 p-3 rounded-lg border transition-all ${
+                          task.completed
+                            ? 'bg-slate-700/30 border-slate-600/50 opacity-60'
+                            : 'bg-slate-900/50 border-slate-700 hover:border-purple-500/50'
+                        }`}
+                      >
+                        <button
+                          onClick={() => toggleComplete(task.id)}
+                          className={`flex-shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all ${
+                            task.completed
+                              ? 'bg-emerald-500 border-emerald-500'
+                              : 'border-slate-500 hover:border-purple-400'
+                          }`}
+                        >
+                          {task.completed && <Check className="w-3 h-3 text-white" />}
+                        </button>
+
+                        <div className="flex-1 min-w-0">
+                          <p className={`font-medium ${task.completed ? 'line-through text-slate-500' : 'text-purple-100'}`}>
+                            {task.magicName}
+                          </p>
+                          <p className="text-xs text-slate-400">{task.originalName}</p>
+                        </div>
+
+                        <button
+                          onClick={() => removeTask(task.id)}
+                          className="flex-shrink-0 p-1 text-slate-400 hover:text-red-400 transition-colors"
+                        >
+                          <Trash2 className="w-4 h-4" />
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )
+            ))}
+          </div>
+
+          {tasks.length === 0 && (
+            <div className="text-center py-8">
+              <Wand2 className="w-12 h-12 mx-auto text-purple-600 mb-3" />
+              <p className="text-purple-300 mb-1">No spells summoned yet!</p>
+              <p className="text-slate-400 text-sm">Add tasks above to begin your magical journey.</p>
+            </div>
+          )}
+        </div>
+
+        {/* Quest Modal */}
+        {showQuestModal && summonedTask && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80">
+            <div className="bg-slate-800 border border-purple-500/50 rounded-2xl max-w-md w-full p-6 shadow-2xl">
+              <h2 className="text-2xl font-bold text-white text-center mb-4">
+                {gameState === 'idle' || gameState === 'estimating' ? '⚔️ Quest Awaits!' :
+                 gameState === 'running' ? '⏱️ Cast Your Spell!' :
+                 '🎉 Quest Complete!'}
+              </h2>
+
+              {/* Task Card */}
+              <div className="bg-purple-900/30 border border-purple-500/30 rounded-xl p-4 mb-6">
+                <p className="text-xl font-semibold text-purple-200 text-center">{summonedTask.originalName}</p>
+                <p className="text-sm text-purple-400/70 text-center mt-1">aka: {summonedTask.magicName}</p>
+              </div>
+
+              {/* Estimating State */}
+              {gameState === 'estimating' && (
+                <>
+                  <div className="mb-4 text-center">
+                    <label className="block text-purple-300 text-sm mb-3">
+                      How many minutes will this take?
+                    </label>
+                    <div className="flex items-center justify-center gap-3">
+                      <input
+                        type="number"
+                        min="1"
+                        max="60"
+                        value={estimatedMinutes}
+                        onChange={(e) => setEstimatedMinutes(e.target.value)}
+                        onKeyDown={(e) => e.key === 'Enter' && startTimer()}
+                        placeholder="5"
+                        className="w-24 px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white text-center text-2xl font-bold focus:border-purple-500 focus:outline-none"
+                      />
+                      <span className="text-purple-300 text-lg">min</span>
+                    </div>
+                    <p className="text-slate-400 text-sm mt-2">Beat the timer to earn a sticker!</p>
+                  </div>
+                  <div className="flex gap-3">
+                    <button onClick={resetQuest} className="flex-1 px-4 py-3 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg transition-colors">
+                      Cancel
+                    </button>
+                    <button
+                      onClick={startTimer}
+                      className="flex-1 px-4 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-lg transition-colors font-semibold"
+                    >
+                      Start Timer
+                    </button>
+                  </div>
+                </>
+              )}
+
+              {/* Running State */}
+              {gameState === 'running' && (
+                <>
+                  <div className="text-center py-6">
+                    <div className="text-6xl font-bold text-purple-300 mb-2">
+                      {formatTime(elapsedSeconds)}
+                    </div>
+                    <div className="text-sm text-slate-400">
+                      Target: {estimatedMinutes} min
+                    </div>
+                    <div className="mt-4 text-xs text-slate-500">
+                      Timer is running! Complete your task and click "I'm Done" when finished.
+                    </div>
+                  </div>
+                  <button
+                    onClick={stopTimer}
+                    className="w-full px-4 py-4 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl transition-colors text-lg font-semibold"
+                  >
+                    ✓ I'm Done!
+                  </button>
+                </>
+              )}
+
+              {/* Finished State */}
+              {gameState === 'finished' && (
+                <>
+                  <div className="text-center py-4 mb-4">
+                    <div className="text-5xl mb-3">🎉</div>
+                    <p className="text-lg text-purple-200 mb-2">Excellent work, Wizard!</p>
+                    <p className="text-sm text-slate-400">
+                      Completed in {formatTime(elapsedSeconds)}
+                    </p>
+                    {elapsedSeconds <= Number(estimatedMinutes) * 60 && (
+                      <div className="mt-3 p-3 bg-amber-500/20 border border-amber-500/30 rounded-lg">
+                        <p className="text-amber-300 font-semibold">⚡ You beat the timer!</p>
+                        <p className="text-amber-400/80 text-sm">Collect your reward!</p>
+                      </div>
+                    )}
+                  </div>
+                  <button
+                    onClick={finishQuest}
+                    className="w-full px-4 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-lg transition-colors font-semibold text-lg"
+                  >
+                    {elapsedSeconds <= Number(estimatedMinutes) * 60 ? 'Collect Reward' : 'Complete Quest'}
+                  </button>
+                </>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
