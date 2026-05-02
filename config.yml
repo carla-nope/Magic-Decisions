@@ -10,10 +10,6 @@ public_folder: "/images/uploads"
 # Enable editorial workflow for draft/review/publish
 publish_mode: editorial_workflow
 
-# Site URL for authentication
-site_url: https://magicdecisions.com
-logo_url: https://magicdecisions.com/favicon.ico
-
 collections:
   - name: "blog"
     label: "Blog Posts"
