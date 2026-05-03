@@ -1,42 +1,43 @@
-version: 1
-
-public: true
-
 media:
-  folder: public/images
-  public_folder: /images
+  input: public/images
+  output: /images
 
 content:
-  blog:
+  - name: blog
     label: Blog Posts
     label_singular: Blog Post
-    folder: content/blog
-    create: true
-    delete: true
+    type: collection
+    path: content/blog
+    view:
+      fields: [title, date]
     fields:
-      - label: Title
-        name: title
+      - name: title
+        label: Title
         type: string
         required: true
-      - label: Date
-        name: date
+      - name: date
+        label: Date
         type: date
         required: true
-        date_format: YYYY-MM-DD
-      - label: Excerpt
-        name: excerpt
+        options:
+          format: YYYY-MM-DD
+      - name: excerpt
+        label: Excerpt
         type: text
-      - label: Category
-        name: category
+      - name: category
+        label: Category
         type: string
-      - label: Featured
-        name: featured
+      - name: featured
+        label: Featured
         type: boolean
         default: false
-      - label: Author
-        name: author
+      - name: author
+        label: Author
         type: string
         default: MagicDecisions
-      - label: Body
-        name: body
-        type: markdown
+      - name: body
+        label: Body
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
