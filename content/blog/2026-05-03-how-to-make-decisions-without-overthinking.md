@@ -119,7 +119,7 @@ For those decisions, pause, gather facts, and sleep on it if needed. Slow thinki
 
 When everything gets the same amount of thought, the important choices don't get your best energy.
 
-## Conclusion
+## Decide, Don't Overthink
 
 Making decisions faster starts with less mental clutter, not more effort. When you reduce options, use simple filters, and set limits, choices stop feeling so heavy.
 
