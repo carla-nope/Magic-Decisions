@@ -9,6 +9,7 @@ import RockPaperScissors from './RockPaperScissors'
 import NamePicker from './NamePicker'
 import LandingPage from './LandingPage'
 import BlogPage from './BlogPage'
+import BlogPost from './BlogPost'
 import UsernameGenerator from './UsernameGenerator'
 import OutfitIdeaGenerator from './OutfitIdeaGenerator'
 import MaximizerQuiz from './MaximizerQuiz'
@@ -19,7 +20,7 @@ import SEOContent from './SEOContent'
 import { PrivacyPolicy, TermsConditions, AboutPage, ContactPage } from './LegalPages'
 import './index.css'
 
-type Tool = 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner' | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit' | 'chores' | 'blog' | 'privacy' | 'terms' | 'about' | 'contact'
+type Tool = 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner' | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit' | 'chores' | 'blog' | 'blogpost' | 'privacy' | 'terms' | 'about' | 'contact'
 
 interface HistoryItem {
   id: number;
@@ -361,6 +362,7 @@ function YesNoOracle() {
 function App() {
   const [activeTool, setActiveTool] = useState<Tool>('home');
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
+  const [blogPostSlug, setBlogPostSlug] = useState<string | null>(null);
 
   const toolCategories = [
     {
@@ -526,7 +528,8 @@ function App() {
         {activeTool === 'bias' && <CognitiveBiasTest />}
         {activeTool === 'buyit' && <ShouldIBuyItCalculator />}
         {activeTool === 'chores' && <MagicChores />}
-        {activeTool === 'blog' && <BlogPage />}
+        {activeTool === 'blog' && <BlogPage onNavigateToPost={(slug) => { setBlogPostSlug(slug); setActiveTool('blogpost'); }} />}
+        {activeTool === 'blogpost' && blogPostSlug && <BlogPost slug={blogPostSlug} onBack={() => { setActiveTool('blog'); setBlogPostSlug(null); }} />}
         {activeTool === 'privacy' && <PrivacyPolicy onNavigate={setActiveTool} />}
         {activeTool === 'terms' && <TermsConditions onNavigate={setActiveTool} />}
         {activeTool === 'about' && <AboutPage onNavigate={setActiveTool} />}

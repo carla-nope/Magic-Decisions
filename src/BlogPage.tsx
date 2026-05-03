@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BookOpen, ArrowRight, Mail, Sparkles, Heart, Brain, Plus, ExternalLink } from 'lucide-react'
+import { BookOpen, ArrowRight, Mail, Sparkles, Heart, Brain, Plus, Calendar, Clock } from 'lucide-react'
 import './index.css'
 
 interface BlogPost {
@@ -9,7 +9,9 @@ interface BlogPost {
   excerpt: string
   category: string
   featured: boolean
+  author: string
   readTime: string
+  body?: string
 }
 
 const CATEGORY_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -26,31 +28,157 @@ const CATEGORY_COLORS: Record<string, string> = {
   Technology: 'blue',
 }
 
-function BlogPage() {
+const REPO_OWNER = 'carla-nope'
+const REPO_NAME = 'Magic-Decisions'
+const CONTENT_PATH = 'content/blog'
+
+function parseFrontmatter(content: string): { data: Record<string, string | boolean | number>; body: string } {
+  const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/)
+  if (!frontmatterMatch) {
+    return { data: {}, body: content }
+  }
+
+  const frontmatter = frontmatterMatch[1]
+  const body = content.slice(frontmatterMatch[0].length).trim()
+  const data: Record<string, string | boolean | number> = {}
+
+  frontmatter.split('\n').forEach(line => {
+    const colonIndex = line.indexOf(':')
+    if (colonIndex > -1) {
+      const key = line.slice(0, colonIndex).trim()
+      let value: string | boolean | number = line.slice(colonIndex + 1).trim()
+
+      // Handle quoted strings
+      if (typeof value === 'string') {
+        if (value.startsWith('"') && value.endsWith('"')) {
+          value = value.slice(1, -1)
+        } else if (value.startsWith("'") && value.endsWith("'")) {
+          value = value.slice(1, -1)
+        }
+
+        // Handle booleans
+        if (value === 'true') value = true
+        if (value === 'false') value = false
+      }
+
+      data[key] = value
+    }
+  })
+
+  return { data, body }
+}
+
+function calculateReadTime(content: string): string {
+  const wordsPerMinute = 200
+  const wordCount = content.split(/\s+/).length
+  const minutes = Math.ceil(wordCount / wordsPerMinute)
+  return `${minutes} min read`
+}
+
+function formatDate(dateStr: string): string {
+  const date = new Date(dateStr)
+  return date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+}
+
+function BlogPostCard({ post, onClick }: { post: BlogPost; onClick: () => void }) {
+  const Icon = CATEGORY_ICONS[post.category] || Brain
+  const color = CATEGORY_COLORS[post.category] || 'purple'
+
+  return (
+    <div
+      className="mystical-card p-5 hover:shadow-lg transition-shadow cursor-pointer"
+      onClick={onClick}
+    >
+      <div className="flex items-center gap-2 mb-3">
+        <div className={`w-8 h-8 rounded-lg bg-${color}-100 flex items-center justify-center`}>
+          <Icon className={`w-4 h-4 text-${color}-600`} />
+        </div>
+        <span className="text-xs font-medium text-slate-400 uppercase tracking-wide">{post.category}</span>
+      </div>
+      <h3 className="font-bold text-slate-800 mb-2">{post.title}</h3>
+      <p className="text-slate-600 text-sm mb-4 line-clamp-2">{post.excerpt}</p>
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-3 text-xs text-slate-400">
+          <span className="flex items-center gap-1">
+            <Calendar className="w-3 h-3" />
+            {formatDate(post.date)}
+          </span>
+          <span className="flex items-center gap-1">
+            <Clock className="w-3 h-3" />
+            {post.readTime}
+          </span>
+        </div>
+        <span className="flex items-center gap-1 text-emerald-600 text-sm font-medium hover:text-emerald-700">
+          Read <ArrowRight className="w-3 h-3" />
+        </span>
+      </div>
+    </div>
+  )
+}
+
+function BlogPage({ onNavigateToPost }: { onNavigateToPost?: (slug: string) => void }) {
   const [posts, setPosts] = useState<BlogPost[]>([])
-  const [email, setEmail] = useState('')
-  const [subscribed, setSubscribed] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    // Load blog posts from manifest
-    fetch('/blog-manifest.json')
-      .then(res => res.json())
-      .then(data => {
-        setPosts(data.posts || [])
+    async function fetchPosts() {
+      try {
+        // Fetch the directory listing from GitHub API
+        const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${CONTENT_PATH}`
+        const response = await fetch(apiUrl)
+
+        if (!response.ok) {
+          throw new Error('Failed to fetch posts')
+        }
+
+        const files = await response.json()
+        const markdownFiles = files.filter((f: any) => f.name.endsWith('.md') || f.name.endsWith('.mdx'))
+
+        // Fetch each post's content
+        const postsData = await Promise.all(
+          markdownFiles.map(async (file: any) => {
+            const contentResponse = await fetch(file.download_url)
+            const content = await contentResponse.text()
+            const { data, body } = parseFrontmatter(content)
+
+            return {
+              slug: file.name.replace(/\.mdx?$/, ''),
+              title: data.title || 'Untitled',
+              date: data.date || new Date().toISOString().split('T')[0],
+              excerpt: data.excerpt || '',
+              category: data.category || 'General',
+              featured: data.featured || false,
+              author: data.author || 'MagicDecisions',
+              readTime: calculateReadTime(body),
+            }
+          })
+        )
+
+        // Sort by date, newest first
+        postsData.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+
+        setPosts(postsData)
         setLoading(false)
-      })
-      .catch(() => {
+      } catch (err) {
+        console.error('Error fetching posts:', err)
+        setError('Failed to load blog posts')
         setLoading(false)
-      })
+      }
+    }
+
+    fetchPosts()
   }, [])
 
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (email) {
-      setSubscribed(true)
-      setEmail('')
+  const handlePostClick = (slug: string) => {
+    // Trigger navigation - will be handled by parent or router
+    if (onNavigateToPost) {
+      onNavigateToPost(slug)
     }
+    // Update URL without page reload
+    window.history.pushState({}, '', `/blog/${slug}`)
+    // Dispatch custom event for routing
+    window.dispatchEvent(new CustomEvent('blog-post-navigate', { detail: { slug } }))
   }
 
   const featuredPosts = posts.filter(p => p.featured)
@@ -79,8 +207,17 @@ function BlogPage() {
             <div className="w-6 h-6 border-2 border-slate-300 border-t-slate-600 rounded-full animate-spin" />
             <span>Loading posts...</span>
           </div>
+        ) : error ? (
+          <div className="mystical-card p-8 text-center">
+            <p className="text-slate-600 mb-4">{error}</p>
+            <button
+              onClick={() => window.location.reload()}
+              className="mystical-btn"
+            >
+              Try Again
+            </button>
+          </div>
         ) : posts.length === 0 ? (
-          /* Empty State - New CMS Setup */
           <div className="w-full max-w-4xl mb-12">
             <div className="mystical-card p-8 text-center bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-100 flex items-center justify-center">
@@ -90,16 +227,6 @@ function BlogPage() {
               <p className="text-slate-600 mb-6 max-w-md mx-auto">
                 Your blog is set up and ready. Click the button above to open the Content Manager and write your first post.
               </p>
-              <div className="bg-slate-100 rounded-lg p-4 text-left max-w-md mx-auto">
-                <p className="font-medium text-slate-700 mb-2 text-sm">How to add blog posts:</p>
-                <ol className="text-slate-600 text-sm space-y-1">
-                  <li>1. Click "Open CMS Editor" above</li>
-                  <li>2. Sign in with GitHub/GitLab/Bitbucket</li>
-                  <li>3. Click "New Blog Posts" to create</li>
-                  <li>4. Write your post in Markdown</li>
-                  <li>5. Click "Save" to publish</li>
-                </ol>
-              </div>
             </div>
           </div>
         ) : (
@@ -109,33 +236,33 @@ function BlogPage() {
               <div className="w-full max-w-4xl mb-12">
                 <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">Featured Articles</h2>
                 <div className="grid md:grid-cols-2 gap-6">
-                  {featuredPosts.map((post) => {
-                    const Icon = CATEGORY_ICONS[post.category] || Brain
-                    const color = CATEGORY_COLORS[post.category] || 'purple'
-                    return (
-                      <div key={post.slug} className="mystical-card p-6 hover:shadow-lg transition-shadow">
-                        <div className="flex items-start gap-4">
-                          <div className={`w-12 h-12 rounded-xl bg-${color}-100 flex items-center justify-center flex-shrink-0`}>
-                            <Icon className={`w-6 h-6 text-${color}-600`} />
-                          </div>
-                          <div className="flex-1">
-                            <span className="text-xs font-medium text-slate-400 uppercase tracking-wide">{post.category}</span>
-                            <h3 className="font-bold text-slate-800 text-lg mb-2">{post.title}</h3>
-                            <p className="text-slate-600 text-sm mb-4">{post.excerpt}</p>
-                            <div className="flex items-center justify-between">
-                              <span className="text-xs text-slate-400">{post.readTime}</span>
-                              <a
-                                href={`/blog/${post.slug}`}
-                                className="flex items-center gap-1 text-emerald-600 text-sm font-medium hover:text-emerald-700"
-                              >
-                                Read More <ArrowRight className="w-4 h-4" />
-                              </a>
-                            </div>
+                  {featuredPosts.map((post) => (
+                    <div
+                      key={post.slug}
+                      className="mystical-card p-6 hover:shadow-lg transition-shadow cursor-pointer"
+                      onClick={() => handlePostClick(post.slug)}
+                    >
+                      <div className="flex items-start gap-4">
+                        <div className={`w-12 h-12 rounded-xl bg-${CATEGORY_COLORS[post.category] || 'purple'}-100 flex items-center justify-center flex-shrink-0`}>
+                          {(() => {
+                            const Icon = CATEGORY_ICONS[post.category] || Brain
+                            return <Icon className={`w-6 h-6 text-${CATEGORY_COLORS[post.category] || 'purple'}-600`} />
+                          })()}
+                        </div>
+                        <div className="flex-1">
+                          <span className="text-xs font-medium text-slate-400 uppercase tracking-wide">{post.category}</span>
+                          <h3 className="font-bold text-slate-800 text-lg mb-2">{post.title}</h3>
+                          <p className="text-slate-600 text-sm mb-4">{post.excerpt}</p>
+                          <div className="flex items-center justify-between">
+                            <span className="text-xs text-slate-400">{post.readTime}</span>
+                            <span className="flex items-center gap-1 text-emerald-600 text-sm font-medium hover:text-emerald-700">
+                              Read More <ArrowRight className="w-4 h-4" />
+                            </span>
                           </div>
                         </div>
                       </div>
-                    )
-                  })}
+                    </div>
+                  ))}
                 </div>
               </div>
             )}
@@ -145,31 +272,13 @@ function BlogPage() {
               <div className="w-full max-w-4xl mb-12">
                 <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">More to Explore</h2>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {recentPosts.map((post) => {
-                    const Icon = CATEGORY_ICONS[post.category] || Brain
-                    const color = CATEGORY_COLORS[post.category] || 'purple'
-                    return (
-                      <div key={post.slug} className="mystical-card p-5 hover:shadow-lg transition-shadow">
-                        <div className="flex items-center gap-2 mb-3">
-                          <div className={`w-8 h-8 rounded-lg bg-${color}-100 flex items-center justify-center`}>
-                            <Icon className={`w-4 h-4 text-${color}-600`} />
-                          </div>
-                          <span className="text-xs font-medium text-slate-400 uppercase tracking-wide">{post.category}</span>
-                        </div>
-                        <h3 className="font-bold text-slate-800 mb-2">{post.title}</h3>
-                        <p className="text-slate-600 text-sm mb-4 line-clamp-2">{post.excerpt}</p>
-                        <div className="flex items-center justify-between">
-                          <span className="text-xs text-slate-400">{post.readTime}</span>
-                          <a
-                            href={`/blog/${post.slug}`}
-                            className="flex items-center gap-1 text-emerald-600 text-sm font-medium hover:text-emerald-700"
-                          >
-                            Read <ArrowRight className="w-3 h-3" />
-                          </a>
-                        </div>
-                      </div>
-                    )
-                  })}
+                  {recentPosts.map((post) => (
+                    <BlogPostCard
+                      key={post.slug}
+                      post={post}
+                      onClick={() => handlePostClick(post.slug)}
+                    />
+                  ))}
                 </div>
               </div>
             )}
@@ -186,27 +295,7 @@ function BlogPage() {
             <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
               Join thousands of readers who get practical insights on making better choices. No spam, just useful content.
             </p>
-            {subscribed ? (
-              <div className="flex items-center justify-center gap-2 text-emerald-600">
-                <Sparkles className="w-5 h-5" />
-                <span className="font-medium">Thanks for subscribing! Check your inbox.</span>
-              </div>
-            ) : (
-              <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email"
-                  className="mystical-input flex-1 text-center sm:text-left"
-                  required
-                />
-                <button type="submit" className="mystical-btn whitespace-nowrap">
-                  Subscribe
-                </button>
-              </form>
-            )}
-            <p className="text-xs text-slate-400 mt-4">Unsubscribe anytime. We respect your inbox.</p>
+            <p className="text-xs text-slate-400 mt-4">Newsletter coming soon!</p>
           </div>
         </div>
 
@@ -235,20 +324,6 @@ function BlogPage() {
           </div>
         </div>
 
-        {/* Internal Admin Link - Site Management */}
-        <div className="w-full max-w-3xl mb-16">
-          <div className="flex items-center justify-center">
-            <a
-              href="/admin/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-slate-400 hover:text-slate-500 text-xs transition-colors"
-            >
-              Site Administration
-            </a>
-          </div>
-        </div>
-
         {/* Footer spacer for fixed nav/footer */}
         <div className="h-24" />
       </div>
@@ -266,3 +341,6 @@ function BlogPage() {
 }
 
 export default BlogPage
+
+// Also export the component for use in individual post pages
+export { parseFrontmatter, formatDate, calculateReadTime, REPO_OWNER, REPO_NAME, CONTENT_PATH }
