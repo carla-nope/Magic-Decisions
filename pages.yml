@@ -1,0 +1,43 @@
+media:
+  input: public/images
+  output: /images
+
+content:
+  - name: blog
+    label: Blog Posts
+    label_singular: Blog Post
+    type: collection
+    path: content/blog
+    view:
+      fields: [title, date]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: excerpt
+        label: Excerpt
+        type: text
+      - name: category
+        label: Category
+        type: string
+      - name: featured
+        label: Featured
+        type: boolean
+        default: false
+      - name: author
+        label: Author
+        type: string
+        default: MagicDecisions
+      - name: body
+        label: Body
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
