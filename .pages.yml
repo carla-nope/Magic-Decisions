@@ -15,12 +15,16 @@ content:
         label: Title
         type: string
         required: true
+      - name: slug
+        label: URL Slug
+        type: string
+        description: Custom URL slug (e.g., my-post-title)
       - name: date
         label: Date
         type: date
         required: true
         options:
-          format: YYYY-MM-DD
+          format: yyyy-MM-dd
       - name: excerpt
         label: Excerpt
         type: text
@@ -35,6 +39,22 @@ content:
         label: Author
         type: string
         default: MagicDecisions
+      - name: seo
+        label: SEO
+        type: object
+        fields:
+          - name: meta_title
+            label: Meta Title
+            type: string
+            description: SEO title (defaults to post title if empty)
+          - name: meta_description
+            label: Meta Description
+            type: text
+            description: SEO meta description for search engines
+          - name: keywords
+            label: Keywords
+            type: text
+            description: Comma-separated keywords for SEO
       - name: body
         label: Body
         type: rich-text
