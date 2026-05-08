@@ -167,6 +167,50 @@ function BlogPost({ slug, onBack }: BlogPostProps) {
     fetchPost()
   }, [slug])
 
+  // Inject JSON-LD schema for AI/LLM crawlers
+  useEffect(() => {
+    if (!post) return
+
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": post.title,
+      "description": post.excerpt,
+      "datePublished": post.date,
+      "author": {
+        "@type": "Person",
+        "name": post.author
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MagicDecisions",
+        "url": "https://magicdecisions.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": `https://magicdecisions.com/blog/${slug}`
+      },
+      "articleSection": post.category,
+      "wordCount": post.body.replace(/<[^>]*>/g, '').split(/\s+/).length
+    }
+
+    const script = document.createElement('script')
+    script.type = 'application/ld+json'
+    script.text = JSON.stringify(schema)
+    script.id = 'article-schema'
+
+    // Remove existing script if any
+    const existing = document.getElementById('article-schema')
+    if (existing) existing.remove()
+
+    document.head.appendChild(script)
+
+    return () => {
+      const toRemove = document.getElementById('article-schema')
+      if (toRemove) toRemove.remove()
+    }
+  }, [post, slug])
+
   const handleShare = async () => {
     const url = window.location.href
     if (navigator.share) {
