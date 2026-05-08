@@ -138,5 +138,6 @@ You don't need perfect instincts. You need better defaults, clearer time boundar
 
 The next time you feel stuck, make the choice smaller, shorter, and simpler. Progress feels lighter when you stop asking every decision to be perfect.
 
-Still can't decide? Let the magic help.
-Magic Decisions has 15 free tools for exactly this kind of moment — yes/no oracles, spin wheels, dinner deciders, and more. No signup, no overthinking. Just pick and go.
+***Still can't decide? Let the magic help.***  
+Magic Decisions has [15 free tools](https://www.magicdecisions.com/) for exactly this kind of moment — yes/no oracles, spin wheels, dinner deciders, and more. No signup, no overthinking. Just pick and go.
+
