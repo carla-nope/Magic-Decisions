@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MagicDecisions Blog</title>
+  <subtitle>Making better decisions with practical tools and psychology insights</subtitle>
+  <link href="https://magicdecisions.com/feed.xml" rel="self"/>
+  <link href="https://magicdecisions.com/blog"/>
+  <updated>2026-05-07T00:00:00Z</updated>
+  <id>https://magicdecisions.com</id>
+  <author>
+    <name>MagicDecisions</name>
+  </author>
+  <rights>Copyright 2026 MagicDecisions.com</rights>
+
+  <!-- Blog Post: Psychology Behind Decision Fatigue -->
+  <entry>
+    <title>The Psychology Behind Decision Fatigue</title>
+    <link href="https://magicdecisions.com/blog/psychology-behind-decision-fatigue"/>
+    <id>https://magicdecisions.com/blog/psychology-behind-decision-fatigue</id>
+    <published>2026-05-02T00:00:00Z</published>
+    <updated>2026-05-02T00:00:00Z</updated>
+    <author>
+      <name>MagicDecisions</name>
+    </author>
+    <category term="Psychology"/>
+    <summary>Why do we struggle with simple choices? Learn about cognitive load and how randomization tools can help preserve mental energy.</summary>
+    <content type="html"><![CDATA[Why do we struggle with simple choices? Learn about cognitive load and how randomization tools can help preserve mental energy.]]></content>
+  </entry>
+
+  <!-- Blog Post: When to Use Randomness vs Logic -->
+  <entry>
+    <title>When to Use Randomness vs Logic</title>
+    <link href="https://magicdecisions.com/blog/when-to-use-randomness-vs-logic"/>
+    <id>https://magicdecisions.com/blog/when-to-use-randomness-vs-logic</id>
+    <published>2026-05-01T00:00:00Z</published>
+    <updated>2026-05-01T00:00:00Z</updated>
+    <author>
+      <name>MagicDecisions</name>
+    </author>
+    <category term="Strategy"/>
+    <summary>Not every decision needs deep analysis. Discover when it makes sense to let chance decide and when to think it through.</summary>
+    <content type="html"><![CDATA[Not every decision needs deep analysis. Discover when it makes sense to let chance decide and when to think it through.]]></content>
+  </entry>
+
+  <!-- Blog Post: 10 Decisions You Should Never Overthink -->
+  <entry>
+    <title>10 Decisions You Should Never Overthink</title>
+    <link href="https://magicdecisions.com/blog/10-decisions-you-should-never-overthink"/>
+    <id>https://magicdecisions.com/blog/10-decisions-you-should-never-overthink</id>
+    <published>2026-04-28T00:00:00Z</published>
+    <updated>2026-04-28T00:00:00Z</updated>
+    <author>
+      <name>MagicDecisions</name>
+    </author>
+    <category term="Lifestyle"/>
+    <summary>From what to eat for dinner to who drives—some choices deserve quick decisions, not hours of deliberation.</summary>
+    <content type="html"><![CDATA[From what to eat for dinner to who drives—some choices deserve quick decisions, not hours of deliberation.]]></content>
+  </entry>
+
+  <!-- Blog Post: The Science of Randomness -->
+  <entry>
+    <title>The Science of Randomness</title>
+    <link href="https://magicdecisions.com/blog/the-science-of-randomness"/>
+    <id>https://magicdecisions.com/blog/the-science-of-randomness</id>
+    <published>2026-04-25T00:00:00Z</published>
+    <updated>2026-04-25T00:00:00Z</updated>
+    <author>
+      <name>MagicDecisions</name>
+    </author>
+    <category term="Technology"/>
+    <summary>How computers generate random numbers and why true randomness matters for fair decision-making tools.</summary>
+    <content type="html"><![CDATA[How computers generate random numbers and why true randomness matters for fair decision-making tools.]]></content>
+  </entry>
+
+  <!-- Blog Post: Breaking Analysis Paralysis -->
+  <entry>
+    <title>Breaking Analysis Paralysis</title>
+    <link href="https://magicdecisions.com/blog/breaking-analysis-paralysis"/>
+    <id>https://magicdecisions.com/blog/breaking-analysis-paralysis</id>
+    <published>2026-04-20T00:00:00Z</published>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <author>
+      <name>MagicDecisions</name>
+    </author>
+    <category term="Psychology"/>
+    <summary>When you have too many options and cannot choose, a random selector can be your best friend. Here's why.</summary>
+    <content type="html"><![CDATA[When you have too many options and cannot choose, a random selector can be your best friend. Here's why.]]></content>
+  </entry>
+</feed>

@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react'
-import { Hash, Gamepad2, Sparkles, RefreshCw, Copy, Check, Share2, Shuffle, Wand2 } from 'lucide-react'
+import { Hash, Gamepad2, Sparkles, RefreshCw, Copy, Check, Share2, Shuffle, Wand2, ArrowRight } from 'lucide-react'
 import './index.css'
 
 const categories = [
@@ -25,7 +25,11 @@ const suffixes: Record<string, string[]> = {
 
 const numberStyles = ['add', 'none', 'end', 'start']
 
-function UsernameGenerator() {
+interface UsernameGeneratorProps {
+  onNavigate?: (toolId: string) => void
+}
+
+function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [generatedUsernames, setGeneratedUsernames] = useState<string[]>([])
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null)
@@ -243,66 +247,69 @@ function UsernameGenerator() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="mt-auto pt-12 text-center text-slate-400 text-sm">
-          <p>Find your perfect online identity</p>
-        </div>
-
-        {/* SEO Content */}
-        <div className="w-full max-w-3xl mt-16 mb-8">
-          <div className="mystical-card p-6">
-            <h2 className="text-xl font-bold text-slate-800 mb-4">What is a Username Generator?</h2>
-            <p className="text-slate-600 mb-4">
-              A username generator is a creative tool that helps you come up with unique handles for social media, gaming platforms, and online accounts. Whether you need a TikTok username, gaming tag, or Instagram handle, our generator creates memorable options tailored to your style.
+        {/* Parent/Family Teaching Moment */}
+        <div className="w-full max-w-2xl mb-12">
+          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-violet-50 border border-purple-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+              Use the Username Generator to Teach Identity and Self-Expression
+            </h2>
+            <p className="text-slate-600 text-center mb-4">
+              The Username Generator opens conversations about online identity and self-expression. Have kids discuss why they like certain usernames—what does their choice say about how they want to present themselves? This tool helps families talk about the difference between anonymity, privacy, and authenticity online. Kids learn that usernames are a first impression, and making a choice through randomization helps them step outside their comfort zone and try new forms of expression.
             </p>
-
-            <h3 className="text-lg font-semibold text-slate-800 mb-3">Why Use a Username Generator?</h3>
-            <ul className="text-slate-600 space-y-2 mb-4">
-              <li>• Finding available usernames across multiple platforms</li>
-              <li>• Creating consistent handles for your personal brand</li>
-              <li>• Discovering creative names you wouldn't think of yourself</li>
-              <li>• Avoiding the frustration of "username taken" errors</li>
-            </ul>
-
-            <div className="grid md:grid-cols-2 gap-4 mb-4">
-              <div>
-                <h3 className="text-lg font-semibold text-emerald-600 mb-2">Pros</h3>
-                <ul className="text-slate-600 text-sm space-y-1">
-                  <li>✓ Instant generation of unique usernames</li>
-                  <li>✓ Multiple style categories to choose from</li>
-                  <li>✓ One-click copy functionality</li>
-                  <li>✓ Save favorites for later</li>
-                  <li>✓ Works for any platform</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-orange-500 mb-2">Tips</h3>
-                <ul className="text-slate-600 text-sm space-y-1">
-                  <li>• Check availability before committing</li>
-                  <li>• Avoid using personal info like birth year</li>
-                  <li>• Keep it simple and easy to spell</li>
-                  <li>• Consider your long-term branding goals</li>
-                </ul>
-              </div>
-            </div>
-
-            <h3 className="text-lg font-semibold text-slate-800 mb-3">Frequently Asked Questions</h3>
-            <div className="space-y-3">
-              <div>
-                <p className="text-slate-700 font-medium text-sm">Are these usernames available?</p>
-                <p className="text-slate-600 text-sm">We generate creative suggestions, but you'll need to check availability on each platform. Many usernames may already be taken, so generate multiple options.</p>
-              </div>
-              <div>
-                <p className="text-slate-700 font-medium text-sm">Can I use these for multiple platforms?</p>
-                <p className="text-slate-600 text-sm">Yes! Try to use the same username across all platforms for brand consistency. Check each platform separately for availability.</p>
-              </div>
-              <div>
-                <p className="text-slate-700 font-medium text-sm">How do I make my username unique?</p>
-                <p className="text-slate-600 text-sm">Try adding symbols like underscores, periods, or numbers. Mix spellings (like "xtra" instead of "extra") and combine words creatively.</p>
-              </div>
-            </div>
           </div>
         </div>
+
+        {/* Related Tools */}
+        <div className="w-full max-w-4xl mb-12">
+          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+            Try More Free Decision Tools
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'Name Picker', description: 'Random name selection for fair picks', id: 'names', emoji: '👤' },
+              { name: 'Random Picker', description: 'Pick from any list of options', id: 'picker', emoji: '🎯' },
+              { name: 'Outfit Picker', description: 'Decide what to wear with ease', id: 'outfit', emoji: '👕' },
+              { name: 'Magic Chores', description: 'Gamify tasks with rewards', id: 'chores', emoji: '🔥' },
+            ].map((tool) => (
+              <button
+                key={tool.id}
+                onClick={() => onNavigate?.(tool.id)}
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-purple-400 cursor-pointer bg-transparent"
+              >
+                <span className="text-3xl mb-2 block">{tool.emoji}</span>
+                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
+                <p className="text-slate-500 text-xs">{tool.description}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8">
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-purple-50 to-violet-50 border border-purple-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-100 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-purple-600" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Want to Help Kids Make Confident Identity Choices?
+            </h2>
+            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+              Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+            </p>
+            <a
+              href="https://go.magicdecisions.com/dt1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-violet-500 hover:from-purple-600 hover:to-violet-600 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-purple-500/30"
+            >
+              Get the Free Decision Traps Guide
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* Footer spacer */}
+        <div className="h-24" />
       </div>
 
       <style>{`

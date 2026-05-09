@@ -1,8 +1,12 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
-import { Plus, Trash2, Shuffle, Copy, Check, Share2, Volume2, VolumeX } from 'lucide-react'
+import { Plus, Trash2, Shuffle, Copy, Check, Share2, Volume2, VolumeX, Sparkles, ArrowRight } from 'lucide-react'
 import './index.css'
 
-function RandomPicker() {
+interface RandomPickerProps {
+  onNavigate?: (toolId: string) => void
+}
+
+function RandomPicker({ onNavigate }: RandomPickerProps) {
   const [items, setItems] = useState<string[]>([
     'Option 1',
     'Option 2',
@@ -296,62 +300,69 @@ function RandomPicker() {
           <p>Let the picker guide your decisions</p>
         </div>
 
-        {/* Content Section for SEO */}
-        <div className="w-full max-w-3xl mt-16 mb-8">
-          <div className="mystical-card p-6">
-            <h2 className="text-xl font-bold text-slate-800 mb-4">What is a Random Picker?</h2>
-            <p className="text-slate-600 mb-4">
-              A Random Picker is a flexible decision-making tool that lets you add any options and randomly select one. Unlike the Spin Wheel which is visual and public, a random picker works great for private decisions, quick picks, or when you have many options. Simply type in your choices, click pick, and get your result instantly.
+        {/* Parent/Family Teaching Moment */}
+        <div className="w-full max-w-2xl mb-12">
+          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+              Use the Random Picker to Teach Decision Confidence
+            </h2>
+            <p className="text-slate-600 text-center mb-4">
+              The Random Picker teaches kids that it's okay to not know what you want—and that delegation to chance is a valid decision-making strategy. When kids are overwhelmed by choice, let them add all options and let the picker decide. This reduces anxiety around "getting it wrong" and builds comfort with uncertainty. It's a low-stakes way to practice that not every decision needs deep analysis.
             </p>
-
-            <h3 className="text-lg font-semibold text-slate-800 mb-3">When to Use the Random Picker</h3>
-            <ul className="text-slate-600 space-y-2 mb-4">
-              <li>• Decision-making when you have 3+ options</li>
-              <li>• Private choices you don't want others to see</li>
-              <li>• Quick random selection from any list</li>
-              <li>• Choosing winners for giveaways or raffles</li>
-              <li>• Breaking indecision without group pressure</li>
-            </ul>
-
-            <div className="grid md:grid-cols-2 gap-4 mb-4">
-              <div>
-                <h3 className="text-lg font-semibold text-emerald-600 mb-2">Pros</h3>
-                <ul className="text-slate-600 text-sm space-y-1">
-                  <li>✓ Works with any number of options</li>
-                  <li>✓ Private and discreet selection</li>
-                  <li>✓ Edit options anytime before picking</li>
-                  <li>✓ Sound effects add excitement</li>
-                  <li>✓ Great for giveaways and contests</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-orange-500 mb-2">Considerations</h3>
-                <ul className="text-slate-600 text-sm space-y-1">
-                  <li>• Less visual than spin wheel</li>
-                  <li>• Better for small groups than large ones</li>
-                  <li>• Results are purely random</li>
-                  <li>• Requires typing out your options</li>
-                </ul>
-              </div>
-            </div>
-
-            <h3 className="text-lg font-semibold text-slate-800 mb-3">Frequently Asked Questions</h3>
-            <div className="space-y-3">
-              <div>
-                <p className="text-slate-700 font-medium text-sm">How do I add multiple options quickly?</p>
-                <p className="text-slate-600 text-sm">Type your option in the input field and press Enter to add it. You can add as many options as you need. Options can be edited or deleted by clicking on them.</p>
-              </div>
-              <div>
-                <p className="text-slate-700 font-medium text-sm">Can I use this for giveaways?</p>
-                <p className="text-slate-600 text-sm">Absolutely! The random picker is perfect for selecting winners. Add all participants' names, click pick, and you'll have a fair random winner every time.</p>
-              </div>
-              <div>
-                <p className="text-slate-700 font-medium text-sm">Is the selection truly random?</p>
-                <p className="text-slate-600 text-sm">Yes, we use JavaScript's random number generator to ensure each selection is completely fair. Each option has an equal chance of being selected.</p>
-              </div>
-            </div>
           </div>
         </div>
+
+        {/* Related Tools */}
+        <div className="w-full max-w-4xl mb-12">
+          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+            Try More Free Decision Tools
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'D20 Roller', description: 'Roll for games, prompts, and playful choices', id: 'd20', emoji: '🎲' },
+              { name: 'Spin Wheel', description: 'Visual wheel for multi-option choices', id: 'spin', emoji: '🎡' },
+              { name: 'Coin Flip', description: 'Binary 50/50 decisions', id: 'coin', emoji: '🪙' },
+              { name: 'Magic Chores', description: 'Gamify tasks with rewards', id: 'chores', emoji: '🔥' },
+            ].map((tool) => (
+              <button
+                key={tool.id}
+                onClick={() => onNavigate?.(tool.id)}
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+              >
+                <span className="text-3xl mb-2 block">{tool.emoji}</span>
+                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
+                <p className="text-slate-500 text-xs">{tool.description}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8">
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-emerald-600" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Want to Help Kids Practice Confident Choices?
+            </h2>
+            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+              Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+            </p>
+            <a
+              href="https://go.magicdecisions.com/dt1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+            >
+              Get the Free Decision Traps Guide
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* Footer spacer */}
+        <div className="h-24" />
       </div>
 
       <style>{`

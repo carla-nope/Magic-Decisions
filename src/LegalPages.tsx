@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Shield, FileText, Info, Mail, Home } from 'lucide-react'
+import { Shield, FileText, Info, Mail, Home, Sparkles, ArrowRight } from 'lucide-react'
 import './index.css'
 
 type Tool = 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner' | 'rps' | 'names' | 'privacy' | 'terms' | 'about' | 'contact'
@@ -244,11 +244,20 @@ If any provision of these terms is found to be unenforceable, the remaining prov
 
 // About Page Component
 function AboutPage({ onNavigate }: { onNavigate: (page: Tool) => void }) {
-  const teamValues = [
-    { emoji: '🎯', title: 'Fairness', description: 'Every choice should have an equal chance. We use proper randomization algorithms to ensure fairness.' },
-    { emoji: '⚡', title: 'Speed', description: 'No sign-ups, no downloads, no delays. Get your answer instantly when you need it.' },
-    { emoji: '🔒', title: 'Privacy', description: 'Your inputs stay on your device. We don\'t collect personal data or track your decisions.' },
-    { emoji: '🎨', title: 'Delight', description: 'Tools should be fun to use. We add delightful animations and visual feedback to make decisions enjoyable.' },
+  const beliefs = [
+    { title: 'Deciding is a skill.', description: 'Kids can practice decision-making through small, safe, everyday choices.' },
+    { title: 'Low-stakes choices matter.', description: 'Tiny decisions help kids build confidence, independence, and self-trust over time.' },
+    { title: 'Fairness helps.', description: 'Random tools like dice, coin flips, and spin wheels make family choices feel less personal and more neutral.' },
+    { title: 'Speed matters.', description: 'Some choices do not need 20 minutes of debate. A simple tool can help everyone move forward.' },
+    { title: 'Privacy matters.', description: 'Our tools are designed to be simple and low-friction, without requiring sign-ups just to make a quick decision.' },
+    { title: 'Learning can be fun.', description: 'This site is also a real-world business and web design learning project between a mom and daughter.' },
+  ];
+
+  const stats = [
+    { number: '15', label: 'Decision Tools', color: 'text-purple-400' },
+    { number: '100%', label: 'Free to Use', color: 'text-emerald-400' },
+    { number: '0', label: 'Required Sign-up', color: 'text-amber-400' },
+    { number: 'Family', label: 'Built with Heart', color: 'text-cyan-400' },
   ];
 
   return (
@@ -257,52 +266,95 @@ function AboutPage({ onNavigate }: { onNavigate: (page: Tool) => void }) {
       <div className="relative z-10 max-w-4xl mx-auto px-4 py-12">
         <button
           onClick={() => onNavigate('home')}
-          className="flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors"
+          className="flex items-center gap-2 text-slate-400 hover:text-slate-600 mb-8 transition-colors"
         >
           <Home className="w-4 h-4" />
           Back to Home
         </button>
 
+        {/* Hero */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-700 text-sm mb-4">
             <Info className="w-4 h-4" />
             About Us
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-emerald-400 via-teal-400 to-emerald-400 bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800">
             About Magic Decisions
           </h1>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            We're on a mission to make decision-making fun, fair, and effortless.
+          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            Making everyday decisions easier, fairer, and a little more magical.
+          </p>
+        </div>
+
+        {/* Introduction */}
+        <div className="mystical-card p-8 mb-8">
+          <p className="text-slate-300 leading-relaxed mb-4">
+            Magic Decisions is a collection of free decision-making tools for kids, parents, families, classrooms, and anyone who occasionally gets stuck choosing what to do next.
+          </p>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            We believe decision-making does not always have to feel heavy. Sometimes you need a fair coin flip, a quick spin wheel, a dice roll, or a playful prompt to help you move forward. For low-stakes everyday choices, a little bit of structure — and a little bit of magic — can make deciding feel easier.
           </p>
         </div>
 
         {/* Our Story */}
         <div className="mystical-card p-8 mb-8">
           <h2 className="text-2xl font-bold text-white mb-4">Our Story</h2>
-          <p className="text-gray-400 leading-relaxed mb-4">
-            Magic Decisions started with a simple frustration: deciding where to eat with friends. Everyone had different opinions, conversations dragged on, and sometimes we just ended up not eating together at all.
+          <p className="text-slate-300 leading-relaxed mb-4">
+            Magic Decisions started with a very real problem in our own home: <strong className="text-white">decision-making is hard</strong>.
           </p>
-          <p className="text-gray-400 leading-relaxed mb-4">
-            We thought—what if there was a fun, magical way to make these decisions? Something that felt fair, didn't require accounts or downloads, and actually made the process enjoyable?
+          <p className="text-slate-300 leading-relaxed mb-4">
+            I am Carla, a single mom who has struggled with decisions myself. I know what it feels like to overthink, second-guess, delay, and wish someone else would just pick already. Then I started noticing something familiar in my 10-year-old daughter. She was beginning to struggle with decisions too — small choices, everyday choices, the kind that can still feel surprisingly big when you are a kid.
           </p>
-          <p className="text-gray-400 leading-relaxed">
-            That's how Magic Decisions was born. Today, we've expanded to eight tools that help with everything from daily food choices to team assignments for game night. Our philosophy is simple: for low-stakes decisions, why not let a little magic take the stress away?
+          <p className="text-slate-300 leading-relaxed mb-4">
+            Instead of turning it into another lecture, we decided to turn it into a project.
+          </p>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            Magic Decisions became something we could build together: a fun website full of simple tools that help make low-stakes choices feel less stressful and more playful. Along the way, my daughter gets to learn about web design, SEO, online business, creativity, and how an idea can become something real on the internet.
+          </p>
+          <p className="text-slate-300 leading-relaxed">
+            So this site is part family project, part learning lab, and part practical toolkit for families like ours.
           </p>
         </div>
 
-        {/* Our Values */}
+        {/* Why We Built This */}
+        <div className="mystical-card p-8 mb-8">
+          <h2 className="text-2xl font-bold text-white mb-4">Why We Built This Site</h2>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            We built Magic Decisions for the moments when a decision does not need to become a full family meeting.
+          </p>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            What should we eat? Which game should we play? Who goes first? What chore comes next? Which activity should we try today? Should we flip a coin and see how we feel about the result?
+          </p>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            These are not life-or-death decisions. They are everyday moments. But everyday moments are where kids get to practice noticing preferences, making choices, handling outcomes, and learning that not every decision has to be perfect.
+          </p>
+          <p className="text-slate-300 leading-relaxed">
+            Magic Decisions gives families a low-pressure way to practice those skills. The tools are free, fast, and easy to use. No accounts. No downloads. No complicated setup. Just simple decision tools that help you pick, play, laugh, and move on.
+          </p>
+        </div>
+
+        {/* Who It's For */}
+        <div className="mystical-card p-8 mb-8">
+          <h2 className="text-2xl font-bold text-white mb-4">Who Magic Decisions Is For</h2>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            Magic Decisions is for parents who want to help their kids practice making choices without turning every decision into a battle. It is for kids who freeze when asked to choose, overthink simple options, say "I don't care" when they really do, or need a playful nudge to trust their own reaction.
+          </p>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            It is also for teachers, homeschool families, game-night planners, friend groups, and anyone who wants a fair, fun way to make small choices.
+          </p>
+          <p className="text-slate-300 leading-relaxed">
+            The site is designed for <strong className="text-white">low-stakes decisions</strong>: choosing activities, assigning turns, picking prompts, making family routines more fun, or adding a little randomness to ordinary moments. It is not meant for medical, legal, financial, safety, or major life decisions.
+          </p>
+        </div>
+
+        {/* What We Believe */}
         <div className="mb-8">
           <h2 className="text-2xl font-bold text-white mb-6 text-center">What We Believe</h2>
           <div className="grid md:grid-cols-2 gap-4">
-            {teamValues.map((value) => (
-              <div key={value.title} className="mystical-card p-6">
-                <div className="flex items-start gap-4">
-                  <span className="text-3xl">{value.emoji}</span>
-                  <div>
-                    <h3 className="text-lg font-bold text-white mb-2">{value.title}</h3>
-                    <p className="text-gray-400 text-sm">{value.description}</p>
-                  </div>
-                </div>
+            {beliefs.map((belief) => (
+              <div key={belief.title} className="mystical-card p-6">
+                <h3 className="text-lg font-bold text-white mb-2">{belief.title}</h3>
+                <p className="text-slate-400 text-sm">{belief.description}</p>
               </div>
             ))}
           </div>
@@ -312,34 +364,67 @@ function AboutPage({ onNavigate }: { onNavigate: (page: Tool) => void }) {
         <div className="mystical-card p-8 mb-8">
           <h2 className="text-2xl font-bold text-white mb-6 text-center">Magic by the Numbers</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <p className="text-4xl font-bold text-purple-400 mb-1">15</p>
-              <p className="text-gray-500 text-sm">Decision Tools</p>
-            </div>
-            <div>
-              <p className="text-4xl font-bold text-emerald-400 mb-1">100%</p>
-              <p className="text-gray-500 text-sm">Free Forever</p>
-            </div>
-            <div>
-              <p className="text-4xl font-bold text-amber-400 mb-1">0</p>
-              <p className="text-gray-500 text-sm">Required Sign-up</p>
-            </div>
-            <div>
-              <p className="text-4xl font-bold text-cyan-400 mb-1">200+</p>
-              <p className="text-gray-500 text-sm">Built-in Options</p>
-            </div>
+            {stats.map((stat) => (
+              <div key={stat.label}>
+                <p className={`text-4xl font-bold mb-1 ${stat.color}`}>{stat.number}</p>
+                <p className="text-slate-500 text-sm">{stat.label}</p>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="text-center">
-          <p className="text-gray-400 mb-4">Ready to let the magic guide your decisions?</p>
+        {/* Our Mission */}
+        <div className="mystical-card p-8 mb-8">
+          <h2 className="text-2xl font-bold text-white mb-4">Our Mission</h2>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            Our mission is to make decision-making feel less stressful and more approachable for kids and families.
+          </p>
+          <p className="text-slate-300 leading-relaxed">
+            We are not here to tell families what to choose. We are here to give them simple tools that make choosing easier. Sometimes the tool gives you an answer. Sometimes it helps you realize what you actually wanted all along. Either way, the goal is the same: less stuck, more action, and a little more confidence with every small choice.
+          </p>
+        </div>
+
+        {/* Start with a Small Decision */}
+        <div className="mystical-card p-8 mb-8">
+          <h2 className="text-2xl font-bold text-white mb-4">Start with a Small Decision</h2>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            If you or your child tends to overthink, freeze, or avoid small choices, start with something easy. Flip a coin. Spin a wheel. Roll a die. Try a prompt. Notice how the result feels.
+          </p>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            That tiny reaction — relief, disappointment, excitement, hesitation — can tell you a lot.
+          </p>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            Ready to let a little magic guide your next low-stakes decision?
+          </p>
           <button
             onClick={() => onNavigate('home')}
-            className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white font-semibold hover:from-purple-600 hover:to-pink-600 transition-all shadow-lg hover:shadow-purple-500/30"
+            className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full text-white font-semibold hover:from-emerald-600 hover:to-teal-600 transition-all shadow-lg hover:shadow-emerald-500/30 inline-flex items-center gap-2"
           >
-            Try Our Tools
+            Try Our Free Decision Tools
+            <ArrowRight className="w-4 h-4" />
           </button>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
+          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
+            <Sparkles className="w-8 h-8 text-emerald-600" />
+          </div>
+          <h2 className="text-xl font-bold text-slate-800 mb-3">
+            Want to Help Kids Practice Confident Choices?
+          </h2>
+          <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+          </p>
+          <a
+            href="https://go.magicdecisions.com/dt1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+          >
+            Get the Free Decision Traps Guide
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </div>

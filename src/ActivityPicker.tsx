@@ -1,6 +1,10 @@
 import { useState, useCallback } from 'react'
-import { Lightbulb, RefreshCw, Copy, Check, Share2, Sun, Moon, Coffee, BookOpen, Dumbbell, Palette, Music, Gamepad2, Users, Utensils, Sparkles } from 'lucide-react'
+import { Lightbulb, RefreshCw, Copy, Check, Share2, Sun, Moon, Coffee, BookOpen, Dumbbell, Palette, Music, Gamepad2, Users, Utensils, Sparkles, ArrowRight } from 'lucide-react'
 import './index.css'
+
+interface ActivityPickerProps {
+  onNavigate?: (toolId: string) => void
+}
 
 type CategoryColor = {
   bg: string;
@@ -131,7 +135,7 @@ const activityCategories = [
   },
 ];
 
-function ActivityPicker() {
+function ActivityPicker({ onNavigate }: ActivityPickerProps) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [currentActivity, setCurrentActivity] = useState<string | null>(null);
   const [isRevealing, setIsRevealing] = useState(false);
@@ -386,6 +390,70 @@ function ActivityPicker() {
         <div className="mt-auto pt-12 text-center text-gray-600 text-sm">
           <p>Let inspiration guide your day</p>
         </div>
+
+        {/* Parent/Family Teaching Moment */}
+        <div className="w-full max-w-2xl mb-12">
+          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+              Use the Activity Picker to Teach Exploration and Openness
+            </h2>
+            <p className="text-slate-600 text-center mb-4">
+              The Activity Picker is perfect for teaching kids that trying new things doesn't have to be scary. When your child says "I don't know what to do," let the picker decide. This removes the pressure of choice and introduces the idea that exploration is valuable even when you don't know what you'll discover. It's great for reducing "I'm bored" syndrome and building a growth mindset around novelty.
+            </p>
+          </div>
+        </div>
+
+        {/* Related Tools */}
+        <div className="w-full max-w-4xl mb-12">
+          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+            Try More Free Decision Tools
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'D20 Roller', description: 'Roll for games, prompts, and playful choices', id: 'd20', emoji: '🎲' },
+              { name: 'Dinner Decider', description: 'Decide what to eat', id: 'dinner', emoji: '🍽️' },
+              { name: 'Spin Wheel', description: 'Visual wheel for multi-option choices', id: 'spin', emoji: '🎡' },
+              { name: 'Magic Chores', description: 'Gamify tasks with rewards', id: 'chores', emoji: '🔥' },
+            ].map((tool) => (
+              <button
+                key={tool.id}
+                onClick={() => onNavigate?.(tool.id)}
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+              >
+                <span className="text-3xl mb-2 block">{tool.emoji}</span>
+                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
+                <p className="text-slate-500 text-xs">{tool.description}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8">
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-emerald-600" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Want to Help Kids Practice Confident Choices?
+            </h2>
+            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+              Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+            </p>
+            <a
+              href="https://go.magicdecisions.com/dt1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+            >
+              Get the Free Decision Traps Guide
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* Footer spacer */}
+        <div className="h-24" />
       </div>
 
       <style>{`

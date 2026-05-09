@@ -2,8 +2,36 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://magicdecisions.com/sitemap.xml
+# AI/LLM Crawlers (explicit permission)
+User-agent: GPTBot
+Allow: /
 
-# Crawl delay (optional, be nice to shared hosts)
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Sitemap locations
+Sitemap: https://magicdecisions.com/sitemap.xml
+Sitemap: https://magicdecisions.com/feed.xml
+
+# RSS/Atom feed for AI crawlers
+Allow: /feed.xml
+
 Crawl-delay: 1

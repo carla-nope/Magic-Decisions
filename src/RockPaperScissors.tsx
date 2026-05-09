@@ -1,6 +1,10 @@
 import { useState, useCallback } from 'react'
-import { Hand, RefreshCw, Copy, Check, Share2, Trophy, Target, Zap } from 'lucide-react'
+import { Hand, RefreshCw, Copy, Check, Share2, Trophy, Target, Zap, Sparkles, ArrowRight } from 'lucide-react'
 import './index.css'
+
+interface RockPaperScissorsProps {
+  onNavigate?: (toolId: string) => void
+}
 
 type Choice = 'rock' | 'paper' | 'scissors';
 type Result = 'win' | 'lose' | 'draw' | null;
@@ -17,7 +21,7 @@ const resultMessages = {
   draw: ['Draw!', 'Tie!', 'Again!', 'Rematch!'],
 };
 
-function RockPaperScissors() {
+function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
   const [playerChoice, setPlayerChoice] = useState<Choice | null>(null);
   const [computerChoice, setComputerChoice] = useState<Choice | null>(null);
   const [result, setResult] = useState<Result>(null);
@@ -368,6 +372,70 @@ function RockPaperScissors() {
         <div className="mt-auto pt-12 text-center text-gray-600 text-sm">
           <p>Test your luck against the computer</p>
         </div>
+
+        {/* Parent/Family Teaching Moment */}
+        <div className="w-full max-w-2xl mb-12">
+          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+              Use Rock Paper Scissors to Teach Fairness and Accepting Outcomes
+            </h2>
+            <p className="text-slate-600 text-center mb-4">
+              Rock Paper Scissors is a classic tool for teaching kids about fair decision-making and graceful acceptance of outcomes. When siblings can't agree, let RPS decide. This teaches that some decisions don't need to be argued about, and that accepting a loss gracefully is as important as winning. The random element removes bias and teaches kids that sometimes chance, not skill, determines outcomes.
+            </p>
+          </div>
+        </div>
+
+        {/* Related Tools */}
+        <div className="w-full max-w-4xl mb-12">
+          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+            Try More Free Decision Tools
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'Coin Flip', description: 'Binary 50/50 decisions', id: 'coin', emoji: '🪙' },
+              { name: 'D20 Roller', description: 'Roll for games, prompts, and playful choices', id: 'd20', emoji: '🎲' },
+              { name: 'Name Picker', description: 'Pick names randomly for teams', id: 'names', emoji: '👤' },
+              { name: 'Magic Chores', description: 'Gamify tasks with rewards', id: 'chores', emoji: '🔥' },
+            ].map((tool) => (
+              <button
+                key={tool.id}
+                onClick={() => onNavigate?.(tool.id)}
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+              >
+                <span className="text-3xl mb-2 block">{tool.emoji}</span>
+                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
+                <p className="text-slate-500 text-xs">{tool.description}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8">
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-emerald-600" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Want to Help Kids Practice Confident Choices?
+            </h2>
+            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+              Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+            </p>
+            <a
+              href="https://go.magicdecisions.com/dt1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+            >
+              Get the Free Decision Traps Guide
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* Footer spacer */}
+        <div className="h-24" />
       </div>
 
       <style>{`

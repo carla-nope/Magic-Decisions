@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Sparkles, History, Share2, Copy, Check, RefreshCw, Trash2, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Home, Shield, FileText, Info, Mail, BookOpen, Wand2, Shirt, Brain, Target, CreditCard, Flame } from 'lucide-react'
+import { Sparkles, History, Share2, Copy, Check, RefreshCw, Trash2, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Home, Shield, FileText, Info, Mail, BookOpen, Wand2, Shirt, Brain, Target, CreditCard, Flame, Dices, ArrowRight } from 'lucide-react'
 import SpinWheel from './SpinWheel'
 import CoinFlip from './CoinFlip'
 import RandomPicker from './RandomPicker'
@@ -16,11 +16,12 @@ import MaximizerQuiz from './MaximizerQuiz'
 import CognitiveBiasTest from './CognitiveBiasTest'
 import ShouldIBuyItCalculator from './ShouldIBuyItCalculator'
 import MagicChores from './MagicChores'
+import D20Roller from './D20Roller'
 import SEOContent from './SEOContent'
 import { PrivacyPolicy, TermsConditions, AboutPage, ContactPage } from './LegalPages'
 import './index.css'
 
-type Tool = 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner' | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit' | 'chores' | 'blog' | 'blogpost' | 'privacy' | 'terms' | 'about' | 'contact'
+type Tool = 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner' | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit' | 'chores' | 'd20' | 'blog' | 'blogpost' | 'privacy' | 'terms' | 'about' | 'contact'
 
 interface HistoryItem {
   id: number;
@@ -317,43 +318,72 @@ function YesNoOracle() {
           </div>
         )}
 
-        {/* SEO Content with FAQ Schema */}
-        <SEOContent
-          toolName="Yes No Oracle"
-          toolDescription="A Yes No Oracle is a decision-making tool that helps you find answers to binary questions. Think of it as a digital magic 8 ball with a crystal ball aesthetic. Simply type your question, focus your mind, and click the orb to receive a yes, no, or maybe answer."
-          pros={[
-            "Instant answers with no signup required",
-            "Crystal ball theme makes decisions enjoyable",
-            "History feature lets you review past questions",
-            "Works on any device with a web browser",
-            "Completely free to use forever"
-          ]}
-          tips={[
-            "Best for quick, low-stakes decisions",
-            "Not suitable for major life decisions",
-            "Results are for entertainment purposes",
-            "Use the history to track patterns"
-          ]}
-          faqs={[
-            {
-              question: "Is the Yes No Oracle truly random?",
-              answer: "Yes, the oracle randomly selects from Yes, No, and Maybe answers. Each question is independent with equal probability for all three outcomes."
-            },
-            {
-              question: "Can I ask any type of question?",
-              answer: "You can ask any yes or no question, but the oracle works best with simple, direct questions. Complex questions with multiple variables may not get meaningful answers."
-            },
-            {
-              question: "Does the oracle save my questions?",
-              answer: "Your questions are only saved locally in your browser's history. We don't store your questions on any servers. You can clear your history anytime."
-            }
-          ]}
-          relatedTools={[
-            { name: "Spin Wheel", description: "Create a custom wheel and let it decide for you", id: "spin" },
-            { name: "Random Picker", description: "Add options and pick one randomly", id: "picker" },
-            { name: "Coin Flip", description: "Heads or tails? Let fate decide", id: "coin" }
-          ]}
-        />
+        {/* Parent/Family Teaching Moment */}
+        <div className="w-full max-w-2xl mb-12 px-4">
+          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+              Use the Crystal Ball to Teach Intuition and Reflection
+            </h2>
+            <p className="text-slate-600 text-center mb-4">
+              The Yes No Oracle isn't just about random answers—it's a tool for reflection. Before asking, have kids notice what they hope the answer will be. If they're hoping for "yes" but get "no," that's valuable self-knowledge. This builds emotional awareness and helps kids recognize when they're seeking validation versus truly weighing options. The crystal ball creates space to explore intuition without judgment.
+            </p>
+          </div>
+        </div>
+
+        {/* Related Tools */}
+        <div className="w-full max-w-4xl mb-12 px-4">
+          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+            Try More Free Decision Tools
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'D20 Roller', description: 'Roll for games, prompts, and playful choices', id: 'd20', emoji: '🎲' },
+              { name: 'Spin Wheel', description: 'Visual wheel for multi-option choices', id: 'spin', emoji: '🎡' },
+              { name: 'Coin Flip', description: 'Binary 50/50 decisions', id: 'coin', emoji: '🪙' },
+              { name: 'Magic Chores', description: 'Gamify tasks with rewards', id: 'chores', emoji: '🔥' },
+            ].map((tool) => (
+              <button
+                key={tool.id}
+                onClick={() => {
+                  const setActiveTool = (window as any).__setActiveTool;
+                  if (setActiveTool) setActiveTool(tool.id);
+                }}
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+              >
+                <span className="text-3xl mb-2 block">{tool.emoji}</span>
+                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
+                <p className="text-slate-500 text-xs">{tool.description}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8 px-4">
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-emerald-600" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Want to Help Kids Practice Confident Choices?
+            </h2>
+            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+              Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+            </p>
+            <a
+              href="https://go.magicdecisions.com/dt1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+            >
+              Get the Free Decision Traps Guide
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* Footer spacer */}
+        <div className="h-24" />
       </div>
     </div>
   );
@@ -372,6 +402,7 @@ function App() {
       color: 'purple',
       tools: [
         { id: 'oracle' as Tool, name: 'Yes No Oracle', icon: Sparkles, color: 'purple' },
+        { id: 'd20' as Tool, name: 'D20 Roller', icon: Dices, color: 'amber' },
         { id: 'spin' as Tool, name: 'Spin Wheel', icon: RefreshCw, color: 'amber' },
         { id: 'rps' as Tool, name: 'Rock Paper Scissors', icon: Hand, color: 'cyan' },
         { id: 'coin' as Tool, name: 'Coin Flip', icon: Circle, color: 'blue' },
@@ -515,19 +546,20 @@ function App() {
       <div className="pt-16">
         {activeTool === 'home' && <LandingPage onSelectTool={setActiveTool} />}
         {activeTool === 'oracle' && <YesNoOracle />}
-        {activeTool === 'spin' && <SpinWheel />}
-        {activeTool === 'coin' && <CoinFlip />}
-        {activeTool === 'picker' && <RandomPicker />}
-        {activeTool === 'activity' && <ActivityPicker />}
-        {activeTool === 'dinner' && <DinnerDecider />}
-        {activeTool === 'rps' && <RockPaperScissors />}
-        {activeTool === 'names' && <NamePicker />}
-        {activeTool === 'username' && <UsernameGenerator />}
-        {activeTool === 'outfit' && <OutfitIdeaGenerator />}
-        {activeTool === 'maximizer' && <MaximizerQuiz />}
-        {activeTool === 'bias' && <CognitiveBiasTest />}
-        {activeTool === 'buyit' && <ShouldIBuyItCalculator />}
-        {activeTool === 'chores' && <MagicChores />}
+        {activeTool === 'spin' && <SpinWheel onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'coin' && <CoinFlip onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'picker' && <RandomPicker onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'activity' && <ActivityPicker onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'dinner' && <DinnerDecider onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'rps' && <RockPaperScissors onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'names' && <NamePicker onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'username' && <UsernameGenerator onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'outfit' && <OutfitIdeaGenerator onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'maximizer' && <MaximizerQuiz onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'bias' && <CognitiveBiasTest onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'buyit' && <ShouldIBuyItCalculator onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'chores' && <MagicChores onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'd20' && <D20Roller onNavigate={(id) => setActiveTool(id as Tool)} />}
         {activeTool === 'blog' && <BlogPage onNavigateToPost={(slug) => { setBlogPostSlug(slug); setActiveTool('blogpost'); }} />}
         {activeTool === 'blogpost' && blogPostSlug && <BlogPost slug={blogPostSlug} onBack={() => { setActiveTool('blog'); setBlogPostSlug(null); }} />}
         {activeTool === 'privacy' && <PrivacyPolicy onNavigate={setActiveTool} />}

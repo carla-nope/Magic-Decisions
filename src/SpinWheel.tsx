@@ -1,6 +1,10 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
-import { Plus, Trash2, RefreshCw, Share2, Copy, Check, Volume2, VolumeX } from 'lucide-react'
+import { Plus, Trash2, RefreshCw, Share2, Copy, Check, Volume2, VolumeX, Sparkles, ArrowRight } from 'lucide-react'
 import './index.css'
+
+interface SpinWheelProps {
+  onNavigate?: (toolId: string) => void
+}
 
 interface WheelSegment {
   id: string;
@@ -14,7 +18,7 @@ const defaultColors = [
   '#14b8a6', '#f97316', '#84cc16', '#06b6d4', '#a855f7'
 ];
 
-function SpinWheel() {
+function SpinWheel({ onNavigate }: SpinWheelProps) {
   const [segments, setSegments] = useState<WheelSegment[]>([
     { id: '1', label: 'Option 1', color: defaultColors[0] },
     { id: '2', label: 'Option 2', color: defaultColors[1] },
@@ -440,6 +444,70 @@ function SpinWheel() {
         <div className="mt-auto pt-12 text-center text-slate-400 text-sm">
           <p>Let the wheel guide your decisions</p>
         </div>
+
+        {/* Parent/Family Teaching Moment */}
+        <div className="w-full max-w-2xl mb-12">
+          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+              Use the Spin Wheel to Teach Decision-Making
+            </h2>
+            <p className="text-slate-600 text-center mb-4">
+              The Spin Wheel isn't just for decisions—it's a tool for teaching kids how to make choices. Let them add their own options, discuss why they chose them, and see what happens when choice is made for them. This builds flexibility, reduces decision fatigue, and makes the process less personal. When the wheel decides, it's not Mom's fault or Dad's preference—it's just chance. That's a valuable lesson in letting go of control.
+            </p>
+          </div>
+        </div>
+
+        {/* Related Tools */}
+        <div className="w-full max-w-4xl mb-12">
+          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+            Try More Free Decision Tools
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'D20 Roller', description: 'Roll for games, prompts, and playful choices', id: 'd20', emoji: '🎲' },
+              { name: 'Coin Flip', description: 'Binary 50/50 decisions', id: 'coin', emoji: '🪙' },
+              { name: 'Random Picker', description: 'Pick from your custom list', id: 'picker', emoji: '🎯' },
+              { name: 'Magic Chores', description: 'Gamify tasks with rewards', id: 'chores', emoji: '🔥' },
+            ].map((tool) => (
+              <button
+                key={tool.id}
+                onClick={() => onNavigate?.(tool.id)}
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+              >
+                <span className="text-3xl mb-2 block">{tool.emoji}</span>
+                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
+                <p className="text-slate-500 text-xs">{tool.description}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8">
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-emerald-600" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Want to Help Kids Practice Confident Choices?
+            </h2>
+            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+              Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+            </p>
+            <a
+              href="https://go.magicdecisions.com/dt1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+            >
+              Get the Free Decision Traps Guide
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* Footer spacer */}
+        <div className="h-24" />
       </div>
     </div>
   );

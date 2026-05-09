@@ -1,6 +1,10 @@
 import { useState, useCallback } from 'react'
-import { UtensilsCrossed, RefreshCw, Copy, Check, Share2, Clock, Flame, Leaf, Plus, Trash2, Info, BookOpen } from 'lucide-react'
+import { UtensilsCrossed, RefreshCw, Copy, Check, Share2, Clock, Flame, Leaf, Plus, Trash2, Info, BookOpen, Sparkles, ArrowRight } from 'lucide-react'
 import './index.css'
+
+interface DinnerDeciderProps {
+  onNavigate?: (toolId: string) => void
+}
 
 const foodCategories = {
   '🍕 Italian': {
@@ -170,7 +174,7 @@ interface FoodItem {
   desc: string;
 }
 
-function DinnerDecider() {
+function DinnerDecider({ onNavigate }: DinnerDeciderProps) {
   const [selectedCategories, setSelectedCategories] = useState<string[]>(['🍕 Italian', '🍔 American', '🍜 Asian']);
   const [currentDish, setCurrentDish] = useState<FoodItem | null>(null);
   const [isRevealing, setIsRevealing] = useState(false);
@@ -499,6 +503,70 @@ function DinnerDecider() {
         <div className="mt-auto pt-12 text-center text-slate-500 text-sm">
           <p>Let deliciousness guide your evening</p>
         </div>
+
+        {/* Parent/Family Teaching Moment */}
+        <div className="w-full max-w-2xl mb-12">
+          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+              Use the Dinner Decider to Teach Compromise and Exploration
+            </h2>
+            <p className="text-slate-600 text-center mb-4">
+              The Dinner Decider is perfect for family meal planning. Let kids pick their favorite cuisine category, discuss what sounds good, and let the tool decide. This removes the "we can't agree" argument and teaches that sometimes letting chance choose is a valid way to solve disagreements. It also introduces kids to new cuisines they might not have tried otherwise.
+            </p>
+          </div>
+        </div>
+
+        {/* Related Tools */}
+        <div className="w-full max-w-4xl mb-12">
+          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+            Try More Free Decision Tools
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'Activity Picker', description: 'Find something fun to do', id: 'activity', emoji: '💡' },
+              { name: 'Spin Wheel', description: 'Visual wheel for multi-option choices', id: 'spin', emoji: '🎡' },
+              { name: 'Random Picker', description: 'Pick from your custom list', id: 'picker', emoji: '🎯' },
+              { name: 'Magic Chores', description: 'Gamify tasks with rewards', id: 'chores', emoji: '🔥' },
+            ].map((tool) => (
+              <button
+                key={tool.id}
+                onClick={() => onNavigate?.(tool.id)}
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+              >
+                <span className="text-3xl mb-2 block">{tool.emoji}</span>
+                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
+                <p className="text-slate-500 text-xs">{tool.description}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8">
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-emerald-600" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Want to Help Kids Practice Confident Choices?
+            </h2>
+            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+              Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+            </p>
+            <a
+              href="https://go.magicdecisions.com/dt1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+            >
+              Get the Free Decision Traps Guide
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* Footer spacer */}
+        <div className="h-24" />
       </div>
 
       <style>{`

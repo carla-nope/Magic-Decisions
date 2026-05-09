@@ -1,8 +1,12 @@
 import { useState, useCallback } from 'react'
-import { User, Plus, Trash2, RefreshCw, Copy, Check, Share2, Shuffle, Users } from 'lucide-react'
+import { User, Plus, Trash2, RefreshCw, Copy, Check, Share2, Shuffle, Users, Sparkles, ArrowRight } from 'lucide-react'
 import './index.css'
 
-function NamePicker() {
+interface NamePickerProps {
+  onNavigate?: (toolId: string) => void
+}
+
+function NamePicker({ onNavigate }: NamePickerProps) {
   const [names, setNames] = useState<string[]>([]);
   const [newName, setNewName] = useState('');
   const [isPicking, setIsPicking] = useState(false);
@@ -474,10 +478,69 @@ function NamePicker() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="mt-auto pt-12 text-center text-gray-600 text-sm">
-          <p>Fair picks every time</p>
+        {/* Parent/Family Teaching Moment */}
+        <div className="w-full max-w-2xl mb-12">
+          <div className="mystical-card p-6 bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+              Use the Name Picker to Teach Fairness and Equity
+            </h2>
+            <p className="text-slate-600 text-center mb-4">
+              The Name Picker demonstrates what true fairness looks like: each name has an equal chance of being selected, with no manipulation or bias. When kids use this tool for choosing teams or picking partners, they're experiencing randomization as a fairness mechanism. This builds understanding that some decisions should be left to chance not because it's arbitrary, but because it's the most equitable approach. Adults can extend this by discussing how randomization is used in lottery systems,公平的 randomized selection in hiring, and democratic processes.
+            </p>
+          </div>
         </div>
+
+        {/* Related Tools */}
+        <div className="w-full max-w-4xl mb-12">
+          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+            Try More Free Decision Tools
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'Random Picker', description: 'Pick from any list of options', id: 'picker', emoji: '🎯' },
+              { name: 'D20 Roller', description: 'Roll for creative prompts and games', id: 'd20', emoji: '🎲' },
+              { name: 'Spin Wheel', description: 'Visual wheel for multi-option choices', id: 'spin', emoji: '🎡' },
+              { name: 'Magic Chores', description: 'Gamify tasks with rewards', id: 'chores', emoji: '🔥' },
+            ].map((tool) => (
+              <button
+                key={tool.id}
+                onClick={() => onNavigate?.(tool.id)}
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-rose-400 cursor-pointer bg-transparent"
+              >
+                <span className="text-3xl mb-2 block">{tool.emoji}</span>
+                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
+                <p className="text-slate-500 text-xs">{tool.description}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8">
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-rose-100 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-rose-600" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Want to Help Kids Understand Fair Decision-Making?
+            </h2>
+            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+              Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+            </p>
+            <a
+              href="https://go.magicdecisions.com/dt1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-rose-500/30"
+            >
+              Get the Free Decision Traps Guide
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* Footer spacer */}
+        <div className="h-24" />
       </div>
 
       <style>{`

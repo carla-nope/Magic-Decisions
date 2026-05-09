@@ -60,7 +60,11 @@ const questions: Question[] = [
   },
 ]
 
-function MaximizerQuiz() {
+interface MaximizerQuizProps {
+  onNavigate?: (toolId: string) => void
+}
+
+function MaximizerQuiz({ onNavigate }: MaximizerQuizProps) {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [answers, setAnswers] = useState<number[]>([])
   const [showResult, setShowResult] = useState(false)
@@ -327,9 +331,68 @@ function MaximizerQuiz() {
           </div>
         )}
 
-        {/* Footer */}
-        <div className="mt-auto pt-12 text-center text-slate-400 text-sm">
-          <p>Understand your decision-making style</p>
+        {/* Footer spacer */}
+        <div className="h-24" />
+
+        {/* Parent/Family Teaching Moment */}
+        <div className="w-full max-w-2xl mb-12">
+          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+              Use the Maximizer vs Satisficer Quiz to Teach Decision Quality Awareness
+            </h2>
+            <p className="text-slate-600 text-center mb-4">
+              This quiz helps kids understand that different decision-making styles exist and neither is "wrong." Maximizers (who seek the best option) and Satisficers (who seek good-enough options) both can make great decisions. Talk about when each approach makes sense—low-stakes daily decisions might not need maximum research, while bigger decisions might benefit from more analysis. This builds metacognitive awareness about their own thinking patterns.
+            </p>
+          </div>
+        </div>
+
+        {/* Related Tools */}
+        <div className="w-full max-w-4xl mb-12">
+          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+            Try More Free Decision Tools
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'Cognitive Bias Test', description: 'Discover your mental shortcuts', id: 'bias', emoji: '🧠' },
+              { name: 'Yes No Oracle', description: "Can't decide? Ask the crystal ball", id: 'oracle', emoji: '🔮' },
+              { name: 'Should I Buy It?', description: 'Evaluate purchase decisions', id: 'buyit', emoji: '🛒' },
+              { name: 'Magic Chores', description: 'Gamify tasks with rewards', id: 'chores', emoji: '🔥' },
+            ].map((tool) => (
+              <button
+                key={tool.id}
+                onClick={() => onNavigate?.(tool.id)}
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-purple-400 cursor-pointer bg-transparent"
+              >
+                <span className="text-3xl mb-2 block">{tool.emoji}</span>
+                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
+                <p className="text-slate-500 text-xs">{tool.description}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8">
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-100 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-purple-600" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Want to Help Kids Make Better Decisions?
+            </h2>
+            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+              Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+            </p>
+            <a
+              href="https://go.magicdecisions.com/dt1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-purple-500/30"
+            >
+              Get the Free Decision Traps Guide
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

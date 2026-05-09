@@ -1,4 +1,4 @@
-import { Sparkles, RefreshCw, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Star, ArrowRight, Zap, Globe, Wand2, Shirt, Brain, Target, CreditCard, Flame } from 'lucide-react'
+import { Sparkles, RefreshCw, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Star, ArrowRight, Zap, Globe, Wand2, Shirt, Brain, Target, CreditCard, Flame, Dices } from 'lucide-react'
 import './index.css'
 
 const tools = [
@@ -10,6 +10,15 @@ const tools = [
     emoji: '🔮',
     description: 'Ask the mystical crystal ball for yes or no answers',
     keyword: 'magic 8 ball online'
+  },
+  {
+    id: 'd20',
+    name: 'D20 Roller',
+    icon: Dices,
+    color: 'amber',
+    emoji: '🎲',
+    description: 'Roll a 20-sided die for games, prompts, and playful decisions',
+    keyword: 'D20 roller online'
   },
   {
     id: 'spin',
@@ -131,13 +140,6 @@ const tools = [
 ];
 
 function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) {
-  const scrollToContent = () => {
-    const contentSection = document.getElementById('how-it-helps');
-    if (contentSection) {
-      contentSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const getColorClasses = (color: string) => {
     const colors: Record<string, { bg: string; border: string; text: string; hover: string }> = {
       purple: { bg: 'bg-purple-100', border: 'border-purple-200', text: 'text-purple-700', hover: 'hover:border-purple-400 hover:bg-purple-50' },
@@ -150,6 +152,24 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
       rose: { bg: 'bg-rose-100', border: 'border-rose-200', text: 'text-rose-700', hover: 'hover:border-rose-400 hover:bg-rose-50' },
     };
     return colors[color] || colors.purple;
+  };
+
+  const toolMapping: Record<string, string> = {
+    'Yes No Oracle': 'oracle',
+    'D20 Roller': 'd20',
+    'Spin Wheel': 'spin',
+    'Rock Paper Scissors': 'rps',
+    'Coin Flip': 'coin',
+    'Random Picker': 'picker',
+    'Activity Picker': 'activity',
+    'Dinner Decider': 'dinner',
+    'Username Picker': 'username',
+    'Outfit Picker': 'outfit',
+    'Name Picker': 'names',
+    'Magic Chores': 'chores',
+    'Decision Style Quiz': 'maximizer',
+    'Cognitive Bias Test': 'bias',
+    'Should I Buy It': 'buyit',
   };
 
   return (
@@ -174,7 +194,7 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
               </p>
               <div className="flex items-center justify-center gap-2 text-slate-500 text-sm">
                 <Zap className="w-4 h-4 text-amber-500" />
-                <span>14 free tools</span>
+                <span>15 free tools</span>
                 <span>•</span>
                 <Globe className="w-4 h-4" />
                 <span>Works everywhere</span>
@@ -222,27 +242,23 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
             </div>
           </div>
 
-          {/* CTA Button */}
-          <button
-            onClick={scrollToContent}
-            className="mt-12 mb-8 px-8 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-full text-white font-semibold hover:from-emerald-600 hover:to-emerald-700 transition-all shadow-lg hover:shadow-emerald-500/30"
-          >
-            Start Making Decisions
-          </button>
+          {/* Spacer to give breathing room */}
+          <div className="mt-16" />
         </div>
 
         {/* How Magic Decisions Helps Section */}
-        <div id="how-it-helps" className="w-full max-w-5xl px-4 py-16 scroll-mt-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800">
-              How Magic Decisions Helps You Choose
-            </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">
-              We all face decision fatigue. When daily choices pile up—from what to eat to what activity to try—our ability to make good decisions decreases. Magic Decisions exists to lift that burden.
-            </p>
-          </div>
+        <div id="how-it-helps" className="w-full px-4 py-16 scroll-mt-20">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800">
+                How Magic Decisions Helps You Choose
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto">
+                We all face decision fatigue. When daily choices pile up—from what to eat to what activity to try—our ability to make good decisions decreases. Magic Decisions exists to lift that burden.
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* What is Decision Fatigue */}
             <div className="mystical-card p-6 text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-purple-100 flex items-center justify-center">
@@ -326,6 +342,7 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mx-auto max-w-5xl">
               {[
                 { emoji: '🔮', name: 'Yes No Oracle', use: 'Simple yes/no decisions with mystical flair' },
+                { emoji: '🎲', name: 'D20 Roller', use: 'Games, prompts, and playful decisions' },
                 { emoji: '🎡', name: 'Spin Wheel', use: 'Multi-option choices with visual excitement' },
                 { emoji: '✂️', name: 'Rock Paper Scissors', use: 'Settle disputes with quick games' },
                 { emoji: '🪙', name: 'Coin Flip', use: 'Binary 50/50 decisions' },
@@ -340,19 +357,24 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
                 { emoji: '🎯', name: 'Cognitive Bias Test', use: 'Test your mental shortcuts' },
                 { emoji: '🛒', name: 'Should I Buy It', use: 'Make smarter purchases' },
               ].map((tool) => (
-                <div key={tool.name} className="mystical-card p-4 text-center">
+                <button
+                  key={tool.name}
+                  onClick={() => onSelectTool(toolMapping[tool.name] as any)}
+                  className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-purple-400 hover:bg-purple-50 cursor-pointer"
+                >
                   <span className="text-2xl mb-2 block">{tool.emoji}</span>
                   <h4 className="font-semibold text-slate-800 text-sm mb-1">{tool.name}</h4>
                   <p className="text-slate-500 text-xs">{tool.use}</p>
-                </div>
+                </button>
               ))}
             </div>
           </div>
+          </div>
 
           {/* Statistics */}
-          <div className="flex flex-wrap justify-center gap-8 py-6 border-y border-slate-200">
+          <div className="flex flex-wrap justify-center gap-8 py-6 border-y border-slate-200 mt-12">
             <div className="text-center">
-              <p className="text-3xl font-bold text-purple-600">14</p>
+              <p className="text-3xl font-bold text-purple-600">15</p>
               <p className="text-slate-500 text-sm">Decision Tools</p>
             </div>
             <div className="text-center">
@@ -368,27 +390,12 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
               <p className="text-slate-500 text-sm">Sign-up Required</p>
             </div>
           </div>
-        </div>
 
-        {/* Popular Searches */}
-          <div className="mt-12 text-center">
-            <p className="text-slate-500 text-sm mb-4">Popular searches:</p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {['magic 8 ball', 'spin wheel', 'yes no oracle', 'random picker', 'coin flip'].map((term) => (
-                <span
-                  key={term}
-                  className="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-sm hover:bg-slate-200 transition-colors cursor-pointer"
-                >
-                  {term}
-                </span>
-              ))}
-            </div>
+          {/* Footer */}
+          <div className="py-6 text-center text-slate-400 text-sm border-t border-slate-200 mt-12">
+            <p>Let the magic guide your decisions • Free forever</p>
           </div>
-        </div>
-
-        {/* Footer */}
-        <div className="py-6 text-center text-slate-400 text-sm border-t border-slate-200">
-          <p>Let the magic guide your decisions • Free forever</p>
+          </div>
         </div>
       </div>
 

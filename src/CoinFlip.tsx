@@ -1,8 +1,12 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Copy, Check, Share2, RotateCcw } from 'lucide-react'
+import { Copy, Check, Share2, RotateCcw, Sparkles, ArrowRight } from 'lucide-react'
 import './index.css'
 
-function CoinFlip() {
+interface CoinFlipProps {
+  onNavigate?: (toolId: string) => void
+}
+
+function CoinFlip({ onNavigate }: CoinFlipProps) {
   const [isFlipping, setIsFlipping] = useState(false);
   const [result, setResult] = useState<'heads' | 'tails' | null>(null);
   const [history, setHistory] = useState<{ side: 'heads' | 'tails'; timestamp: Date }[]>([]);
@@ -220,62 +224,69 @@ function CoinFlip() {
           <p>Let the coin guide your decisions</p>
         </div>
 
-        {/* Content Section for SEO */}
-        <div className="w-full max-w-3xl mt-16 mb-8">
-          <div className="mystical-card p-6">
-            <h2 className="text-xl font-bold text-slate-800 mb-4">What is a Coin Flip?</h2>
-            <p className="text-slate-600 mb-4">
-              A Coin Flip is the simplest random decision tool—just like flipping a real coin to decide between two options. Heads or tails, yes or no, this or that. Our virtual coin provides the same fair 50/50 chance as a physical coin, with beautiful 3D animation that makes even mundane decisions feel special.
+        {/* Parent/Family Teaching Moment */}
+        <div className="w-full max-w-2xl mb-12">
+          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+              Use Coin Flip to Teach Fairness and Probability
+            </h2>
+            <p className="text-slate-600 text-center mb-4">
+              The coin flip is a perfect tool for teaching kids about fairness, chance, and decision-making. When you and your child can't agree, let the coin decide. This removes parent-vs-child conflict and teaches that some decisions don't require deep analysis—they just need a 50/50 chance. It's also a great way to introduce basic probability and statistics in a hands-on, visual way.
             </p>
-
-            <h3 className="text-lg font-semibold text-slate-800 mb-3">When to Use Coin Flip</h3>
-            <ul className="text-slate-600 space-y-2 mb-4">
-              <li>• Binary choices between two equally good options</li>
-              <li>• Settling arguments quickly and fairly</li>
-              <li>• Making small everyday decisions like "pizza or burgers"</li>
-              <li>• Deciding who pays, who drives, or who goes first</li>
-              <li>• Quick random selection for A/B scenarios</li>
-            </ul>
-
-            <div className="grid md:grid-cols-2 gap-4 mb-4">
-              <div>
-                <h3 className="text-lg font-semibold text-emerald-600 mb-2">Pros</h3>
-                <ul className="text-slate-600 text-sm space-y-1">
-                  <li>✓ True 50/50 random probability</li>
-                  <li>✓ Beautiful 3D flip animation</li>
-                  <li>✓ Built-in statistics to track results</li>
-                  <li>✓ Works on mobile with tap-to-flip</li>
-                  <li>✓ No coins needed—always available</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-orange-500 mb-2">Considerations</h3>
-                <ul className="text-slate-600 text-sm space-y-1">
-                  <li>• Only works for two-option decisions</li>
-                  <li>• Random results, not strategic ones</li>
-                  <li>• Not suitable for important life decisions</li>
-                  <li>• Best for truly equal choices</li>
-                </ul>
-              </div>
-            </div>
-
-            <h3 className="text-lg font-semibold text-slate-800 mb-3">Frequently Asked Questions</h3>
-            <div className="space-y-3">
-              <div>
-                <p className="text-slate-700 font-medium text-sm">Is the coin flip truly random?</p>
-                <p className="text-slate-600 text-sm">Yes, our coin flip uses a cryptographically secure random number generator to ensure each flip has exactly 50% chance of heads or tails. The result is independent of previous flips.</p>
-              </div>
-              <div>
-                <p className="text-slate-700 font-medium text-sm">Can I see my flip history?</p>
-                <p className="text-slate-600 text-sm">Yes! We show your running statistics including total flips, heads count, tails count, and percentages. Your history is saved locally in your browser.</p>
-              </div>
-              <div>
-                <p className="text-slate-700 font-medium text-sm">Does the coin look different for heads vs tails?</p>
-                <p className="text-slate-600 text-sm">The visual design stays the same, but after flipping, the coin shows different colors: blue for heads and gold for tails. You can tap the coin at any time to flip it.</p>
-              </div>
-            </div>
           </div>
         </div>
+
+        {/* Related Tools */}
+        <div className="w-full max-w-4xl mb-12">
+          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+            Try More Free Decision Tools
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'D20 Roller', description: 'Roll for games, prompts, and playful choices', id: 'd20', emoji: '🎲' },
+              { name: 'Spin Wheel', description: 'Visual wheel for multi-option choices', id: 'spin', emoji: '🎡' },
+              { name: 'Random Picker', description: 'Pick from your custom list', id: 'picker', emoji: '🎯' },
+              { name: 'Magic Chores', description: 'Gamify tasks with rewards', id: 'chores', emoji: '🔥' },
+            ].map((tool) => (
+              <button
+                key={tool.id}
+                onClick={() => onNavigate?.(tool.id)}
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+              >
+                <span className="text-3xl mb-2 block">{tool.emoji}</span>
+                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
+                <p className="text-slate-500 text-xs">{tool.description}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8">
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-emerald-600" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Want to Help Kids Practice Confident Choices?
+            </h2>
+            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+              Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+            </p>
+            <a
+              href="https://go.magicdecisions.com/dt1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+            >
+              Get the Free Decision Traps Guide
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* Footer spacer */}
+        <div className="h-24" />
       </div>
 
       <style>{`

@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react'
-import { Shirt, RefreshCw, Copy, Check, Share2, Sun, Cloud, CloudRain, Snowflake, Wind, Thermometer, Sparkles, PartyPopper, Briefcase, Heart, Coffee } from 'lucide-react'
+import { Shirt, RefreshCw, Copy, Check, Share2, Sun, Cloud, CloudRain, Snowflake, Wind, Thermometer, Sparkles, PartyPopper, Briefcase, Heart, Coffee, ArrowRight } from 'lucide-react'
 import './index.css'
 
 const vibes = [
@@ -61,7 +61,11 @@ const outfitData: Record<string, { top: string[], bottom: string[], shoes: strin
   ],
 }
 
-function OutfitIdeaGenerator() {
+interface OutfitIdeaGeneratorProps {
+  onNavigate?: (toolId: string) => void
+}
+
+function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
   const [selectedVibe, setSelectedVibe] = useState<string>('casual')
   const [selectedWeather, setSelectedWeather] = useState<string>('warm')
   const [selectedOccasion, setSelectedOccasion] = useState<string>('any')
@@ -297,66 +301,69 @@ function OutfitIdeaGenerator() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="mt-auto pt-12 text-center text-slate-400 text-sm">
-          <p>Dress with confidence</p>
-        </div>
-
-        {/* SEO Content */}
-        <div className="w-full max-w-3xl mt-16 mb-8">
-          <div className="mystical-card p-6">
-            <h2 className="text-xl font-bold text-slate-800 mb-4">What is an Outfit Idea Generator?</h2>
-            <p className="text-slate-600 mb-4">
-              An outfit idea generator helps you discover new fashion combinations based on your style preferences, weather conditions, and the occasion. Whether you're stuck in a fashion rut or need inspiration for a special event, our generator creates personalized outfit suggestions that match your vibe.
+        {/* Parent/Family Teaching Moment */}
+        <div className="w-full max-w-2xl mb-12">
+          <div className="mystical-card p-6 bg-gradient-to-br from-cyan-50 to-teal-50 border border-cyan-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+              Use the Outfit Picker to Teach Self-Expression and Confidence
+            </h2>
+            <p className="text-slate-600 text-center mb-4">
+              The Outfit Picker helps kids practice decision-making about self-expression. Fashion is a form of communication—discuss with your kids what their outfit choices say about how they want to present themselves. When the tool picks something unexpected, it opens conversations about stepping outside comfort zones and being open to new styles. This builds comfort with change and helps kids understand that identity isn't fixed—it's expressed through choices, including surprising ones.
             </p>
-
-            <h3 className="text-lg font-semibold text-slate-800 mb-3">Why Use an Outfit Generator?</h3>
-            <ul className="text-slate-600 space-y-2 mb-4">
-              <li>• Break out of style ruts with fresh ideas</li>
-              <li>• Match outfits to weather conditions</li>
-              <li>• Find looks for specific occasions</li>
-              <li>• Discover new style combinations you hadn't considered</li>
-            </ul>
-
-            <div className="grid md:grid-cols-2 gap-4 mb-4">
-              <div>
-                <h3 className="text-lg font-semibold text-emerald-600 mb-2">Pros</h3>
-                <ul className="text-slate-600 text-sm space-y-1">
-                  <li>✓ Multiple style categories to explore</li>
-                  <li>✓ Weather-based suggestions</li>
-                  <li>✓ Occasion-appropriate recommendations</li>
-                  <li>✓ Complete outfit details (top, bottom, shoes, accessories)</li>
-                  <li>✓ Copy and share outfit ideas</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-orange-500 mb-2">Styling Tips</h3>
-                <ul className="text-slate-600 text-sm space-y-1">
-                  <li>• Build your wardrobe around versatile basics</li>
-                  <li>• Mix textures for visual interest</li>
-                  <li>• Use accessories to elevate simple outfits</li>
-                  <li>• Consider the occasion before choosing an outfit</li>
-                </ul>
-              </div>
-            </div>
-
-            <h3 className="text-lg font-semibold text-slate-800 mb-3">Frequently Asked Questions</h3>
-            <div className="space-y-3">
-              <div>
-                <p className="text-slate-700 font-medium text-sm">How do I find my personal style?</p>
-                <p className="text-slate-600 text-sm">Start by exploring different aesthetics and noticing what makes you feel confident. Mix and match elements from different styles until you find what resonates with you. Our outfit generator can help you discover new combinations.</p>
-              </div>
-              <div>
-                <p className="text-slate-700 font-medium text-sm">What should I wear for different occasions?</p>
-                <p className="text-slate-600 text-sm">Work settings typically call for polished, professional looks. Date nights can be more relaxed or glamorous depending on the venue. Parties are great opportunities to experiment with bolder choices. Always consider the dress code when available.</p>
-              </div>
-              <div>
-                <p className="text-slate-700 font-medium text-sm">How do I dress for the weather?</p>
-                <p className="text-slate-600 text-sm">In hot weather, choose breathable, lightweight fabrics in light colors. In cold weather, layer up with quality outerwear and thermal pieces. Always check the forecast and plan accordingly. Our generator takes weather into account for each suggestion.</p>
-              </div>
-            </div>
           </div>
         </div>
+
+        {/* Related Tools */}
+        <div className="w-full max-w-4xl mb-12">
+          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+            Try More Free Decision Tools
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'Name Picker', description: 'Random name selection for fair picks', id: 'names', emoji: '👤' },
+              { name: 'Username Generator', description: 'Find unique handles for social media', id: 'username', emoji: '✨' },
+              { name: 'Dinner Decider', description: 'Decide what to cook or eat', id: 'dinner', emoji: '🍽️' },
+              { name: 'Magic Chores', description: 'Gamify tasks with rewards', id: 'chores', emoji: '🔥' },
+            ].map((tool) => (
+              <button
+                key={tool.id}
+                onClick={() => onNavigate?.(tool.id)}
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-cyan-400 cursor-pointer bg-transparent"
+              >
+                <span className="text-3xl mb-2 block">{tool.emoji}</span>
+                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
+                <p className="text-slate-500 text-xs">{tool.description}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8">
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-cyan-50 to-teal-50 border border-cyan-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-cyan-100 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-cyan-600" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Want to Help Kids Build Confidence in Self-Expression?
+            </h2>
+            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+              Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+            </p>
+            <a
+              href="https://go.magicdecisions.com/dt1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-cyan-500/30"
+            >
+              Get the Free Decision Traps Guide
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* Footer spacer */}
+        <div className="h-24" />
       </div>
 
       <style>{`

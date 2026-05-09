@@ -119,7 +119,11 @@ const biasScenarios: BiasScenario[] = [
   },
 ]
 
-function CognitiveBiasTest() {
+interface CognitiveBiasTestProps {
+  onNavigate?: (toolId: string) => void
+}
+
+function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
   const [currentScenario, setCurrentScenario] = useState(0)
   const [answers, setAnswers] = useState<{ isCorrect: boolean; isBias: boolean }[]>([])
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
@@ -449,9 +453,68 @@ function CognitiveBiasTest() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="mt-auto pt-12 text-center text-slate-400 text-sm">
-          <p>Test your cognitive bias awareness</p>
+        {/* Footer spacer */}
+        <div className="h-24" />
+
+        {/* Parent/Family Teaching Moment */}
+        <div className="w-full max-w-2xl mb-12">
+          <div className="mystical-card p-6 bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+              Use the Cognitive Bias Test to Teach Critical Thinking
+            </h2>
+            <p className="text-slate-600 text-center mb-4">
+              Cognitive biases are mental shortcuts that usually help us but can lead to errors. This test shows kids that everyone has biases—not because they're "stupid," but because our brains are designed to take mental shortcuts. Discuss real-world examples together: when have they caught themselves falling for a bias? How did it feel to be wrong? Building awareness of these patterns helps kids become more thoughtful decision-makers.
+            </p>
+          </div>
+        </div>
+
+        {/* Related Tools */}
+        <div className="w-full max-w-4xl mb-12">
+          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+            Try More Free Decision Tools
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'Maximizer vs Satisficer', description: 'Discover your decision style', id: 'maximizer', emoji: '⚖️' },
+              { name: 'Yes No Oracle', description: "Can't decide? Ask the crystal ball", id: 'oracle', emoji: '🔮' },
+              { name: 'Should I Buy It?', description: 'Evaluate purchase decisions', id: 'buyit', emoji: '🛒' },
+              { name: 'Magic Chores', description: 'Gamify tasks with rewards', id: 'chores', emoji: '🔥' },
+            ].map((tool) => (
+              <button
+                key={tool.id}
+                onClick={() => onNavigate?.(tool.id)}
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-amber-400 cursor-pointer bg-transparent"
+              >
+                <span className="text-3xl mb-2 block">{tool.emoji}</span>
+                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
+                <p className="text-slate-500 text-xs">{tool.description}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8">
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-amber-100 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-amber-600" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Want to Help Kids Think More Critically?
+            </h2>
+            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+              Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+            </p>
+            <a
+              href="https://go.magicdecisions.com/dt1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-amber-500/30"
+            >
+              Get the Free Decision Traps Guide
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

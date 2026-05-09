@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Sparkles, Wand2, Plus, Trash2, Check, Clock, Star, Crown, Flame, ChevronDown, ChevronUp, Castle, Shield, Swords, Timer, Gift, Info, RefreshCw } from 'lucide-react'
-
+import { Sparkles, Wand2, Plus, Trash2, Check, Clock, Star, Crown, Flame, ChevronDown, ChevronUp, Castle, Shield, Swords, Timer, Gift, Info, RefreshCw, ArrowRight } from 'lucide-react'
+import './index.css'
 // ============================================
 // MOTIVATIONAL QUOTES (Magical + Plain)
 // ============================================
@@ -131,7 +131,11 @@ interface StickerReward {
   taskName: string
 }
 
-export default function MagicChores() {
+interface MagicChoresProps {
+  onNavigate?: (toolId: string) => void
+}
+
+export default function MagicChores({ onNavigate }: MagicChoresProps) {
   // Task State
   const [tasks, setTasks] = useState<MagicTask[]>(() => {
     try {
@@ -717,6 +721,70 @@ export default function MagicChores() {
           </div>
         )}
       </div>
+
+      {/* Parent/Family Teaching Moment */}
+      <div className="w-full max-w-2xl mx-auto px-4 mb-12">
+        <div className="bg-purple-900/30 border border-purple-500/30 rounded-xl p-6">
+          <h2 className="text-xl font-bold text-purple-200 mb-4 text-center">
+            Use Magic Chores to Teach Task Management and Delayed Gratification
+          </h2>
+          <p className="text-slate-300 text-center mb-4">
+            Magic Chores gamifies task completion to make chores feel like adventures. The timer mechanic teaches time estimation and urgency without pressure. Sticker rewards introduce the concept of earned rewards—kids learn that completing tasks brings tangible satisfaction. Discuss the magic theme together: what makes a quest feel special? How does completing small quests build confidence for bigger challenges?
+          </p>
+        </div>
+      </div>
+
+      {/* Related Tools */}
+      <div className="w-full max-w-4xl mx-auto px-4 mb-12">
+        <h2 className="text-xl font-semibold text-white mb-6 text-center">
+          Try More Free Decision Tools
+        </h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            { name: 'Random Picker', description: 'Pick from any list of options', id: 'picker', emoji: '🎯' },
+            { name: 'Activity Picker', description: 'Decide what to do for fun', id: 'activity', emoji: '🎮' },
+            { name: 'Dinner Decider', description: 'Decide what to cook or eat', id: 'dinner', emoji: '🍽️' },
+            { name: 'D20 Roller', description: 'Roll for creative prompts and games', id: 'd20', emoji: '🎲' },
+          ].map((tool) => (
+            <button
+              key={tool.id}
+              onClick={() => onNavigate?.(tool.id)}
+              className="bg-slate-800/80 border border-slate-700 p-4 text-center hover:border-purple-500/50 cursor-pointer"
+            >
+              <span className="text-3xl mb-2 block">{tool.emoji}</span>
+              <h3 className="font-semibold text-white mb-1">{tool.name}</h3>
+              <p className="text-slate-400 text-xs">{tool.description}</p>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Lead Magnet CTA */}
+      <div className="w-full max-w-2xl mx-auto px-4 mb-8">
+        <div className="bg-gradient-to-br from-purple-900/40 to-indigo-900/40 border border-purple-500/30 rounded-xl p-8 text-center">
+          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-500/30 flex items-center justify-center">
+            <Sparkles className="w-8 h-8 text-purple-300" />
+          </div>
+          <h2 className="text-xl font-bold text-white mb-3">
+            Want to Help Kids Build Better Task Habits?
+          </h2>
+          <p className="text-slate-300 text-sm mb-6 max-w-md mx-auto">
+            Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+          </p>
+          <a
+            href="https://go.magicdecisions.com/dt1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-400 hover:to-indigo-400 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-purple-500/30"
+          >
+            Get the Free Decision Traps Guide
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+      </div>
+
+      {/* Footer spacer */}
+      <div className="h-24" />
     </div>
   )
 }

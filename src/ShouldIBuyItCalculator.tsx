@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react'
-import { CreditCard, Calculator, Sparkles, RefreshCw, Share2, Copy, Check, AlertTriangle, CheckCircle, XCircle, TrendingDown, DollarSign, Heart, Brain } from 'lucide-react'
+import { CreditCard, Calculator, Sparkles, RefreshCw, Share2, Copy, Check, AlertTriangle, CheckCircle, XCircle, TrendingDown, DollarSign, Heart, Brain, ArrowRight } from 'lucide-react'
 import './index.css'
 
 interface Question {
@@ -54,7 +54,11 @@ const questions: Question[] = [
   },
 ]
 
-function ShouldIBuyItCalculator() {
+interface ShouldIBuyItCalculatorProps {
+  onNavigate?: (toolId: string) => void
+}
+
+function ShouldIBuyItCalculator({ onNavigate }: ShouldIBuyItCalculatorProps) {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [answers, setAnswers] = useState<Record<string, number | 'yes' | 'no'>>({})
   const [showResult, setShowResult] = useState(false)
@@ -428,9 +432,68 @@ function ShouldIBuyItCalculator() {
           )}
         </div>
 
-        {/* Footer */}
-        <div className="mt-auto pt-12 text-center text-slate-400 text-sm">
-          <p>Make smarter purchasing decisions</p>
+        {/* Footer spacer */}
+        <div className="h-24" />
+
+        {/* Parent/Family Teaching Moment */}
+        <div className="w-full max-w-2xl mb-12">
+          <div className="mystical-card p-6 bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
+            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+              Use the Should I Buy It Calculator to Teach Financial Awareness
+            </h2>
+            <p className="text-slate-600 text-center mb-4">
+              This tool helps kids practice evaluating purchases before spending money. Walk through the questions together—why do we ask about emotional state? Why does it matter if we already own something similar? These questions build critical thinking about consumption. Even small decisions about treats or toys become learning opportunities when you discuss the reasoning behind choices.
+            </p>
+          </div>
+        </div>
+
+        {/* Related Tools */}
+        <div className="w-full max-w-4xl mb-12">
+          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+            Try More Free Decision Tools
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: 'Yes No Oracle', description: "Can't decide? Ask the crystal ball", id: 'oracle', emoji: '🔮' },
+              { name: 'Cognitive Bias Test', description: 'Discover your mental shortcuts', id: 'bias', emoji: '🧠' },
+              { name: 'Maximizer vs Satisficer', description: 'Discover your decision style', id: 'maximizer', emoji: '⚖️' },
+              { name: 'Magic Chores', description: 'Gamify tasks with rewards', id: 'chores', emoji: '🔥' },
+            ].map((tool) => (
+              <button
+                key={tool.id}
+                onClick={() => onNavigate?.(tool.id)}
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+              >
+                <span className="text-3xl mb-2 block">{tool.emoji}</span>
+                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
+                <p className="text-slate-500 text-xs">{tool.description}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8">
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-emerald-600" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Want to Help Kids Make Smarter Money Choices?
+            </h2>
+            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+              Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
+            </p>
+            <a
+              href="https://go.magicdecisions.com/dt1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+            >
+              Get the Free Decision Traps Guide
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
