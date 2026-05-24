@@ -397,6 +397,23 @@ function App() {
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
   const [blogPostSlug, setBlogPostSlug] = useState<string | null>(null);
 
+  // Sync activeTool from URL on mount and browser back/forward
+  useEffect(() => {
+    const path = window.location.pathname.replace(/^\/|\/$/g, '');
+    const initial = pathToTool[path] || 'home';
+    setActiveTool(initial);
+  }, []);
+
+  // Update URL when activeTool changes
+  useEffect(() => {
+    const path = toolToPath[activeTool];
+    if (path) {
+      window.history.replaceState(null, '', '/' + path);
+    } else {
+      window.history.replaceState(null, '', '/');
+    }
+  }, [activeTool]);
+
   const toolCategories = [
     {
       id: 'simple',
@@ -460,6 +477,54 @@ function App() {
       ]
     }
   ];
+
+const pathToTool: Record<string, Tool> = {
+  'yes-no-oracle': 'oracle',
+  'spin-the-wheel': 'spin',
+  'coin-flip': 'coin',
+  'random-picker': 'picker',
+  'random-activity-picker': 'activity',
+  'what-to-eat-randomizer': 'dinner',
+  'rock-paper-scissors': 'rps',
+  'random-name-generator': 'names',
+  'random-username-generator': 'username',
+  'what-to-wear-randomizer': 'outfit',
+  'magic-chores-list': 'chores',
+  'screen-time-swap': 'screentime',
+  'decision-maximizer': 'maximizer',
+  'cognitive-bias-checker': 'bias',
+  'should-i-buy-it-calculator': 'buyit',
+  'about-us': 'about',
+  'privacy-policy': 'privacy',
+  'terms-of-service': 'terms',
+  'd20-roller': 'd20',
+};
+
+const toolToPath: Record<Tool, string> = {
+  oracle: 'yes-no-oracle',
+  spin: 'spin-the-wheel',
+  coin: 'coin-flip',
+  picker: 'random-picker',
+  activity: 'random-activity-picker',
+  dinner: 'what-to-eat-randomizer',
+  rps: 'rock-paper-scissors',
+  names: 'random-name-generator',
+  username: 'random-username-generator',
+  outfit: 'what-to-wear-randomizer',
+  chores: 'magic-chores-list',
+  screentime: 'screen-time-swap',
+  maximizer: 'decision-maximizer',
+  bias: 'cognitive-bias-checker',
+  buyit: 'should-i-buy-it-calculator',
+  about: 'about-us',
+  privacy: 'privacy-policy',
+  terms: 'terms-of-service',
+  d20: 'd20-roller',
+  home: '',
+  contact: 'contact',
+  blog: 'blog',
+  blogpost: 'blog',
+};
 
   const getColorClasses = (color: string) => {
     const colors: Record<string, { bg: string; border: string; text: string; hover: string }> = {
