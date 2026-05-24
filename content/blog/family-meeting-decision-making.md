@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "The Ultimate Guide to Family Meeting Decision-Making (That Kids Will Actually Enjoy)"
-  meta_description: "Family Communication • 10 min read
-
-# The Ultimate Guide to Family Meeting Decision-Making (That Kids Will Actually Enjoy)
-
-Family meetings can feel like p"
+  meta_description: "Family Communication \u2022 10 min read"
   keywords: "family meeting decision making, magicdecisions"
 ---
 

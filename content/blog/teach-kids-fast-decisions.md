@@ -2,17 +2,13 @@
 title: "How to Teach Kids to Make Fast Decisions Without the Drama"
 slug: "teach-kids-fast-decisions"
 date: "2026-05-25"
-excerpt: ""I don't know what I want!" Sound familiar? Every parent hears this daily. But here's the thing: your child isn't broken. They just haven't learned how to decid"
+excerpt: "I don't know what I want!" Sound familiar? Every parent hears this daily. But here's the thing: your child isn't broken. They just haven't learned how to decid"
 category: "Gamified Productivity"
 featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "How to Teach Kids to Make Fast Decisions Without the Drama"
-  meta_description: "Parenting • 10 min read
-
-# How to Teach Kids to Make Fast Decisions Without the Drama
-
-"I don't know what I want!" Sound familiar? Every parent hears this "
+  meta_description: "Parenting \u2022 10 min read"
   keywords: "teach kids fast decisions, magicdecisions"
 ---
 

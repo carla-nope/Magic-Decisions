@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "The 5-Second Decision Method for Kids: How to End Decision Paralysis Forever"
-  meta_description: "Parenting • 8 min read
-
-# The 5-Second Decision Method for Kids: How to End Decision Paralysis Forever
-
-Your child stands frozen in front of the cereal ais"
+  meta_description: "Parenting \u2022 8 min read"
   keywords: "5 second decision method, magicdecisions"
 ---
 

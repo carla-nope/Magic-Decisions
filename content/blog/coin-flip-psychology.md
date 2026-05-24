@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "Coin Flip Psychology: Why Random Decisions Feel Fair (Even When They're Not)"
-  meta_description: "Psychology • 8 min read
-
-# Coin Flip Psychology: Why Random Decisions Feel Fair (Even When They're Not)
-
-Two kids fighting over who gets the last cookie. A"
+  meta_description: "Psychology \u2022 8 min read"
   keywords: "coin flip psychology, magicdecisions"
 ---
 

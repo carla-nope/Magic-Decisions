@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "The Decision Difficulty Scale: Know Exactly When to Think Hard (And When to Let Go)"
-  meta_description: "Decision Making • 9 min read
-
-# The Decision Difficulty Scale: Know Exactly When to Think Hard (And When to Let Go)
-
-Should you spend twenty minutes choosi"
+  meta_description: "Decision Making \u2022 9 min read"
   keywords: "decision difficulty scale, magicdecisions"
 ---
 

@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "Building Decision-Making Confidence in Kids: The Complete Parent's Guide"
-  meta_description: "Parenting • 10 min read
-
-# Building Decision-Making Confidence in Kids: The Complete Parent's Guide
-
-The most successful adults aren't the ones who never m"
+  meta_description: "Parenting \u2022 10 min read"
   keywords: "building decision confidence kids, magicdecisions"
 ---
 

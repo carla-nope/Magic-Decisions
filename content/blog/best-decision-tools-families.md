@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "The Best Decision Tools for Families (And When to Use Each One)"
-  meta_description: "Tools & Resources • 10 min read
-
-# The Best Decision Tools for Families (And When to Use Each One)
-
-Spin wheels, coin flips, random pickers, dice rollers—t"
+  meta_description: "Tools & Resources \u2022 10 min read"
   keywords: "best decision tools families, magicdecisions"
 ---
 

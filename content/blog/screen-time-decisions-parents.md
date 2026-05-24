@@ -2,7 +2,7 @@
 title: "Untitled Post"
 slug: "screen-time-decisions-parents"
 date: "2026-05-25"
-excerpt: ""Can I play video games?" "How much longer?" "Just five more minutes!" "But I was about to beat the level!" Sound familiar? Screen time negotiations are one of the most exhausting parts of parenting...."
+excerpt: "Can I play video games?" "How much longer?" "Just five more minutes!" "But I was about to beat the level!" Sound familiar? Screen time negotiations are one of the most exhausting parts of parenting...."
 category: "Lifestyle"
 featured: false
 author: "MagicDecisions"

@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "How a Spin Wheel Fixed Our Family Arguments (A Real Story)"
-  meta_description: "Family Stories • 9 min read
-
-# How a Spin Wheel Fixed Our Family Arguments (A Real Story)
-
-Six months ago, I was ready to throw my hands up. Every evening "
+  meta_description: "Family Stories \u2022 9 min read"
   keywords: "spin wheel family arguments, magicdecisions"
 ---
 

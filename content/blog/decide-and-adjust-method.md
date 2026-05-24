@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "The Decide and Adjust Method: How to Make Faster Decisions Without Regret"
-  meta_description: "Decision Making • 8 min read
-
-# The Decide and Adjust Method: How to Make Faster Decisions Without Regret
-
-What if you could make most decisions in seconds"
+  meta_description: "Decision Making \u2022 8 min read"
   keywords: "decide and adjust method, magicdecisions"
 ---
 

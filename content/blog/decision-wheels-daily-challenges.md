@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "Decision Wheels for Daily Family Challenges: Homework, Chores, Screen Time, and More"
-  meta_description: "Practical Solutions • 11 min read
-
-# Decision Wheels for Daily Family Challenges: Homework, Chores, Screen Time, and More
-
-Every family has battlegrounds: "
+  meta_description: "Practical Solutions \u2022 11 min read"
   keywords: "decision wheels daily challenges, magicdecisions"
 ---
 

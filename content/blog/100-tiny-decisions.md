@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "100 Tiny Decisions You Don't Need to Overthink (Just Pick and Move On)"
-  meta_description: "Decision Making • 11 min read
-
-# 100 Tiny Decisions You Don't Need to Overthink (Just Pick and Move On)
-
-Here's a secret: most of the decisions that drain "
+  meta_description: "Decision Making \u2022 11 min read"
   keywords: "100 tiny decisions, magicdecisions"
 ---
 

@@ -8,7 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "Celebrating Decision Milestones: How to Build Decision Confidence Through Positive Reinforcement"
-  meta_description: "Positive Parenting • 9 min read
+  meta_description: "Positive Parenting • 9 min read"
 
 # Celebrating Decision Milestones: How to Build Decision Confidence Through Positive Reinforcement
 

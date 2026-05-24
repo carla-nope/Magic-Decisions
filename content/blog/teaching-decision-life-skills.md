@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "Why Teaching Kids Decision Skills Is the Most Important Life Skill You're Not Teaching"
-  meta_description: "Parenting • 9 min read
-
-# Why Teaching Kids Decision Skills Is the Most Important Life Skill You're Not Teaching
-
-We teach kids to read, to do math, to tie"
+  meta_description: "Parenting \u2022 9 min read"
   keywords: "teaching decision life skills, magicdecisions"
 ---
 

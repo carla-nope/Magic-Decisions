@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "Decision Fatigue: Why Families Get Cranky by Evening (And What to Do About It)"
-  meta_description: "Family Wellness • 9 min read
-
-# Decision Fatigue: Why Families Get Cranky by Evening (And What to Do About It)
-
-You pick the kids up from school. Everyone'"
+  meta_description: "Family Wellness \u2022 9 min read"
   keywords: "decision fatigue families, magicdecisions"
 ---
 

@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "The Evolution of Decision-Making: How Growing Up Today Differs from 50 Years Ago"
-  meta_description: "Family Psychology • 9 min read
-
-# The Evolution of Decision-Making: How Growing Up Today Differs from 50 Years Ago
-
-Your grandparents made decisions differ"
+  meta_description: "Family Psychology \u2022 9 min read"
   keywords: "evolution of decision making, magicdecisions"
 ---
 

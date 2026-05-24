@@ -1,6 +1,7 @@
 ---
 title: "The Psychology Behind Decision Fatigue"
 date: "2026-05-02"
+slug: "psychology-behind-decision-fatigue"
 excerpt: "Why do we struggle with simple choices? Learn about cognitive load and how randomization tools can help preserve mental energy."
 category: "Psychology"
 featured: true

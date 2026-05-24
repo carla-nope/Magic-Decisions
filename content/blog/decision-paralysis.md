@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "Why You Keep Overthinking Small Decisions (And How to Finally Stop)"
-  meta_description: "Decision Making • 8 min read
-
-# Why You Keep Overthinking Small Decisions (And How to Finally Stop)
-
-You're standing in the cereal aisle for ten minutes. Y"
+  meta_description: "Decision Making \u2022 8 min read"
   keywords: "decision paralysis, magicdecisions"
 ---
 

@@ -8,11 +8,7 @@ featured: false
 author: "MagicDecisions"
 seo:
   meta_title: "How to Use Randomization to End Sibling Disputes (Without Being the Referee)"
-  meta_description: "Parenting • 9 min read
-
-# How to Use Randomization to End Sibling Disputes (Without Being the Referee)
-
-You've been the referee for 47 minutes. SEVEN. You'"
+  meta_description: "Parenting \u2022 9 min read"
   keywords: "randomization sibling disputes, magicdecisions"
 ---
 

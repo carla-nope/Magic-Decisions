@@ -2,7 +2,7 @@
 title: "Untitled Post"
 slug: "dinner-decision-fatigue"
 date: "2026-05-25"
-excerpt: ""What's for dinner?" "I don't know, what do you want?" "I don't care." "Me neither." *Silence* This conversation happens in millions of homes every single day. It's the dinner decision loop, and it's..."
+excerpt: "What's for dinner?" "I don't know, what do you want?" "I don't care." "Me neither." *Silence* This conversation happens in millions of homes every single day. It's the dinner decision loop, and it's..."
 category: "Lifestyle"
 featured: false
 author: "MagicDecisions"

@@ -2,7 +2,7 @@
 title: "The Yes/No Oracle: Teaching Kids Binary Decision Skills"
 slug: "yes-no-decision-maker-kids"
 date: "2026-05-25"
-excerpt: ""Should I do it or not?" "Is this a good idea?" "Should I say something?" Sometimes kids just need a push. The yes/no oracle gives them that push—without you be"
+excerpt: "\"Should I do it or not?\" "Is this a good idea?" "Should I say something?" Sometimes kids just need a push. The yes/no oracle gives them that push—without you be"
 category: "Gamified Productivity"
 featured: false
 author: "MagicDecisions"
