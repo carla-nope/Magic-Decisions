@@ -14,6 +14,7 @@
     { "source": "/random-username-generator", "destination": "/index.html" },
     { "source": "/what-to-wear-randomizer", "destination": "/index.html" },
     { "source": "/magic-chores-list", "destination": "/index.html" },
+    { "source": "/screen-time-swap", "destination": "/index.html" },
     { "source": "/decision-maximizer", "destination": "/index.html" },
     { "source": "/cognitive-bias-checker", "destination": "/index.html" },
     { "source": "/should-i-buy-it-calculator", "destination": "/index.html" },
