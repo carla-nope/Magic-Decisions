@@ -1,4 +1,4 @@
-import { Sparkles, RefreshCw, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Star, ArrowRight, Zap, Globe, Wand2, Shirt, Brain, Target, CreditCard, Flame, Dices } from 'lucide-react'
+import { Sparkles, RefreshCw, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Star, ArrowRight, Zap, Globe, Wand2, Shirt, Brain, Target, CreditCard, Flame, Dices, Monitor } from 'lucide-react'
 import './index.css'
 
 const tools = [
@@ -111,6 +111,15 @@ const tools = [
     keyword: 'chore tracker'
   },
   {
+    id: 'screentime',
+    name: 'Screen Time Swap',
+    icon: Monitor,
+    color: 'cyan',
+    emoji: '🖥️',
+    description: 'Trade screen time for real-world adventures',
+    keyword: 'screen time swap'
+  },
+  {
     id: 'maximizer',
     name: 'Decision Style Quiz',
     icon: Brain,
@@ -167,6 +176,7 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
     'Outfit Picker': 'outfit',
     'Name Picker': 'names',
     'Magic Chores': 'chores',
+    'Screen Time Swap': 'screentime',
     'Decision Style Quiz': 'maximizer',
     'Cognitive Bias Test': 'bias',
     'Should I Buy It': 'buyit',
@@ -194,7 +204,7 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
               </p>
               <div className="flex items-center justify-center gap-2 text-slate-500 text-sm">
                 <Zap className="w-4 h-4 text-amber-500" />
-                <span>15 free tools</span>
+                <span>16 free tools</span>
                 <span>•</span>
                 <Globe className="w-4 h-4" />
                 <span>Works everywhere</span>
@@ -353,6 +363,7 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
                 { emoji: '👗', name: 'Outfit Picker', use: 'Decide what to wear' },
                 { emoji: '👤', name: 'Name Picker', use: 'Random selection or team assignment' },
                 { emoji: '🔥', name: 'Magic Chores', use: 'Gamify tasks with magic rewards' },
+                { emoji: '🖥️', name: 'Screen Time Swap', use: 'Trade screen time for real-world fun' },
                 { emoji: '🧠', name: 'Decision Style Quiz', use: 'Discover your decision style' },
                 { emoji: '🎯', name: 'Cognitive Bias Test', use: 'Test your mental shortcuts' },
                 { emoji: '🛒', name: 'Should I Buy It', use: 'Make smarter purchases' },
@@ -374,7 +385,7 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
           {/* Statistics */}
           <div className="flex flex-wrap justify-center gap-8 py-6 border-y border-slate-200 mt-12">
             <div className="text-center">
-              <p className="text-3xl font-bold text-purple-600">15</p>
+              <p className="text-3xl font-bold text-purple-600">16</p>
               <p className="text-slate-500 text-sm">Decision Tools</p>
             </div>
             <div className="text-center">
