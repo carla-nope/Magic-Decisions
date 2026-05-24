@@ -427,6 +427,7 @@ function App() {
         { id: 'rps' as Tool, name: 'Rock Paper Scissors', icon: Hand, color: 'cyan' },
         { id: 'coin' as Tool, name: 'Coin Flip', icon: Circle, color: 'blue' },
         { id: 'picker' as Tool, name: 'Random Picker', icon: CircleDot, color: 'emerald' },
+        { id: 'screentime' as Tool, name: 'Screen Swap', icon: Monitor, color: 'cyan' },
       ]
     },
     {
@@ -449,7 +450,6 @@ function App() {
       color: 'red',
       tools: [
         { id: 'chores' as Tool, name: 'Magic Chores', icon: Flame, color: 'red' },
-        { id: 'screentime' as Tool, name: 'Screen Swap', icon: Monitor, color: 'cyan' },
       ]
     },
     {
@@ -647,7 +647,7 @@ const toolToPath: Record<Tool, string> = {
         {activeTool === 'buyit' && <ShouldIBuyItCalculator onNavigate={(id) => setActiveTool(id as Tool)} />}
         {activeTool === 'chores' && <MagicChores onNavigate={(id) => setActiveTool(id as Tool)} />}
         {activeTool === 'd20' && <D20Roller onNavigate={(id) => setActiveTool(id as Tool)} />}
-        {activeTool === 'screentime' && <ScreenTimeSwap />}
+        {activeTool === 'screentime' && <ScreenTimeSwap onNavigate={(id) => setActiveTool(id as Tool)} />}
         {activeTool === 'blog' && <BlogPage onNavigateToPost={(slug) => { setBlogPostSlug(slug); setActiveTool('blogpost'); }} />}
         {activeTool === 'blogpost' && blogPostSlug && <BlogPost slug={blogPostSlug} onBack={() => { setActiveTool('blog'); setBlogPostSlug(null); }} />}
         {activeTool === 'privacy' && <PrivacyPolicy onNavigate={setActiveTool} />}
