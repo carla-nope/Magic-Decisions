@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Copy, Check, Share2, RotateCcw, Sparkles, ArrowRight } from 'lucide-react'
+import { Copy, Check, Share2, RotateCcw, Sparkles, ArrowRight, ChevronRight } from 'lucide-react'
 import './index.css'
 
 interface CoinFlipProps {
@@ -93,14 +93,20 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
   return (
     <div className="min-h-screen relative">
       <div className="stars-bg" />
-      <div className="fixed inset-0 stars pointer-events-none opacity-50" />
+      <div className="relative z-10 min-h-screen flex flex-col items-center px-4 py-8">
 
-      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-8">
+        {/* Breadcrumb */}
+        <div className="flex items-center gap-2 text-sm text-slate-500 mb-6">
+          <button onClick={() => onNavigate && onNavigate('home')} className="hover:text-purple-600 transition-colors">Home</button>
+          <ChevronRight className="w-4 h-4" />
+          <span className="text-slate-700 font-medium">Coin Flip</span>
+        </div>
+
         {/* Header */}
-        <div className="text-center mb-6">
+        <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200 text-blue-700 text-sm mb-4">
-            <RotateCcw className="w-4 h-4" />
-            Decision Maker
+            <Sparkles className="w-4 h-4" />
+            Random Outcome
           </div>
           <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
             Flip the Coin!
