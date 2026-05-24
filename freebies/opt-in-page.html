@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stop overthinking the small stuff. Download the free 100 Tiny Decisions guide and learn which everyday choices don't deserve your brain power." />
+  <title>100 Tiny Decisions You Don't Need to Overthink | MagicDecisions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --purple:      #6B21A8;
+      --purple-dark: #4C1D95;
+      --purple-light: #9333EA;
+      --blue-wash:    #DBEAFE;
+      --lavender:     #EDE9FE;
+      --text-dark:    #1E1B4B;
+      --text-mid:     #4B5563;
+      --text-light:   #6B7280;
+      --white:        #FFFFFF;
+      --off-white:    #FAFAF8;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-dark);
+      background: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── UTILITIES ── */
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--purple);
+      color: var(--white);
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(107, 33, 168, 0.35);
+      white-space: nowrap;
+    }
+    .btn-primary:hover {
+      background: var(--purple-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(107, 33, 168, 0.4);
+    }
+    .btn-primary:active { transform: translateY(0); }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--purple);
+      background: var(--lavender);
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #F3F0FF;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+    }
+    .logo-text {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      letter-spacing: -0.02em;
+    }
+    .logo-text span { color: var(--purple); }
+
+    nav { display: flex; align-items: center; gap: 28px; }
+    nav a {
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+    nav a:hover { color: var(--purple); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, #F5F3FF 0%, #EFF6FF 50%, #F0FDF4 100%);
+      padding: 72px 0 80px;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(147, 51, 234, 0.12) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -60px;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content { max-width: 520px; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #FEF9C3;
+      border: 1px solid #FDE047;
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #854D0E;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      letter-spacing: -0.03em;
+    }
+    h1 span { color: var(--purple); }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--text-mid);
+      margin-bottom: 28px;
+      line-height: 1.75;
+    }
+
+    /* Opt-in form */
+    .optin-form {
+      display: flex;
+      gap: 10px;
+      max-width: 480px;
+      margin-bottom: 14px;
+    }
+    .optin-form input[type="email"] {
+      flex: 1;
+      min-width: 0;
+      padding: 14px 18px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+      border: 2px solid #E5E7EB;
+      border-radius: 50px;
+      outline: none;
+      background: var(--white);
+      color: var(--text-dark);
+      transition: border-color 0.2s;
+    }
+    .optin-form input[type="email"]:focus {
+      border-color: var(--purple);
+    }
+    .optin-form input[type="email"]::placeholder { color: #9CA3AF; }
+
+    .form-note {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .form-note svg { flex-shrink: 0; }
+
+    /* Hero visual */
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .guide-mockup {
+      position: relative;
+      width: 340px;
+    }
+    .guide-mockup .cover {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow:
+        0 20px 60px rgba(107, 33, 168, 0.2),
+        0 8px 24px rgba(0,0,0,0.08);
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      padding: 32px 28px;
+      color: white;
+      transform: perspective(800px) rotateY(-8deg) rotateX(3deg);
+      transition: transform 0.3s ease;
+    }
+    .guide-mockup:hover .cover {
+      transform: perspective(800px) rotateY(-3deg) rotateX(1deg);
+    }
+    .cover-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #C4B5FD;
+      margin-bottom: 16px;
+    }
+    .cover-title {
+      font-family: 'Lora', serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      line-height: 1.35;
+      margin-bottom: 20px;
+    }
+    .cover-divider {
+      height: 1px;
+      background: rgba(255,255,255,0.2);
+      margin-bottom: 16px;
+    }
+    .cover-tagline {
+      font-size: 0.75rem;
+      color: #DDD6FE;
+      margin-bottom: 20px;
+    }
+    .cover-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .cover-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: #E9D5FF;
+    }
+    .cover-list li svg { color: #A78BFA; flex-shrink: 0; }
+
+    /* Decorative circles */
+    .deco-circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.12;
+    }
+    .deco-1 {
+      width: 140px; height: 140px;
+      background: var(--purple);
+      top: -20px; right: -30px;
+    }
+    .deco-2 {
+      width: 80px; height: 80px;
+      background: #3B82F6;
+      bottom: 30px; right: -20px;
+    }
+    .deco-3 {
+      width: 50px; height: 50px;
+      background: #10B981;
+      top: 50px; left: -15px;
+    }
+
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      background: var(--white);
+      border-top: 1px solid #F3F0FF;
+      border-bottom: 1px solid #F3F0FF;
+      padding: 28px 0;
+    }
+    .trust-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      font-weight: 500;
+    }
+    .trust-item svg { color: var(--purple); }
+
+    /* ── WHY SECTION ── */
+    .why-section {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .why-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .why-content .section-tag { margin-bottom: 12px; }
+
+    .why-content h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+    .why-content p {
+      color: var(--text-mid);
+      margin-bottom: 16px;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    .why-content .highlight-box {
+      background: linear-gradient(135deg, #F5F3FF, #EFF6FF);
+      border-left: 4px solid var(--purple);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 24px;
+    }
+    .highlight-box p {
+      margin: 0;
+      font-size: 0.95rem;
+      font-style: italic;
+      color: #5B21B6;
+    }
+
+    /* Benefits card */
+    .benefits-card {
+      background: var(--white);
+      border: 1px solid #E9D5FF;
+      border-radius: 20px;
+      padding: 36px;
+      box-shadow: 0 4px 24px rgba(107, 33, 168, 0.06);
+    }
+    .benefits-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 24px;
+    }
+    .benefit-item {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .benefit-item:last-of-type { margin-bottom: 28px; }
+    .benefit-icon {
+      flex-shrink: 0;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--purple), var(--purple-light));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .benefit-icon svg { color: white; }
+    .benefit-text h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+    }
+    .benefit-text p {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin: 0;
+      line-height: 1.6;
+    }
+    .benefits-card .btn-primary { width: 100%; }
+
+    /* ── WHAT'S INSIDE ── */
+    .inside-section {
+      padding: 80px 0;
+      background: var(--off-white);
+    }
+    .inside-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 48px;
+    }
+    .inside-header h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
+    }
+    .inside-header p {
+      color: var(--text-mid);
+      font-size: 1rem;
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+    .cat-card {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 22px 18px;
+      border: 1px solid #F3F0FF;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: default;
+    }
+    .cat-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(107, 33, 168, 0.08);
+    }
+    .cat-emoji { font-size: 1.8rem; margin-bottom: 10px; display: block; }
+    .cat-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+    }
+    .cat-count {
+      font-size: 0.75rem;
+      color: var(--purple);
+      font-weight: 600;
+    }
+
+    /* ── WHO FOR ── */
+    .who-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      color: white;
+    }
+    .who-inner { max-width: 700px; margin: 0 auto; text-align: center; }
+    .who-inner .section-tag {
+      background: rgba(255,255,255,0.15);
+      color: #DDD6FE;
+      margin-bottom: 16px;
+    }
+    .who-inner h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      line-height: 1.3;
+    }
+    .who-inner > p {
+      font-size: 1.05rem;
+      color: #DDD6FE;
+      margin-bottom: 36px;
+      line-height: 1.8;
+    }
+    .who-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      text-align: left;
+    }
+    .who-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 14px;
+      padding: 18px 20px;
+    }
+    .who-check {
+      flex-shrink: 0;
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+    .who-item p {
+      font-size: 0.9rem;
+      color: #E9D5FF;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ── CTA SECTION ── */
+    .cta-section {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .cta-inner {
+      background: linear-gradient(135deg, #F5F3FF 0%, #EFF6FF 100%);
+      border-radius: 28px;
+      padding: 60px;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      border: 1px solid #E9D5FF;
+    }
+    .cta-inner h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .cta-inner > p {
+      color: var(--text-mid);
+      font-size: 1rem;
+      margin-bottom: 32px;
+      line-height: 1.75;
+    }
+    .cta-inner .optin-form { margin: 0 auto 14px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--text-dark);
+      color: #9CA3AF;
+      padding: 40px 0 24px;
+      font-size: 0.82rem;
+    }
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .footer-brand { display: flex; align-items: center; gap: 8px; color: white; font-weight: 600; font-size: 0.9rem; }
+    .footer-brand span { color: var(--purple-light); }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { color: #9CA3AF; text-decoration: none; }
+    .footer-links a:hover { color: white; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; text-align: center; }
+      .hero-content { max-width: 100%; }
+      .optin-form { max-width: 100%; }
+      .form-note { justify-content: center; }
+      .hero-visual { display: none; }
+      .why-inner { grid-template-columns: 1fr; }
+      .categories-grid { grid-template-columns: repeat(3, 1fr); }
+      .who-grid { grid-template-columns: 1fr; }
+      nav { display: none; }
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.9rem; }
+      .categories-grid { grid-template-columns: repeat(2, 1fr); }
+      .cta-inner { padding: 36px 24px; }
+      .optin-form { flex-direction: column; }
+      .optin-form .btn-primary { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header>
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="16" height="16" rx="3" fill="#6B21A8"/>
+        <rect x="20" y="0" width="16" height="16" rx="3" fill="#9333EA" opacity="0.7"/>
+        <rect x="0" y="20" width="16" height="16" rx="3" fill="#9333EA" opacity="0.7"/>
+        <rect x="20" y="20" width="16" height="16" rx="3" fill="#6B21A8"/>
+      </svg>
+      <span class="logo-text">Magic<span>Decisions</span></span>
+    </a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+      <a href="/tools">Tools</a>
+      <a href="/#freebie">Free Guide</a>
+    </nav>
+    <a href="#get-guide" class="btn-primary" style="padding:10px 24px;font-size:0.85rem;">Get Free Guide</a>
+  </div>
+</header>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Free Download — 100 Tiny Decisions Guide
+      </div>
+      <h1>Stop Overthinking the <span>Small Stuff</span></h1>
+      <p class="hero-sub">Every day, you waste mental energy on decisions that don't deserve it. Get the free 100 Tiny Decisions guide and learn exactly which everyday choices you can make in seconds — so you can save your brain for what actually matters.</p>
+
+      <form class="optin-form" id="get-guide" action="#" method="POST">
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn-primary">Get Free Guide</button>
+      </form>
+      <p class="form-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Free guide from MagicDecisions. No spam. Unsubscribe anytime.
+      </p>
+    </div>
+
+    <div class="hero-visual">
+      <div class="guide-mockup">
+        <div class="cover">
+          <p class="cover-badge">Free Parent Guide</p>
+          <p class="cover-title">100 Tiny Decisions You Don't Need to Overthink</p>
+          <div class="cover-divider"></div>
+          <p class="cover-tagline">Stop agonizing. Start deciding.</p>
+          <ul class="cover-list">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              100 everyday decisions to make in seconds
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              10 categories covering family life
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              The 2-Minute Decision System bonus
+            </li>
+          </ul>
+        </div>
+        <div class="deco-circle deco-1"></div>
+        <div class="deco-circle deco-2"></div>
+        <div class="deco-circle deco-3"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRUST BAR ══ -->
+<div class="trust-bar">
+  <div class="container trust-inner">
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      No spam, ever
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Instant delivery
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      Free forever
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      Built for parents
+    </div>
+  </div>
+</div>
+
+<!-- ══ WHY SECTION ══ -->
+<section class="why-section">
+  <div class="container why-inner">
+    <div class="why-content">
+      <span class="section-tag">Why This Helps</span>
+      <h2>Small Choices Can Feel Surprisingly Big</h2>
+      <p>You probably spent 15 minutes choosing a restaurant last week. Or agonizing over which streaming show to start. Or debating whether to use the self-checkout or the regular checkout. Here's the uncomfortable truth: none of that time was worth it.</p>
+      <p>The decision didn't change your life. It just stole your attention.</p>
+      <p>This guide was created for parents who feel like every small decision — what to make for dinner, who picks the movie, which park to visit — turns into a 30-minute negotiation. It's a friendly starting point, not a clinical tool or a therapy resource.</p>
+      <div class="highlight-box">
+        <p>"The goal isn't to stop making decisions. The goal is to stop making some decisions mean more than they do."</p>
+      </div>
+    </div>
+
+    <div class="benefits-card">
+      <h3>What You Get in the Free Guide</h3>
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <div class="benefit-text">
+          <h4>Spot the decision traps</h4>
+          <p>Learn 10 categories of tiny decisions that drain your energy — and why they don't deserve your brain power.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M12 2v20M2 12h20"/></svg>
+        </div>
+        <div class="benefit-text">
+          <h4>Reduce decision pressure</h4>
+          <p>Use simple reframes that make everyday choices feel safer, smaller, and more manageable — for you and your kids.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="benefit-text">
+          <h4>Practice through play</h4>
+          <p>Connect the guide to free MagicDecisions tools — spin wheels, coin flips — that make choosing feel like a game.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div class="benefit-text">
+          <h4>Build confidence gently</h4>
+          <p>Help your kids practice making choices without turning every small decision into a power struggle.</p>
+        </div>
+      </div>
+      <a href="#get-guide" class="btn-primary" style="width:100%;">Download Free Guide</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHAT'S INSIDE ══ -->
+<section class="inside-section">
+  <div class="container">
+    <div class="inside-header">
+      <span class="section-tag">What's Inside</span>
+      <h2>100 Tiny Decisions Across 10 Categories</h2>
+      <p>Every decision in this guide is something you can make in under 2 minutes — once you know it doesn't need deep thought.</p>
+    </div>
+    <div class="categories-grid">
+      <div class="cat-card">
+        <span class="cat-emoji">&#127869;</span>
+        <p class="cat-title">Food &amp; Drink</p>
+        <p class="cat-count">10 decisions</p>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">&#👕</span>
+        <p class="cat-title">Clothing</p>
+        <p class="cat-count">10 decisions</p>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">&#127968;</span>
+        <p class="cat-title">Home &amp; Household</p>
+        <p class="cat-count">10 decisions</p>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">&#128187;</span>
+        <p class="cat-title">Screen Time</p>
+        <p class="cat-count">10 decisions</p>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">&#128104;&#128100;</span>
+        <p class="cat-title">Family &amp; Kids</p>
+        <p class="cat-count">10 decisions</p>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">&#128188;</span>
+        <p class="cat-title">Work &amp; Productivity</p>
+        <p class="cat-count">10 decisions</p>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">&#128722;</span>
+        <p class="cat-title">Shopping</p>
+        <p class="cat-count">10 decisions</p>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">&#128197;</span>
+        <p class="cat-title">Scheduling</p>
+        <p class="cat-count">10 decisions</p>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">&#129504;</span>
+        <p class="cat-title">Mindset</p>
+        <p class="cat-count">10 decisions</p>
+      </div>
+      <div class="cat-card">
+        <span class="cat-emoji">&#127922;</span>
+        <p class="cat-title">Random Everyday</p>
+        <p class="cat-count">10 decisions</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="#get-guide" class="btn-primary">Get the Complete Guide — Free</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHO IS IT FOR ══ -->
+<section class="who-section">
+  <div class="container who-inner">
+    <span class="section-tag">Is This for You?</span>
+    <h2>This Guide Is for Parents Who...</h2>
+    <p>If any of these sound familiar, you're in the right place. This guide isn't about productivity hacks — it's about recognizing which decisions deserve your energy and which ones are just noise.</p>
+    <div class="who-grid">
+      <div class="who-item">
+        <div class="who-check">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <p>Feel mentally drained by the constant small decisions of family life</p>
+      </div>
+      <div class="who-item">
+        <div class="who-check">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <p>Find themselves spiraling over choices that don't actually matter</p>
+      </div>
+      <div class="who-item">
+        <div class="who-check">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <p>Want to teach their kids that not every decision needs deep analysis</p>
+      </div>
+      <div class="who-item">
+        <div class="who-check">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <p>Are tired of the "I don't know" loop when asked what their child wants</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINAL CTA ══ -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <span class="section-tag">Free Download</span>
+      <h2>Grab Your Copy of 100 Tiny Decisions</h2>
+      <p>Put your email in the box and we'll send the guide straight to your inbox. No spam — just the guide and occasional tips from MagicDecisions to help your family make faster, easier decisions.</p>
+      <form class="optin-form" action="#" method="POST">
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn-primary">Send Me the Guide</button>
+      </form>
+      <p class="form-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Free guide from MagicDecisions. No spam. Unsubscribe anytime.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <svg width="20" height="20" viewBox="0 0 36 36" fill="none">
+        <rect x="0" y="0" width="16" height="16" rx="3" fill="#9333EA" opacity="0.7"/>
+        <rect x="20" y="0" width="16" height="16" rx="3" fill="#6B21A8"/>
+        <rect x="0" y="20" width="16" height="16" rx="3" fill="#6B21A8"/>
+        <rect x="20" y="20" width="16" height="16" rx="3" fill="#9333EA" opacity="0.7"/>
+      </svg>
+      Magic<span>Decisions</span>
+    </div>
+    <div class="footer-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="/contact">Contact</a>
+      <a href="mailto:support@magicdecisions.com">support@magicdecisions.com</a>
+    </div>
+    <p>&copy; 2026 MagicDecisions. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

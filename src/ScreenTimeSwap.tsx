@@ -2,7 +2,6 @@ import { useState, useCallback } from 'react'
 import { Monitor, Clock, ArrowRight, RotateCcw, Sparkles, ChevronRight, Info, AlertCircle, Lightbulb } from 'lucide-react'
 import { useTheme } from './contexts/ThemeContext'
 import { playMagicChime } from './lib/sounds'
-import SEOContent from './SEOContent'
 import './index.css'
 
 interface ScreenSwapOption {
@@ -222,7 +221,7 @@ const screenTimeAmounts = [
 const USE_CASES = [
   { icon: <Monitor className="w-5 h-5" />, title: 'Screen Time Balance', description: 'Help kids swap passive screen time for active, creative, or social experiences.' },
   { icon: <Lightbulb className="w-5 h-5" />, title: 'New Activity Discovery', description: 'Introduce kids to hobbies and activities they might not try on their own.' },
-  { icon: <Info className="w-5 h-5" />, title: 'Parenting Made Easier', description: 'When kids are bickering over \"what to do,\" let the wheel pick and remove the negotiation.' },
+  { icon: <Info className="w-5 h-5" />, title: 'Parenting Made Easier', description: 'When kids are bickering over "what to do," let the wheel pick and remove the negotiation.' },
 ]
 
 // Related tools

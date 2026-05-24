@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Tiny Decisions You Don't Need to Overthink | MagicDecisions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #fff;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+                font-size: 11pt;
+            }
+            .cta-section {
+                page-break-before: always;
+            }
+            .decision-card {
+                page-break-inside: avoid;
+            }
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #6c5ce7;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #6c5ce7;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            color: #2d3436;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #636e72;
+            margin-bottom: 20px;
+        }
+        
+        .intro-box {
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .intro-box h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        
+        .intro-box p {
+            font-size: 16px;
+            opacity: 0.95;
+        }
+        
+        .how-to-use {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 4px solid #6c5ce7;
+        }
+        
+        .how-to-use h2 {
+            color: #6c5ce7;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .how-to-use ol {
+            margin-left: 25px;
+        }
+        
+        .how-to-use li {
+            margin-bottom: 10px;
+        }
+        
+        .category {
+            margin-bottom: 35px;
+        }
+        
+        .category-header {
+            background: #2d3436;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .category-icon {
+            font-size: 24px;
+        }
+        
+        .decisions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 15px;
+        }
+        
+        .decision-card {
+            background: white;
+            border: 2px solid #dfe6e9;
+            border-radius: 10px;
+            padding: 15px;
+            transition: all 0.2s;
+        }
+        
+        .decision-card:hover {
+            border-color: #6c5ce7;
+            box-shadow: 0 4px 15px rgba(108, 92, 231, 0.15);
+        }
+        
+        .decision-number {
+            background: #6c5ce7;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .decision-text {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2d3436;
+            margin-bottom: 10px;
+        }
+        
+        .stop-box {
+            background: linear-gradient(135deg, #00b894 0%, #55efc4 100%);
+            border-radius: 8px;
+            padding: 12px;
+            color: white;
+        }
+        
+        .stop-box-header {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            opacity: 0.9;
+        }
+        
+        .stop-box-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .cta-section h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #6c5ce7;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #dfe6e9;
+            color: #636e72;
+            font-size: 14px;
+        }
+        
+        .footer a {
+            color: #6c5ce7;
+            text-decoration: none;
+        }
+        
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #6c5ce7;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #636e72;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">✨ MagicDecisions</div>
+    <h1>100 Tiny Decisions<br>You Don't Need to Overthink</h1>
+    <p class="subtitle">A printable guide to help your family stop wasting energy on choices that don't matter.</p>
+    <div class="stats-row">
+        <div class="stat-item">
+            <div class="stat-number">100</div>
+            <div class="stat-label">Decisions</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">7</div>
+            <div class="stat-label">Categories</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Time Saved</div>
+        </div>
+    </div>
+</div>
+
+<div class="intro-box">
+    <h2>What is this guide?</h2>
+    <p>You're making hundreds of decisions every day. Most of them are tiny, temporary, and don't really matter. But they still eat up mental energy that could be spent on things you actually care about.</p>
+    <br>
+    <p>This guide lists 100 small decisions that most families waste time debating. For each one, we've included a simple "stop here" insight showing why you can just... move on. No overthinking needed.</p>
+</div>
+
+<div class="how-to-use">
+    <h2>How to Use This Guide</h2>
+    <ol>
+        <li><strong>Print it out</strong> - Keep it on the fridge or in a family command center</li>
+        <li><strong>Use it during decision moments</strong> - When someone gets stuck, find the relevant decision and point to the "stop here" box</li>
+        <li><strong>Train your brain</strong> - Over time, you'll naturally stop overthinking these choices without needing the guide</li>
+        <li><strong>Share with your kids</strong> - Help them see which decisions deserve energy and which don't</li>
+    </ol>
+</div>
+
+<!-- MORNING CATEGORY -->
+<div class="category">
+    <div class="category-header">
+        <span class="category-icon">🌅</span>
+        Morning Decisions (1-15)
+    </div>
+    <div class="decisions-grid">
+        <div class="decision-card">
+            <span class="decision-number">1</span>
+            <div class="decision-text">Which cup to drink from today?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Any cup works. Pick one. Drink. Move on.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">2</span>
+            <div class="decision-text">Which shoe goes on first?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">It literally doesn't matter. Shoes go on feet. Done.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">3</span>
+            <div class="decision-text">Socks first or pants first?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Whatever order works for your body is fine. Nobody's watching.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">4</span>
+            <div class="decision-text">Brush teeth before or after breakfast?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Either works. Dentists say either way is fine. Pick one and go.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">5</span>
+            <div class="decision-text">Hair parted left or right?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Whichever side you did yesterday. Or flip a coin if you must.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">6</span>
+            <div class="decision-text">Which arm goes in jacket first?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Your jacket doesn't care. You'll get it on either way.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">7</span>
+            <div class="decision-text">Zipper up or down on the hoodie?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Up keeps you warm. Down looks cool. Pick one. Weather decides anyway.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">8</span>
+            <div class="decision-text">Which egg to pick from the carton?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">They're all eggs. Grab one. The carton doesn't judge.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">9</span>
+            <div class="decision-text">Eat toast with butter or jam?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Why not both? It's your toast. Live a little.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">10</span>
+            <div class="decision-text">Cereal or toast this morning?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Rotate days if it helps. But honestly, just pick. Both fill your stomach.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">11</span>
+            <div class="decision-text">Spoon or fork for cereal?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Spoon. Obviously. But if you want to try a fork, life's short.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">12</span>
+            <div class="decision-text">Shower at night or morning?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Pick one and stick with it. Your schedule doesn't need this debate.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">13</span>
+            <div class="decision-text">Left side of bed or right side?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">You claimed your spot. It's yours. Stop thinking about it.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">14</span>
+            <div class="decision-text">Bath towel on hook or floor?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Where it dries best and doesn't bug anyone. That's your answer.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">15</span>
+            <div class="decision-text">Water first or coffee first?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Hydrate. Coffee. Done. Not a philosophy class.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SCHOOL CATEGORY -->
+<div class="category">
+    <div class="category-header">
+        <span class="category-icon">🎒</span>
+        School Decisions (16-30)
+    </div>
+    <div class="decisions-grid">
+        <div class="decision-card">
+            <span class="decision-number">16</span>
+            <div class="decision-text">Which backpack pocket for which item?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Same place every day. Problem solved. You're not planning a heist.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">17</span>
+            <div class="decision-text">Folder color this semester?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Whatever color makes you happy. Or just grab the first one you see.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">18</span>
+            <div class="decision-text">Pencil case zipped or unzipped at school?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Zip it. You'll lose less stuff. That's the whole decision.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">19</span>
+            <div class="decision-text">Which pencil to use first?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Top of the cup. Or the one closest to you. This isn't lottery day.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">20</span>
+            <div class="decision-text">Sit at front desk or back desk?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Depends on the day. Pick based on your energy. No deep analysis needed.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">21</span>
+            <div class="decision-text">Take snack now or save for later?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Ask your stomach. It's usually right. Don't overthink it.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">22</span>
+            <div class="decision-text">Book in backpack or locker?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Where you need it next. Logic wins here. No drama needed.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">23</span>
+            <div class="decision-text">Line up single file or partner up?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Teacher will tell you. Follow instructions. Done.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">24</span>
+            <div class="decision-text">Answer question on paper or orally?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">The teacher will ask how they want it. Wait for instruction. Easy.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">25</span>
+            <div class="decision-text">Take notes in notebook or laptop?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Whatever works for your learning style. Try both, keep what clicks.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">26</span>
+            <div class="decision-text">Raise hand or call out answer?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Raise hand. It's how class works. No decision here.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">27</span>
+            <div class="decision-text">Write name in corner or center?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Top right corner. Every time. Put the paper down and move on.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">28</span>
+            <div class="decision-text">Eraser or white-out for mistakes?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Eraser is faster and has less waste. But if white-out is what you have, use it.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">29</span>
+            <div class="decision-text">Walk or jog to next class?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Based on how much time you have. Check the clock. Pick accordingly.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">30</span>
+            <div class="decision-text">Ask for help now or figure it out first?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Give it two minutes. If stuck after that, ask. Simple rule.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MEALS CATEGORY -->
+<div class="category">
+    <div class="category-header">
+        <span class="category-icon">🍽️</span>
+        Meal Decisions (31-45)
+    </div>
+    <div class="decisions-grid">
+        <div class="decision-card">
+            <span class="decision-number">31</span>
+            <div class="decision-text">Plate first or food first?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Plate first. It's more civilized. But honestly, nobody's timing you.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">32</span>
+            <div class="decision-text">Napkin on lap or table?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Lap for fancy meals. Table for casual. At home? Wherever lands.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">33</span>
+            <div class="decision-text">Eat veggies first or save for end?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Eat what you want when you want it. It's dinner, not a strategy meeting.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">34</span>
+            <div class="decision-text">Drink with meals or not?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Sip when thirsty. Don't sip when not. Your body knows.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">35</span>
+            <div class="decision-text">Milk in cereal first or cereal in milk?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Cereal in milk. It keeps things from getting soggy. Science says so.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">36</span>
+            <div class="decision-text">Which pizza slice first?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Any slice. They're all connected. Pizza is democracy.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">37</span>
+            <div class="decision-text">Sandwich diagonal or straight cut?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Diagonal looks fancier. Straight fits in lunchbox better. Pick your priority.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">38</span>
+            <div class="decision-text">Drink from left side or right side of cup?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Whatever side is closest to your mouth. This is not a real question.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">39</span>
+            <div class="decision-text">Eat the crust or leave it?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Eat it. It's food. Your parents are watching anyway.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">40</span>
+            <div class="decision-text">Fork tines facing up or down?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Down on the plate. Up if holding. Either way you get food in your mouth.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">41</span>
+            <div class="decision-text">Apple whole or sliced?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Depends on the apple's size and your mood. Both are valid.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">42</span>
+            <div class="decision-text">Banana from stem or tip end?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Stem end opens easier. Tip end is messier. Now you know.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">43</span>
+            <div class="decision-text">Watermelon seeds spit or swallow?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Spit. But if you swallow one by accident, your stomach won't explode.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">44</span>
+            <div class="decision-text">Scrambled or fried eggs?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Rotate based on mood. But if someone cooked for you, be grateful for either.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">45</span>
+            <div class="decision-text">Popcorn with butter or plain?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Movie theater = butter. Home microwave = personal preference. Done.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PLAY CATEGORY -->
+<div class="category">
+    <div class="category-header">
+        <span class="category-icon">🎮</span>
+        Play Decisions (46-60)
+    </div>
+    <div class="decisions-grid">
+        <div class="decision-card">
+            <span class="decision-number">46</span>
+            <div class="decision-text">Which video game to play first?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Whichever you want. It's your time. Just pick one and start.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">47</span>
+            <div class="decision-text">Game story mode or multiplayer?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Solo = story. Friends online = multiplayer. No friends available = story.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">48</span>
+            <div class="decision-text">Controller on lap or coffee table?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Lap for comfort. Table for space. Pick based on how you're sitting.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">49</span>
+            <div class="decision-text">Play inside or outside?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Weather decides. Inside is fine. Outside is fine. Both are play.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">50</span>
+            <div class="decision-text">Bicycle or scooter to the park?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Whichever is closer to the door. Or whichever you rode last time.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">51</span>
+            <div class="decision-text">Board game or card game?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Depends on table space and player count. Both are good.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">52</span>
+            <div class="decision-text">Read on couch or bed?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Couch for daytime. Bed for bedtime. Keeps sleep and play separated.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">53</span>
+            <div class="decision-text">Build with blocks or play with dolls?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Both teach different things. Alternate based on mood. That's the whole rule.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">54</span>
+            <div class="decision-text">Color with crayons or markers?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Crayons on paper. Markers on special paper. Check the label if unsure.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">55</span>
+            <div class="decision-text">Watch TV or listen to music?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">What matches your mood. TV for passive. Music for active. Both are rest.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">56</span>
+            <div class="decision-text">Legos sorted or mixed?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Sorted = faster building next time. Mixed = more creative chaos now.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">57</span>
+            <div class="decision-text">Play with one toy or spread them all out?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Young kids = one at a time focus. Creative play = spread it out. Your call.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">58</span>
+            <div class="decision-text">Jump on trampoline or play catch?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Both burn energy. Pick based on who else is playing with you.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">59</span>
+            <div class="decision-text">Arts and crafts inside or outside?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Inside = less mess to clean. Outside = more freedom. Both work.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">60</span>
+            <div class="decision-text">Puzzle piece from box or table?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Box for neatness. Table for access. No wrong answer here.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FAMILY CATEGORY -->
+<div class="category">
+    <div class="category-header">
+        <span class="category-icon">👨‍👩‍👧‍👦</span>
+        Family Decisions (61-75)
+    </div>
+    <div class="decisions-grid">
+        <div class="decision-card">
+            <span class="decision-number">61</span>
+            <div class="decision-text">Who sits where in the car?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Driver picks first. Others fill in. No arguing about the front seat rule.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">62</span>
+            <div class="decision-text">Who picks the movie on family night?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Rotate weekly. If you can't decide who's next, spin a wheel.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">63</span>
+            <div class="decision-text">Couch seat claimed or first come first serve?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">First come first serve. But if it's your regular spot, people learn not to take it.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">64</span>
+            <div class="decision-text">Light on or off for sleeping siblings?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Room owner's preference wins. It's their sleep space.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">65</span>
+            <div class="decision-text">Bath together or separate?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Depends on ages and willingness. Parents decide based on comfort level.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">66</span>
+            <div class="decision-text">Which parent helps with homework?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Whose patience is higher right now. That's the real answer.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">67</span>
+            <div class="decision-text">Who picks what's for dinner?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Rotate like movie night. If stuck, use a random picker and move on.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">68</span>
+            <div class="decision-text">TV on or off during dinner?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Off is better for conversation. On is okay for special occasions. Pick one.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">69</span>
+            <div class="decision-text">Family game night weekly or daily?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Weekly is sustainable. Daily sounds fun but fades fast. Quality beats frequency.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">70</span>
+            <div class="decision-text">Pets allowed on bed or not?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Pet owner's call. If pet is yours, you deal with the fur. Clear rules help.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">71</span>
+            <div class="decision-text">Door open or closed when dressing?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Kid's room = kid's choice. Bathroom = closed. General rule solved.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">72</span>
+            <div class="decision-text">Socks on or off in the house?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Your floor, your rule. Pick based on how clean the floor is.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">73</span>
+            <div class="decision-text">Pajamas or day clothes for movie marathon?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Pajamas. Always. It's part of the fun. This one is easy.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">74</span>
+            <div class="decision-text">Brush teeth before or after reading?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">After reading. You can read longer without bedtime creeping up.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">75</span>
+            <div class="decision-text">One story or two at bedtime?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Two on school nights. One on weekdays if bedtime is tight. Done.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SOCIAL CATEGORY -->
+<div class="category">
+    <div class="category-header">
+        <span class="category-icon">👯</span>
+        Social Decisions (76-85)
+    </div>
+    <div class="decisions-grid">
+        <div class="decision-card">
+            <span class="decision-number">76</span>
+            <div class="decision-text">Wave or say hi first?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Both work. Wave if you're far. Say hi if you're close. Your call.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">77</span>
+            <div class="decision-text">Invite friend over or go to their house?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Rotate. Home owner has home advantage. Whoever wants snacks less.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">78</span>
+            <div class="decision-text">Share toy now or after turn?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Let them finish first. Then it's your turn. Then you share again.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">79</span>
+            <div class="decision-text">Sit with friends or find new table?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Depends on energy level. Both are valid social choices. No wrong answer.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">80</span>
+            <div class="decision-text">Talk or listen right now?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">If you just talked, listen. If you just listened, talk. Balance works.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">81</span>
+            <div class="decision-text">High five, fist bump, or handshake?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">High five is universally acceptable. Fist bump is cool. Handshake is formal.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">82</span>
+            <div class="decision-text">Smile or nod when passing?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Both. Why not both? It's friendly and takes no effort.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">83</span>
+            <div class="decision-text">Join game in progress or start new one?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Ask first. If they say yes, join. If no, find another group or start your own.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">84</span>
+            <div class="decision-text">Compliment out loud or keep it internal?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Out loud feels good. But if it would embarrass someone, keep it inside.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">85</span>
+            <div class="decision-text">Ask to play or wait to be invited?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Ask. The worst they can say is no. And then you find another game.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- EVENING CATEGORY -->
+<div class="category">
+    <div class="category-header">
+        <span class="category-icon">🌙</span>
+        Evening Decisions (86-100)
+    </div>
+    <div class="decisions-grid">
+        <div class="decision-card">
+            <span class="decision-number">86</span>
+            <div class="decision-text">PJ top or bottom on first?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Whatever feels faster. You'll be wearing both either way.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">87</span>
+            <div class="decision-text">Brush teeth before or after pajamas?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">After pajamas means you're dressed. Before means less walking around. Your call.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">88</span>
+            <div class="decision-text">Hair brushed or just go to bed?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Brushed. Tomorrow you won't regret it. Tangled hair is a morning problem.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">89</span>
+            <div class="decision-text">Water bottle on nightstand or in kitchen?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Nightstand if you wake up thirsty. Kitchen if you want cold water in the morning.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">90</span>
+            <div class="decision-text">Nightlight on or off?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">If you need it, use it. If you don't, save the electricity. Your fear level decides.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">91</span>
+            <div class="decision-text">Door open or closed at night?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Crack it if you want to hear the house. Close it if you want quiet. Both fine.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">92</span>
+            <div class="decision-text">Stuffed animal under pillow or on bed?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Where you can reach it. That's the only rule that matters.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">93</span>
+            <div class="decision-text">Sleep with blanket or without?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Whatever keeps you comfortable. Temperature changes what you need.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">94</span>
+            <div class="decision-text">Story on phone/tablet or physical book?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Physical book is better for sleep. Screen time before bed can mess with sleep.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">95</span>
+            <div class="decision-text">One more minute or go to sleep now?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Go to sleep now. The minute will become ten. Just close your eyes.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">96</span>
+            <div class="decision-text">What to think about when falling asleep?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Nothing. That's the trick. Focus on your breathing. Let thoughts drift away.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">97</span>
+            <div class="decision-text">Alarm set or wake up naturally?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">School mornings = alarm. Weekends and summers = natural wake. Easy split.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">98</span>
+            <div class="decision-text">Curtains open or closed for morning light?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Open if you want to wake with sun. Closed if you want to sleep longer.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">99</span>
+            <div class="decision-text">Tomorrow's clothes laid out or not?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Laid out the night before saves morning stress. Do it. You'll thank yourself.</div>
+            </div>
+        </div>
+        <div class="decision-card">
+            <span class="decision-number">100</span>
+            <div class="decision-text">Remember today or let it go?</div>
+            <div class="stop-box">
+                <div class="stop-box-header">Stop Here</div>
+                <div class="stop-box-text">Let it go. Tomorrow is a new day. You're allowed to close the book on today.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cta-section">
+    <h2>Want More Decision Help?</h2>
+    <p>MagicDecisions.com has free online tools to help your family make quick decisions on everything from what's for dinner to who goes first. No signup needed.</p>
+    <a href="https://www.magicdecisions.com" class="cta-button">Try MagicDecisions Free</a>
+</div>
+
+<div class="footer">
+    <p>100 Tiny Decisions Guide | <a href="https://www.magicdecisions.com">MagicDecisions.com</a></p>
+    <p>Free to print, share, and use with your family.</p>
+</div>
+
+</body>
+</html>
