@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Sparkles, History, Share2, Copy, Check, RefreshCw, Trash2, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Home, Shield, FileText, Info, Mail, BookOpen, Wand2, Shirt, Brain, Target, CreditCard, Flame, Dices, ArrowRight } from 'lucide-react'
+import { Sparkles, History, Share2, Copy, Check, RefreshCw, Trash2, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Home, Shield, FileText, Info, Mail, BookOpen, Wand2, Shirt, Brain, Target, CreditCard, Flame, Dices, ArrowRight, Moon, Sun, Volume2, VolumeX, Monitor } from 'lucide-react'
 import SpinWheel from './SpinWheel'
 import CoinFlip from './CoinFlip'
 import RandomPicker from './RandomPicker'
@@ -17,11 +17,13 @@ import CognitiveBiasTest from './CognitiveBiasTest'
 import ShouldIBuyItCalculator from './ShouldIBuyItCalculator'
 import MagicChores from './MagicChores'
 import D20Roller from './D20Roller'
+import ScreenTimeSwap from './ScreenTimeSwap'
 import SEOContent from './SEOContent'
 import { PrivacyPolicy, TermsConditions, AboutPage, ContactPage } from './LegalPages'
+import { useTheme } from './contexts/ThemeContext'
 import './index.css'
 
-type Tool = 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner' | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit' | 'chores' | 'd20' | 'blog' | 'blogpost' | 'privacy' | 'terms' | 'about' | 'contact'
+type Tool = 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner' | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit' | 'chores' | 'd20' | 'screentime' | 'blog' | 'blogpost' | 'privacy' | 'terms' | 'about' | 'contact'
 
 interface HistoryItem {
   id: number;
@@ -390,6 +392,7 @@ function YesNoOracle() {
 }
 
 function App() {
+  const { theme, toggleTheme, soundEnabled, toggleSound } = useTheme();
   const [activeTool, setActiveTool] = useState<Tool>('home');
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
   const [blogPostSlug, setBlogPostSlug] = useState<string | null>(null);
@@ -429,6 +432,7 @@ function App() {
       color: 'red',
       tools: [
         { id: 'chores' as Tool, name: 'Magic Chores', icon: Flame, color: 'red' },
+        { id: 'screentime' as Tool, name: 'Screen Swap', icon: Monitor, color: 'cyan' },
       ]
     },
     {
@@ -484,6 +488,24 @@ function App() {
               <span className="text-2xl">✨</span>
               <span className="font-semibold text-slate-800 text-lg hidden sm:inline">Magic Decisions</span>
             </button>
+
+            {/* Theme & Sound Toggles */}
+            <div className="flex items-center gap-1">
+              <button
+                onClick={toggleSound}
+                className="p-2 rounded-lg text-slate-500 hover:text-slate-700 hover:bg-slate-100 transition-all"
+                title={soundEnabled ? 'Mute sounds' : 'Enable sounds'}
+              >
+                {soundEnabled ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
+              </button>
+              <button
+                onClick={toggleTheme}
+                className="p-2 rounded-lg text-slate-500 hover:text-slate-700 hover:bg-slate-100 transition-all"
+                title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+              >
+                {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+              </button>
+            </div>
 
             {/* Category Dropdowns */}
             <div className="flex items-center gap-1">
@@ -560,6 +582,7 @@ function App() {
         {activeTool === 'buyit' && <ShouldIBuyItCalculator onNavigate={(id) => setActiveTool(id as Tool)} />}
         {activeTool === 'chores' && <MagicChores onNavigate={(id) => setActiveTool(id as Tool)} />}
         {activeTool === 'd20' && <D20Roller onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'screentime' && <ScreenTimeSwap />}
         {activeTool === 'blog' && <BlogPage onNavigateToPost={(slug) => { setBlogPostSlug(slug); setActiveTool('blogpost'); }} />}
         {activeTool === 'blogpost' && blogPostSlug && <BlogPost slug={blogPostSlug} onBack={() => { setActiveTool('blog'); setBlogPostSlug(null); }} />}
         {activeTool === 'privacy' && <PrivacyPolicy onNavigate={setActiveTool} />}
