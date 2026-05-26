@@ -1,44 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /* Cognitive Clarity Light Theme */
-  --primary: #1E293B;
-  --bg-base: #F8FAFC;
-  --bg-card: #FFFFFF;
-  --accent: #10B981;
-  --accent-dark: #059669;
-  --secondary: #F97316;
-  --text-primary: #1E293B;
-  --text-secondary: #64748B;
-  --text-muted: #94A3B8;
-  --border: #E2E8F0;
-  --shadow: rgba(0, 0, 0, 0.05);
-  --nav-bg: rgba(255, 255, 255, 0.95);
-  --nav-border: #e2e8f0;
+  /* Magic Decisions — Warm Paper Theme */
+  --primary: #1A1A2E;
+  --bg-base: #FAF6F0;
+  --bg-card: #FFFBF7;
+  --accent: #E8B931;
+  --accent-dark: #D4A017;
+  --secondary: #5BA5A5;
+  --secondary-dark: #3D8888;
+  --highlight: #F09080;
+  --text-primary: #1A1A2E;
+  --text-secondary: #6B5E4E;
+  --text-muted: #A09080;
+  --border: #E5DDD1;
+  --shadow: rgba(154, 130, 80, 0.12);
+  --nav-bg: rgba(255, 251, 247, 0.95);
+  --nav-border: #E5DDD1;
 }
 
 [data-theme="dark"] {
-  /* Cognitive Clarity Dark Theme */
-  --primary: #F8FAFC;
-  --bg-base: #0F172A;
-  --bg-card: #1E293B;
-  --accent: #10B981;
-  --accent-dark: #059669;
-  --secondary: #F97316;
-  --text-primary: #F8FAFC;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
-  --border: #334155;
-  --shadow: rgba(0, 0, 0, 0.3);
-  --nav-bg: rgba(30, 41, 59, 0.95);
-  --nav-border: #334155;
+  /* Dark mode — deep ink with goldenrod accents */
+  --primary: #F0EBE3;
+  --bg-base: #1A1A2E;
+  --bg-card: #252540;
+  --accent: #E8B931;
+  --accent-dark: #D4A017;
+  --secondary: #5BA5A5;
+  --secondary-dark: #7FC4C4;
+  --highlight: #F09080;
+  --text-primary: #F0EBE3;
+  --text-secondary: #A7D7D7;
+  --text-muted: #6B8090;
+  --border: #2F2F4A;
+  --shadow: rgba(0, 0, 0, 0.4);
+  --nav-bg: rgba(26, 26, 46, 0.95);
+  --nav-border: #2F2F4A;
 }
 
-/* Dark mode background */
 [data-theme="dark"] body {
   background: var(--bg-base);
   color: var(--text-primary);
@@ -60,7 +63,7 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Nunito', 'Georgia', 'Cambria', 'Times New Roman', serif;
   background: var(--bg-base);
   color: var(--text-primary);
   min-height: 100vh;
@@ -68,7 +71,7 @@ body {
   line-height: 1.7;
 }
 
-/* Light Background - No stars needed in light mode */
+/* Light Background */
 .stars-bg {
   display: none;
 }
@@ -77,7 +80,15 @@ body {
   display: none;
 }
 
-/* Crystal Orb - Updated for light theme */
+/* Warm shadows */
+.shadow-warm { box-shadow: 0 4px 24px rgba(154, 130, 80, 0.12); }
+.shadow-warm-md { box-shadow: 0 8px 32px rgba(154, 130, 80, 0.16); }
+.shadow-warm-lg { box-shadow: 0 16px 48px rgba(154, 130, 80, 0.20); }
+.shadow-warm-gold { box-shadow: 0 4px 20px rgba(232, 185, 49, 0.25); }
+.shadow-warm-teal { box-shadow: 0 4px 20px rgba(91, 165, 165, 0.25); }
+.shadow-warm-coral { box-shadow: 0 4px 20px rgba(240, 144, 128, 0.25); }
+
+/* Crystal Orb — Warm theme */
 .crystal-orb {
   position: relative;
   width: 280px;
@@ -85,11 +96,11 @@ body {
   border-radius: 50%;
   background:
     radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.6) 0%, transparent 40%),
-    radial-gradient(circle at 70% 70%, rgba(16, 185, 129, 0.2) 0%, transparent 50%),
-    linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+    radial-gradient(circle at 70% 70%, rgba(91, 165, 165, 0.2) 0%, transparent 50%),
+    linear-gradient(135deg, #5BA5A5 0%, #3D8888 50%, #2F6B6B 100%);
   box-shadow:
-    0 8px 32px rgba(16, 185, 129, 0.25),
-    0 16px 48px rgba(16, 185, 129, 0.15),
+    0 8px 32px rgba(91, 165, 165, 0.25),
+    0 16px 48px rgba(91, 165, 165, 0.15),
     inset 0 0 32px rgba(255, 255, 255, 0.3);
   animation: float 6s ease-in-out infinite;
   cursor: pointer;
@@ -99,8 +110,8 @@ body {
 .crystal-orb:hover {
   transform: scale(1.02);
   box-shadow:
-    0 12px 40px rgba(16, 185, 129, 0.35),
-    0 20px 56px rgba(16, 185, 129, 0.2),
+    0 12px 40px rgba(91, 165, 165, 0.35),
+    0 20px 56px rgba(91, 165, 165, 0.2),
     inset 0 0 40px rgba(255, 255, 255, 0.4);
 }
 
@@ -126,6 +137,37 @@ body {
   90% { transform: translateX(-2px) rotate(0); }
 }
 
+/* Warm spin animation */
+@keyframes warm-spin {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+/* Sparkle burst */
+@keyframes sparkle-burst {
+  0% { transform: scale(0) rotate(0deg); opacity: 1; }
+  100% { transform: scale(1.5) rotate(180deg); opacity: 0; }
+}
+
+/* Gentle bounce */
+@keyframes gentle-bounce {
+  0% { transform: scale(0.85); opacity: 0; }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Fade up */
+@keyframes fade-up {
+  0% { transform: translateY(12px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Slide right */
+@keyframes slide-right {
+  0% { transform: translateX(-12px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
 /* Inner Glow */
 .orb-inner {
   position: absolute;
@@ -133,7 +175,7 @@ body {
   border-radius: 50%;
   background:
     radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.5) 0%, transparent 50%),
-    radial-gradient(circle at 60% 60%, rgba(16, 185, 129, 0.15) 0%, transparent 40%);
+    radial-gradient(circle at 60% 60%, rgba(91, 165, 165, 0.15) 0%, transparent 40%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,7 +195,7 @@ body {
   to { transform: rotate(360deg); }
 }
 
-/* Mystical Particles - Subtle for light theme */
+/* Mystical Particles */
 .particles {
   position: absolute;
   inset: -50px;
@@ -164,7 +206,7 @@ body {
   position: absolute;
   width: 4px;
   height: 4px;
-  background: var(--accent);
+  background: var(--secondary);
   border-radius: 50%;
   opacity: 0;
   animation: floatUp 3s ease-out infinite;
@@ -196,22 +238,23 @@ body {
 
 .answer-text {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   animation: fadeIn 0.5s ease-out;
 }
 
 .answer-text.yes {
-  color: #10b981;
+  color: var(--secondary);
 }
 
 .answer-text.no {
-  color: #ef4444;
+  color: var(--highlight);
 }
 
 .answer-text.maybe {
-  color: #f59e0b;
+  color: var(--accent);
 }
 
 @keyframes fadeIn {
@@ -225,49 +268,49 @@ body {
   }
 }
 
-/* Input Styles - Light theme */
+/* Input Styles — Warm theme */
 .mystical-input {
   width: 100%;
   padding: 1rem 1.5rem;
-  background: #FFFFFF;
+  background: #FFFBF7;
   border: 2px solid var(--border);
   border-radius: 1rem;
   color: var(--text-primary);
   font-size: 1rem;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Nunito', sans-serif;
   transition: all 0.3s ease;
-  box-shadow: var(--shadow);
+  box-shadow: 0 2px 8px var(--shadow);
 }
 
 .mystical-input:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+  box-shadow: 0 0 0 3px rgba(232, 185, 49, 0.20);
 }
 
 .mystical-input::placeholder {
   color: var(--text-muted);
 }
 
-/* Button Styles - Sage Green CTA */
+/* Button Styles — Warm goldenrod CTA */
 .mystical-btn {
   padding: 1rem 2.5rem;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+  background: linear-gradient(135deg, #E8B931 0%, #D4A017 100%);
   border: none;
   border-radius: 2rem;
-  color: white;
+  color: #1A1A2E;
   font-size: 1.1rem;
-  font-weight: 600;
-  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 4px 16px rgba(232, 185, 49, 0.35);
 }
 
 .mystical-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(16, 185, 129, 0.4);
-  background: linear-gradient(135deg, var(--accent-dark) 0%, #047857 100%);
+  box-shadow: 0 6px 24px rgba(232, 185, 49, 0.45);
+  background: linear-gradient(135deg, #D4A017 0%, #B8860B 100%);
 }
 
 .mystical-btn:active {
@@ -280,39 +323,77 @@ body {
   transform: none;
 }
 
-/* Card Styles - Clean light cards */
+/* Card Styles — Warm cream cards */
 .mystical-card {
-  background: #FFFFFF;
+  background: #FFFBF7;
   border: 1px solid var(--border);
   border-radius: 1.5rem;
   box-shadow: 0 4px 24px var(--shadow);
 }
 
+/* Warm tool card */
+.tool-card {
+  background: #FFFBF7;
+  border: 1.5px solid var(--border);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 24px var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(154, 130, 80, 0.16);
+  border-color: var(--accent);
+}
+
+/* Parent note callout — printable style */
+.parent-note {
+  background: #FFFBF7;
+  border: 2px dashed var(--accent);
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.parent-note::before {
+  content: '📋 Parent Note';
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  position: absolute;
+  top: -0.6rem;
+  left: 1rem;
+  background: #FFFBF7;
+  padding: 0 0.5rem;
+}
+
+/* Printable tool panel */
+.tool-panel {
+  border: 2px solid var(--border);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  background: #FFFBF7;
+}
+
 /* History */
 .history-item {
   padding: 0.75rem 1rem;
-  background: rgba(16, 185, 129, 0.08);
+  background: rgba(232, 185, 49, 0.08);
   border-radius: 0.75rem;
   border-left: 3px solid var(--accent);
-  animation: slideIn 0.3s ease-out;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  animation: slide-right 0.3s ease-out;
 }
 
 /* Share Buttons */
 .share-btn {
   padding: 0.5rem 1rem;
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  background: rgba(232, 185, 49, 0.1);
+  border: 1px solid rgba(232, 185, 49, 0.2);
   border-radius: 2rem;
   color: var(--text-primary);
   font-size: 0.875rem;
@@ -321,28 +402,12 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  font-family: 'Nunito', sans-serif;
 }
 
 .share-btn:hover {
-  background: rgba(16, 185, 129, 0.2);
+  background: rgba(232, 185, 49, 0.2);
   transform: scale(1.05);
-}
-
-/* Responsive */
-@media (max-width: 640px) {
-  .crystal-orb {
-    width: 220px;
-    height: 220px;
-  }
-
-  .answer-text {
-    font-size: 1.5rem;
-  }
-
-  .mystical-btn {
-    padding: 0.875rem 2rem;
-    font-size: 1rem;
-  }
 }
 
 /* Glow effect on answer */
@@ -355,7 +420,7 @@ body {
   50% { filter: drop-shadow(0 0 24px currentColor); }
 }
 
-/* Scrollbar - Light theme */
+/* Scrollbar — Warm theme */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -410,7 +475,7 @@ body {
 
 /* Text Selection */
 ::selection {
-  background: rgba(16, 185, 129, 0.3);
+  background: rgba(232, 185, 49, 0.3);
   color: var(--text-primary);
 }
 
@@ -422,7 +487,7 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
-/* Dark mode nav */
+/* Dark mode overrides */
 [data-theme="dark"] nav {
   background: var(--nav-bg) !important;
   border-color: var(--nav-border) !important;
@@ -432,14 +497,15 @@ textarea:focus-visible {
   color: var(--text-primary) !important;
 }
 
-/* Dark mode cards */
-[data-theme="dark"] .mystical-card {
-  background: var(--bg-card);
+[data-theme="dark"] .mystical-card,
+[data-theme="dark"] .tool-card,
+[data-theme="dark"] .tool-panel {
+  background: #252540;
   border-color: var(--border);
 }
 
 [data-theme="dark"] .mystical-input {
-  background: var(--bg-card);
+  background: #252540;
   border-color: var(--border);
   color: var(--text-primary);
 }
@@ -448,26 +514,47 @@ textarea:focus-visible {
   color: var(--text-muted);
 }
 
-/* Dark mode badges */
-[data-theme="dark"] .bg-emerald-100,
-[data-theme="dark"] .bg-purple-100,
-[data-theme="dark"] .bg-amber-100,
-[data-theme="dark"] .bg-blue-100 {
-  opacity: 0.85;
+[data-theme="dark"] .parent-note {
+  background: #252540;
 }
 
-/* Dark mode dropdown menus */
-[data-theme="dark"] .dropdown-menu {
-  background: var(--bg-card);
-  border-color: var(--border);
+[data-theme="dark"] .parent-note::before {
+  background: #252540;
 }
 
-[data-theme="dark"] .dropdown-item {
-  color: var(--text-primary);
+[data-theme="dark"] .share-btn {
+  background: rgba(232, 185, 49, 0.1);
+  border-color: rgba(232, 185, 49, 0.15);
 }
 
-[data-theme="dark"] .dropdown-item:hover {
-  background: var(--bg-base);
+[data-theme="dark"] .history-item {
+  background: rgba(232, 185, 49, 0.06);
+}
+
+[data-theme="dark"] .crystal-orb {
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 70% 70%, rgba(91, 165, 165, 0.15) 0%, transparent 50%),
+    linear-gradient(135deg, #3D8888 0%, #2F6B6B 50%, #1F4B4B 100%);
+}
+
+/* Warm badge styles */
+.badge-teal {
+  background: rgba(91, 165, 165, 0.12);
+  color: #3D8888;
+  border: 1px solid rgba(91, 165, 165, 0.25);
+}
+
+.badge-gold {
+  background: rgba(232, 185, 49, 0.12);
+  color: #B8860B;
+  border: 1px solid rgba(232, 185, 49, 0.25);
+}
+
+.badge-coral {
+  background: rgba(240, 144, 128, 0.12);
+  color: #C86050;
+  border: 1px solid rgba(240, 144, 128, 0.25);
 }
 
 /* Theme toggle button */
@@ -499,6 +586,66 @@ textarea:focus-visible {
   display: none;
 }
 
-[data-theme="dark"] .theme-toggle .sun-icon {
-  display: block;
+/* Responsive */
+@media (max-width: 640px) {
+  .crystal-orb {
+    width: 220px;
+    height: 220px;
+  }
+
+  .answer-text {
+    font-size: 1.5rem;
+  }
+
+  .mystical-btn {
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .stars-bg,
+  .stars,
+  .particles,
+  .theme-toggle,
+  .share-btn {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: #1A1A2E;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .mystical-card,
+  .tool-card,
+  .tool-panel,
+  .parent-note {
+    background: white;
+    border: 1.5px solid #E5DDD1;
+    box-shadow: none;
+    break-inside: avoid;
+    border-radius: 0.75rem;
+  }
+
+  .mystical-btn {
+    background: #E8B931;
+    color: #1A1A2E;
+    box-shadow: none;
+  }
+
+  .crystal-orb {
+    animation: none;
+    box-shadow: 0 0 0 2px #E5DDD1;
+  }
+
+  .parent-note {
+    border: 1.5px dashed #D4A017;
+  }
+
+  h1, h2, h3 {
+    color: #1A1A2E;
+  }
 }
