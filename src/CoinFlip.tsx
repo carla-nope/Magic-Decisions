@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Copy, Check, Share2, RotateCcw, Sparkles, ArrowRight, ChevronRight } from 'lucide-react'
+import { playCoinFlip, playMagicChime, playClick } from './lib/sounds'
 import './index.css'
 
 interface CoinFlipProps {
@@ -36,6 +37,7 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
   const flipCoin = useCallback(() => {
     if (isFlipping) return;
 
+    playCoinFlip();
     setIsFlipping(true);
     setResult(null);
 
@@ -43,6 +45,7 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
       const side: 'heads' | 'tails' = Math.random() > 0.5 ? 'heads' : 'tails';
       setResult(side);
       setIsFlipping(false);
+      playMagicChime();
       setHistory(prev => [{
         side,
         timestamp: new Date()

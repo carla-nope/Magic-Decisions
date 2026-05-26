@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react'
 import { Dices, RefreshCw, Sparkles, ArrowRight, Lightbulb, Users, BookOpen, PenTool, Home, AlertCircle } from 'lucide-react'
 import SEOContent from './SEOContent'
+import { playD20Roll, playFanfare } from './lib/sounds'
 import './index.css'
 
 // Decision prompts mapped to 1-20
@@ -58,6 +59,9 @@ export default function D20Roller({ onNavigate }: D20RollerProps) {
     setIsRolling(true)
     setHasRolled(true)
 
+    // Play dice roll sound
+    playD20Roll()
+
     // Quick animation cycle through numbers
     let cycles = 0
     const maxCycles = 8
@@ -66,8 +70,13 @@ export default function D20Roller({ onNavigate }: D20RollerProps) {
       cycles++
       if (cycles >= maxCycles) {
         clearInterval(interval)
-        setResult(Math.floor(Math.random() * 20) + 1)
+        const finalResult = Math.floor(Math.random() * 20) + 1
+        setResult(finalResult)
         setIsRolling(false)
+        // Play fanfare for natural 20
+        if (finalResult === 20) {
+          playFanfare()
+        }
       }
     }, 80)
 

@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Sparkles, Wand2, Plus, Trash2, Check, Clock, Star, Crown, Flame, ChevronDown, ChevronUp, Castle, Shield, Swords, Timer, Gift, Info, RefreshCw, ArrowRight } from 'lucide-react'
+import { playChoreSpin, playClick } from './lib/sounds'
 import './index.css'
 // ============================================
 // MOTIVATIONAL QUOTES (Magical + Plain)
@@ -206,6 +207,7 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
   const addTask = useCallback((originalName: string, magicName: string, category: MagicCategory) => {
     if (tasks.some(t => t.originalName.toLowerCase() === originalName.toLowerCase())) return false
 
+    playClick();
     const newTask: MagicTask = {
       id: crypto.randomUUID(),
       originalName,
@@ -218,10 +220,12 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
   }, [tasks])
 
   const removeTask = (id: string) => {
+    playClick();
     setTasks(prev => prev.filter(t => t.id !== id))
   }
 
   const toggleComplete = (id: string) => {
+    playClick();
     setTasks(prev => prev.map(t =>
       t.id === id ? { ...t, completed: !t.completed } : t
     ))
@@ -232,10 +236,12 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
   const summonQuest = () => {
     const incompleteTasks = tasks.filter(t => !t.completed)
     if (incompleteTasks.length === 0) return
+    playClick();
     const randomTask = incompleteTasks[Math.floor(Math.random() * incompleteTasks.length)]
     setSummonedTask(randomTask)
     setShowQuestModal(true)
     setGameState('estimating')
+    playChoreSpin();
   }
 
   // Timer Functions
@@ -244,6 +250,7 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
       alert('Please enter a valid number of minutes')
       return
     }
+    playClick();
     setGameState('running')
     setElapsedSeconds(0)
 
@@ -254,6 +261,7 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
   }
 
   const stopTimer = () => {
+    playClick();
     if (timerInterval) {
       clearInterval(timerInterval)
       setTimerInterval(null)
@@ -268,6 +276,7 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
   }
 
   const finishQuest = () => {
+    playClick();
     if (summonedTask) {
       // Mark task complete
       setTasks(prev => prev.map(t =>
@@ -304,6 +313,7 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
   }
 
   const resetQuest = () => {
+    playClick();
     if (timerInterval) {
       clearInterval(timerInterval)
       setTimerInterval(null)

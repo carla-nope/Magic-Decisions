@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react'
 import { Hand, RefreshCw, Copy, Check, Share2, Trophy, Target, Zap, Sparkles, ArrowRight } from 'lucide-react'
+import { playRPSSting, playClick } from './lib/sounds'
 import './index.css'
 
 interface RockPaperScissorsProps {
@@ -53,6 +54,7 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
   const play = useCallback((choice: Choice) => {
     if (isPlaying) return;
 
+    playClick();
     setIsPlaying(true);
     setPlayerChoice(choice);
     setResult(null);
@@ -86,6 +88,7 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
               return newScore;
             });
             setStreak(0);
+            playRPSSting();
           } else if (choices.find(c => c.id === choice)?.beats === finalChoice) {
             setResult('win');
             setResultMessage(resultMessages.win[Math.floor(Math.random() * resultMessages.win.length)]);
@@ -97,6 +100,7 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
             setStreak(prev => prev + 1);
             setShowConfetti(true);
             setTimeout(() => setShowConfetti(false), 3000);
+            playRPSSting();
           } else {
             setResult('lose');
             setResultMessage(resultMessages.lose[Math.floor(Math.random() * resultMessages.lose.length)]);
@@ -106,6 +110,7 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
               return newScore;
             });
             setStreak(0);
+            playRPSSting();
           }
           setIsPlaying(false);
         }, 200);
@@ -115,6 +120,7 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
 
   // Reset game
   const resetGame = () => {
+    playClick();
     setScore({ player: 0, computer: 0, draw: 0 });
     setStreak(0);
     localStorage.removeItem('rpsScores');
@@ -123,6 +129,7 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
   // Copy result
   const handleCopyResult = async () => {
     if (!result || !playerChoice) return;
+    playClick();
     const text = `🎮 Rock Paper Scissors: I chose ${playerChoice}! ${result === 'win' ? 'I WON!' : result === 'lose' ? 'I lost...' : 'It\'s a draw!'}`;
     await navigator.clipboard.writeText(text);
     setCopied(true);
@@ -132,6 +139,7 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
   // Share result
   const handleShare = () => {
     if (!result || !playerChoice) return;
+    playClick();
     const text = `🎮 Rock Paper Scissors! I chose ${playerChoice} and ${result === 'win' ? 'WON!' : result === 'lose' ? 'lost...' : 'it\'s a draw!'} Can you beat me?`;
     if (navigator.share) {
       navigator.share({ title: 'Rock Paper Scissors', text });

@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react'
 import { User, Plus, Trash2, RefreshCw, Copy, Check, Share2, Shuffle, Users, Sparkles, ArrowRight } from 'lucide-react'
+import { playReveal, playClick } from './lib/sounds'
 import './index.css'
 
 interface NamePickerProps {
@@ -7,6 +8,8 @@ interface NamePickerProps {
 }
 
 function NamePicker({ onNavigate }: NamePickerProps) {
+  const playClickSound = useCallback(() => playClick(), [])
+  const playRevealSound = useCallback(() => playReveal(), [])
   const [names, setNames] = useState<string[]>([]);
   const [newName, setNewName] = useState('');
   const [isPicking, setIsPicking] = useState(false);
@@ -25,6 +28,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
       setNewName('');
       return;
     }
+    playClick();
     setNames([...names, newName.trim()]);
     setNewName('');
   }, [newName, names]);
@@ -42,6 +46,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
 
   // Remove name
   const removeName = (name: string) => {
+    playClick();
     setNames(names.filter(n => n !== name));
   };
 
@@ -49,6 +54,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
   const pickRandom = useCallback(() => {
     if (isPicking || names.length < 1) return;
 
+    playClick();
     setIsPicking(true);
     setSelectedName(null);
     setShowConfetti(false);
@@ -74,6 +80,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
         setPickedNames([...pickedNames, finalName]);
         setIsPicking(false);
         setShowConfetti(true);
+        playRevealSound();
         setTimeout(() => setShowConfetti(false), 3000);
       }
     };
@@ -85,6 +92,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
   const assignTeams = useCallback(() => {
     if (names.length < 2 || teamCount < 2) return;
 
+    playClick();
     setIsPicking(true);
 
     // Shuffle names
@@ -106,6 +114,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
     setTimeout(() => {
       setTeams(newTeams);
       setIsPicking(false);
+      playReveal();
       setShowConfetti(true);
       setTimeout(() => setShowConfetti(false), 3000);
     }, 1500);
@@ -113,6 +122,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
 
   // Reset
   const resetAll = () => {
+    playClick();
     setNames([]);
     setSelectedName(null);
     setPickedNames([]);
@@ -122,6 +132,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
   // Copy result
   const handleCopyResult = async () => {
     if (!selectedName) return;
+    playClick();
     const text = `🎯 Random Name Picker chose: "${selectedName}"`;
     await navigator.clipboard.writeText(text);
     setCopied(true);
@@ -131,6 +142,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
   // Share result
   const handleShare = () => {
     if (!selectedName) return;
+    playClick();
     const text = `🎯 Random Name Picker just picked "${selectedName}"!`;
     if (navigator.share) {
       navigator.share({ title: 'Random Name Picker', text });
@@ -141,6 +153,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
 
   // Copy teams
   const handleCopyTeams = async () => {
+    playClick();
     let text = 'Team Assignment:\n';
     Object.entries(teams).forEach(([team, members]) => {
       text += `${team}: ${members.join(', ')}\n`;
@@ -173,21 +186,21 @@ function NamePicker({ onNavigate }: NamePickerProps) {
         {/* Mode Toggle */}
         <div className="flex gap-2 mb-6">
           <button
-            onClick={() => { setMode('pick-one'); setTeams({}); }}
+            onClick={() => { playClickSound(); setMode('pick-one'); setTeams({}); }}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
               mode === 'pick-one'
                 ? 'bg-rose-100 text-rose-700 border border-rose-200'
-                : 'text-slate-500 hover:text-slate-700 hover:bg-slate-100'
+                : 'text-[#A09080] hover:text-[#6B5E4E] hover:bg-cream-100'
             }`}
           >
             <User className="w-4 h-4 inline mr-1" /> Pick One
           </button>
           <button
-            onClick={() => { setMode('assign-teams'); setSelectedName(null); }}
+            onClick={() => { playClickSound(); setMode('assign-teams'); setSelectedName(null); }}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
               mode === 'assign-teams'
                 ? 'bg-rose-100 text-rose-700 border border-rose-200'
-                : 'text-slate-500 hover:text-slate-700 hover:bg-slate-100'
+                : 'text-[#A09080] hover:text-[#6B5E4E] hover:bg-cream-100'
             }`}
           >
             <Users className="w-4 h-4 inline mr-1" /> Teams
@@ -287,11 +300,11 @@ function NamePicker({ onNavigate }: NamePickerProps) {
           {/* Result Actions */}
           {selectedName && !isPicking && mode === 'pick-one' && (
             <div className="flex items-center gap-3 justify-center mt-4 animate-fade-in">
-              <button onClick={handleShare} className="share-btn">
+              <button onClick={() => { playClickSound(); handleShare(); }} className="share-btn">
                 <Share2 className="w-4 h-4" />
                 Share
               </button>
-              <button onClick={handleCopyResult} className="share-btn">
+              <button onClick={() => { playClickSound(); handleCopyResult(); }} className="share-btn">
                 {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
                 {copied ? 'Copied!' : 'Copy'}
               </button>
@@ -304,7 +317,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
 
           {Object.keys(teams).length > 0 && !isPicking && (
             <div className="flex items-center gap-3 justify-center mt-4 animate-fade-in">
-              <button onClick={handleCopyTeams} className="share-btn">
+              <button onClick={() => { playClickSound(); handleCopyTeams(); }} className="share-btn">
                 {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
                 {copied ? 'Copied!' : 'Copy Teams'}
               </button>
@@ -356,7 +369,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
               <span>Names ({names.length})</span>
               {names.length > 0 && (
                 <button
-                  onClick={resetAll}
+                  onClick={() => { playClickSound(); resetAll(); }}
                   className="text-sm text-rose-400 hover:text-rose-300"
                 >
                   Clear All
@@ -374,7 +387,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
                 placeholder="Enter a name..."
                 className="mystical-input flex-1 text-sm"
               />
-              <button onClick={addName} className="name-btn px-4 text-sm">
+              <button onClick={() => { playClickSound(); addName(); }} className="name-btn px-4 text-sm">
                 <Plus className="w-4 h-4" />
               </button>
             </div>
@@ -403,8 +416,8 @@ function NamePicker({ onNavigate }: NamePickerProps) {
                   >
                     {name}
                     <button
-                      onClick={() => removeName(name)}
-                      className="hover:text-red-400 ml-1"
+                      onClick={() => { playClickSound(); removeName(name); }}
+                      className="hover:text-highlight-500 ml-1"
                     >
                       <Trash2 className="w-3 h-3" />
                     </button>
@@ -440,7 +453,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
 
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div>
-                <h3 className="text-lg font-semibold text-emerald-400 mb-2">Pros</h3>
+                <h3 className="text-lg font-semibold text-secondary-400 mb-2">Pros</h3>
                 <ul className="text-gray-400 text-sm space-y-1">
                   <li>✓ Pick single names or assign to teams</li>
                   <li>✓ Add names one-by-one or bulk paste</li>
@@ -508,8 +521,8 @@ function NamePicker({ onNavigate }: NamePickerProps) {
                 className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-rose-400 cursor-pointer bg-transparent"
               >
                 <span className="text-3xl mb-2 block">{tool.emoji}</span>
-                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
-                <p className="text-slate-500 text-xs">{tool.description}</p>
+                <h3 className="font-semibold text-[#1A1A2E] mb-1">{tool.name}</h3>
+                <p className="text-[#A09080] text-xs">{tool.description}</p>
               </button>
             ))}
           </div>
@@ -521,10 +534,10 @@ function NamePicker({ onNavigate }: NamePickerProps) {
             <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-rose-100 flex items-center justify-center">
               <Sparkles className="w-8 h-8 text-rose-600" />
             </div>
-            <h2 className="text-xl font-bold text-slate-800 mb-3">
+            <h2 className="text-xl font-bold text-[#1A1A2E] mb-3">
               Want to Help Kids Understand Fair Decision-Making?
             </h2>
-            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            <p className="text-[#6B5E4E] text-sm mb-6">
               Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
             </p>
             <a

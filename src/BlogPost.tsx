@@ -231,8 +231,8 @@ function BlogPost({ slug, onBack }: BlogPostProps) {
       <div className="min-h-screen relative">
         <div className="stars-bg" />
         <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-8">
-          <div className="flex items-center gap-3 text-slate-500">
-            <div className="w-6 h-6 border-2 border-slate-300 border-t-slate-600 rounded-full animate-spin" />
+          <div className="flex items-center gap-3 text-[#A09080]">
+            <div className="w-6 h-6 border-2 border-[#E5DDD1] border-t-[#1A1A2E] rounded-full animate-spin" />
             <span>Loading post...</span>
           </div>
         </div>
@@ -246,8 +246,8 @@ function BlogPost({ slug, onBack }: BlogPostProps) {
         <div className="stars-bg" />
         <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-8">
           <div className="mystical-card p-8 text-center max-w-md">
-            <h2 className="text-2xl font-bold text-slate-800 mb-4">Post Not Found</h2>
-            <p className="text-slate-600 mb-6">The post you're looking for doesn't exist or has been removed.</p>
+            <h2 className="text-2xl font-bold text-[#1A1A2E] mb-4">Post Not Found</h2>
+            <p className="text-[#6B5E4E] mb-6">The post you're looking for doesn't exist or has been removed.</p>
             <button onClick={onBack} className="mystical-btn">
               Back to Blog
             </button>
@@ -268,7 +268,7 @@ function BlogPost({ slug, onBack }: BlogPostProps) {
         <div className="w-full max-w-3xl mb-6">
           <button
             onClick={onBack}
-            className="flex items-center gap-2 text-slate-600 hover:text-slate-800 transition-colors"
+            className="flex items-center gap-2 text-[#6B5E4E] hover:text-[#1A1A2E] transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Blog</span>
@@ -284,21 +284,21 @@ function BlogPost({ slug, onBack }: BlogPostProps) {
                 <div className={`w-10 h-10 rounded-lg bg-${color}-100 flex items-center justify-center`}>
                   <Icon className={`w-5 h-5 text-${color}-600`} />
                 </div>
-                <span className="text-sm font-medium text-slate-400 uppercase tracking-wide">{post.category}</span>
+                <span className="text-sm text-[#A09080] uppercase tracking-wide">{post.category}</span>
               </div>
 
-              <h1 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4 leading-tight">
+              <h1 className="text-3xl md:text-4xl font-bold text-[#1A1A2E] mb-4 leading-tight">
                 {post.title}
               </h1>
 
               {post.excerpt && (
-                <p className="text-lg text-slate-600 mb-6 leading-relaxed">
+                <p className="text-lg text-[#6B5E4E] mb-6 leading-relaxed">
                   {post.excerpt}
                 </p>
               )}
 
               {/* Meta */}
-              <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500 pb-6 border-b border-slate-200">
+              <div className="flex flex-wrap items-center gap-4 text-sm text-[#A09080] pb-6 border-b border-[#E5DDD1]">
                 <span className="flex items-center gap-1.5">
                   <Calendar className="w-4 h-4" />
                   {formatDate(post.date)}
@@ -317,31 +317,31 @@ function BlogPost({ slug, onBack }: BlogPostProps) {
             {/* Content */}
             <div className="p-8">
               <div
-                className="prose prose-slate max-w-none
-                  prose-headings:text-slate-800 prose-headings:font-bold
+                className="prose prose-[#6B5E4E] max-w-none
+                  prose-headings:text-[#1A1A2E] prose-headings:font-bold
                   prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4
                   prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3
-                  prose-p:text-slate-600 prose-p:leading-relaxed prose-p:mb-4
-                  prose-a:text-emerald-600 prose-a:no-underline hover:prose-a:underline
-                  prose-strong:text-slate-700 prose-strong:font-semibold
-                  prose-ul:text-slate-600 prose-li:mb-2
-                  prose-ol:text-slate-600
-                  prose-blockquote:border-l-4 prose-blockquote:border-emerald-500 prose-blockquote:bg-slate-50 prose-blockquote:py-2 prose-blockquote:px-4
-                  prose-code:text-emerald-600 prose-code:bg-slate-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
-                  prose-pre:bg-slate-800 prose-pre:text-slate-100"
+                  prose-p:text-[#6B5E4E] prose-p:leading-relaxed prose-p:mb-4
+                  prose-a:text-secondary-400 prose-a:no-underline hover:prose-a:underline
+                  prose-strong:text-[#1A1A2E] prose-strong:font-semibold
+                  prose-ul:text-[#6B5E4E] prose-li:mb-2
+                  prose-ol:text-[#6B5E4E]
+                  prose-blockquote:border-l-4 prose-blockquote:border-secondary-400 prose-blockquote:bg-cream-50 prose-blockquote:py-2 prose-blockquote:px-4
+                  prose-code:text-secondary-400 prose-code:bg-cream-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
+                  prose-pre:bg-[#1A1A2E] prose-pre:text-[#F0EBE3]"
                 dangerouslySetInnerHTML={{ __html: post.body }}
               />
 
               {/* Share */}
-              <div className="mt-8 pt-6 border-t border-slate-200 flex items-center justify-between">
-                <span className="text-sm text-slate-500">Share this article:</span>
+              <div className="mt-8 pt-6 border-t border-[#E5DDD1] flex items-center justify-between">
+                <span className="text-sm text-[#A09080]">Share this article:</span>
                 <button
                   onClick={handleShare}
-                  className="flex items-center gap-2 text-slate-600 hover:text-slate-800 transition-colors"
+                  className="flex items-center gap-2 text-[#6B5E4E] hover:text-[#1A1A2E] transition-colors"
                 >
                   {copied ? (
                     <>
-                      <span className="text-emerald-600">Copied!</span>
+                      <span className="text-secondary-400">Copied!</span>
                     </>
                   ) : (
                     <>

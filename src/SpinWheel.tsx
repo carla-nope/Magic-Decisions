@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { Plus, Trash2, RefreshCw, Share2, Copy, Check, Volume2, VolumeX, Sparkles, ArrowRight } from 'lucide-react'
+import { playWheelSpin, playMagicChime, playClick } from './lib/sounds'
 import './index.css'
 
 interface SpinWheelProps {
@@ -111,6 +112,7 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
   const spin = useCallback(() => {
     if (isSpinning || segments.length < 2) return;
 
+    playWheelSpin();
     setIsSpinning(true);
     setSelectedSegment(null);
     setShowConfetti(false);
@@ -157,6 +159,7 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
 
         setSelectedSegment(winner);
         setShowConfetti(true);
+        playMagicChime();
 
         setTimeout(() => setShowConfetti(false), 3000);
       }

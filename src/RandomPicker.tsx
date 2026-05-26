@@ -1,5 +1,6 @@
 import { useState, useCallback, useRef } from 'react'
 import { Plus, Trash2, Shuffle, Copy, Check, Share2, Volume2, VolumeX, Sparkles, ArrowRight } from 'lucide-react'
+import { playReveal, playClick } from './lib/sounds'
 import './index.css'
 
 interface RandomPickerProps {
@@ -26,6 +27,7 @@ function RandomPicker({ onNavigate }: RandomPickerProps) {
   const pickRandom = useCallback(() => {
     if (isPicking || items.length < 2) return;
 
+    playClick();
     setIsPicking(true);
     setSelectedIndex(null);
     setShowConfetti(false);
@@ -49,6 +51,7 @@ function RandomPicker({ onNavigate }: RandomPickerProps) {
         animationRef.current = requestAnimationFrame(animate);
       } else {
         setIsPicking(false);
+        playReveal();
         setShowConfetti(true);
         setTimeout(() => setShowConfetti(false), 2000);
       }
@@ -60,6 +63,7 @@ function RandomPicker({ onNavigate }: RandomPickerProps) {
   // Add item
   const addItem = () => {
     if (!newItem.trim()) return;
+    playClick();
     setItems([...items, newItem.trim()]);
     setNewItem('');
   };
@@ -67,6 +71,7 @@ function RandomPicker({ onNavigate }: RandomPickerProps) {
   // Remove item
   const removeItem = (index: number) => {
     if (items.length <= 2) return;
+    playClick();
     setItems(items.filter((_, i) => i !== index));
   };
 
@@ -80,6 +85,7 @@ function RandomPicker({ onNavigate }: RandomPickerProps) {
   // Copy result
   const handleCopyResult = async () => {
     if (selectedIndex === null) return;
+    playClick();
     const text = `🎯 Random Picker chose: "${items[selectedIndex]}"`;
     await navigator.clipboard.writeText(text);
     setCopied(true);
@@ -89,6 +95,7 @@ function RandomPicker({ onNavigate }: RandomPickerProps) {
   // Share result
   const handleShare = () => {
     if (selectedIndex === null) return;
+    playClick();
     const text = `🎯 Random Picker just chose "${items[selectedIndex]}"!`;
     if (navigator.share) {
       navigator.share({

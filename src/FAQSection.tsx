@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { ChevronDown, ChevronUp, HelpCircle } from 'lucide-react'
+import { playClick } from '../lib/sounds'
+import { useCallback } from 'react'
 
 interface FAQItem {
   question: string
@@ -12,9 +14,11 @@ interface FAQSectionProps {
 }
 
 function FAQSection({ title = "Frequently Asked Questions", items }: FAQSectionProps) {
+  const playClickSound = useCallback(() => playClick(), [])
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   const toggleItem = (index: number) => {
+    playClickSound()
     setOpenIndex(openIndex === index ? null : index)
   }
 
@@ -41,8 +45,8 @@ function FAQSection({ title = "Frequently Asked Questions", items }: FAQSectionP
       />
 
       <div className="mystical-card p-6">
-        <h3 className="text-xl font-bold text-slate-800 mb-6 flex items-center gap-2">
-          <HelpCircle className="w-6 h-6 text-purple-500" />
+        <h3 className="text-xl font-bold text-ink-800 mb-6 flex items-center gap-2">
+          <HelpCircle className="w-6 h-6 text-accent-400" />
           {title}
         </h3>
 
@@ -50,22 +54,22 @@ function FAQSection({ title = "Frequently Asked Questions", items }: FAQSectionP
           {items.map((item, index) => (
             <div
               key={index}
-              className="border border-slate-200 rounded-xl overflow-hidden"
+              className="border border-cream-200 rounded-xl overflow-hidden"
             >
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full flex items-center justify-between p-4 text-left bg-slate-50 hover:bg-slate-100 transition-colors"
+                className="w-full flex items-center justify-between p-4 text-left bg-cream-50 hover:bg-cream-100 transition-colors"
               >
-                <span className="font-medium text-slate-800 pr-4">{item.question}</span>
+                <span className="font-medium text-ink-800 pr-4">{item.question}</span>
                 {openIndex === index ? (
-                  <ChevronUp className="w-5 h-5 text-slate-500 flex-shrink-0" />
+                  <ChevronUp className="w-5 h-5 text-[#A09080] flex-shrink-0" />
                 ) : (
-                  <ChevronDown className="w-5 h-5 text-slate-500 flex-shrink-0" />
+                  <ChevronDown className="w-5 h-5 text-[#A09080] flex-shrink-0" />
                 )}
               </button>
               {openIndex === index && (
-                <div className="p-4 bg-white border-t border-slate-100">
-                  <p className="text-slate-600 leading-relaxed">{item.answer}</p>
+                <div className="p-4 bg-white border-t border-cream-100">
+                  <p className="text-[#6B5E4E] leading-relaxed">{item.answer}</p>
                 </div>
               )}
             </div>

@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react'
 import { Lightbulb, RefreshCw, Copy, Check, Share2, Sun, Moon, Coffee, BookOpen, Dumbbell, Palette, Music, Gamepad2, Users, Utensils, Sparkles, ArrowRight } from 'lucide-react'
+import { playClick, playReveal } from './lib/sounds'
 import './index.css'
 
 interface ActivityPickerProps {
@@ -143,6 +144,7 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
   const [copied, setCopied] = useState(false);
 
   const getRandomActivity = useCallback((categoryName?: string) => {
+    playClick();
     setIsRevealing(true);
     setCurrentActivity(null);
     setShowConfetti(false);
@@ -158,6 +160,7 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
         setSelectedCategory(category.name);
         setShowConfetti(true);
         setTimeout(() => setShowConfetti(false), 3000);
+        playReveal();
       }
       setIsRevealing(false);
     }, 1500);
@@ -165,6 +168,7 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
 
   const handleCopyResult = async () => {
     if (!currentActivity) return;
+    playClick();
     const text = `💡 Today's Activity: "${currentActivity}"\nCategory: ${selectedCategory}`;
     await navigator.clipboard.writeText(text);
     setCopied(true);
@@ -173,6 +177,7 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
 
   const handleShare = () => {
     if (!currentActivity) return;
+    playClick();
     const text = `💡 I should "${currentActivity}" today! What's your pick?`;
     if (navigator.share) {
       navigator.share({

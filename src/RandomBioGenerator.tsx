@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react'
 import { FileText, RefreshCw, Copy, Check, Share2, Sparkles, Heart, Briefcase, Instagram, Calendar } from 'lucide-react'
+import { playReveal, playClick } from '../lib/sounds'
 import './index.css'
 
 const bioCategories = [
@@ -82,6 +83,9 @@ const words = {
 }
 
 function RandomBioGenerator() {
+  const playClickSound = useCallback(() => playClick(), [])
+  const playRevealSound = useCallback(() => playReveal(), [])
+  
   const [selectedCategory, setSelectedCategory] = useState('instagram')
   const [generatedBios, setGeneratedBios] = useState<string[]>([])
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null)
@@ -127,6 +131,7 @@ function RandomBioGenerator() {
     }
 
     setGeneratedBios(newBios)
+    playRevealSound()
   }, [selectedCategory])
 
   const handleCopy = async (bio: string, index: number) => {
@@ -155,9 +160,9 @@ function RandomBioGenerator() {
   const displayBios = showFavorites ? favorites : generatedBios
 
   const charCount = (bio: string) => {
-    if (bio.length <= 150) return { count: bio.length, color: 'text-emerald-600' }
-    if (bio.length <= 200) return { count: bio.length, color: 'text-amber-600' }
-    return { count: bio.length, color: 'text-rose-600' }
+    if (bio.length <= 150) return { count: bio.length, color: 'text-secondary-400' }
+    if (bio.length <= 200) return { count: bio.length, color: 'text-primary-400' }
+    return { count: bio.length, color: 'text-highlight-500' }
   }
 
   return (
@@ -172,10 +177,10 @@ function RandomBioGenerator() {
             <FileText className="w-4 h-4" />
             Bio Creator
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-ink-800">
             Create Your Perfect Bio
           </h1>
-          <p className="text-slate-500 max-w-md mx-auto">
+          <p className="text-[#A09080] max-w-md mx-auto">
             Generate catchy bios for Instagram, dating apps, or professional profiles!
           </p>
         </div>
@@ -183,23 +188,23 @@ function RandomBioGenerator() {
         {/* Category Selection */}
         <div className="mb-6 w-full max-w-2xl">
           <div className="mystical-card p-4">
-            <h3 className="text-lg font-semibold text-slate-800 mb-4 text-center">Choose a Category</h3>
+            <h3 className="text-lg font-semibold text-ink-800 mb-4 text-center">Choose a Category</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {bioCategories.map((cat) => {
                 const Icon = cat.icon
                 return (
                   <button
                     key={cat.id}
-                    onClick={() => setSelectedCategory(cat.id)}
+                    onClick={() => { playClickSound(); setSelectedCategory(cat.id); }}
                     className={`p-4 rounded-xl transition-all flex flex-col items-center gap-2 ${
                       selectedCategory === cat.id
                         ? 'bg-rose-100 border-2 border-rose-400 text-rose-700'
-                        : 'bg-slate-50 hover:bg-slate-100 text-slate-600 border-2 border-transparent'
+                        : 'bg-cream-50 hover:bg-cream-100 text-[#A09080] border-2 border-transparent'
                     }`}
                   >
                     <span className="text-2xl">{cat.emoji}</span>
                     <span className="font-medium text-sm">{cat.name}</span>
-                    <span className="text-xs text-slate-400">{cat.desc}</span>
+                    <span className="text-xs text-[#A09080]">{cat.desc}</span>
                   </button>
                 )
               })}
@@ -209,7 +214,7 @@ function RandomBioGenerator() {
 
         {/* Generate Button */}
         <button
-          onClick={generateBio}
+          onClick={() => { playClickSound(); generateBio(); }}
           className="bio-btn flex items-center gap-2 mb-8"
         >
           <Sparkles className="w-5 h-5" />
@@ -220,15 +225,15 @@ function RandomBioGenerator() {
         {displayBios.length > 0 ? (
           <div className="w-full max-w-3xl mb-6">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold text-slate-800">
+              <h3 className="text-lg font-semibold text-ink-800">
                 {showFavorites ? `Saved Favorites (${favorites.length})` : 'Generated Bios'}
               </h3>
               <button
-                onClick={() => setShowFavorites(!showFavorites)}
+                onClick={() => { playClickSound(); setShowFavorites(!showFavorites); }}
                 className={`text-sm px-3 py-1 rounded-full transition-colors ${
                   showFavorites
                     ? 'bg-rose-100 text-rose-700'
-                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                    : 'bg-cream-100 text-[#6B5E4E] hover:bg-cream-200'
                 }`}
               >
                 {showFavorites ? `Show All (${generatedBios.length})` : `Saved (${favorites.length})`}
@@ -242,28 +247,28 @@ function RandomBioGenerator() {
                     key={`${bio}-${index}`}
                     className="mystical-card p-5 hover:shadow-lg transition-all"
                   >
-                    <p className="text-slate-700 mb-4 leading-relaxed">"{bio}"</p>
+                    <p className="text-ink-800 mb-4 leading-relaxed">"{bio}"</p>
                     <div className="flex items-center justify-between">
                       <span className={`text-xs font-medium ${color}`}>
                         {count} characters {count <= 150 ? '✓' : count <= 200 ? '~' : '!'}
                       </span>
                       <div className="flex items-center gap-2">
                         <button
-                          onClick={() => handleCopy(bio, index)}
+                          onClick={() => { playClickSound(); handleCopy(bio, index); }}
                           className="share-btn text-xs py-1.5 px-2"
                           title="Copy bio"
                         >
                           {copiedIndex === index ? <Check className="w-3 h-3" /> : <Copy className="w-3 h-3" />}
                         </button>
                         <button
-                          onClick={() => handleShare(bio)}
+                          onClick={() => { playClickSound(); handleShare(bio); }}
                           className="share-btn text-xs py-1.5 px-2"
                           title="Share"
                         >
                           <Share2 className="w-3 h-3" />
                         </button>
                         <button
-                          onClick={() => toggleFavorite(bio)}
+                          onClick={() => { playClickSound(); toggleFavorite(bio); }}
                           className={`share-btn text-xs py-1.5 px-2 ${favorites.includes(bio) ? 'text-rose-500' : ''}`}
                           title={favorites.includes(bio) ? 'Remove from favorites' : 'Save to favorites'}
                         >
@@ -280,7 +285,7 @@ function RandomBioGenerator() {
           <div className="w-full max-w-lg mb-8">
             <div className="mystical-card p-8 text-center">
               <span className="text-5xl mb-4 block">✨</span>
-              <p className="text-slate-500">
+              <p className="text-[#A09080]">
                 Click the button above to generate creative bios
               </p>
             </div>
@@ -290,21 +295,21 @@ function RandomBioGenerator() {
         {/* Tips Section */}
         <div className="w-full max-w-2xl mb-8">
           <div className="mystical-card p-6">
-            <h3 className="text-lg font-semibold text-slate-800 mb-4 flex items-center gap-2">
+            <h3 className="text-lg font-semibold text-ink-800 mb-4 flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-rose-500" />
               Bio Writing Tips
             </h3>
-            <div className="grid md:grid-cols-3 gap-4 text-sm text-slate-600">
-              <div className="bg-slate-50 rounded-xl p-4">
-                <p className="font-medium text-slate-700 mb-2">📸 Instagram</p>
+            <div className="grid md:grid-cols-3 gap-4 text-sm text-[#6B5E4E]">
+              <div className="bg-cream-50 rounded-xl p-4">
+                <p className="font-medium text-ink-800 mb-2">📸 Instagram</p>
                 <p>Keep it under 150 characters. Use line breaks for readability. Show your personality!</p>
               </div>
-              <div className="bg-slate-50 rounded-xl p-4">
-                <p className="font-medium text-slate-700 mb-2">💕 Dating Apps</p>
+              <div className="bg-cream-50 rounded-xl p-4">
+                <p className="font-medium text-ink-800 mb-2">💕 Dating Apps</p>
                 <p>Be specific about what you're looking for. Show your humor. Avoid clichés!</p>
               </div>
-              <div className="bg-slate-50 rounded-xl p-4">
-                <p className="font-medium text-slate-700 mb-2">💼 Professional</p>
+              <div className="bg-cream-50 rounded-xl p-4">
+                <p className="font-medium text-ink-800 mb-2">💼 Professional</p>
                 <p>Lead with what you do. Include a value prop. Keep it clean and memorable.</p>
               </div>
             </div>
@@ -312,20 +317,20 @@ function RandomBioGenerator() {
         </div>
 
         {/* Footer */}
-        <div className="mt-auto pt-12 text-center text-slate-400 text-sm">
+        <div className="mt-auto pt-12 text-center text-[#A09080] text-sm">
           <p>Express yourself in words</p>
         </div>
 
         {/* SEO Content */}
         <div className="w-full max-w-3xl mt-16 mb-8">
           <div className="mystical-card p-6">
-            <h2 className="text-xl font-bold text-slate-800 mb-4">What is a Bio Generator?</h2>
-            <p className="text-slate-600 mb-4">
+            <h2 className="text-xl font-bold text-ink-800 mb-4">What is a Bio Generator?</h2>
+            <p className="text-[#6B5E4E] mb-4">
               A bio generator helps you craft the perfect description for your social media profiles, dating apps, or professional platforms. Whether you need an Instagram bio that captures your vibe, a dating app bio that attracts the right matches, or a LinkedIn summary that showcases your expertise, our generator creates personalized options in seconds.
             </p>
 
-            <h3 className="text-lg font-semibold text-slate-800 mb-3">Why Use a Bio Generator?</h3>
-            <ul className="text-slate-600 space-y-2 mb-4">
+            <h3 className="text-lg font-semibold text-ink-800 mb-3">Why Use a Bio Generator?</h3>
+            <ul className="text-[#6B5E4E] space-y-2 mb-4">
               <li>• Overcome writer's block when creating bios</li>
               <li>• Get fresh ideas you wouldn't think of alone</li>
               <li>• Match your bio to different platforms' vibes</li>
@@ -334,8 +339,8 @@ function RandomBioGenerator() {
 
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div>
-                <h3 className="text-lg font-semibold text-emerald-600 mb-2">Pros</h3>
-                <ul className="text-slate-600 text-sm space-y-1">
+                <h3 className="text-lg font-semibold text-secondary-400 mb-2">Pros</h3>
+                <ul className="text-[#6B5E4E] text-sm space-y-1">
                   <li>✓ Multiple platform categories</li>
                   <li>✓ Character count guidance</li>
                   <li>✓ One-click copy functionality</li>
@@ -344,8 +349,8 @@ function RandomBioGenerator() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-orange-500 mb-2">Tips</h3>
-                <ul className="text-slate-600 text-sm space-y-1">
+                <h3 className="text-lg font-semibold text-secondary-400 mb-2">Tips</h3>
+                <ul className="text-[#6B5E4E] text-sm space-y-1">
                   <li>• Customize generated bios to match your voice</li>
                   <li>• Keep Instagram bios under 150 characters</li>
                   <li>• Be authentic, not just catchy</li>
@@ -354,19 +359,19 @@ function RandomBioGenerator() {
               </div>
             </div>
 
-            <h3 className="text-lg font-semibold text-slate-800 mb-3">Frequently Asked Questions</h3>
+            <h3 className="text-lg font-semibold text-ink-800 mb-3">Frequently Asked Questions</h3>
             <div className="space-y-3">
               <div>
-                <p className="text-slate-700 font-medium text-sm">How do I make my bio stand out?</p>
-                <p className="text-slate-600 text-sm">Focus on what makes you unique. Use specific details about your interests, humor, or values. Avoid generic phrases like "I love travel and food."</p>
+                <p className="text-ink-800 font-medium text-sm">How do I make my bio stand out?</p>
+                <p className="text-[#6B5E4E] text-sm">Focus on what makes you unique. Use specific details about your interests, humor, or values. Avoid generic phrases like "I love travel and food."</p>
               </div>
               <div>
-                <p className="text-slate-700 font-medium text-sm">What's the ideal bio length?</p>
-                <p className="text-slate-600 text-sm">For Instagram, aim for under 150 characters. Dating apps usually allow more (up to 500 characters). LinkedIn summaries can be longer (under 3,000 characters).</p>
+                <p className="text-ink-800 font-medium text-sm">What's the ideal bio length?</p>
+                <p className="text-[#6B5E4E] text-sm">For Instagram, aim for under 150 characters. Dating apps usually allow more (up to 500 characters). LinkedIn summaries can be longer (under 3,000 characters).</p>
               </div>
               <div>
-                <p className="text-slate-700 font-medium text-sm">Should I use emojis in my bio?</p>
-                <p className="text-slate-600 text-sm">Emojis can add personality and visual interest, but use them sparingly and intentionally. They work well for personal brands but may look unprofessional on LinkedIn.</p>
+                <p className="text-ink-800 font-medium text-sm">Should I use emojis in my bio?</p>
+                <p className="text-[#6B5E4E] text-sm">Emojis can add personality and visual interest, but use them sparingly and intentionally. They work well for personal brands but may look unprofessional on LinkedIn.</p>
               </div>
             </div>
           </div>

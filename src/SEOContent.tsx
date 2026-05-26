@@ -1,5 +1,7 @@
 import FAQSection, { type FAQItem } from './FAQSection'
 import { Search, Sparkles, ThumbsUp, ThumbsDown, ArrowRight } from 'lucide-react'
+import { playClick } from '../lib/sounds'
+import { useCallback } from 'react'
 
 interface SEOContentProps {
   toolName: string
@@ -22,26 +24,27 @@ function SEOContent({
   relatedTools = [],
   onNavigate
 }: SEOContentProps) {
+  const playClickSound = useCallback(() => playClick(), [])
   return (
     <div className="w-full max-w-3xl mt-16 mb-8 space-y-8">
       {/* Main Tool Description */}
       <div className="mystical-card p-6">
-        <h2 className="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
-          <Search className="w-5 h-5 text-purple-500" />
+        <h2 className="text-xl font-bold text-ink-800 mb-4 flex items-center gap-2">
+          <Search className="w-5 h-5 text-accent-400" />
           What is {toolName}?
         </h2>
-        <p className="text-slate-600 leading-relaxed">{toolDescription}</p>
+        <p className="text-[#6B5E4E] leading-relaxed">{toolDescription}</p>
       </div>
 
       {/* Why Use This Tool */}
       <div className="mystical-card p-6">
-        <h3 className="text-lg font-semibold text-slate-800 mb-4">
+        <h3 className="text-lg font-semibold text-ink-800 mb-4">
           Why Use {toolName}?
         </h3>
-        <ul className="text-slate-600 space-y-2">
+        <ul className="text-[#6B5E4E] space-y-2">
           {pros.map((pro, idx) => (
             <li key={idx} className="flex items-start gap-2">
-              <span className="text-emerald-500 mt-1"><ThumbsUp className="w-4 h-4" /></span>
+              <span className="text-secondary-400 mt-1"><ThumbsUp className="w-4 h-4" /></span>
               <span>{pro}</span>
             </li>
           ))}
@@ -51,22 +54,22 @@ function SEOContent({
       {/* Pros vs Considerations Grid */}
       <div className="grid md:grid-cols-2 gap-4">
         <div className="mystical-card p-6">
-          <h3 className="text-lg font-semibold text-emerald-600 mb-3 flex items-center gap-2">
+          <h3 className="text-lg font-semibold text-secondary-400 mb-3 flex items-center gap-2">
             <Sparkles className="w-5 h-5" />
             Benefits
           </h3>
-          <ul className="text-slate-600 text-sm space-y-1">
+          <ul className="text-[#6B5E4E] text-sm space-y-1">
             {pros.map((pro, idx) => (
               <li key={idx}>✓ {pro}</li>
             ))}
           </ul>
         </div>
         <div className="mystical-card p-6">
-          <h3 className="text-lg font-semibold text-orange-500 mb-3 flex items-center gap-2">
+          <h3 className="text-lg font-semibold text-secondary-400 mb-3 flex items-center gap-2">
             <ThumbsDown className="w-5 h-5" />
             Tips
           </h3>
-          <ul className="text-slate-600 text-sm space-y-1">
+          <ul className="text-[#6B5E4E] text-sm space-y-1">
             {tips.map((tip, idx) => (
               <li key={idx}>• {tip}</li>
             ))}
@@ -82,19 +85,19 @@ function SEOContent({
       {/* Related Tools */}
       {relatedTools.length > 0 && (
         <div className="mystical-card p-6">
-          <h3 className="text-lg font-semibold text-slate-800 mb-4 flex items-center gap-2">
-            <ArrowRight className="w-5 h-5 text-emerald-500" />
+          <h3 className="text-lg font-semibold text-ink-800 mb-4 flex items-center gap-2">
+            <ArrowRight className="w-5 h-5 text-secondary-400" />
             Try Another Tool
           </h3>
           <div className="grid grid-cols-2 gap-3">
             {relatedTools.map((tool) => (
               <button
                 key={tool.id}
-                onClick={() => onNavigate?.(tool.id)}
-                className="p-3 rounded-xl bg-slate-50 hover:bg-slate-100 text-left transition-colors"
+                onClick={() => { playClickSound(); onNavigate?.(tool.id); }}
+                className="p-3 rounded-xl bg-cream-50 hover:bg-cream-100 text-left transition-colors"
               >
-                <p className="font-medium text-slate-700 text-sm">{tool.name}</p>
-                <p className="text-xs text-slate-500 line-clamp-1">{tool.description}</p>
+                <p className="font-medium text-ink-800 text-sm">{tool.name}</p>
+                <p className="text-xs text-[#A09080] line-clamp-1">{tool.description}</p>
               </button>
             ))}
           </div>

@@ -415,7 +415,7 @@ function DinnerDecider({ onNavigate }: DinnerDeciderProps) {
                     {dish.name}
                     <button
                       onClick={() => removeCustomDish(index)}
-                      className="hover:text-red-500 transition-colors"
+                      className="hover:text-highlight-500 transition-colors"
                     >
                       <Trash2 className="w-3 h-3" />
                     </button>

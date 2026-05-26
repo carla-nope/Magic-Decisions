@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Sparkles, History, Share2, Copy, Check, RefreshCw, Trash2, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Home, Shield, FileText, Info, Mail, BookOpen, Wand2, Shirt, Brain, Target, CreditCard, Flame, Dices, ArrowRight, Moon, Sun, Volume2, VolumeX, Monitor } from 'lucide-react'
+import { playEnchant, playClick } from './lib/sounds'
 import SpinWheel from './SpinWheel'
 import CoinFlip from './CoinFlip'
 import RandomPicker from './RandomPicker'
@@ -90,6 +91,7 @@ function YesNoOracle() {
 
   const handleAskOracle = useCallback(() => {
     if (!question.trim()) return;
+    playClick();
 
     setIsShaking(true);
     setCurrentAnswer(null);
@@ -99,6 +101,7 @@ function YesNoOracle() {
       setIsShaking(false);
       const answer = getRandomAnswer();
       setIsRevealing(true);
+      playEnchant();
 
       const newItem: HistoryItem = {
         id: Date.now(),
@@ -168,14 +171,14 @@ function YesNoOracle() {
 
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-8">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-700 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-cream-300 text-secondary-400 text-sm mb-4">
             <Sparkles className="w-4 h-4" />
-            Decision Maker
+            ✨ Magic Decision
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-ink-800 font-display">
             Ask the Crystal Ball
           </h1>
-          <p className="text-slate-500 max-w-md mx-auto">
+          <p className="text-[#A09080] max-w-md mx-auto">
             Enter your question below, focus, and click the orb to reveal your answer.
           </p>
         </div>
@@ -205,7 +208,7 @@ function YesNoOracle() {
           >
             <div className="orb-inner">
               {currentAnswer && !isRevealing ? (
-                <span className={`text-4xl z-10 ${answerClass === 'yes' ? 'text-emerald-400' : answerClass === 'no' ? 'text-red-400' : 'text-amber-400'}`}>
+                <span className={`text-4xl z-10 ${answerClass === 'yes' ? 'text-secondary-400' : answerClass === 'no' ? 'text-highlight-500' : 'text-primary-400'}`}>
                   {answerClass === 'yes' ? '✨' : answerClass === 'no' ? '❌' : '🌫️'}
                 </span>
               ) : (
@@ -215,7 +218,7 @@ function YesNoOracle() {
           </div>
 
           {!currentAnswer && !isShaking && (
-            <p className="text-center text-slate-400 text-sm mt-4">
+            <p className="text-center text-[#A09080] text-sm mt-4">
               Click the orb to reveal your answer
             </p>
           )}
@@ -252,16 +255,17 @@ function YesNoOracle() {
 
         {currentAnswer && !isRevealing && (
           <div className="flex items-center gap-3 mt-6 animate-fade-in">
-            <button onClick={handleShare} className="share-btn">
+            <button onClick={() => { playClick(); handleShare(); }} className="share-btn">
               <Share2 className="w-4 h-4" />
               Share
             </button>
-            <button onClick={handleCopyResult} className="share-btn">
+            <button onClick={() => { playClick(); handleCopyResult(); }} className="share-btn">
               {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
               {copied ? 'Copied!' : 'Copy'}
             </button>
             <button
               onClick={() => {
+                playClick();
                 setCurrentAnswer(null);
                 setQuestion('');
               }}
@@ -277,7 +281,7 @@ function YesNoOracle() {
           <div className="mt-12 w-full max-w-md">
             <button
               onClick={() => setShowHistory(!showHistory)}
-              className="flex items-center gap-2 text-slate-500 hover:text-slate-700 transition-colors mx-auto"
+              className="flex items-center gap-2 text-[#A09080] hover:text-ink-800 transition-colors mx-auto"
             >
               <History className="w-5 h-5" />
               <span>Previous Consultations ({history.length})</span>
@@ -289,18 +293,18 @@ function YesNoOracle() {
                   <div key={item.id} className="history-item mb-2 last:mb-0">
                     <div className="flex items-start justify-between gap-2">
                       <div className="flex-1 min-w-0">
-                        <p className="text-sm text-slate-700 truncate">{item.question}</p>
-                        <p className="text-xs text-slate-400 mt-1">
+                        <p className="text-sm text-[#6B5E4E] truncate">{item.question}</p>
+                        <p className="text-xs text-[#A09080] mt-1">
                           {new Date(item.timestamp).toLocaleString()}
                         </p>
                       </div>
                       <span
                         className={`text-sm font-semibold flex-shrink-0 ${
                           item.answer === 'yes'
-                            ? 'text-emerald-600'
+                            ? 'text-secondary-400'
                             : item.answer === 'no'
-                            ? 'text-red-500'
-                            : 'text-amber-500'
+                            ? 'text-highlight-500'
+                            : 'text-primary-400'
                         }`}
                       >
                         {item.answer === 'yes' ? 'YES' : item.answer === 'no' ? 'NO' : 'MAYBE'}
@@ -310,7 +314,7 @@ function YesNoOracle() {
                 ))}
                 <button
                   onClick={handleClearHistory}
-                  className="flex items-center gap-1 text-red-400/70 hover:text-red-500 text-sm mt-3 mx-auto"
+                  className="flex items-center gap-1 text-highlight-500/70 hover:text-highlight-500 text-sm mt-3 mx-auto"
                 >
                   <Trash2 className="w-4 h-4" />
                   Clear History
@@ -322,11 +326,11 @@ function YesNoOracle() {
 
         {/* Parent/Family Teaching Moment */}
         <div className="w-full max-w-2xl mb-12 px-4">
-          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
-            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+          <div className="mystical-card p-6 bg-cream-50 border-cream-300">
+            <h2 className="text-xl font-bold text-ink-800 mb-4 text-center font-display">
               Use the Crystal Ball to Teach Intuition and Reflection
             </h2>
-            <p className="text-slate-600 text-center mb-4">
+            <p className="text-[#6B5E4E] text-center mb-4">
               The Yes No Oracle isn't just about random answers—it's a tool for reflection. Before asking, have kids notice what they hope the answer will be. If they're hoping for "yes" but get "no," that's valuable self-knowledge. This builds emotional awareness and helps kids recognize when they're seeking validation versus truly weighing options. The crystal ball creates space to explore intuition without judgment.
             </p>
           </div>
@@ -334,7 +338,7 @@ function YesNoOracle() {
 
         {/* Related Tools */}
         <div className="w-full max-w-4xl mb-12 px-4">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-semibold text-ink-800 mb-6 text-center font-display">
             Try More Free Decision Tools
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -350,11 +354,11 @@ function YesNoOracle() {
                   const setActiveTool = (window as any).__setActiveTool;
                   if (setActiveTool) setActiveTool(tool.id);
                 }}
-                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-secondary-400 cursor-pointer bg-transparent"
               >
                 <span className="text-3xl mb-2 block">{tool.emoji}</span>
-                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
-                <p className="text-slate-500 text-xs">{tool.description}</p>
+                <h3 className="font-semibold text-ink-800 mb-1">{tool.name}</h3>
+                <p className="text-[#A09080] text-xs">{tool.description}</p>
               </button>
             ))}
           </div>
@@ -362,21 +366,21 @@ function YesNoOracle() {
 
         {/* Lead Magnet CTA */}
         <div className="w-full max-w-2xl mb-8 px-4">
-          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
-              <Sparkles className="w-8 h-8 text-emerald-600" />
+          <div className="mystical-card p-8 text-center bg-cream-50 border-cream-300">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-secondary-400" />
             </div>
-            <h2 className="text-xl font-bold text-slate-800 mb-3">
+            <h2 className="text-xl font-bold text-ink-800 mb-3 font-display">
               Want to Help Kids Practice Confident Choices?
             </h2>
-            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
               Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
             </p>
             <a
               href="https://go.magicdecisions.com/dt1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+              className="inline-flex items-center gap-2 px-6 py-3 mystical-btn"
             >
               Get the Free Decision Traps Guide
               <ArrowRight className="w-4 h-4" />
