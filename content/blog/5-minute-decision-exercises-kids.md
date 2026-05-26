@@ -1,7 +1,7 @@
 ---
 title: "Untitled Post"
 slug: "5-minute-decision-exercises-kids"
-date: "2026-05-25"
+date: "2026-01-05"
 excerpt: "Practice makes progress. And with these quick exercises, you can help your kid build decision confidence in just five minutes a day. Decision-making is a skill. Like any skill, it improves with..."
 category: "Gamified Productivity"
 featured: false
@@ -19,6 +19,9 @@ Practice makes progress. And with these quick exercises, you can help your kid b
 
 
 ## Exercise 1: The Speed Decision Game
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 
 **Time:** 3-5 minutes
 
@@ -108,3 +111,9 @@ Practice makes progress. And with these quick exercises, you can help your kid b
 
 
     The goal is to build a habit of deciding quickly and confidently. That's it. The skill will come.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

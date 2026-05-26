@@ -1,7 +1,7 @@
 ---
 title: "How a Spin Wheel Fixed Our Family Arguments (A Real Story)"
 slug: "spin-wheel-family-arguments"
-date: "2026-05-25"
+date: "2026-05-27"
 excerpt: "Six months ago, I was ready to throw my hands up. Every evening ended the same way: my kids bickering over something trivial, me playing referee, everyone frust"
 category: "Gamified Productivity"
 featured: false
@@ -15,6 +15,9 @@ seo:
 Family Stories • 9 min read
 
 ## How a Spin Wheel Fixed Our Family Arguments (A Real Story)
+
+*Learn more: [Gamified UK: Gamification in Parenting](https://www.gamified.uk/2018/01/19/parenting-gamification-helps-kids-complete-chores/)*
+
 
 Six months ago, I was ready to throw my hands up. Every evening ended the same way: my kids bickering over something trivial, me playing referee, everyone frustrated, dinner burned, bedtime chaos. Then my 8-year-old grabbed a toy spin wheel from her art supplies and said "let's just spin!" That one moment changed everything.
 
@@ -102,3 +105,9 @@ You don't need an expensive purchased wheel. You don't need anything fancy. You 
 ### Try the Spin Wheel That Changed Our Family
 
 Our free spin wheel has ended thousands of family arguments. Give it a try—it might change your home too.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

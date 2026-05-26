@@ -16,6 +16,9 @@ Parenting • 9 min read
 
 ## How to Use Randomization to End Sibling Disputes (Without Being the Referee)
 
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
+
 You've been the referee for 47 minutes. SEVEN. You've heard every argument, considered every perspective, and you're still not sure who "started it." But what if I told you there's a way to step out of the arena entirely—and your kids will actually thank you for it?
 
 It starts with understanding why sibling disputes are so exhausting: they're not actually about the thing being disputed. A fight over the front seat isn't about the front seat. A war over the TV remote isn't about the TV remote. These are proxy battles for attention, autonomy, and the feeling that "I matter as much as my sibling."
@@ -106,3 +109,9 @@ Give them the autonomy to solve it. If they can't, bring out the wheel. Either w
 ### Stop Being the Referee
 
 Our free spin wheel and coin flip give your kids a neutral way to settle disputes. Try it now.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

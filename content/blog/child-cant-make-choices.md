@@ -1,7 +1,7 @@
 ---
 title: "Untitled Post"
 slug: "child-cant-make-choices"
-date: "2026-05-25"
+date: "2026-02-23"
 excerpt: "Your kid stands paralyzed by a choice that should take seconds. A cereal box. A t-shirt. Which friend to invite. It doesn't matter — they can't decide. If you've been there, you know how frustrating..."
 category: "Gamified Productivity"
 featured: false
@@ -22,6 +22,9 @@ Your kid stands paralyzed by a choice that should take seconds. A cereal box. A 
 
 
 ## What "Can't Decide" Usually Means
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 
     When a child "can't" make a simple choice, there are several things it might mean:
 
@@ -108,3 +111,9 @@ Your kid stands paralyzed by a choice that should take seconds. A cereal box. A 
 
 
     Meet them where they are. Don't expect instant change. And remember: this too shall pass. With time and practice, they'll get better.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

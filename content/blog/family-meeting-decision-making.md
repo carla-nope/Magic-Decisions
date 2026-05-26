@@ -1,7 +1,7 @@
 ---
 title: "The Ultimate Guide to Family Meeting Decision-Making (That Kids Will Actually Enjoy)"
 slug: "family-meeting-decision-making"
-date: "2026-05-25"
+date: "2026-05-18"
 excerpt: "Family meetings can feel like pulling teeth—or they can be the highlight of your week. The difference comes down to how you structure decisions."
 category: "Gamified Productivity"
 featured: false
@@ -15,6 +15,9 @@ seo:
 Family Communication • 10 min read
 
 ## The Ultimate Guide to Family Meeting Decision-Making (That Kids Will Actually Enjoy)
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 
 Family meetings can feel like pulling teeth—or they can be the highlight of your week. The difference? Learning to make decisions together in a way that engages everyone, especially kids. Here's everything you need to know.
 
@@ -149,3 +152,9 @@ The first few meetings might feel awkward. That's normal. Stick with it. Within 
 ### Make Your Family Meetings Easier
 
 Use our free spin wheel and random picker to resolve tiebreakers and make decisions fun in your family meetings.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

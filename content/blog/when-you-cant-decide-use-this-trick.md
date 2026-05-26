@@ -1,7 +1,7 @@
 ---
 title: "When You Can't Decide, Use This Trick"
 slug: "when-you-cant-decide-use-this-trick"
-date: "2026-05-26"
+date: "2026-06-01"
 excerpt: "When you can't decide, there's a trick that works every time. It's simple, fast, and surprisingly effective for everyday choices."
 category: "Tools"
 featured: false
@@ -25,6 +25,9 @@ Decision paralysis doesn't just happen with big life choices. It happens with re
 When you can't decide, here's a trick that works every time: **externalize the choice.**
 
 ## What Is the Externalization Trick?
+
+*Learn more: [Pew Research: Social Media Use by Generation](https://www.pewresearch.org/internet/fact-sheet/social-media/)*
+
 
 The externalization trick is simple: when you're stuck, stop trying to decide internally and introduce an external element to make the choice for you.
 
@@ -160,3 +163,9 @@ Why? Because your brain is bad at predicting the future and good at accepting an
 The goal isn't to let a coin make your choices. The goal is to stop the loop, get moving, and build the confidence to decide faster over time.
 
 **Ready to break the paralysis? Try our decision tool and make your choice in seconds.**
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

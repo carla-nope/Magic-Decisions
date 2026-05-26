@@ -1,7 +1,7 @@
 ---
 title: "The Decision Difficulty Scale: Know Exactly When to Think Hard (And When to Let Go)"
 slug: "decision-difficulty-scale"
-date: "2026-05-25"
+date: "2026-04-06"
 excerpt: "Should you spend twenty minutes choosing a restaurant or two seconds flipping a coin? The answer depends on one thing most people never consider—the actual diff"
 category: "Gamified Productivity"
 featured: false
@@ -15,6 +15,9 @@ seo:
 Decision Making • 9 min read
 
 ## The Decision Difficulty Scale: Know Exactly When to Think Hard (And When to Let Go)
+
+*Learn more: [Pew Research: Social Media Use by Generation](https://www.pewresearch.org/internet/fact-sheet/social-media/)*
+
 
 Should you spend twenty minutes choosing a restaurant or two seconds flipping a coin? The answer depends on one thing most people never consider—the actual difficulty of the decision.
 
@@ -92,3 +95,9 @@ And when you hit level 1 decisions? Let the spin wheel decide. Our free decision
 ### Make Decisions at the Right Speed
 
 Use our free spin wheel, coin flip, and random picker to handle trivial decisions instantly.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

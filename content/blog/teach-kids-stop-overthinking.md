@@ -1,7 +1,7 @@
 ---
 title: "Untitled Post"
 slug: "teach-kids-stop-overthinking"
-date: "2026-05-25"
+date: "2026-05-28"
 excerpt: "Your 8-year-old has been staring at two t-shirts for five minutes. It's just a shirt. But for them, it feels like the biggest decision of their life. Sound familiar? You're not alone. Many kids get..."
 category: "Gamified Productivity"
 featured: false
@@ -19,6 +19,9 @@ Your 8-year-old has been staring at two t-shirts for five minutes. It's just a s
 
 
 ## Why Kids Overthink (It's Not What You Think)
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 
     Adults often assume kids overthink because they're being dramatic, seeking attention, or testing boundaries. Sometimes that's true. But most of the time, here's what's actually happening:
 
@@ -117,3 +120,9 @@ Your 8-year-old has been staring at two t-shirts for five minutes. It's just a s
 
 
     And remember: you're teaching them a life skill. Years from now, they won't remember which shirt they picked today. But they'll remember that they learned to make decisions without getting stuck. That's the real lesson.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

@@ -1,7 +1,7 @@
 ---
 title: "Decision Wheels for Daily Family Challenges: Homework, Chores, Screen Time, and More"
 slug: "decision-wheels-daily-challenges"
-date: "2026-05-25"
+date: "2026-05-05"
 excerpt: "Every family has battlegrounds: the homework wars, the chore mutiny, the screen time showdown. What if a spin wheel could settle all three?"
 category: "Gamified Productivity"
 featured: false
@@ -15,6 +15,9 @@ seo:
 Practical Solutions • 11 min read
 
 ## Decision Wheels for Daily Family Challenges: Homework, Chores, Screen Time, and More
+
+*Learn more: [Gamified UK: Gamification in Parenting](https://www.gamified.uk/2018/01/19/parenting-gamification-helps-kids-complete-chores/)*
+
 
 Every family has battlegrounds: the homework wars, the chore mutiny, the screen time showdown. What if the solution wasn't more negotiation, more rules, or more willpower—but a spin wheel? Here's how to use decision wheels to solve your daily challenges.
 
@@ -153,3 +156,9 @@ By the end of a month, you could have wheels handling homework approach, chore r
 ### Build Your Custom Decision Wheels
 
 Create free spin wheels for homework, chores, screen time, and all your daily family challenges.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

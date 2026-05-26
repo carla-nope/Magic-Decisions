@@ -1,7 +1,7 @@
 ---
 title: How to Make Fast Decisions (Without Overthinking Everything)
 slug: fast-decisions
-date: 2026-05-08
+date: "2025-12-15"
 excerpt: Learn how to make decisions faster without overthinking, with simple
   rules for less decision fatigue, better defaults, and clearer choices.
 category: Decision Making
@@ -140,4 +140,9 @@ The next time you feel stuck, make the choice smaller, shorter, and simpler. Pro
 
 ***Still can't decide? Let the magic help.***  
 Magic Decisions has [15 free tools](https://www.magicdecisions.com/) for exactly this kind of moment — yes/no oracles, spin wheels, dinner deciders, and more. No signup, no overthinking. Just pick and go.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
 

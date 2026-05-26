@@ -1,7 +1,7 @@
 ---
 title: "Decision Fatigue: Why Families Get Cranky by Evening (And What to Do About It)"
 slug: "decision-fatigue-families"
-date: "2026-05-25"
+date: "2026-04-13"
 excerpt: "You pick the kids up from school. Everyone's fine. Three hours later, you're wondering why your kindergartener is sobbing over a sock touching their toe and you"
 category: "Lifestyle"
 featured: false
@@ -15,6 +15,9 @@ seo:
 Family Wellness • 9 min read
 
 ## Decision Fatigue: Why Families Get Cranky by Evening (And What to Do About It)
+
+*Learn more: [APA: The Costs of Decision Fatigue](https://www.apa.org/monitor/2012/03/decision-fatigue)*
+
 
 You pick the kids up from school. Everyone's fine. Three hours later, you're wondering why your kindergartener is sobbing over a sock touching their toe and your partner is snapping about the dishes. The answer isn't bad attitudes. It's decision fatigue—and it affects every family member differently.
 
@@ -98,3 +101,9 @@ Pick one thing to automate this week. Maybe it's breakfast options (you choose t
 ### Conserve Decision Energy with Smart Tools
 
 Use our free spin wheel and random picker to let the universe handle tonight's small decisions.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

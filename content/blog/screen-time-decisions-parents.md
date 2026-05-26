@@ -1,7 +1,7 @@
 ---
 title: "Untitled Post"
 slug: "screen-time-decisions-parents"
-date: "2026-05-25"
+date: "2026-05-26"
 excerpt: "Can I play video games?" "How much longer?" "Just five more minutes!" "But I was about to beat the level!" Sound familiar? Screen time negotiations are one of the most exhausting parts of parenting...."
 category: "Lifestyle"
 featured: false
@@ -22,6 +22,9 @@ seo:
 
 
 ## Why Screen Time Feels Like a Battle
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 
     The core problem is ambiguity. When screen time is negotiable, it becomes a negotiation. Kids push for more. Parents push back. Both sides feel frustrated.
 
@@ -109,3 +112,9 @@ seo:
 
 
     Your job isn't to win every negotiation. Your job is to create a system where the decision is already made, so you can focus on the stuff that actually matters.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

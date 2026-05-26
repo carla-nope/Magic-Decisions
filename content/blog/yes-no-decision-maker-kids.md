@@ -1,7 +1,7 @@
 ---
 title: "The Yes/No Oracle: Teaching Kids Binary Decision Skills"
 slug: "yes-no-decision-maker-kids"
-date: "2026-05-25"
+date: "2026-06-01"
 excerpt: "\"Should I do it or not?\" "Is this a good idea?" "Should I say something?" Sometimes kids just need a push. The yes/no oracle gives them that push—without you be"
 category: "Gamified Productivity"
 featured: false
@@ -25,6 +25,9 @@ You could keep analyzing. You could give more advice. Or you could let the oracl
 Your daughter laughs, rolls her eyes, and says: "The oracle said yes!" And suddenly the overthinking stops. Not because the oracle is magical, but because the oracle is external. The decision isn't hers anymore—it's the universe's. And the universe can't be wrong.
 
 ## Why the Yes/No Oracle Works for Kids
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 
 Binary decisions are uniquely paralyzing for children. When there's only two options, each option feels equally weighted. Should I or shouldn't I? Both feel equally possible, equally scary. The oracle breaks this paralysis by externalizing the decision.
 
@@ -104,3 +107,9 @@ Try it tonight. When your kid is stuck on a yes/no question, offer to ask the or
 ### Try the Yes/No Oracle Now
 
 Let fate decide. Use our free oracle tool to help your kids make binary decisions with confidence.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

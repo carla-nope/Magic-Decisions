@@ -1,7 +1,7 @@
 ---
 title: "How to Make Decisions Faster (Without Overthinking Everything)"
 slug: "how-to-make-decisions-faster"
-date: "2026-05-26"
+date: "2026-05-20"
 excerpt: "Stop agonizing over every choice. Learn simple strategies to make faster decisions without overthinking—even when stakes feel high."
 category: "Decision Making"
 featured: false
@@ -75,3 +75,9 @@ You already know how to make decisions. You've been doing it your whole life. Th
 Every decision you make, even the small ones, builds your confidence for the bigger ones. So start today. Pick something. Move forward. You can always course-correct, but you can't move forward while standing still.
 
 Ready to practice faster decision-making with your family? [Try MagicDecisions](https://magicdecisions.com) and turn everyday choices into quick, fun games the whole household can play together.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

@@ -1,7 +1,7 @@
 ---
 title: "Untitled Post"
 slug: "psychology-behind-overthinking"
-date: "2026-05-25"
+date: "2026-05-23"
 excerpt: "You spent 45 minutes deciding what to watch. You almost bought three different jackets. You're still thinking about that email you sent three days ago. If this sounds like you, you're not alone. And..."
 category: "Lifestyle"
 featured: false
@@ -19,6 +19,9 @@ You spent 45 minutes deciding what to watch. You almost bought three different j
 
 
 ## The Psychology of Decision-Making
+
+*Learn more: [APA: The Costs of Decision Fatigue](https://www.apa.org/monitor/2012/03/decision-fatigue)*
+
 
     Your brain makes decisions using a combination of logic and emotion. The prefrontal cortex handles the rational analysis: weighing pros and cons, considering consequences, planning ahead. The amygdala handles the emotional response: fear of making a mistake, desire for the "right" outcome, anxiety about judgment.
 
@@ -107,3 +110,9 @@ You spent 45 minutes deciding what to watch. You almost bought three different j
 
 
     Small decisions deserve small attention. Big decisions deserve your full focus. Learning to tell the difference is a skill that pays dividends every single day.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

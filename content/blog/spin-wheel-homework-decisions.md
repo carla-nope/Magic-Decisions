@@ -1,7 +1,7 @@
 ---
 title: "Spin Wheels for Homework: How to End the Battles and Get Decisions Made Faster"
 slug: "spin-wheel-homework-decisions"
-date: "2026-05-25"
+date: "2026-05-27"
 excerpt: "Homework battles aren't really about homework. They're about power, autonomy, and the constant negotiation over what to do first. A spin wheel solves all three."
 category: "Gamified Productivity"
 featured: false
@@ -34,6 +34,9 @@ When the order of tasks is causing arguments:
 "Spin the wheel to decide order!" Suddenly, the argument isn't parent vs. child—it's child vs. wheel. They spin, the wheel chooses, and they accept it because the wheel is neutral. This one change can transform your entire homework routine.
 
 ## Why Homework Sparks So Many Arguments
+
+*Learn more: [Gamified UK: Gamification in Parenting](https://www.gamified.uk/2018/01/19/parenting-gamification-helps-kids-complete-chores/)*
+
 
 Before we get into the solutions, let's understand the problem. Homework arguments happen because kids want autonomy and parents want compliance. When you tell them "do your homework," they want some say in how, when, and in what order. When you push for your way, they push back.
 
@@ -141,3 +144,9 @@ I think you'll find that the arguing decreases, the starting time gets earlier, 
 ### Create Your Homework Wheels Today
 
 Free spin wheel tool with customizable options. Create wheels for order, breaks, location, and more.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

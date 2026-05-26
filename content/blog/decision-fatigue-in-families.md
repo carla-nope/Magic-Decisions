@@ -1,7 +1,7 @@
 ---
 title: "Untitled Post"
 slug: "decision-fatigue-in-families"
-date: "2026-05-25"
+date: "2026-04-20"
 excerpt: "It's 3:15 PM. Your kid is melting down over the color of their cup. Your partner snaps at you for asking what they want for snack. And you? You're hiding in the pantry, eating chocolate chips..."
 category: "Gamified Productivity"
 featured: false
@@ -19,6 +19,9 @@ It's 3:15 PM. Your kid is melting down over the color of their cup. Your partner
 
 
 ## What is Decision Fatigue, Exactly?
+
+*Learn more: [APA: The Costs of Decision Fatigue](https://www.apa.org/monitor/2012/03/decision-fatigue)*
+
 
     Decision fatigue is what happens when your brain gets worn out from making too many choices. Every decision you make, from tiny to big, costs a little bit of mental energy. By the end of the day, that energy account can be empty.
 
@@ -118,3 +121,9 @@ It's 3:15 PM. Your kid is melting down over the color of their cup. Your partner
 
 
     Your family's energy is worth protecting. And it starts with recognizing that not every decision deserves your brain power.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

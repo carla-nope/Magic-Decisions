@@ -1,7 +1,7 @@
 ---
 title: "How to Teach Kids to Make Fast Decisions Without the Drama"
 slug: "teach-kids-fast-decisions"
-date: "2026-05-25"
+date: "2026-05-28"
 excerpt: "I don't know what I want!" Sound familiar? Every parent hears this daily. But here's the thing: your child isn't broken. They just haven't learned how to decid"
 category: "Gamified Productivity"
 featured: false
@@ -15,6 +15,9 @@ seo:
 Parenting • 10 min read
 
 ## How to Teach Kids to Make Fast Decisions Without the Drama
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 
 "I don't know what I want!" Sound familiar? Every parent hears this daily. But here's the thing: your child isn't broken. They just haven't learned how to decide yet. And you can teach them.
 
@@ -100,3 +103,9 @@ And when you need a helping hand? Our free decision tools give kids a neutral wa
 ### Help Your Kids Decide with Confidence
 
 Free spin wheels, coin flips, and random pickers make learning to decide fun and fair.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

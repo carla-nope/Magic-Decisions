@@ -1,7 +1,7 @@
 ---
 title: "The 2-Minute Rule for Faster Decisions"
 slug: "2-minute-rule-for-faster-decisions"
-date: "2026-05-26"
+date: "2025-12-08"
 excerpt: "There's a simple rule that makes most decisions in under 2 minutes. Here's how to use it—and when to break it."
 category: "Decision Making"
 featured: false
@@ -99,3 +99,9 @@ Notice what happens. Notice how often "good enough" truly was enough. Notice how
 The goal isn't to rush through life making thoughtless choices. The goal is to respect your mental energy enough to know when a decision deserves it—and when it just needs to be made.
 
 Ready to make quick decisions a family affair? [Check out MagicDecisions](https://magicdecisions.com) for tools that turn everyday choices into quick, engaging activities everyone can enjoy together.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

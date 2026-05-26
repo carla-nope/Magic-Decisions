@@ -1,7 +1,7 @@
 ---
 title: "Untitled Post"
 slug: "teaching-kids-independence-decisions"
-date: "2026-05-25"
+date: "2026-05-29"
 excerpt: "Goal: Raise kids who can think for themselves, solve problems, and trust their judgment. How do you get there? Through hundreds of small decisions, made every day, with your support. Independence..."
 category: "Gamified Productivity"
 featured: false
@@ -22,6 +22,9 @@ Goal: Raise kids who can think for themselves, solve problems, and trust their j
 
 
 ## Why Decisions Build Independence
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 
     Every time a child makes a choice, they practice:
 
@@ -135,3 +138,9 @@ Goal: Raise kids who can think for themselves, solve problems, and trust their j
 
 
     That's the goal. And it starts with one small choice at a time.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

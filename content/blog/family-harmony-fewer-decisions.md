@@ -1,7 +1,7 @@
 ---
 title: "Untitled Post"
 slug: "family-harmony-fewer-decisions"
-date: "2026-05-25"
+date: "2026-05-15"
 excerpt: "What if I told you one of the best things you could do for your family's peace was to make fewer decisions? Sounds backwards, right? Shouldn't we be teaching kids to make MORE decisions to build..."
 category: "Lifestyle"
 featured: false
@@ -19,6 +19,9 @@ What if I told you one of the best things you could do for your family's peace w
 
 
 ## The Decision Overload in Modern Families
+
+*Learn more: [Pew Research: Social Media Use by Generation](https://www.pewresearch.org/internet/fact-sheet/social-media/)*
+
 
     Think about how many micro-decisions happen in your house every day:
 
@@ -115,3 +118,9 @@ What if I told you one of the best things you could do for your family's peace w
 
 
     Start small. Pick one area — maybe mornings or dinners — and create a system. See how it feels. Then try another area. Before you know it, your home will feel noticeably calmer.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

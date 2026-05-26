@@ -1,7 +1,7 @@
 ---
 title: "The 5-Second Decision Method for Kids: How to End Decision Paralysis Forever"
 slug: "5-second-decision-method"
-date: "2026-05-25"
+date: "2026-01-12"
 excerpt: "Your child stands frozen in front of the cereal aisle. Thirty seconds pass. Then a minute. You feel the familiar frustration rising. But here's the thing: your"
 category: "Gamified Productivity"
 featured: false
@@ -15,6 +15,9 @@ seo:
 Parenting • 8 min read
 
 ## The 5-Second Decision Method for Kids: How to End Decision Paralysis Forever
+
+*Learn more: [Pew Research: Social Media Use by Generation](https://www.pewresearch.org/internet/fact-sheet/social-media/)*
+
 
 Your child stands frozen in front of the cereal aisle. Thirty seconds pass. Then a minute. You feel the familiar frustration rising. But here's the thing: your kid isn't being difficult. They're just missing a specific skill. And we're going to teach it to them in five seconds.
 
@@ -102,3 +105,9 @@ The 5-second method isn't about speed for speed's sake. It's about building the 
 ### Make the 5-Second Method Even Easier
 
 Use our spin wheel or coin flip alongside the 5-second method for decisions with multiple options.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

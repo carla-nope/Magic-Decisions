@@ -1,7 +1,7 @@
 ---
 title: "Untitled Post"
 slug: "decision-making-games-kids"
-date: "2026-05-25"
+date: "2026-04-27"
 excerpt: "The best way to teach decision-making? Make it a game. Kids learn fastest when they're having fun, and these games make choices feel like play."
 category: "Gamified Productivity"
 featured: false
@@ -16,6 +16,9 @@ The best way to teach decision-making? Make it a game. Kids learn fastest when t
 
 
 ## Game 1: The Decision Chain
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 
 **How to play:** One person says "I think I'll..." and picks an activity. The next person has to decide: "Great idea! Now I think I'll..." and picks something different. Continue the chain.
 
@@ -100,3 +103,9 @@ The best way to teach decision-making? Make it a game. Kids learn fastest when t
 - Bedtime: Quick yes/no game while brushing teeth
 
     Five minutes here and there adds up. Before you know it, your kids will be making decisions faster and with more confidence. And they'll think they're just playing.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

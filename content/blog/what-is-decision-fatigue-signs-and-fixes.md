@@ -1,7 +1,7 @@
 ---
 title: "What Is Decision Fatigue? Signs and Fixes"
 slug: "what-is-decision-fatigue-signs-and-fixes"
-date: "2026-05-26"
+date: "2026-05-31"
 excerpt: "Feeling mentally drained by simple choices? That's decision fatigue. Learn the signs and proven ways to recover your decision energy."
 category: "Decision Making"
 featured: false
@@ -158,3 +158,9 @@ The goal isn't to never feel depleted—that's unrealistic. The goal is to build
 You make hundreds of decisions every day. Some are huge. Most are small. All of them draw from the same well. Treat that well with the respect it deserves.
 
 Ready to make family decision-making easier? [Try MagicDecisions](https://magicdecisions.com) for tools that simplify choices and make collaborative decision-making fun for everyone.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

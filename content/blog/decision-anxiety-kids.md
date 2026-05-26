@@ -1,7 +1,7 @@
 ---
 title: "Untitled Post"
 slug: "decision-anxiety-kids"
-date: "2026-05-25"
+date: "2026-03-23"
 excerpt: "Your child stands in front of the cereal aisle for ten minutes. They're not being difficult. They're genuinely distressed. Decision anxiety is real, and it's more common than most parents realize. It..."
 category: "Gamified Productivity"
 featured: false
@@ -19,6 +19,9 @@ Your child stands in front of the cereal aisle for ten minutes. They're not bein
 
 
 ## Signs Your Child Has Decision Anxiety
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 - **Freezing on simple choices** — "What do you want for breakfast?" causes tears or shutdown
 - **Asking the same question repeatedly** — "What if I pick wrong?" over and over
 - **Physical symptoms** — Stomachaches, headaches, or panic before decisions
@@ -97,3 +100,9 @@ Your child stands in front of the cereal aisle for ten minutes. They're not bein
 
 
     Your job is to be steady, patient, and calming. You can't fix their anxiety, but you can be a steady presence while they learn to manage it themselves.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

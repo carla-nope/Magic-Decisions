@@ -1,7 +1,7 @@
 ---
 title: "Building Decision-Making Confidence in Kids: The Complete Parent's Guide"
 slug: "building-decision-confidence-kids"
-date: "2026-05-25"
+date: "2026-02-09"
 excerpt: "The most successful adults aren't the ones who never made mistakes—they're the ones who learned to trust their decisions. And that skill starts in childhood. He"
 category: "Gamified Productivity"
 featured: false
@@ -15,6 +15,9 @@ seo:
 Parenting • 10 min read
 
 ## Building Decision-Making Confidence in Kids: The Complete Parent's Guide
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 
 The most successful adults aren't the ones who never made mistakes—they're the ones who learned to trust their decisions. And that skill starts in childhood. Here's everything you need to know to raise a confident decider.
 
@@ -141,3 +144,9 @@ And remember: you're modeling too. Your own decision-making habits shape your ch
 ### Practice Decision Confidence Together
 
 Use our free spin wheel, coin flip, and decision tools to practice decision-making with your kids every day.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

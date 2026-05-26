@@ -1,7 +1,7 @@
 ---
 title: "How to Stop Second-Guessing Yourself"
 slug: "how-to-stop-second-guessing-yourself"
-date: "2026-05-26"
+date: "2026-05-21"
 excerpt: "Second-guessing keeps you stuck. Here's how to build decision confidence and trust your choices again—no overthinking required."
 category: "Decision Making"
 featured: false
@@ -123,3 +123,9 @@ So here's your permission: trust yourself. Make your choice. Move forward. And i
 You don't need to stop second-guessing to live a good life. You need to trust yourself enough to believe that whatever happens, you'll handle it.
 
 Ready to practice trusting your decisions with your family? [Try MagicDecisions](https://magicdecisions.com) and build decision confidence together through fun, collaborative choice-making games.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

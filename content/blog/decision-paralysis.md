@@ -1,7 +1,7 @@
 ---
 title: "Why You Keep Overthinking Small Decisions (And How to Finally Stop)"
 slug: "decision-paralysis"
-date: "2026-05-25"
+date: "2026-05-02"
 excerpt: "You're standing in the cereal aisle for ten minutes. Your kid needs a lunch made. Your spouse is waiting for you to pick a restaurant. And somehow, you still ca"
 category: "Gamified Productivity"
 featured: false
@@ -15,6 +15,9 @@ seo:
 Decision Making • 8 min read
 
 ## Why You Keep Overthinking Small Decisions (And How to Finally Stop)
+
+*Learn more: [APA: The Costs of Decision Fatigue](https://www.apa.org/monitor/2012/03/decision-fatigue)*
+
 
 You're standing in the cereal aisle for ten minutes. Your kid needs a lunch made. Your spouse is waiting for you to pick a restaurant. And somehow, you still can't decide between two boxes of cereal. Sound familiar? You're not indecisive—you're just caught in a trap that every parent falls into.
 
@@ -78,3 +81,9 @@ If you want tools to make this easier, our free spin wheel and decision maker to
 ### End Decision Overload Forever
 
 Use our free spin wheel, coin flip, and random picker to let your family decide faster and stress less.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

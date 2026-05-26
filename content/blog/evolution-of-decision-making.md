@@ -1,7 +1,7 @@
 ---
 title: "The Evolution of Decision-Making: How Growing Up Today Differs from 50 Years Ago"
 slug: "evolution-of-decision-making"
-date: "2026-05-25"
+date: "2026-05-12"
 excerpt: "Your grandparents made decisions differently than you do. Your kids make them differently still. Understanding how decision-making has changed—and why—helps us"
 category: "Gamified Productivity"
 featured: false
@@ -15,6 +15,9 @@ seo:
 Family Psychology • 9 min read
 
 ## The Evolution of Decision-Making: How Growing Up Today Differs from 50 Years Ago
+
+*Learn more: [Pew Research: Social Media Use by Generation](https://www.pewresearch.org/internet/fact-sheet/social-media/)*
+
 
 Your grandparents made decisions differently than you do. Your kids make them differently still. Understanding how decision-making has changed—and why—helps us raise children who thrive in the modern world.
 
@@ -122,3 +125,9 @@ You're equipping your children with skills that will serve them for their entire
 ### Practice Decision Skills for the Future
 
 Build your child's decision confidence today with free tools that make decision practice fun and accessible.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

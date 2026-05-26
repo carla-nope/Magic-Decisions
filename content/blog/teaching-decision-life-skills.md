@@ -1,7 +1,7 @@
 ---
 title: "Why Teaching Kids Decision Skills Is the Most Important Life Skill You're Not Teaching"
 slug: "teaching-decision-life-skills"
-date: "2026-05-25"
+date: "2026-05-29"
 excerpt: "We teach kids to read, to do math, to tie their shoes. But we rarely systematically teach them how to make decisions. And that's a huge miss, because decision-m"
 category: "Gamified Productivity"
 featured: false
@@ -15,6 +15,9 @@ seo:
 Parenting • 9 min read
 
 ## Why Teaching Kids Decision Skills Is the Most Important Life Skill You're Not Teaching
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 
 We teach kids to read, to do math, to tie their shoes. But we rarely systematically teach them how to make decisions. And that's a huge miss, because decision-making might be the only skill they need for every single situation they'll face in life.
 
@@ -89,3 +92,9 @@ And when you need neutral help—like when two kids both want to choose—use to
 ### Build Decision Skills in Your Family
 
 Free tools like spin wheels and coin flips make practicing decisions fun and fair for kids.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

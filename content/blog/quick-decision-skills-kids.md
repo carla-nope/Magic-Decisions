@@ -1,7 +1,7 @@
 ---
 title: "Untitled Post"
 slug: "quick-decision-skills-kids"
-date: "2026-05-25"
+date: "2026-05-24"
 excerpt: "Your 9-year-old needs to decide between two activities. Your 7-year-old is stuck on which game to play. Your 11-year-old has been choosing a snack for five minutes. These sound like small problems...."
 category: "Gamified Productivity"
 featured: false
@@ -19,6 +19,9 @@ Your 9-year-old needs to decide between two activities. Your 7-year-old is stuck
 
 
 ## Why Decision-Making is a Life Skill
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 
     Decision-making isn't just about choosing what to eat or what to wear. It's about:
 
@@ -107,3 +110,9 @@ Your 9-year-old needs to decide between two activities. Your 7-year-old is stuck
 
 
     The goal isn't to turn your kid into someone who never thinks. It's to help them trust themselves enough to decide without getting stuck. That's a gift that pays off forever.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

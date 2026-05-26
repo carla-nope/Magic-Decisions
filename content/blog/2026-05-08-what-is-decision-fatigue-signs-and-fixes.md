@@ -1,7 +1,7 @@
 ---
 title: What Is Decision Fatigue? Signs and Fixes
 slug: decision-fatigue
-date: 2026-05-08
+date: "2025-12-22"
 excerpt: Decision fatigue can make small choices feel huge. Spot the signs, then
   use simple fixes to save your brain for the decisions that matter.
 category: Decision Making
@@ -103,3 +103,9 @@ And for low-stakes moments when your brain is totally done, let chance step in. 
 Decision fatigue is normal. It happens when too many choices pile onto one tired brain.
 
 The fix isn't becoming more disciplined every second of the day. It's building a day with less friction, fewer tiny decisions, and more room to think. When life feels less crowded, **better choices** tend to show up on their own.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

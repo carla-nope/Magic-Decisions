@@ -1,7 +1,7 @@
 ---
 title: "Decision Confidence for Shy Kids: Strategies That Actually Work"
 slug: "decision-confidence-shy-kids"
-date: "2026-05-25"
+date: "2026-03-30"
 excerpt: "Your quiet child stands frozen while louder siblings grab what they want. "Say what you want!" you encourage. They just shrug. But inside, they're deciding: sho"
 category: "Gamified Productivity"
 featured: false
@@ -25,6 +25,9 @@ Lily isn't indecisive—she's just wired differently. Some kids find decision-ma
 If this sounds like your child, you're not alone. And more importantly, this isn't a problem to fix—it's a difference to understand and work with. Here are strategies that help quiet kids build decision confidence at their own pace.
 
 ## Understanding Why Shy Kids Struggle with Decisions
+
+*Learn more: [American Psychological Association on child resilience](https://www.apa.org/topics/child-development/resilience-infographic)*
+
 
 Shy kids aren't lacking opinions—they're managing fear. Fear of saying the wrong thing, fear of being judged, fear of taking up space. When a louder sibling speaks first, a shy child might think "they already said it, so I shouldn't" or "maybe my idea isn't good enough" or "I don't want to make a scene."
 
@@ -114,3 +117,9 @@ Keep providing opportunities. Keep celebrating attempts. Keep creating space for
 ### Practice Decision Confidence at Home
 
 Our free decision tools help quiet kids practice choosing without the pressure of speaking up.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

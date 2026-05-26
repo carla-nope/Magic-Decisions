@@ -14,6 +14,9 @@ Every day, we make countless decisions—from what to wear in the morning to wha
 
 ## What Is Decision Fatigue?
 
+*Learn more: [APA: The Costs of Decision Fatigue](https://www.apa.org/monitor/2012/03/decision-fatigue)*
+
+
 Decision fatigue is the deteriorating quality of decisions made after a long session of decision-making. Just like a muscle, our capacity for making good choices gets tired with use.
 
 Psychologist Roy Baumeister famously demonstrated this phenomenon in a study where people who resisted tempting sweets were later more likely to give up on difficult puzzles. The same principle applies to everyday choices.
@@ -68,3 +71,9 @@ The next time you find yourself agonizing over what movie to watch or where to e
 ---
 
 *Ready to put this into practice? Try our [Yes No Oracle](/yes-no-oracle) for quick binary decisions, or the [Spin Wheel](/spin-the-wheel) for multiple options.*
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

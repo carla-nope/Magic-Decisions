@@ -30,6 +30,9 @@ The good news: there's a way out. And it's faster than you think.
 
 ## Why "Should I Do It" Questions Feel So Hard
 
+*Learn more: [Pew Research: Social Media Use by Generation](https://www.pewresearch.org/internet/fact-sheet/social-media/)*
+
+
 Here's the thing about should I do it decisions: they're rarely actually hard. They're hard because we make them hard.
 
 ### The Overthinking Trap
@@ -174,3 +177,9 @@ Should I do it decisions don't have to be hard. Most of the time, the analysis i
 The only bad decision is the one you never make.
 
 **Need help deciding right now? Try our quick decision maker and get your answer in seconds.**
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+

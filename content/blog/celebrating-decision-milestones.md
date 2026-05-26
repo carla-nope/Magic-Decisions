@@ -1,7 +1,7 @@
 ---
 title: "Celebrating Decision Milestones: How to Build Decision Confidence Through Positive Reinforcement"
 slug: "celebrating-decision-milestones"
-date: "2026-05-25"
+date: "2026-02-16"
 excerpt: "Every time your child makes a decision—even a tiny one—they're building a skill that will serve them for life. Here's how to celebrate it."
 category: "Gamified Productivity"
 featured: false
@@ -19,6 +19,9 @@ Every time your child "
 Positive Parenting • 9 min read
 
 ## Celebrating Decision Milestones: How to Build Decision Confidence Through Positive Reinforcement
+
+*Learn more: [Pew Research: Social Media Use by Generation](https://www.pewresearch.org/internet/fact-sheet/social-media/)*
+
 
 Every time your child makes a decision—even a tiny one—they're building a skill that will serve them for life. But are you recognizing and celebrating those moments? Research shows that how we acknowledge decisions shapes how confident kids become as decision-makers.
 
@@ -151,3 +154,9 @@ Do this three times today. Tomorrow, do it three more times. Within a week, you'
 ### Practice Decision Celebrations Today
 
 Use our free decision tools to create moments you can celebrate with your kids.
+---
+
+**Free Decision Fatigue and Quick Decision Resources Directly To Your Email**
+
+[Get Free Decision Fatigue and Quick Decision Resources Directly To Your Email](https://go.magicdecisions.com/dt1)
+
