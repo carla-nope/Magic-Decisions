@@ -186,14 +186,14 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
 
   const getCategoryColor = (color: string): CategoryColor => {
     const colors: Record<string, CategoryColor> = {
-      pink: { bg: 'bg-pink-500', text: 'text-pink-400', border: 'border-pink-500' },
-      red: { bg: 'bg-red-500', text: 'text-red-400', border: 'border-red-500' },
-      blue: { bg: 'bg-blue-500', text: 'text-blue-400', border: 'border-blue-500' },
-      purple: { bg: 'bg-purple-500', text: 'text-purple-400', border: 'border-purple-500' },
-      amber: { bg: 'bg-amber-500', text: 'text-amber-400', border: 'border-amber-500' },
-      green: { bg: 'bg-green-500', text: 'text-green-400', border: 'border-green-500' },
-      cyan: { bg: 'bg-cyan-500', text: 'text-cyan-400', border: 'border-cyan-500' },
-      orange: { bg: 'bg-orange-500', text: 'text-orange-400', border: 'border-orange-500' },
+      pink: { bg: 'bg-highlight/10', text: 'text-highlight-500', border: 'border-highlight-500' },
+      red: { bg: 'bg-highlight/10', text: 'text-highlight-500', border: 'border-highlight-500' },
+      blue: { bg: 'bg-secondary/10', text: 'text-secondary-400', border: 'border-secondary-400' },
+      purple: { bg: 'bg-secondary/10', text: 'text-secondary-400', border: 'border-secondary-400' },
+      amber: { bg: 'bg-primary/10', text: 'text-primary-400', border: 'border-primary-400' },
+      green: { bg: 'bg-secondary/10', text: 'text-secondary-400', border: 'border-secondary-400' },
+      cyan: { bg: 'bg-secondary/10', text: 'text-secondary-400', border: 'border-secondary-400' },
+      orange: { bg: 'bg-highlight/10', text: 'text-highlight-500', border: 'border-highlight-500' },
     };
     return colors[color] || colors.purple;
   };
@@ -206,14 +206,14 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-8">
         {/* Header */}
         <div className="text-center mb-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-100 border border-yellow-200 text-yellow-700 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-cream-300 text-[#6B5E4E] text-sm mb-4">
             <Lightbulb className="w-4 h-4" />
             Decision Maker
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-2 text-ink-800">
             What Should I Do Today?
           </h1>
-          <p className="text-slate-500 max-w-md mx-auto">
+          <p className="text-[#A09080] max-w-md mx-auto">
             Can't decide what to do? Let us suggest an activity! Pick a category or get a random suggestion.
           </p>
         </div>
@@ -232,7 +232,7 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
                     top: `${Math.random() * 100}%`,
                     width: '8px',
                     height: '8px',
-                    backgroundColor: ['#fbbf24', '#f59e0b', '#f97316', '#ef4444', '#10b981', '#06b6d4'][i % 6],
+                    backgroundColor: ['#D4A574', '#C4956A', '#E8B87D', '#C97B5D', '#8B9D77', '#A4C3A2'][i % 6],
                     borderRadius: Math.random() > 0.5 ? '50%' : '2px',
                     animationDelay: `${i * 0.05}s`,
                   }}
@@ -242,7 +242,7 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
           )}
 
           {/* Activity Display */}
-          <div className={`mystical-card p-8 text-center transition-all duration-300 ${isRevealing ? 'animate-pulse' : ''}`}>
+          <div className={`mystical-card rounded-2xl p-8 text-center transition-all duration-300 ${isRevealing ? 'animate-pulse' : ''}`}>
             {currentActivity ? (
               <div className="animate-bounce-in">
                 <span className="text-5xl mb-4 block">
@@ -254,22 +254,22 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
                    selectedCategory === 'Fun' ? '🎮' :
                    selectedCategory === 'Productive' ? '💡' : '🍳'}
                 </span>
-                <p className="text-xl md:text-2xl font-bold text-white mb-2">
+                <p className="text-xl md:text-2xl font-bold font-display text-ink-800 mb-2">
                   {currentActivity}
                 </p>
-                <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium bg-yellow-500/20 text-yellow-400 border border-yellow-500/30`}>
+                <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium bg-primary/10 text-primary-400 border border-primary-400/30`}>
                   {selectedCategory}
                 </span>
               </div>
             ) : isRevealing ? (
               <div className="py-8">
-                <div className="w-12 h-12 mx-auto border-4 border-yellow-500/30 border-t-yellow-500 rounded-full animate-spin" />
-                <p className="text-gray-400 mt-4">Finding something for you...</p>
+                <div className="w-12 h-12 mx-auto border-4 border-primary-400/30 border-t-primary-400 rounded-full animate-spin" />
+                <p className="text-[#A09080] mt-4">Finding something for you...</p>
               </div>
             ) : (
               <div className="py-8">
                 <span className="text-5xl mb-4 block">🤔</span>
-                <p className="text-gray-400">Pick a category below or get a random activity!</p>
+                <p className="text-[#A09080]">Pick a category below or get a random activity!</p>
               </div>
             )}
           </div>
@@ -277,15 +277,15 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
           {/* Result Actions */}
           {currentActivity && !isRevealing && (
             <div className="flex items-center gap-3 justify-center mt-4 animate-fade-in">
-              <button onClick={handleShare} className="share-btn">
+              <button onClick={handleShare} className="mystical-btn">
                 <Share2 className="w-4 h-4" />
                 Share
               </button>
-              <button onClick={handleCopyResult} className="share-btn">
+              <button onClick={handleCopyResult} className="mystical-btn">
                 {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
                 {copied ? 'Copied!' : 'Copy'}
               </button>
-              <button onClick={() => getRandomActivity()} className="share-btn">
+              <button onClick={() => getRandomActivity()} className="mystical-btn">
                 <RefreshCw className="w-4 h-4" />
                 Try Again
               </button>
@@ -305,7 +305,7 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
 
         {/* Category Grid */}
         <div className="w-full max-w-2xl">
-          <h3 className="text-lg font-semibold text-white mb-4 text-center">
+          <h3 className="text-lg font-semibold font-display text-ink-800 mb-4 text-center">
             Or pick a category
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -317,12 +317,12 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
                   key={category.name}
                   onClick={() => getRandomActivity(category.name)}
                   disabled={isRevealing}
-                  className={`mystical-card p-4 text-center hover:scale-105 transition-all ${
+                  className={`mystical-card rounded-2xl p-4 text-center hover:scale-105 transition-all ${
                     selectedCategory === category.name ? `ring-2 ${color.border}` : ''
                   }`}
                 >
                   <Icon className={`w-8 h-8 mx-auto mb-2 ${color.text}`} />
-                  <span className="text-sm font-medium text-white">{category.name}</span>
+                  <span className="text-sm font-medium text-ink-800">{category.name}</span>
                 </button>
               );
             })}
@@ -331,14 +331,14 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
 
         {/* Content Section for SEO */}
         <div className="w-full max-w-3xl mt-8 pb-24">
-          <div className="mystical-card p-6">
-            <h2 className="text-xl font-bold text-white mb-4">What is an Activity Picker?</h2>
-            <p className="text-gray-400 mb-4">
+          <div className="mystical-card rounded-2xl p-6">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-4">What is an Activity Picker?</h2>
+            <p className="text-[#6B5E4E] mb-4">
               An Activity Picker is a fun tool that helps you discover what to do when you're bored. With 80+ activities across 8 categories, it takes the "I don't know what to do" out of your day. Whether you're looking for something active, creative, social, or relaxing, we've got options for every mood.
             </p>
 
-            <h3 className="text-lg font-semibold text-white mb-3">When to Use the Activity Picker</h3>
-            <ul className="text-gray-400 space-y-2 mb-4">
+            <h3 className="text-lg font-semibold font-display text-ink-800 mb-3">When to Use the Activity Picker</h3>
+            <ul className="text-[#6B5E4E] space-y-2 mb-4">
               <li>• When you're bored and need inspiration</li>
               <li>• Planning family activities for the weekend</li>
               <li>• Finding new hobbies to try</li>
@@ -348,8 +348,8 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
 
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div>
-                <h3 className="text-lg font-semibold text-emerald-400 mb-2">Pros</h3>
-                <ul className="text-gray-400 text-sm space-y-1">
+                <h3 className="text-lg font-semibold font-display text-secondary-400 mb-2">Pros</h3>
+                <ul className="text-[#6B5E4E] text-sm space-y-1">
                   <li>✓ 80+ built-in activities across 8 categories</li>
                   <li>✓ Filter by category for targeted results</li>
                   <li>✓ Instant inspiration without overthinking</li>
@@ -358,8 +358,8 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-rose-400 mb-2">Considerations</h3>
-                <ul className="text-gray-400 text-sm space-y-1">
+                <h3 className="text-lg font-semibold font-display text-highlight-500 mb-2">Considerations</h3>
+                <ul className="text-[#6B5E4E] text-sm space-y-1">
                   <li>• Results depend on selected categories</li>
                   <li>• Some activities may require materials</li>
                   <li>• Not all activities suit all ages</li>
@@ -368,36 +368,36 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
               </div>
             </div>
 
-            <h3 className="text-lg font-semibold text-white mb-3">Frequently Asked Questions</h3>
+            <h3 className="text-lg font-semibold font-display text-ink-800 mb-3">Frequently Asked Questions</h3>
             <div className="space-y-3">
               <div>
-                <p className="text-yellow-300 font-medium text-sm">What categories are available?</p>
-                <p className="text-gray-400 text-sm">We have 8 categories: Creative Arts, Outdoor Adventures, Sports & Fitness, Social Games, Learning & Reading, Music & Entertainment, Wellness & Relaxation, and Food & Cooking.</p>
+                <p className="text-primary-400 font-medium text-sm">What categories are available?</p>
+                <p className="text-[#6B5E4E] text-sm">We have 8 categories: Creative Arts, Outdoor Adventures, Sports & Fitness, Social Games, Learning & Reading, Music & Entertainment, Wellness & Relaxation, and Food & Cooking.</p>
               </div>
               <div>
-                <p className="text-yellow-300 font-medium text-sm">Can I pick from all categories at once?</p>
-                <p className="text-gray-400 text-sm">Yes! Click the main "Get Random Activity" button to pick from all 80+ activities. Or select specific categories to narrow down to activities you prefer.</p>
+                <p className="text-primary-400 font-medium text-sm">Can I pick from all categories at once?</p>
+                <p className="text-[#6B5E4E] text-sm">Yes! Click the main "Get Random Activity" button to pick from all 80+ activities. Or select specific categories to narrow down to activities you prefer.</p>
               </div>
               <div>
-                <p className="text-yellow-300 font-medium text-sm">Are the activities suitable for kids?</p>
-                <p className="text-gray-400 text-sm">Many activities are family-friendly, but some categories like "Social Games" or "Outdoor Adventures" have options for all ages. Filter by category to find appropriate activities.</p>
+                <p className="text-primary-400 font-medium text-sm">Are the activities suitable for kids?</p>
+                <p className="text-[#6B5E4E] text-sm">Many activities are family-friendly, but some categories like "Social Games" or "Outdoor Adventures" have options for all ages. Filter by category to find appropriate activities.</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="mt-auto pt-12 text-center text-gray-600 text-sm">
+        <div className="mt-auto pt-12 text-center text-[#A09080] text-sm">
           <p>Let inspiration guide your day</p>
         </div>
 
         {/* Parent/Family Teaching Moment */}
         <div className="w-full max-w-2xl mb-12">
-          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
-            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+          <div className="mystical-card rounded-2xl p-6 bg-cream-50 border border-cream-300">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-4 text-center">
               Use the Activity Picker to Teach Exploration and Openness
             </h2>
-            <p className="text-slate-600 text-center mb-4">
+            <p className="text-[#6B5E4E] text-center mb-4">
               The Activity Picker is perfect for teaching kids that trying new things doesn't have to be scary. When your child says "I don't know what to do," let the picker decide. This removes the pressure of choice and introduces the idea that exploration is valuable even when you don't know what you'll discover. It's great for reducing "I'm bored" syndrome and building a growth mindset around novelty.
             </p>
           </div>
@@ -405,7 +405,7 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
 
         {/* Related Tools */}
         <div className="w-full max-w-4xl mb-12">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-semibold font-display text-ink-800 mb-6 text-center">
             Try More Free Decision Tools
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -418,11 +418,11 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
               <button
                 key={tool.id}
                 onClick={() => onNavigate?.(tool.id)}
-                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+                className="mystical-card tool-card rounded-2xl p-4 text-center hover:border-secondary-400 cursor-pointer bg-cream-50"
               >
                 <span className="text-3xl mb-2 block">{tool.emoji}</span>
-                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
-                <p className="text-slate-500 text-xs">{tool.description}</p>
+                <h3 className="font-semibold font-display text-ink-800 mb-1">{tool.name}</h3>
+                <p className="text-[#A09080] text-xs">{tool.description}</p>
               </button>
             ))}
           </div>
@@ -430,21 +430,21 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
 
         {/* Lead Magnet CTA */}
         <div className="w-full max-w-2xl mb-8">
-          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
-              <Sparkles className="w-8 h-8 text-emerald-600" />
+          <div className="mystical-card rounded-2xl p-8 text-center bg-cream-50 border border-cream-300">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-secondary-400" />
             </div>
-            <h2 className="text-xl font-bold text-slate-800 mb-3">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-3">
               Want to Help Kids Practice Confident Choices?
             </h2>
-            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
               Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
             </p>
             <a
               href="https://go.magicdecisions.com/dt1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+              className="mystical-btn inline-flex items-center gap-2"
             >
               Get the Free Decision Traps Guide
               <ArrowRight className="w-4 h-4" />
@@ -459,7 +459,7 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
       <style>{`
         .activity-btn {
           padding: 1rem 2.5rem;
-          background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+          background: linear-gradient(135deg, #D4A574 0%, #C4956A 100%);
           border: none;
           border-radius: 2rem;
           color: #1a1333;
@@ -468,12 +468,12 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
           font-family: 'Quicksand', sans-serif;
           cursor: pointer;
           transition: all 0.3s ease;
-          box-shadow: 0 4px 20px rgba(251, 191, 36, 0.4);
+          box-shadow: 0 4px 20px rgba(212, 165, 116, 0.4);
         }
 
         .activity-btn:hover {
           transform: translateY(-2px);
-          box-shadow: 0 6px 30px rgba(251, 191, 36, 0.5);
+          box-shadow: 0 6px 30px rgba(212, 165, 116, 0.5);
         }
 
         .activity-btn:active {

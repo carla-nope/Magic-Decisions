@@ -162,10 +162,10 @@ function NamePicker({ onNavigate }: NamePickerProps) {
             <User className="w-4 h-4" />
             Decision Maker
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-2 text-ink-800">
             Pick a Random Name!
           </h1>
-          <p className="text-slate-500 max-w-md mx-auto">
+          <p className="text-[#6B5E4E] max-w-md mx-auto">
             Perfect for giveaways, classrooms, teams, and making fair decisions!
           </p>
         </div>
@@ -480,11 +480,11 @@ function NamePicker({ onNavigate }: NamePickerProps) {
 
         {/* Parent/Family Teaching Moment */}
         <div className="w-full max-w-2xl mb-12">
-          <div className="mystical-card p-6 bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-200">
-            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+          <div className="mystical-card p-6 bg-cream-50 border-cream-300">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-4 text-center">
               Use the Name Picker to Teach Fairness and Equity
             </h2>
-            <p className="text-slate-600 text-center mb-4">
+            <p className="text-[#6B5E4E] text-center mb-4">
               The Name Picker demonstrates what true fairness looks like: each name has an equal chance of being selected, with no manipulation or bias. When kids use this tool for choosing teams or picking partners, they're experiencing randomization as a fairness mechanism. This builds understanding that some decisions should be left to chance not because it's arbitrary, but because it's the most equitable approach. Adults can extend this by discussing how randomization is used in lottery systems,公平的 randomized selection in hiring, and democratic processes.
             </p>
           </div>
@@ -492,7 +492,7 @@ function NamePicker({ onNavigate }: NamePickerProps) {
 
         {/* Related Tools */}
         <div className="w-full max-w-4xl mb-12">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-bold font-display text-ink-800 mb-6 text-center">
             Try More Free Decision Tools
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">

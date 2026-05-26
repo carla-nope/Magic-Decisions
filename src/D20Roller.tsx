@@ -86,21 +86,21 @@ export default function D20Roller({ onNavigate }: D20RollerProps) {
         <div className="w-full max-w-2xl mb-12">
           {/* Badge */}
           <div className="text-center mb-6">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 border border-amber-200 text-amber-700 text-sm mb-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-cream-300 text-primary-400 text-sm mb-4">
               <Dices className="w-4 h-4" />
               Free Online Tool
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+            <h1 className="text-3xl md:text-4xl font-bold font-display mb-2 text-ink-800">
               D20 Roller
             </h1>
-            <p className="text-slate-500 max-w-md mx-auto text-center">
+            <p className="text-[#A09080] max-w-md mx-auto text-center">
               Roll a free online D20 for games, classroom activities, creative prompts, family fun, and playful decisions.
             </p>
           </div>
 
           {/* Tool Card */}
           <div className="mystical-card p-8 text-center">
-            <p className="text-slate-600 text-sm mb-6">
+            <p className="text-[#6B5E4E] text-sm mb-6">
               Use this 20-sided dice roller when you need a quick number, a game roll, a prompt, or a playful nudge. Click Roll D20 and let the number give you a simple next step.
             </p>
 
@@ -110,11 +110,11 @@ export default function D20Roller({ onNavigate }: D20RollerProps) {
                 {result ? (
                   <span className="result-number">{result}</span>
                 ) : (
-                  <span className="text-slate-400 text-2xl">?</span>
+                  <span className="text-[#A09080] text-2xl">?</span>
                 )}
               </div>
               {result && !isRolling && (
-                <p className="text-amber-600 font-medium mt-3">
+                <p className="text-primary-400 font-medium mt-3">
                   Roll: {result}
                 </p>
               )}
@@ -141,10 +141,10 @@ export default function D20Roller({ onNavigate }: D20RollerProps) {
 
             {/* Decision Prompt */}
             {result && !isRolling && (
-              <div className="mt-8 p-4 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-xl animate-fade-in">
+              <div className="mt-8 p-4 bg-secondary/10 border border-cream-300 rounded-2xl animate-fade-in">
                 <div className="flex items-start gap-3">
-                  <Lightbulb className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                  <p className="text-slate-700 text-left">
+                  <Lightbulb className="w-5 h-5 text-secondary-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-ink-800 text-left">
                     <span className="font-semibold">Decision Prompt:</span> {getPrompt(result)}
                   </p>
                 </div>
@@ -155,19 +155,19 @@ export default function D20Roller({ onNavigate }: D20RollerProps) {
 
         {/* Use Cases Section */}
         <div className="w-full max-w-4xl mb-12">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-bold font-display text-ink-800 mb-6 text-center">
             Ways to Use This D20 Roller
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {USE_CASES.map((useCase, index) => (
               <div key={index} className="mystical-card p-5">
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
-                    <span className="text-amber-600">{useCase.icon}</span>
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-primary-400">{useCase.icon}</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-800 mb-1">{useCase.title}</h3>
-                    <p className="text-slate-500 text-sm">{useCase.description}</p>
+                    <h3 className="font-bold font-display text-ink-800 mb-1">{useCase.title}</h3>
+                    <p className="text-[#A09080] text-sm">{useCase.description}</p>
                   </div>
                 </div>
               </div>
@@ -177,16 +177,16 @@ export default function D20Roller({ onNavigate }: D20RollerProps) {
 
         {/* Parent/Family Angle Section */}
         <div className="w-full max-w-2xl mb-12">
-          <div className="mystical-card p-8 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
-            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+          <div className="mystical-card p-8 bg-secondary/10 border border-cream-300">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-4 text-center">
               Use the D20 to Make Small Choices Feel Easier
             </h2>
-            <p className="text-slate-600 text-center mb-4">
+            <p className="text-[#6B5E4E] text-center mb-4">
               Sometimes a random roll can make a small decision feel lighter. Use the D20 when the choice is low-stakes, safe, and flexible — like choosing a family activity, picking a writing prompt, deciding chore order, or practicing quick choices. The goal is not to let the dice make every decision. The goal is to make decision-making feel more playful and less stuck.
             </p>
-            <div className="flex items-start gap-2 p-3 bg-amber-50 border border-amber-200 rounded-lg">
-              <AlertCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-              <p className="text-slate-600 text-sm">
+            <div className="flex items-start gap-2 p-3 bg-primary/10 border border-cream-300 rounded-lg">
+              <AlertCircle className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" />
+              <p className="text-[#6B5E4E] text-sm text-left">
                 For big, personal, financial, medical, or safety-related decisions, use thoughtful judgment and trusted guidance instead of a randomizer.
               </p>
             </div>
@@ -195,7 +195,7 @@ export default function D20Roller({ onNavigate }: D20RollerProps) {
 
         {/* Related Tools Section */}
         <div className="w-full max-w-4xl mb-12">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-bold font-display text-ink-800 mb-6 text-center">
             Try More Free Decision Tools
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -203,11 +203,11 @@ export default function D20Roller({ onNavigate }: D20RollerProps) {
               <button
                 key={tool.id}
                 onClick={() => onNavigate(tool.id)}
-                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+                className="mystical-card p-4 text-center hover:border-cream-300 transition-all cursor-pointer bg-transparent"
               >
                 <span className="text-3xl mb-2 block">{tool.emoji}</span>
-                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
-                <p className="text-slate-500 text-xs">{tool.description}</p>
+                <h3 className="font-bold font-display text-ink-800 mb-1">{tool.name}</h3>
+                <p className="text-[#A09080] text-xs">{tool.description}</p>
               </button>
             ))}
           </div>
@@ -215,21 +215,21 @@ export default function D20Roller({ onNavigate }: D20RollerProps) {
 
         {/* Lead Magnet CTA */}
         <div className="w-full max-w-2xl mb-8">
-          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
-              <Sparkles className="w-8 h-8 text-emerald-600" />
+          <div className="mystical-card p-8 text-center bg-secondary/10 border border-cream-300">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-secondary-400" />
             </div>
-            <h2 className="text-xl font-bold text-slate-800 mb-3">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-3">
               Want to Help Kids Practice Confident Choices?
             </h2>
-            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
               Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
             </p>
                         <a
               href="https://go.magicdecisions.com/dt1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-cream-50 rounded-full font-semibold transition-all shadow-lg hover:shadow-primary/30"
             >
               Get the Free Decision Traps Guide
               <ArrowRight className="w-4 h-4" />
@@ -254,7 +254,7 @@ export default function D20Roller({ onNavigate }: D20RollerProps) {
           border-radius: 24px;
           box-shadow:
             0 20px 40px rgba(0, 0, 0, 0.2),
-            inset 0 2px 4px rgba(255, 255, 255, 0.1),
+            inset 0 2px 4px rgba(255, 255, 257, 0.1),
             inset 0 -2px 4px rgba(0, 0, 0, 0.2);
           transition: transform 0.1s ease;
         }

@@ -57,12 +57,12 @@ interface CategoryInfo {
 }
 
 const CATEGORIES: CategoryInfo[] = [
-  { id: 'castle', name: 'Castle Upkeep', icon: <Castle className="w-4 h-4" />, color: 'text-purple-400', bgColor: 'bg-purple-100', borderColor: 'border-purple-300' },
-  { id: 'alchemy', name: 'Alchemy Kitchen', icon: <Flame className="w-4 h-4" />, color: 'text-amber-400', bgColor: 'bg-amber-100', borderColor: 'border-amber-300' },
-  { id: 'druid', name: 'Druid Nature', icon: <Sparkles className="w-4 h-4" />, color: 'text-emerald-400', bgColor: 'bg-emerald-100', borderColor: 'border-emerald-300' },
-  { id: 'wizard', name: 'Wizard Training', icon: <Star className="w-4 h-4" />, color: 'text-blue-400', bgColor: 'bg-blue-100', borderColor: 'border-blue-300' },
-  { id: 'transformation', name: 'Transformation', icon: <Wand2 className="w-4 h-4" />, color: 'text-pink-400', bgColor: 'bg-pink-100', borderColor: 'border-pink-300' },
-  { id: 'hero', name: 'Hero Quests', icon: <Swords className="w-4 h-4" />, color: 'text-red-400', bgColor: 'bg-red-100', borderColor: 'border-red-300' },
+  { id: 'castle', name: 'Castle Upkeep', icon: <Castle className="w-4 h-4" />, color: 'text-secondary-400', bgColor: 'bg-secondary/10', borderColor: 'border-cream-300' },
+  { id: 'alchemy', name: 'Alchemy Kitchen', icon: <Flame className="w-4 h-4" />, color: 'text-primary-400', bgColor: 'bg-primary/10', borderColor: 'border-cream-300' },
+  { id: 'druid', name: 'Druid Nature', icon: <Sparkles className="w-4 h-4" />, color: 'text-secondary-400', bgColor: 'bg-secondary/10', borderColor: 'border-cream-300' },
+  { id: 'wizard', name: 'Wizard Training', icon: <Star className="w-4 h-4" />, color: 'text-secondary-400', bgColor: 'bg-secondary/10', borderColor: 'border-cream-300' },
+  { id: 'transformation', name: 'Transformation', icon: <Wand2 className="w-4 h-4" />, color: 'text-highlight-500', bgColor: 'bg-highlight/10', borderColor: 'border-cream-300' },
+  { id: 'hero', name: 'Hero Quests', icon: <Swords className="w-4 h-4" />, color: 'text-highlight-500', bgColor: 'bg-highlight/10', borderColor: 'border-cream-300' },
 ]
 
 const PRESET_TASKS: { originalName: string; magicName: string; category: MagicCategory }[] = [
@@ -323,14 +323,14 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
   }))
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-slate-900">
+    <div className="min-h-screen relative overflow-hidden bg-cream-50">
       {/* Magical Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-purple-950 to-slate-900" />
-      <div className="absolute inset-0 opacity-30">
+      <div className="absolute inset-0 bg-cream-100" />
+      <div className="absolute inset-0 opacity-20">
         {[...Array(30)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1 h-1 bg-purple-300 rounded-full animate-pulse"
+            className="absolute w-1 h-1 bg-secondary-400 rounded-full animate-pulse"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -342,42 +342,42 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
 
       <div className="relative z-10 min-h-screen flex flex-col">
         {/* Header */}
-        <div className="p-4 text-center border-b border-purple-500/20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/20 border border-purple-400/30 text-purple-300 text-sm mb-2">
+        <div className="p-4 text-center border-b border-cream-300">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary-300 text-secondary-500 text-sm mb-2">
             <Sparkles className="w-4 h-4" />
             Magic Decisions
           </div>
-          <h1 className="text-2xl md:text-3xl font-bold text-white">
+          <h1 className="text-2xl md:text-3xl font-bold font-display text-ink-800">
             ✨ Magic Chores ✨
           </h1>
 
           {/* Stats */}
           <div className="flex items-center justify-center gap-4 mt-3">
-            <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-400/30 text-amber-300 text-sm">
+            <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary-300 text-primary-500 text-sm">
               <Crown className="w-4 h-4" />
               {streak} Spells
             </div>
-            <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-500/20 border border-purple-400/30 text-purple-300 text-sm">
+            <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary/10 border border-secondary-300 text-secondary-500 text-sm">
               <Gift className="w-4 h-4" />
               {stickers.length} Stickers
             </div>
-            <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-sm">
+            <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary/10 border border-secondary-300 text-secondary-500 text-sm">
               {incompleteTasks.length} Tasks
             </div>
           </div>
 
           {/* Motivational Quote */}
           <div className="mt-4 px-4">
-            <div className="bg-gradient-to-r from-purple-900/40 to-indigo-900/40 border border-purple-500/30 rounded-xl p-4 max-w-xl mx-auto">
+            <div className="bg-cream-100 border border-cream-300 rounded-2xl p-4 max-w-xl mx-auto mystical-card">
               <div className="flex items-start gap-3">
-                <Sparkles className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <Sparkles className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" />
                 <div className="flex-1 text-center">
-                  <p className="text-purple-200 italic text-sm md:text-base">"{currentQuote.magical}"</p>
-                  <p className="text-slate-400 text-xs mt-2">(or, in plain words: "{currentQuote.plain}")</p>
+                  <p className="text-ink-700 italic text-sm md:text-base font-display">"{currentQuote.magical}"</p>
+                  <p className="text-[#A09080] text-xs mt-2">(or, in plain words: "{currentQuote.plain}")</p>
                 </div>
                 <button
                   onClick={refreshQuote}
-                  className="flex-shrink-0 p-1.5 rounded-full bg-purple-500/30 hover:bg-purple-500/50 text-purple-400 hover:text-purple-300 transition-all"
+                  className="flex-shrink-0 p-1.5 rounded-full bg-secondary/10 hover:bg-secondary/20 text-secondary-400 hover:text-secondary-500 transition-all"
                   aria-label="Get new inspiration"
                 >
                   <RefreshCw className="w-4 h-4" />
@@ -388,33 +388,33 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
         </div>
 
         {/* How It Works Section */}
-        <div className="px-4 py-4 border-b border-purple-500/20">
-          <div className="bg-purple-900/30 border border-purple-500/30 rounded-xl p-4 max-w-2xl mx-auto">
+        <div className="px-4 py-4 border-b border-cream-300">
+          <div className="bg-cream-100 border border-cream-300 rounded-2xl p-4 max-w-2xl mx-auto mystical-card">
             <div className="flex items-center gap-2 mb-3">
-              <Info className="w-5 h-5 text-purple-400" />
-              <h2 className="font-semibold text-purple-200">How It Works</h2>
+              <Info className="w-5 h-5 text-secondary-400" />
+              <h2 className="font-semibold font-display text-ink-700">How It Works</h2>
             </div>
             <div className="grid sm:grid-cols-3 gap-4 text-sm">
               <div className="text-center">
-                <div className="w-10 h-10 rounded-full bg-purple-500/30 flex items-center justify-center mx-auto mb-2">
-                  <Wand2 className="w-5 h-5 text-purple-300" />
+                <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-2">
+                  <Wand2 className="w-5 h-5 text-secondary-400" />
                 </div>
-                <p className="text-purple-200 font-medium">Add Tasks</p>
-                <p className="text-slate-400 text-xs mt-1">Pick presets or create custom magical tasks</p>
+                <p className="text-ink-700 font-bold font-display">Add Tasks</p>
+                <p className="text-[#6B5E4E] text-xs mt-1">Pick presets or create custom magical tasks</p>
               </div>
               <div className="text-center">
-                <div className="w-10 h-10 rounded-full bg-purple-500/30 flex items-center justify-center mx-auto mb-2">
-                  <Timer className="w-5 h-5 text-purple-300" />
+                <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-2">
+                  <Timer className="w-5 h-5 text-secondary-400" />
                 </div>
-                <p className="text-purple-200 font-medium">Start Timer</p>
-                <p className="text-slate-400 text-xs mt-1">Estimate time, then race the clock to earn rewards</p>
+                <p className="text-ink-700 font-bold font-display">Start Timer</p>
+                <p className="text-[#6B5E4E] text-xs mt-1">Estimate time, then race the clock to earn rewards</p>
               </div>
               <div className="text-center">
-                <div className="w-10 h-10 rounded-full bg-purple-500/30 flex items-center justify-center mx-auto mb-2">
-                  <Gift className="w-5 h-5 text-purple-300" />
+                <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-2">
+                  <Gift className="w-5 h-5 text-secondary-400" />
                 </div>
-                <p className="text-purple-200 font-medium">Earn Stickers</p>
-                <p className="text-slate-400 text-xs mt-1">Beat the timer to collect magical rewards</p>
+                <p className="text-ink-700 font-bold font-display">Earn Stickers</p>
+                <p className="text-[#6B5E4E] text-xs mt-1">Beat the timer to collect magical rewards</p>
               </div>
             </div>
           </div>
@@ -427,35 +427,35 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
             <button
               onClick={summonQuest}
               disabled={incompleteTasks.length === 0}
-              className="w-full max-w-md mx-auto px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white rounded-xl text-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-purple-500/30 flex items-center justify-center gap-2"
+              className="w-full max-w-md mx-auto px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-2xl text-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed mystical-btn flex items-center justify-center gap-2"
             >
               <Sparkles className="w-5 h-5" />
               Summon a Quest
             </button>
             {incompleteTasks.length === 0 && (
-              <p className="text-purple-300/70 text-sm mt-2">Add tasks below to begin your magical journey!</p>
+              <p className="text-secondary-400/70 text-sm mt-2">Add tasks below to begin your magical journey!</p>
             )}
           </div>
 
           {/* Add Task Section */}
-          <div className="bg-slate-800/80 border border-slate-700 rounded-xl p-4">
+          <div className="bg-cream-100 border border-cream-300 rounded-2xl p-4 mystical-card">
             <div className="flex items-center gap-2 mb-3">
-              <Wand2 className="w-5 h-5 text-purple-400" />
-              <h2 className="text-lg font-semibold text-white">Conjure a New Spell</h2>
+              <Wand2 className="w-5 h-5 text-secondary-400" />
+              <h2 className="text-lg font-semibold font-display text-ink-800">Conjure a New Spell</h2>
             </div>
 
             {/* Preset Tasks Picker */}
             <div className="mb-4">
               <button
                 onClick={() => setShowPresetPicker(!showPresetPicker)}
-                className="w-full flex items-center justify-between px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-purple-300 hover:bg-slate-700 transition-colors"
+                className="w-full flex items-center justify-between px-4 py-3 bg-cream-50 border border-cream-300 rounded-lg text-secondary-400 hover:bg-cream-100 transition-colors mystical-input"
               >
                 <span>Choose from Magical Presets</span>
                 {showPresetPicker ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
               </button>
 
               {showPresetPicker && (
-                <div className="mt-2 max-h-80 overflow-y-auto bg-slate-900/90 rounded-lg border border-slate-700 p-2 space-y-1">
+                <div className="mt-2 max-h-80 overflow-y-auto bg-cream-50 rounded-lg border border-cream-300 p-2 space-y-1">
                   {PRESET_TASKS.map((preset, idx) => {
                     const isAdded = tasks.some(t => t.originalName.toLowerCase() === preset.originalName.toLowerCase())
                     return (
@@ -468,13 +468,13 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
                         disabled={isAdded}
                         className={`w-full text-left p-3 rounded-lg transition-all ${
                           isAdded
-                            ? 'bg-slate-800/50 text-slate-500 cursor-not-allowed'
-                            : 'bg-slate-800 hover:bg-slate-700 text-purple-200 border border-slate-700 hover:border-purple-500/50'
+                            ? 'bg-cream-100/50 text-[#A09080] cursor-not-allowed'
+                            : 'bg-cream-50 hover:bg-cream-100 text-ink-700 border border-cream-300 hover:border-secondary-400/50'
                         }`}
                       >
-                        <div className="font-medium text-sm">{preset.originalName}</div>
-                        <div className="text-xs text-purple-400/70 mt-0.5">→ {preset.magicName}</div>
-                        <div className="text-xs text-slate-500 mt-0.5">{CATEGORIES.find(c => c.id === preset.category)?.name}</div>
+                        <div className="font-medium text-sm font-display">{preset.originalName}</div>
+                        <div className="text-xs text-secondary-400/70 mt-0.5">→ {preset.magicName}</div>
+                        <div className="text-xs text-[#A09080] mt-0.5">{CATEGORIES.find(c => c.id === preset.category)?.name}</div>
                       </button>
                     )
                   })}
@@ -496,7 +496,7 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
                   }
                 }}
                 placeholder="Enter any chore..."
-                className="flex-1 px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-purple-500 focus:outline-none"
+                className="flex-1 px-4 py-3 bg-cream-50 border border-cream-300 rounded-lg text-ink-800 placeholder-[#A09080] focus:border-secondary-400 focus:outline-none mystical-input"
               />
               <button
                 onClick={() => {
@@ -506,7 +506,7 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
                     setCustomTask('')
                   }
                 }}
-                className="px-4 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-lg transition-colors"
+                className="px-4 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg transition-colors mystical-btn"
               >
                 <Plus className="w-5 h-5" />
               </button>
@@ -517,7 +517,7 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
           <div className="flex justify-center">
             <button
               onClick={() => setShowStickers(!showStickers)}
-              className="px-4 py-2 rounded-full bg-amber-500/20 border border-amber-400/30 text-amber-300 hover:bg-amber-500/30 transition-colors flex items-center gap-2"
+              className="px-4 py-2 rounded-full bg-primary/10 border border-primary-300 text-primary-500 hover:bg-primary/20 transition-colors flex items-center gap-2 mystical-btn"
             >
               <Shield className="w-4 h-4" />
               My Collection ({stickers.length})
@@ -526,29 +526,29 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
 
           {/* Sticker Collection Modal */}
           {showStickers && (
-            <div className="bg-slate-800/80 border border-amber-500/30 rounded-xl p-4">
+            <div className="bg-cream-100 border border-primary-300 rounded-2xl p-4 mystical-card">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
-                  <Crown className="w-5 h-5 text-amber-400" />
-                  <h2 className="text-lg font-semibold text-white">Spell Collection</h2>
+                  <Crown className="w-5 h-5 text-primary-500" />
+                  <h2 className="text-lg font-semibold font-display text-ink-800">Spell Collection</h2>
                 </div>
-                <button onClick={() => setShowStickers(false)} className="text-slate-400 hover:text-white text-xl leading-none">
+                <button onClick={() => setShowStickers(false)} className="text-[#A09080] hover:text-ink-800 text-xl leading-none">
                   ✕
                 </button>
               </div>
 
               {stickers.length === 0 ? (
                 <div className="text-center py-8">
-                  <Gift className="w-12 h-12 mx-auto text-slate-600 mb-3" />
-                  <p className="text-slate-400">Complete quests to earn magical rewards!</p>
-                  <p className="text-slate-500 text-sm mt-1">Beat the timer when completing tasks for a chance to win stickers</p>
+                  <Gift className="w-12 h-12 mx-auto text-[#A09080] mb-3" />
+                  <p className="text-[#6B5E4E]">Complete quests to earn magical rewards!</p>
+                  <p className="text-[#A09080] text-sm mt-1">Beat the timer when completing tasks for a chance to win stickers</p>
                 </div>
               ) : (
                 <div className="grid grid-cols-3 gap-3">
                   {stickers.map((sticker) => (
-                    <div key={sticker.id} className="aspect-square bg-slate-900/80 rounded-lg border border-amber-500/30 p-3 flex flex-col items-center justify-center">
+                    <div key={sticker.id} className="aspect-square bg-cream-50 rounded-lg border border-primary-300 p-3 flex flex-col items-center justify-center tool-card">
                       <img src={sticker.path} alt={sticker.name} className="w-full h-full object-contain" />
-                      <span className="text-xs text-amber-300 mt-1 text-center">{sticker.name}</span>
+                      <span className="text-xs text-primary-500 mt-1 text-center font-display">{sticker.name}</span>
                     </div>
                   ))}
                 </div>
@@ -560,11 +560,11 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
           <div className="space-y-3">
             {tasksByCategory.map(category => (
               category.tasks.length > 0 && (
-                <div key={category.id} className="bg-slate-800/80 border border-slate-700 rounded-xl p-4">
-                  <div className={`flex items-center gap-2 mb-3 pb-2 border-b border-slate-700 ${category.color}`}>
+                <div key={category.id} className="bg-cream-100 border border-cream-300 rounded-2xl p-4 mystical-card">
+                  <div className={`flex items-center gap-2 mb-3 pb-2 border-b border-cream-300 ${category.color}`}>
                     {category.icon}
-                    <h3 className="font-semibold">{category.name}</h3>
-                    <span className="text-xs text-slate-400 ml-auto">{category.tasks.filter(t => !t.completed).length} remaining</span>
+                    <h3 className="font-semibold font-display">{category.name}</h3>
+                    <span className="text-xs text-[#A09080] ml-auto">{category.tasks.filter(t => !t.completed).length} remaining</span>
                   </div>
 
                   <div className="space-y-2">
@@ -573,31 +573,31 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
                         key={task.id}
                         className={`flex items-center gap-3 p-3 rounded-lg border transition-all ${
                           task.completed
-                            ? 'bg-slate-700/30 border-slate-600/50 opacity-60'
-                            : 'bg-slate-900/50 border-slate-700 hover:border-purple-500/50'
+                            ? 'bg-cream-50/50 border-cream-200/50 opacity-60'
+                            : 'bg-cream-50 border-cream-300 hover:border-secondary-400/50'
                         }`}
                       >
                         <button
                           onClick={() => toggleComplete(task.id)}
                           className={`flex-shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all ${
                             task.completed
-                              ? 'bg-emerald-500 border-emerald-500'
-                              : 'border-slate-500 hover:border-purple-400'
+                              ? 'bg-secondary-500 border-secondary-500'
+                              : 'border-[#A09080] hover:border-secondary-400'
                           }`}
                         >
                           {task.completed && <Check className="w-3 h-3 text-white" />}
                         </button>
 
                         <div className="flex-1 min-w-0">
-                          <p className={`font-medium ${task.completed ? 'line-through text-slate-500' : 'text-purple-100'}`}>
+                          <p className={`font-medium font-display ${task.completed ? 'line-through text-[#A09080]' : 'text-ink-700'}`}>
                             {task.magicName}
                           </p>
-                          <p className="text-xs text-slate-400">{task.originalName}</p>
+                          <p className="text-xs text-[#A09080]">{task.originalName}</p>
                         </div>
 
                         <button
                           onClick={() => removeTask(task.id)}
-                          className="flex-shrink-0 p-1 text-slate-400 hover:text-red-400 transition-colors"
+                          className="flex-shrink-0 p-1 text-[#A09080] hover:text-highlight-500 transition-colors"
                         >
                           <Trash2 className="w-4 h-4" />
                         </button>
@@ -611,34 +611,34 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
 
           {tasks.length === 0 && (
             <div className="text-center py-8">
-              <Wand2 className="w-12 h-12 mx-auto text-purple-600 mb-3" />
-              <p className="text-purple-300 mb-1">No spells summoned yet!</p>
-              <p className="text-slate-400 text-sm">Add tasks above to begin your magical journey.</p>
+              <Wand2 className="w-12 h-12 mx-auto text-secondary-400 mb-3" />
+              <p className="text-secondary-400 mb-1 font-display">No spells summoned yet!</p>
+              <p className="text-[#6B5E4E] text-sm">Add tasks above to begin your magical journey.</p>
             </div>
           )}
         </div>
 
         {/* Quest Modal */}
         {showQuestModal && summonedTask && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80">
-            <div className="bg-slate-800 border border-purple-500/50 rounded-2xl max-w-md w-full p-6 shadow-2xl">
-              <h2 className="text-2xl font-bold text-white text-center mb-4">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-ink-800/50">
+            <div className="bg-cream-50 border border-secondary-400/50 rounded-2xl max-w-md w-full p-6 mystical-card">
+              <h2 className="text-2xl font-bold font-display text-ink-800 text-center mb-4">
                 {gameState === 'idle' || gameState === 'estimating' ? '⚔️ Quest Awaits!' :
                  gameState === 'running' ? '⏱️ Cast Your Spell!' :
                  '🎉 Quest Complete!'}
               </h2>
 
               {/* Task Card */}
-              <div className="bg-purple-900/30 border border-purple-500/30 rounded-xl p-4 mb-6">
-                <p className="text-xl font-semibold text-purple-200 text-center">{summonedTask.originalName}</p>
-                <p className="text-sm text-purple-400/70 text-center mt-1">aka: {summonedTask.magicName}</p>
+              <div className="bg-secondary/10 border border-secondary-300 rounded-2xl p-4 mb-6 mystical-card">
+                <p className="text-xl font-semibold text-ink-700 text-center font-display">{summonedTask.originalName}</p>
+                <p className="text-sm text-secondary-400/70 text-center mt-1">aka: {summonedTask.magicName}</p>
               </div>
 
               {/* Estimating State */}
               {gameState === 'estimating' && (
                 <>
                   <div className="mb-4 text-center">
-                    <label className="block text-purple-300 text-sm mb-3">
+                    <label className="block text-secondary-400 text-sm mb-3 font-display">
                       How many minutes will this take?
                     </label>
                     <div className="flex items-center justify-center gap-3">
@@ -650,19 +650,19 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
                         onChange={(e) => setEstimatedMinutes(e.target.value)}
                         onKeyDown={(e) => e.key === 'Enter' && startTimer()}
                         placeholder="5"
-                        className="w-24 px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white text-center text-2xl font-bold focus:border-purple-500 focus:outline-none"
+                        className="w-24 px-4 py-3 bg-cream-50 border border-cream-300 rounded-lg text-ink-800 text-center text-2xl font-bold focus:border-secondary-400 focus:outline-none mystical-input"
                       />
-                      <span className="text-purple-300 text-lg">min</span>
+                      <span className="text-secondary-400 text-lg font-display">min</span>
                     </div>
-                    <p className="text-slate-400 text-sm mt-2">Beat the timer to earn a sticker!</p>
+                    <p className="text-[#A09080] text-sm mt-2">Beat the timer to earn a sticker!</p>
                   </div>
                   <div className="flex gap-3">
-                    <button onClick={resetQuest} className="flex-1 px-4 py-3 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg transition-colors">
+                    <button onClick={resetQuest} className="flex-1 px-4 py-3 bg-cream-100 hover:bg-cream-50 text-[#6B5E4E] rounded-lg transition-colors mystical-btn">
                       Cancel
                     </button>
                     <button
                       onClick={startTimer}
-                      className="flex-1 px-4 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-lg transition-colors font-semibold"
+                      className="flex-1 px-4 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg transition-colors font-semibold mystical-btn"
                     >
                       Start Timer
                     </button>
@@ -674,19 +674,19 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
               {gameState === 'running' && (
                 <>
                   <div className="text-center py-6">
-                    <div className="text-6xl font-bold text-purple-300 mb-2">
+                    <div className="text-6xl font-bold text-secondary-400 mb-2 font-display">
                       {formatTime(elapsedSeconds)}
                     </div>
-                    <div className="text-sm text-slate-400">
+                    <div className="text-sm text-[#6B5E4E]">
                       Target: {estimatedMinutes} min
                     </div>
-                    <div className="mt-4 text-xs text-slate-500">
+                    <div className="mt-4 text-xs text-[#A09080]">
                       Timer is running! Complete your task and click "I'm Done" when finished.
                     </div>
                   </div>
                   <button
                     onClick={stopTimer}
-                    className="w-full px-4 py-4 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl transition-colors text-lg font-semibold"
+                    className="w-full px-4 py-4 bg-secondary-500 hover:bg-secondary-600 text-white rounded-2xl transition-colors text-lg font-semibold mystical-btn"
                   >
                     ✓ I'm Done!
                   </button>
@@ -698,20 +698,20 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
                 <>
                   <div className="text-center py-4 mb-4">
                     <div className="text-5xl mb-3">🎉</div>
-                    <p className="text-lg text-purple-200 mb-2">Excellent work, Wizard!</p>
-                    <p className="text-sm text-slate-400">
+                    <p className="text-lg text-ink-700 mb-2 font-display">Excellent work, Wizard!</p>
+                    <p className="text-sm text-[#6B5E4E]">
                       Completed in {formatTime(elapsedSeconds)}
                     </p>
                     {elapsedSeconds <= Number(estimatedMinutes) * 60 && (
-                      <div className="mt-3 p-3 bg-amber-500/20 border border-amber-500/30 rounded-lg">
-                        <p className="text-amber-300 font-semibold">⚡ You beat the timer!</p>
-                        <p className="text-amber-400/80 text-sm">Collect your reward!</p>
+                      <div className="mt-3 p-3 bg-primary/10 border border-primary-300 rounded-lg">
+                        <p className="text-primary-500 font-bold font-display">⚡ You beat the timer!</p>
+                        <p className="text-primary-400/80 text-sm">Collect your reward!</p>
                       </div>
                     )}
                   </div>
                   <button
                     onClick={finishQuest}
-                    className="w-full px-4 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-lg transition-colors font-semibold text-lg"
+                    className="w-full px-4 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg transition-colors font-semibold text-lg mystical-btn"
                   >
                     {elapsedSeconds <= Number(estimatedMinutes) * 60 ? 'Collect Reward' : 'Complete Quest'}
                   </button>
@@ -724,11 +724,11 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
 
       {/* Parent/Family Teaching Moment */}
       <div className="w-full max-w-2xl mx-auto px-4 mb-12">
-        <div className="bg-purple-900/30 border border-purple-500/30 rounded-xl p-6">
-          <h2 className="text-xl font-bold text-purple-200 mb-4 text-center">
+        <div className="bg-cream-100 border border-secondary-300 rounded-2xl p-6 mystical-card">
+          <h2 className="text-xl font-bold font-display text-ink-700 mb-4 text-center">
             Use Magic Chores to Teach Task Management and Delayed Gratification
           </h2>
-          <p className="text-slate-300 text-center mb-4">
+          <p className="text-[#6B5E4E] text-center mb-4">
             Magic Chores gamifies task completion to make chores feel like adventures. The timer mechanic teaches time estimation and urgency without pressure. Sticker rewards introduce the concept of earned rewards—kids learn that completing tasks brings tangible satisfaction. Discuss the magic theme together: what makes a quest feel special? How does completing small quests build confidence for bigger challenges?
           </p>
         </div>
@@ -736,7 +736,7 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
 
       {/* Related Tools */}
       <div className="w-full max-w-4xl mx-auto px-4 mb-12">
-        <h2 className="text-xl font-semibold text-white mb-6 text-center">
+        <h2 className="text-xl font-semibold font-display text-ink-800 mb-6 text-center">
           Try More Free Decision Tools
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -749,11 +749,11 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
             <button
               key={tool.id}
               onClick={() => onNavigate?.(tool.id)}
-              className="bg-slate-800/80 border border-slate-700 p-4 text-center hover:border-purple-500/50 cursor-pointer"
+              className="bg-cream-100 border border-cream-300 p-4 text-center hover:border-secondary-400/50 cursor-pointer rounded-2xl mystical-card"
             >
               <span className="text-3xl mb-2 block">{tool.emoji}</span>
-              <h3 className="font-semibold text-white mb-1">{tool.name}</h3>
-              <p className="text-slate-400 text-xs">{tool.description}</p>
+              <h3 className="font-semibold font-display text-ink-800 mb-1">{tool.name}</h3>
+              <p className="text-[#6B5E4E] text-xs">{tool.description}</p>
             </button>
           ))}
         </div>
@@ -761,21 +761,21 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
 
       {/* Lead Magnet CTA */}
       <div className="w-full max-w-2xl mx-auto px-4 mb-8">
-        <div className="bg-gradient-to-br from-purple-900/40 to-indigo-900/40 border border-purple-500/30 rounded-xl p-8 text-center">
-          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-500/30 flex items-center justify-center">
-            <Sparkles className="w-8 h-8 text-purple-300" />
+        <div className="bg-cream-100 border border-secondary-300 rounded-2xl p-8 text-center mystical-card">
+          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center">
+            <Sparkles className="w-8 h-8 text-secondary-400" />
           </div>
-          <h2 className="text-xl font-bold text-white mb-3">
+          <h2 className="text-xl font-bold font-display text-ink-800 mb-3">
             Want to Help Kids Build Better Task Habits?
           </h2>
-          <p className="text-slate-300 text-sm mb-6 max-w-md mx-auto">
+          <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
             Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
           </p>
           <a
             href="https://go.magicdecisions.com/dt1"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-400 hover:to-indigo-400 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-purple-500/30"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-full font-semibold transition-all hover:shadow-lg mystical-btn"
           >
             Get the Free Decision Traps Guide
             <ArrowRight className="w-4 h-4" />

@@ -22,10 +22,10 @@ const CATEGORY_ICONS: Record<string, React.ComponentType<{ className?: string }>
 }
 
 const CATEGORY_COLORS: Record<string, string> = {
-  Psychology: 'purple',
-  Strategy: 'emerald',
-  Lifestyle: 'rose',
-  Technology: 'blue',
+  Psychology: 'secondary',
+  Strategy: 'secondary',
+  Lifestyle: 'highlight',
+  Technology: 'secondary',
 }
 
 const REPO_OWNER = 'carla-nope'
@@ -82,23 +82,22 @@ function formatDate(dateStr: string): string {
 
 function BlogPostCard({ post, onClick }: { post: BlogPost; onClick: () => void }) {
   const Icon = CATEGORY_ICONS[post.category] || Brain
-  const color = CATEGORY_COLORS[post.category] || 'purple'
 
   return (
     <div
-      className="mystical-card p-5 hover:shadow-lg transition-shadow cursor-pointer"
+      className="mystical-card p-5 hover:shadow-lg transition-shadow cursor-pointer rounded-2xl"
       onClick={onClick}
     >
       <div className="flex items-center gap-2 mb-3">
-        <div className={`w-8 h-8 rounded-lg bg-${color}-100 flex items-center justify-center`}>
-          <Icon className={`w-4 h-4 text-${color}-600`} />
+        <div className="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center">
+          <Icon className="w-4 h-4 text-secondary-400" />
         </div>
-        <span className="text-xs font-medium text-slate-400 uppercase tracking-wide">{post.category}</span>
+        <span className="text-xs font-medium text-[#A09080] uppercase tracking-wide">{post.category}</span>
       </div>
-      <h3 className="font-bold text-slate-800 mb-2">{post.title}</h3>
-      <p className="text-slate-600 text-sm mb-4 line-clamp-2">{post.excerpt}</p>
+      <h3 className="font-bold font-display text-ink-800 mb-2">{post.title}</h3>
+      <p className="text-[#6B5E4E] text-sm mb-4 line-clamp-2">{post.excerpt}</p>
       <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3 text-xs text-slate-400">
+        <div className="flex items-center gap-3 text-xs text-[#A09080]">
           <span className="flex items-center gap-1">
             <Calendar className="w-3 h-3" />
             {formatDate(post.date)}
@@ -108,7 +107,7 @@ function BlogPostCard({ post, onClick }: { post: BlogPost; onClick: () => void }
             {post.readTime}
           </span>
         </div>
-        <span className="flex items-center gap-1 text-emerald-600 text-sm font-medium hover:text-emerald-700">
+        <span className="flex items-center gap-1 text-secondary-400 text-sm font-medium hover:text-secondary-500">
           Read <ArrowRight className="w-3 h-3" />
         </span>
       </div>
@@ -190,26 +189,26 @@ function BlogPage({ onNavigateToPost }: { onNavigateToPost?: (slug: string) => v
       <div className="relative z-10 min-h-screen flex flex-col items-center px-4 py-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-700 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-cream-300 text-secondary-400 text-sm mb-4">
             <BookOpen className="w-4 h-4" />
             Blog & Resources
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-2 text-ink-800">
             Making Better Decisions
           </h1>
-          <p className="text-slate-600 max-w-2xl mx-auto">
+          <p className="text-[#6B5E4E] max-w-2xl mx-auto">
             Practical insights on decision-making, psychology, and how to overcome choice overload.
           </p>
         </div>
 
         {loading ? (
-          <div className="flex items-center gap-3 text-slate-500 py-12">
-            <div className="w-6 h-6 border-2 border-slate-300 border-t-slate-600 rounded-full animate-spin" />
+          <div className="flex items-center gap-3 text-[#A09080] py-12">
+            <div className="w-6 h-6 border-2 border-cream-300 border-t-secondary-400 rounded-full animate-spin" />
             <span>Loading posts...</span>
           </div>
         ) : error ? (
           <div className="mystical-card p-8 text-center">
-            <p className="text-slate-600 mb-4">{error}</p>
+            <p className="text-[#6B5E4E] mb-4">{error}</p>
             <button
               onClick={() => window.location.reload()}
               className="mystical-btn"
@@ -219,12 +218,12 @@ function BlogPage({ onNavigateToPost }: { onNavigateToPost?: (slug: string) => v
           </div>
         ) : posts.length === 0 ? (
           <div className="w-full max-w-4xl mb-12">
-            <div className="mystical-card p-8 text-center bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-100 flex items-center justify-center">
-                <Plus className="w-8 h-8 text-purple-600" />
+            <div className="mystical-card p-8 text-center bg-cream-50 border border-cream-300 rounded-2xl">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center">
+                <Plus className="w-8 h-8 text-secondary-400" />
               </div>
-              <h3 className="text-xl font-bold text-slate-800 mb-2">Welcome to Your Blog!</h3>
-              <p className="text-slate-600 mb-6 max-w-md mx-auto">
+              <h3 className="text-xl font-bold font-display text-ink-800 mb-2">Welcome to Your Blog!</h3>
+              <p className="text-[#6B5E4E] mb-6 max-w-md mx-auto">
                 Your blog is set up and ready. Click the button above to open the Content Manager and write your first post.
               </p>
             </div>
@@ -234,28 +233,28 @@ function BlogPage({ onNavigateToPost }: { onNavigateToPost?: (slug: string) => v
             {/* Featured Articles */}
             {featuredPosts.length > 0 && (
               <div className="w-full max-w-4xl mb-12">
-                <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">Featured Articles</h2>
+                <h2 className="text-xl font-semibold text-ink-800 mb-6 text-center font-display">Featured Articles</h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   {featuredPosts.map((post) => (
                     <div
                       key={post.slug}
-                      className="mystical-card p-6 hover:shadow-lg transition-shadow cursor-pointer"
+                      className="mystical-card p-6 hover:shadow-lg transition-shadow cursor-pointer rounded-2xl"
                       onClick={() => handlePostClick(post.slug)}
                     >
                       <div className="flex items-start gap-4">
-                        <div className={`w-12 h-12 rounded-xl bg-${CATEGORY_COLORS[post.category] || 'purple'}-100 flex items-center justify-center flex-shrink-0`}>
+                        <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
                           {(() => {
                             const Icon = CATEGORY_ICONS[post.category] || Brain
-                            return <Icon className={`w-6 h-6 text-${CATEGORY_COLORS[post.category] || 'purple'}-600`} />
+                            return <Icon className="w-6 h-6 text-secondary-400" />
                           })()}
                         </div>
                         <div className="flex-1">
-                          <span className="text-xs font-medium text-slate-400 uppercase tracking-wide">{post.category}</span>
-                          <h3 className="font-bold text-slate-800 text-lg mb-2">{post.title}</h3>
-                          <p className="text-slate-600 text-sm mb-4">{post.excerpt}</p>
+                          <span className="text-xs font-medium text-[#A09080] uppercase tracking-wide">{post.category}</span>
+                          <h3 className="font-bold font-display text-ink-800 text-lg mb-2">{post.title}</h3>
+                          <p className="text-[#6B5E4E] text-sm mb-4">{post.excerpt}</p>
                           <div className="flex items-center justify-between">
-                            <span className="text-xs text-slate-400">{post.readTime}</span>
-                            <span className="flex items-center gap-1 text-emerald-600 text-sm font-medium hover:text-emerald-700">
+                            <span className="text-xs text-[#A09080]">{post.readTime}</span>
+                            <span className="flex items-center gap-1 text-secondary-400 text-sm font-medium hover:text-secondary-500">
                               Read More <ArrowRight className="w-4 h-4" />
                             </span>
                           </div>
@@ -270,7 +269,7 @@ function BlogPage({ onNavigateToPost }: { onNavigateToPost?: (slug: string) => v
             {/* More Articles */}
             {recentPosts.length > 0 && (
               <div className="w-full max-w-4xl mb-12">
-                <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">More to Explore</h2>
+                <h2 className="text-xl font-semibold text-ink-800 mb-6 text-center font-display">More to Explore</h2>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   {recentPosts.map((post) => (
                     <BlogPostCard
@@ -287,28 +286,28 @@ function BlogPage({ onNavigateToPost }: { onNavigateToPost?: (slug: string) => v
 
         {/* Newsletter Signup */}
         <div className="w-full max-w-2xl mb-12">
-          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
-              <Mail className="w-8 h-8 text-emerald-600" />
+          <div className="mystical-card p-8 text-center bg-cream-50 border border-cream-300 rounded-2xl">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center">
+              <Mail className="w-8 h-8 text-secondary-400" />
             </div>
-            <h3 className="text-xl font-bold text-slate-800 mb-2">Get Weekly Decision Tips</h3>
-            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            <h3 className="text-xl font-bold font-display text-ink-800 mb-2">Get Weekly Decision Tips</h3>
+            <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
               Join thousands of readers who get practical insights on making better choices. No spam, just useful content.
             </p>
-            <p className="text-xs text-slate-400 mt-4">Newsletter coming soon!</p>
+            <p className="text-xs text-[#A09080] mt-4">Newsletter coming soon!</p>
           </div>
         </div>
 
         {/* SEO Content Section */}
         <div className="w-full max-w-3xl mt-8 mb-4">
-          <div className="mystical-card p-6">
-            <h2 className="text-xl font-bold text-slate-800 mb-4">About Magic Decisions Blog</h2>
-            <p className="text-slate-600 mb-4">
+          <div className="mystical-card p-6 rounded-2xl">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-4">About Magic Decisions Blog</h2>
+            <p className="text-[#6B5E4E] mb-4">
               Welcome to the Magic Decisions blog, your resource for understanding how to make better choices in everyday life. We explore the psychology behind decision-making, offering practical tips for overcoming analysis paralysis and choosing wisely when faced with multiple options.
             </p>
 
-            <h3 className="text-lg font-semibold text-slate-800 mb-3">What We Cover</h3>
-            <ul className="text-slate-600 space-y-2 mb-4">
+            <h3 className="text-lg font-semibold font-display text-ink-800 mb-3">What We Cover</h3>
+            <ul className="text-[#6B5E4E] space-y-2 mb-4">
               <li>• Decision fatigue and how to manage it effectively</li>
               <li>• When randomness helps vs. when analysis is better</li>
               <li>• Practical tools and techniques for daily decisions</li>
@@ -316,9 +315,9 @@ function BlogPage({ onNavigateToPost }: { onNavigateToPost?: (slug: string) => v
               <li>• Real-world examples of decision-making in action</li>
             </ul>
 
-            <div className="bg-slate-50 rounded-xl p-4">
-              <p className="text-slate-600 text-sm">
-                <strong className="text-slate-700">Get Started:</strong> Try our free decision tools including the Yes No Oracle, Spin Wheel, Coin Flip, and Random Picker. No signup required—just instant decisions when you need them.
+            <div className="bg-cream-100 rounded-2xl p-4">
+              <p className="text-[#6B5E4E] text-sm">
+                <strong className="text-ink-800">Get Started:</strong> Try our free decision tools including the Yes No Oracle, Spin Wheel, Coin Flip, and Random Picker. No signup required—just instant decisions when you need them.
               </p>
             </div>
           </div>

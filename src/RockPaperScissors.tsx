@@ -141,9 +141,9 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
   };
 
   const getResultColor = () => {
-    if (result === 'win') return 'text-emerald-400';
-    if (result === 'lose') return 'text-red-400';
-    return 'text-yellow-400';
+    if (result === 'win') return 'text-primary-400';
+    if (result === 'lose') return 'text-highlight-500';
+    return 'text-primary-400';
   };
 
   const getResultEmoji = () => {
@@ -153,21 +153,21 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
   };
 
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative bg-cream-50">
       <div className="stars-bg" />
       <div className="fixed inset-0 stars pointer-events-none opacity-50" />
 
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-8">
         {/* Header */}
         <div className="text-center mb-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-100 border border-cyan-200 text-cyan-700 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-cream-300 text-secondary-400 text-sm mb-4">
             <Hand className="w-4 h-4" />
             Decision Maker
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-2 text-ink-800">
             Rock Paper Scissors!
           </h1>
-          <p className="text-slate-500 max-w-md mx-auto">
+          <p className="text-[#6B5E4E] max-w-md mx-auto">
             Classic game, instant play! Choose your weapon and battle the computer.
           </p>
         </div>
@@ -176,20 +176,20 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
         <div className="mystical-card p-4 mb-6 w-full max-w-sm">
           <div className="flex justify-between items-center text-center">
             <div className="flex-1">
-              <p className="text-slate-500 text-sm mb-1">You</p>
-              <p className="text-3xl font-bold text-emerald-600">{score.player}</p>
+              <p className="text-[#6B5E4E] text-sm mb-1">You</p>
+              <p className="text-3xl font-bold font-display text-primary-400">{score.player}</p>
             </div>
             <div className="px-4">
-              <p className="text-slate-400 text-sm">Draws: {score.draw}</p>
+              <p className="text-[#A09080] text-sm">Draws: {score.draw}</p>
               {streak >= 2 && (
-                <p className="text-amber-500 text-xs flex items-center gap-1 justify-center mt-1">
+                <p className="text-primary-400 text-xs flex items-center gap-1 justify-center mt-1">
                   <Zap className="w-3 h-3" /> {streak} streak!
                 </p>
               )}
             </div>
             <div className="flex-1">
-              <p className="text-slate-500 text-sm mb-1">CPU</p>
-              <p className="text-3xl font-bold text-red-500">{score.computer}</p>
+              <p className="text-[#6B5E4E] text-sm mb-1">CPU</p>
+              <p className="text-3xl font-bold font-display text-highlight-500">{score.computer}</p>
             </div>
           </div>
         </div>
@@ -208,7 +208,7 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
                     top: `${Math.random() * 100}%`,
                     width: '10px',
                     height: '10px',
-                    backgroundColor: ['#06b6d4', '#22d3ee', '#fbbf24', '#10b981', '#ec4899'][i % 5],
+                    backgroundColor: ['#E8B86D', '#D4A574', '#C4956A', '#B8860B', '#A67C52'][i % 5],
                     borderRadius: Math.random() > 0.5 ? '50%' : '2px',
                     animationDelay: `${i * 0.05}s`,
                   }}
@@ -221,37 +221,37 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
           <div className="flex items-center justify-center gap-8 mb-6">
             {/* Player Choice */}
             <div className="text-center">
-              <div className={`w-24 h-24 rounded-2xl bg-white/10 flex items-center justify-center mb-2 transition-all duration-300 ${
+              <div className={`w-24 h-24 rounded-2xl bg-cream-100 flex items-center justify-center mb-2 transition-all duration-300 ${
                 isPlaying ? 'animate-pulse' : ''
               }`}>
                 {playerChoice ? (
                   <span className="text-5xl">{choices.find(c => c.id === playerChoice)?.emoji}</span>
                 ) : (
-                  <span className="text-gray-500 text-2xl">?</span>
+                  <span className="text-[#A09080] text-2xl">?</span>
                 )}
               </div>
-              <p className="text-gray-400 text-sm">Your Choice</p>
+              <p className="text-[#A09080] text-sm">Your Choice</p>
             </div>
 
             {/* VS */}
             <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 flex items-center justify-center">
-                <span className="text-2xl font-bold text-white">VS</span>
+              <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center">
+                <span className="text-2xl font-bold font-display text-ink-800">VS</span>
               </div>
             </div>
 
             {/* Computer Choice */}
             <div className="text-center">
-              <div className={`w-24 h-24 rounded-2xl bg-white/10 flex items-center justify-center mb-2 transition-all duration-300 ${
+              <div className={`w-24 h-24 rounded-2xl bg-cream-100 flex items-center justify-center mb-2 transition-all duration-300 ${
                 isPlaying ? 'animate-bounce' : ''
               }`}>
                 {computerChoice ? (
                   <span className="text-5xl">{choices.find(c => c.id === computerChoice)?.emoji}</span>
                 ) : (
-                  <span className="text-gray-500 text-2xl">?</span>
+                  <span className="text-[#A09080] text-2xl">?</span>
                 )}
               </div>
-              <p className="text-gray-400 text-sm">CPU Choice</p>
+              <p className="text-[#A09080] text-sm">CPU Choice</p>
             </div>
           </div>
 
@@ -259,7 +259,7 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
           {result && !isPlaying && (
             <div className="text-center mb-6 animate-bounce-in">
               <span className="text-5xl mb-2 block">{getResultEmoji()}</span>
-              <p className={`text-3xl font-bold ${getResultColor()}`}>
+              <p className={`text-3xl font-bold font-display ${getResultColor()}`}>
                 {resultMessage}
               </p>
               <div className="flex items-center gap-3 justify-center mt-4">
@@ -283,19 +283,19 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
               key={choice.id}
               onClick={() => play(choice.id)}
               disabled={isPlaying}
-              className={`rps-btn w-20 h-20 rounded-2xl flex flex-col items-center justify-center transition-all ${
+              className={`mystical-btn w-20 h-20 rounded-2xl flex flex-col items-center justify-center transition-all ${
                 isPlaying ? 'opacity-50 cursor-not-allowed' : 'hover:scale-110'
               }`}
             >
               <span className="text-3xl mb-1">{choice.emoji}</span>
-              <span className="text-xs text-white/80 capitalize">{choice.id}</span>
+              <span className="text-xs text-[#6B5E4E]/80 capitalize">{choice.id}</span>
             </button>
           ))}
         </div>
 
         {/* Instructions */}
         {!playerChoice && !isPlaying && (
-          <p className="text-gray-500 text-sm text-center animate-pulse">
+          <p className="text-[#A09080] text-sm text-center animate-pulse">
             Choose your weapon above!
           </p>
         )}
@@ -304,7 +304,7 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
         {(score.player > 0 || score.computer > 0) && !isPlaying && (
           <button
             onClick={resetGame}
-            className="mt-6 text-gray-500 hover:text-gray-300 text-sm flex items-center gap-2 transition-colors"
+            className="mt-6 text-[#A09080] hover:text-[#6B5E4E] text-sm flex items-center gap-2 transition-colors"
           >
             <RefreshCw className="w-4 h-4" />
             Reset Scores
@@ -314,13 +314,13 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
         {/* Content Section for SEO */}
         <div className="w-full max-w-3xl mt-8 pb-24">
           <div className="mystical-card p-6">
-            <h2 className="text-xl font-bold text-white mb-4">What is Rock Paper Scissors?</h2>
-            <p className="text-gray-400 mb-4">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-4">What is Rock Paper Scissors?</h2>
+            <p className="text-[#6B5E4E] mb-4">
               Rock Paper Scissors is a classic hand game played worldwide for making decisions and settling disputes. Our online version lets you play against the computer with beautiful animations, score tracking, and streak bonuses. It's a fun way to add excitement to any decision that needs a random outcome.
             </p>
 
-            <h3 className="text-lg font-semibold text-white mb-3">When to Play Rock Paper Scissors</h3>
-            <ul className="text-gray-400 space-y-2 mb-4">
+            <h3 className="text-lg font-semibold font-display text-ink-800 mb-3">When to Play Rock Paper Scissors</h3>
+            <ul className="text-[#6B5E4E] space-y-2 mb-4">
               <li>• Settling minor disputes or choosing who goes first</li>
               <li>• Making quick decisions with a fun twist</li>
               <li>• Playing against friends (take turns on one device)</li>
@@ -330,8 +330,8 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
 
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div>
-                <h3 className="text-lg font-semibold text-emerald-400 mb-2">Pros</h3>
-                <ul className="text-gray-400 text-sm space-y-1">
+                <h3 className="text-lg font-semibold font-display text-primary-400 mb-2">Pros</h3>
+                <ul className="text-[#6B5E4E] text-sm space-y-1">
                   <li>✓ Instant fun with no setup required</li>
                   <li>✓ Score tracking to compete with yourself</li>
                   <li>✓ Streak bonuses for consecutive wins</li>
@@ -340,8 +340,8 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-rose-400 mb-2">Considerations</h3>
-                <ul className="text-gray-400 text-sm space-y-1">
+                <h3 className="text-lg font-semibold font-display text-highlight-500 mb-2">Considerations</h3>
+                <ul className="text-[#6B5E4E] text-sm space-y-1">
                   <li>• Computer opponent uses true randomization</li>
                   <li>• Cannot predict or influence outcomes</li>
                   <li>• Results are purely based on chance</li>
@@ -350,36 +350,36 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
               </div>
             </div>
 
-            <h3 className="text-lg font-semibold text-white mb-3">Frequently Asked Questions</h3>
+            <h3 className="text-lg font-semibold font-display text-ink-800 mb-3">Frequently Asked Questions</h3>
             <div className="space-y-3">
               <div>
-                <p className="text-cyan-300 font-medium text-sm">Is the computer's choice random?</p>
-                <p className="text-gray-400 text-sm">Yes, the computer randomly selects rock, paper, or scissors with equal probability (33.3% each). You cannot predict or outsmart the AI—it truly is random.</p>
+                <p className="text-secondary-400 font-medium text-sm">Is the computer's choice random?</p>
+                <p className="text-[#6B5E4E] text-sm">Yes, the computer randomly selects rock, paper, or scissors with equal probability (33.3% each). You cannot predict or outsmart the AI—it truly is random.</p>
               </div>
               <div>
-                <p className="text-cyan-300 font-medium text-sm">How does scoring work?</p>
-                <p className="text-gray-400 text-sm">You get 1 point for winning, the computer gets 1 point for winning, and ties don't count. Your score is saved locally so you can keep track across sessions.</p>
+                <p className="text-secondary-400 font-medium text-sm">How does scoring work?</p>
+                <p className="text-[#6B5E4E] text-sm">You get 1 point for winning, the computer gets 1 point for winning, and ties don't count. Your score is saved locally so you can keep track across sessions.</p>
               </div>
               <div>
-                <p className="text-cyan-300 font-medium text-sm">What are the streak bonuses?</p>
-                <p className="text-gray-400 text-sm">If you win 2+ times in a row, a streak indicator appears showing your consecutive wins. This adds excitement but doesn't change the gameplay or scoring.</p>
+                <p className="text-secondary-400 font-medium text-sm">What are the streak bonuses?</p>
+                <p className="text-[#6B5E4E] text-sm">If you win 2+ times in a row, a streak indicator appears showing your consecutive wins. This adds excitement but doesn't change the gameplay or scoring.</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="mt-auto pt-12 text-center text-gray-600 text-sm">
+        <div className="mt-auto pt-12 text-center text-[#6B5E4E] text-sm">
           <p>Test your luck against the computer</p>
         </div>
 
         {/* Parent/Family Teaching Moment */}
         <div className="w-full max-w-2xl mb-12">
-          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
-            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+          <div className="mystical-card p-6 bg-cream-50 border border-cream-300">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-4 text-center">
               Use Rock Paper Scissors to Teach Fairness and Accepting Outcomes
             </h2>
-            <p className="text-slate-600 text-center mb-4">
+            <p className="text-[#6B5E4E] text-center mb-4">
               Rock Paper Scissors is a classic tool for teaching kids about fair decision-making and graceful acceptance of outcomes. When siblings can't agree, let RPS decide. This teaches that some decisions don't need to be argued about, and that accepting a loss gracefully is as important as winning. The random element removes bias and teaches kids that sometimes chance, not skill, determines outcomes.
             </p>
           </div>
@@ -387,7 +387,7 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
 
         {/* Related Tools */}
         <div className="w-full max-w-4xl mb-12">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-semibold font-display text-ink-800 mb-6 text-center">
             Try More Free Decision Tools
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -400,11 +400,11 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
               <button
                 key={tool.id}
                 onClick={() => onNavigate?.(tool.id)}
-                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+                className="tool-card p-4 text-center cursor-pointer"
               >
                 <span className="text-3xl mb-2 block">{tool.emoji}</span>
-                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
-                <p className="text-slate-500 text-xs">{tool.description}</p>
+                <h3 className="font-semibold font-display text-ink-800 mb-1">{tool.name}</h3>
+                <p className="text-[#6B5E4E] text-xs">{tool.description}</p>
               </button>
             ))}
           </div>
@@ -412,21 +412,21 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
 
         {/* Lead Magnet CTA */}
         <div className="w-full max-w-2xl mb-8">
-          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
-              <Sparkles className="w-8 h-8 text-emerald-600" />
+          <div className="mystical-card p-8 text-center bg-cream-50 border border-cream-300">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-primary-400" />
             </div>
-            <h2 className="text-xl font-bold text-slate-800 mb-3">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-3">
               Want to Help Kids Practice Confident Choices?
             </h2>
-            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
               Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
             </p>
             <a
               href="https://go.magicdecisions.com/dt1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+              className="mystical-btn inline-flex items-center gap-2 px-6 py-3"
             >
               Get the Free Decision Traps Guide
               <ArrowRight className="w-4 h-4" />
@@ -440,15 +440,15 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
 
       <style>{`
         .rps-btn {
-          background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
-          border: 2px solid rgba(255,255,255,0.1);
-          box-shadow: 0 4px 20px rgba(6, 182, 212, 0.2);
+          background: linear-gradient(135deg, #FFFBF7 0%, rgba(255,251,247,0.05) 100%);
+          border: 2px solid rgba(255,251,247,0.1);
+          box-shadow: 0 4px 20px rgba(232, 184, 109, 0.2);
         }
 
         .rps-btn:hover {
-          background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(6, 182, 212, 0.1) 100%);
-          border-color: rgba(6, 182, 212, 0.5);
-          box-shadow: 0 6px 30px rgba(6, 182, 212, 0.3);
+          background: linear-gradient(135deg, rgba(232, 184, 109, 0.2) 0%, rgba(232, 184, 109, 0.1) 100%);
+          border-color: rgba(232, 184, 109, 0.5);
+          box-shadow: 0 6px 30px rgba(232, 184, 109, 0.3);
         }
 
         @keyframes fadeIn {

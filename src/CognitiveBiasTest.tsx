@@ -181,25 +181,25 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
     if (scorePercent >= 80) return {
       title: "Bias Awareness Expert",
       emoji: "🧠",
-      color: "emerald",
+      color: "secondary",
       description: "You have excellent awareness of cognitive biases. Your critical thinking skills are strong, and you often catch yourself before falling for mental shortcuts."
     }
     if (scorePercent >= 60) return {
       title: "Bias Conscious",
       emoji: "💡",
-      color: "blue",
+      color: "secondary",
       description: "You recognize many cognitive biases when pointed out. Keep practicing awareness, and you'll catch more biases in real-time."
     }
     if (scorePercent >= 40) return {
       title: "Bias Prone",
       emoji: "⚠️",
-      color: "amber",
+      color: "primary",
       description: "Like most people, you fall for some cognitive biases. This is completely normal—awareness is the first step to improvement."
     }
     return {
       title: "Bias Blind Spot",
       emoji: "🎭",
-      color: "rose",
+      color: "highlight",
       description: "We all have blind spots! The good news is that understanding these biases is the first step to making better decisions."
     }
   }
@@ -211,36 +211,36 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
         <div className="stars-bg" />
         <div className="fixed inset-0 stars pointer-events-none opacity-50" />
 
-        <div className="relative z-10 min-h-screen flex flex-col items-center px-4 py-8">
+        <div className="relative z-10 min-h-screen flex flex-col items-center px-4 py-8 bg-cream-50">
           <div className="text-center mb-6">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 border border-amber-200 text-amber-700 text-sm mb-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary-200 text-primary-400 text-sm mb-4">
               <Brain className="w-4 h-4" />
               Test Complete
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+            <h1 className="text-3xl md:text-4xl font-bold font-display mb-2 text-ink-800">
               Your Bias Awareness Score
             </h1>
           </div>
 
           <div className="w-full max-w-2xl">
-            <div className="mystical-card p-6">
+            <div className="mystical-card p-6 rounded-2xl">
               <div className="text-center mb-6">
                 <span className="text-6xl mb-4 block">{category.emoji}</span>
-                <h2 className="text-2xl font-bold text-slate-800 mb-2">{category.title}</h2>
-                <p className="text-4xl font-bold mb-2">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">{scorePercent}%</span>
+                <h2 className="text-2xl font-bold font-display text-ink-800 mb-2">{category.title}</h2>
+                <p className="text-4xl font-bold font-display mb-2">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary-400 to-highlight-500">{scorePercent}%</span>
                 </p>
-                <p className="text-slate-500">{correctCount} out of {total} correct</p>
+                <p className="text-[#A09080]">{correctCount} out of {total} correct</p>
               </div>
 
-              <p className="text-slate-600 text-center mb-6 leading-relaxed">
+              <p className="text-[#6B5E4E] text-center mb-6 leading-relaxed">
                 {category.description}
               </p>
 
               {/* Score breakdown */}
-              <div className="w-full h-4 bg-slate-200 rounded-full overflow-hidden mb-6">
+              <div className="w-full h-4 bg-cream-200 rounded-full overflow-hidden mb-6">
                 <div
-                  className="h-full bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-500"
+                  className="h-full bg-gradient-to-r from-secondary-400 to-highlight-500 transition-all duration-500"
                   style={{ width: `${scorePercent}%` }}
                 />
               </div>
@@ -251,15 +251,15 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
                   const answer = answers[idx]
                   const wasCorrect = answer?.isCorrect
                   return (
-                    <div key={scenario.id} className="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
+                    <div key={scenario.id} className="flex items-center gap-3 p-3 bg-cream-100 rounded-2xl">
                       {wasCorrect ? (
-                        <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-secondary-400 flex-shrink-0" />
                       ) : (
-                        <XCircle className="w-5 h-5 text-rose-500 flex-shrink-0" />
+                        <XCircle className="w-5 h-5 text-highlight-500 flex-shrink-0" />
                       )}
                       <div className="flex-1">
-                        <p className="text-sm font-medium text-slate-700">{scenario.title}</p>
-                        <p className="text-xs text-slate-500">{scenario.biasName}</p>
+                        <p className="text-sm font-medium text-[#6B5E4E]">{scenario.title}</p>
+                        <p className="text-xs text-[#A09080]">{scenario.biasName}</p>
                       </div>
                     </div>
                   )
@@ -270,14 +270,14 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
               <div className="flex items-center justify-center gap-3">
                 <button
                   onClick={resetTest}
-                  className="flex items-center gap-2 px-6 py-3 bg-slate-100 hover:bg-slate-200 rounded-full text-slate-700 font-medium transition-colors"
+                  className="mystical-btn flex items-center gap-2 px-6 py-3 bg-cream-100 hover:bg-cream-200 rounded-full text-[#6B5E4E] font-medium transition-colors"
                 >
                   <RefreshCw className="w-4 h-4" />
                   Retake Test
                 </button>
                 <button
                   onClick={handleShare}
-                  className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-full text-white font-medium transition-all shadow-lg hover:shadow-purple-500/30"
+                  className="mystical-btn flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-secondary-400 to-highlight-500 hover:from-secondary-500 hover:to-highlight-600 rounded-full text-white font-medium transition-all shadow-lg hover:shadow-secondary-500/30"
                 >
                   <Share2 className="w-4 h-4" />
                   {copied ? 'Copied!' : 'Share Results'}
@@ -286,33 +286,33 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
             </div>
 
             {/* About Cognitive Biases */}
-            <div className="mystical-card p-6 mt-6">
-              <h3 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
-                <Brain className="w-5 h-5 text-purple-500" />
+            <div className="mystical-card p-6 mt-6 rounded-2xl">
+              <h3 className="text-lg font-semibold font-display text-ink-800 mb-3 flex items-center gap-2">
+                <Brain className="w-5 h-5 text-secondary-400" />
                 What Are Cognitive Biases?
               </h3>
-              <p className="text-slate-600 text-sm mb-3">
+              <p className="text-[#6B5E4E] text-sm mb-3">
                 Cognitive biases are systematic patterns of deviation from norm or rationality in judgment. They're mental shortcuts that help us process information quickly, but can lead to errors in thinking.
               </p>
-              <p className="text-slate-600 text-sm">
+              <p className="text-[#6B5E4E] text-sm">
                 Research by Daniel Kahneman and Amos Tversky showed that these biases affect our decisions in predictable ways. Understanding them helps us make better choices and recognize when our thinking might be skewed.
               </p>
             </div>
 
             {/* Related Tools */}
-            <div className="mystical-card p-6 mt-6">
-              <h3 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
-                <ArrowRight className="w-5 h-5 text-emerald-500" />
+            <div className="mystical-card p-6 mt-6 rounded-2xl">
+              <h3 className="text-lg font-semibold font-display text-ink-800 mb-3 flex items-center gap-2">
+                <ArrowRight className="w-5 h-5 text-secondary-400" />
                 Try Another Tool
               </h3>
               <div className="grid grid-cols-2 gap-3">
-                <button className="p-3 rounded-xl bg-slate-50 hover:bg-slate-100 text-left transition-colors">
-                  <p className="font-medium text-slate-700 text-sm">Maximizer vs Satisficer</p>
-                  <p className="text-xs text-slate-500">Discover your decision style</p>
+                <button className="tool-card p-3 rounded-2xl bg-cream-100 hover:bg-cream-200 text-left transition-colors">
+                  <p className="font-medium text-[#6B5E4E] text-sm">Maximizer vs Satisficer</p>
+                  <p className="text-xs text-[#A09080]">Discover your decision style</p>
                 </button>
-                <button className="p-3 rounded-xl bg-slate-50 hover:bg-slate-100 text-left transition-colors">
-                  <p className="font-medium text-slate-700 text-sm">Yes No Oracle</p>
-                  <p className="text-xs text-slate-500">Can't decide? Ask the crystal ball</p>
+                <button className="tool-card p-3 rounded-2xl bg-cream-100 hover:bg-cream-200 text-left transition-colors">
+                  <p className="font-medium text-[#6B5E4E] text-sm">Yes No Oracle</p>
+                  <p className="text-xs text-[#A09080]">Can't decide? Ask the crystal ball</p>
                 </button>
               </div>
             </div>
@@ -329,30 +329,30 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
       <div className="stars-bg" />
       <div className="fixed inset-0 stars pointer-events-none opacity-50" />
 
-      <div className="relative z-10 min-h-screen flex flex-col items-center px-4 py-8">
+      <div className="relative z-10 min-h-screen flex flex-col items-center px-4 py-8 bg-cream-50">
         {/* Header */}
         <div className="text-center mb-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 border border-amber-200 text-amber-700 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary-200 text-primary-400 text-sm mb-4">
             <Brain className="w-4 h-4" />
             Bias Awareness Test
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-2 text-ink-800">
             Do You Fall for Cognitive Biases?
           </h1>
-          <p className="text-slate-500 max-w-md mx-auto">
+          <p className="text-[#A09080] max-w-md mx-auto">
             Test your awareness of common mental shortcuts that affect our decisions
           </p>
         </div>
 
         {/* Progress */}
         <div className="w-full max-w-2xl mb-6">
-          <div className="flex items-center justify-between text-sm text-slate-500 mb-2">
+          <div className="flex items-center justify-between text-sm text-[#A09080] mb-2">
             <span>Scenario {currentScenario + 1} of {biasScenarios.length}</span>
             <span>{Math.round(((currentScenario + 1) / biasScenarios.length) * 100)}% Complete</span>
           </div>
-          <div className="w-full h-2 bg-slate-200 rounded-full overflow-hidden">
+          <div className="w-full h-2 bg-cream-200 rounded-full overflow-hidden">
             <div
-              className="h-full bg-gradient-to-r from-amber-500 to-orange-500 transition-all duration-500"
+              className="h-full bg-gradient-to-r from-primary-400 to-highlight-500 transition-all duration-500"
               style={{ width: `${((currentScenario + 1) / biasScenarios.length) * 100}%` }}
             />
           </div>
@@ -360,24 +360,24 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
 
         {/* Scenario */}
         <div className="w-full max-w-2xl">
-          <div className="mystical-card p-6">
+          <div className="mystical-card p-6 rounded-2xl">
             <div className="mb-4">
-              <span className="text-xs font-medium text-amber-600 uppercase tracking-wide">
+              <span className="text-xs font-medium text-primary-400 uppercase tracking-wide">
                 {scenario.biasName}
               </span>
             </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">
+            <h2 className="text-xl font-semibold font-display text-ink-800 mb-2">
               {scenario.title}
             </h2>
-            <p className="text-slate-600 mb-4 text-sm">
+            <p className="text-[#6B5E4E] mb-4 text-sm">
               {scenario.description}
             </p>
-            <div className="bg-slate-50 rounded-xl p-4 mb-4">
-              <p className="text-sm text-slate-500 italic">
+            <div className="bg-cream-100 rounded-2xl p-4 mb-4">
+              <p className="text-sm text-[#A09080] italic">
                 {scenario.scenario}
               </p>
             </div>
-            <p className="text-slate-700 font-medium mb-4">
+            <p className="text-[#6B5E4E] font-medium mb-4">
               {scenario.question}
             </p>
 
@@ -392,23 +392,23 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
                     key={index}
                     onClick={() => !showExplanation && handleSelectAnswer(index)}
                     disabled={showExplanation}
-                    className={`w-full p-4 text-left rounded-xl border-2 transition-all ${
+                    className={`w-full p-4 text-left rounded-2xl border-2 transition-all ${
                       showExplanation
                         ? isSelected
                           ? isCorrect
-                            ? 'border-emerald-400 bg-emerald-50'
-                            : 'border-rose-400 bg-rose-50'
-                          : 'border-slate-200 bg-slate-50 opacity-50'
+                            ? 'border-secondary-400 bg-secondary/10'
+                            : 'border-highlight-500 bg-highlight/10'
+                          : 'border-cream-300 bg-cream-100 opacity-50'
                         : isSelected
-                        ? 'border-purple-400 bg-purple-50'
-                        : 'border-slate-200 hover:border-purple-300 hover:bg-purple-50'
+                        ? 'border-secondary-400 bg-secondary/10'
+                        : 'border-cream-300 hover:border-secondary-400 hover:bg-secondary/10'
                     }`}
                   >
                     <div className="flex items-start gap-3">
                       <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 ${
                         showExplanation && isSelected
-                          ? isCorrect ? 'bg-emerald-500' : 'bg-rose-500'
-                          : 'bg-slate-200'
+                          ? isCorrect ? 'bg-secondary-400' : 'bg-highlight-500'
+                          : 'bg-cream-200'
                       }`}>
                         {showExplanation && isSelected ? (
                           isCorrect ? (
@@ -417,20 +417,20 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
                             <XCircle className="w-4 h-4 text-white" />
                           )
                         ) : (
-                          <span className="text-xs text-slate-500">{String.fromCharCode(65 + index)}</span>
+                          <span className="text-xs text-[#A09080]">{String.fromCharCode(65 + index)}</span>
                         )}
                       </div>
                       <p className={`text-sm flex-1 ${isSelected && showExplanation ? 'font-medium' : ''} ${
                         showExplanation && isSelected
-                          ? isCorrect ? 'text-emerald-700' : 'text-rose-700'
-                          : 'text-slate-700'
+                          ? isCorrect ? 'text-secondary-500' : 'text-highlight-600'
+                          : 'text-[#6B5E4E]'
                       }`}>
                         {option.text}
                       </p>
                     </div>
                     {showExplanation && isSelected && (
                       <div className={`mt-3 p-3 rounded-lg ${
-                        isCorrect ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700'
+                        isCorrect ? 'bg-secondary/10 text-secondary-500' : 'bg-highlight/10 text-highlight-600'
                       }`}>
                         <p className="text-sm">
                           {isCorrect ? '✓ ' : '✗ '}{option.explanation}
@@ -445,7 +445,7 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
             {showExplanation && (
               <button
                 onClick={handleNext}
-                className="w-full mt-6 p-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-xl text-white font-medium transition-all"
+                className="mystical-btn w-full mt-6 p-4 bg-gradient-to-r from-secondary-400 to-highlight-500 hover:from-secondary-500 hover:to-highlight-600 rounded-2xl text-white font-medium transition-all"
               >
                 {currentScenario < biasScenarios.length - 1 ? 'Next Scenario →' : 'See My Results'}
               </button>
@@ -458,11 +458,11 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
 
         {/* Parent/Family Teaching Moment */}
         <div className="w-full max-w-2xl mb-12">
-          <div className="mystical-card p-6 bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200">
-            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+          <div className="mystical-card p-6 bg-cream-50 rounded-2xl border border-primary-200">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-4 text-center">
               Use the Cognitive Bias Test to Teach Critical Thinking
             </h2>
-            <p className="text-slate-600 text-center mb-4">
+            <p className="text-[#6B5E4E] text-center mb-4">
               Cognitive biases are mental shortcuts that usually help us but can lead to errors. This test shows kids that everyone has biases—not because they're "stupid," but because our brains are designed to take mental shortcuts. Discuss real-world examples together: when have they caught themselves falling for a bias? How did it feel to be wrong? Building awareness of these patterns helps kids become more thoughtful decision-makers.
             </p>
           </div>
@@ -470,7 +470,7 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
 
         {/* Related Tools */}
         <div className="w-full max-w-4xl mb-12">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-semibold font-display text-ink-800 mb-6 text-center">
             Try More Free Decision Tools
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -483,11 +483,11 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
               <button
                 key={tool.id}
                 onClick={() => onNavigate?.(tool.id)}
-                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-amber-400 cursor-pointer bg-transparent"
+                className="tool-card mystical-card p-4 text-center hover:border-primary-400 cursor-pointer bg-transparent rounded-2xl"
               >
                 <span className="text-3xl mb-2 block">{tool.emoji}</span>
-                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
-                <p className="text-slate-500 text-xs">{tool.description}</p>
+                <h3 className="font-semibold font-display text-ink-800 mb-1">{tool.name}</h3>
+                <p className="text-[#A09080] text-xs">{tool.description}</p>
               </button>
             ))}
           </div>
@@ -495,21 +495,21 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
 
         {/* Lead Magnet CTA */}
         <div className="w-full max-w-2xl mb-8">
-          <div className="mystical-card p-8 text-center bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-amber-100 flex items-center justify-center">
-              <Sparkles className="w-8 h-8 text-amber-600" />
+          <div className="mystical-card p-8 text-center bg-cream-50 rounded-2xl border border-primary-200">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-primary-400" />
             </div>
-            <h2 className="text-xl font-bold text-slate-800 mb-3">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-3">
               Want to Help Kids Think More Critically?
             </h2>
-            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
               Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
             </p>
             <a
               href="https://go.magicdecisions.com/dt1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-amber-500/30"
+              className="mystical-btn inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-400 to-highlight-500 hover:from-primary-500 hover:to-highlight-600 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-primary-400/30"
             >
               Get the Free Decision Traps Guide
               <ArrowRight className="w-4 h-4" />

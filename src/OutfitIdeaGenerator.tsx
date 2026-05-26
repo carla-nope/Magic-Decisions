@@ -102,25 +102,25 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
       <div className="relative z-10 min-h-screen flex flex-col items-center px-4 py-8">
         {/* Header */}
         <div className="text-center mb-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-100 border border-cyan-200 text-cyan-700 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-cream-300 text-secondary-400 text-sm mb-4">
             <Shirt className="w-4 h-4" />
             Decision Maker
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-2 text-ink-800">
             Outfit Decision Picker
           </h1>
-          <p className="text-slate-500 max-w-md mx-auto">
+          <p className="text-[#A09080] max-w-md mx-auto">
             Can't decide what to wear? Let the magic choose for you! Get perfect outfit ideas based on your vibe, weather, and occasion.
           </p>
         </div>
 
         {/* Selection Grid */}
         <div className="w-full max-w-4xl mb-6">
-          <div className="mystical-card p-4">
+          <div className="mystical-card p-4 rounded-2xl">
             {/* Vibe Selection */}
             <div className="mb-6">
-              <h3 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-purple-500" />
+              <h3 className="text-lg font-semibold text-ink-800 font-display mb-3 flex items-center gap-2">
+                <Sparkles className="w-5 h-5 text-secondary-400" />
                 What's Your Vibe?
               </h3>
               <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
@@ -128,10 +128,10 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
                   <button
                     key={vibe.id}
                     onClick={() => setSelectedVibe(vibe.id)}
-                    className={`p-3 rounded-xl transition-all flex flex-col items-center gap-1 ${
+                    className={`p-3 rounded-2xl transition-all flex flex-col items-center gap-1 ${
                       selectedVibe === vibe.id
-                        ? 'bg-purple-100 border-2 border-purple-400 text-purple-700'
-                        : 'bg-slate-50 hover:bg-slate-100 text-slate-600 border-2 border-transparent'
+                        ? 'bg-secondary/10 border-2 border-secondary-400 text-secondary-400'
+                        : 'bg-cream-50 hover:bg-cream-100 text-[#6B5E4E] border-2 border-transparent'
                     }`}
                   >
                     <span className="text-xl">{vibe.emoji}</span>
@@ -143,8 +143,8 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
 
             {/* Weather Selection */}
             <div className="mb-6">
-              <h3 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
-                <Thermometer className="w-5 h-5 text-orange-500" />
+              <h3 className="text-lg font-semibold text-ink-800 font-display mb-3 flex items-center gap-2">
+                <Thermometer className="w-5 h-5 text-highlight-500" />
                 What's the Weather?
               </h3>
               <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
@@ -154,10 +154,10 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
                     <button
                       key={w.id}
                       onClick={() => setSelectedWeather(w.id)}
-                      className={`p-3 rounded-xl transition-all flex flex-col items-center gap-1 ${
+                      className={`p-3 rounded-2xl transition-all flex flex-col items-center gap-1 ${
                         selectedWeather === w.id
-                          ? 'bg-orange-100 border-2 border-orange-400 text-orange-700'
-                          : 'bg-slate-50 hover:bg-slate-100 text-slate-600 border-2 border-transparent'
+                          ? 'bg-highlight/10 border-2 border-highlight-500 text-highlight-500'
+                          : 'bg-cream-50 hover:bg-cream-100 text-[#6B5E4E] border-2 border-transparent'
                       }`}
                     >
                       <span className="text-xl">{w.emoji}</span>
@@ -170,8 +170,8 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
 
             {/* Occasion Selection */}
             <div>
-              <h3 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
-                <PartyPopper className="w-5 h-5 text-emerald-500" />
+              <h3 className="text-lg font-semibold text-ink-800 font-display mb-3 flex items-center gap-2">
+                <PartyPopper className="w-5 h-5 text-secondary-400" />
                 What's the Occasion?
               </h3>
               <div className="grid grid-cols-3 md:grid-cols-5 gap-2">
@@ -181,10 +181,10 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
                     <button
                       key={occ.id}
                       onClick={() => setSelectedOccasion(occ.id)}
-                      className={`p-3 rounded-xl transition-all flex flex-col items-center gap-1 ${
+                      className={`p-3 rounded-2xl transition-all flex flex-col items-center gap-1 ${
                         selectedOccasion === occ.id
-                          ? 'bg-emerald-100 border-2 border-emerald-400 text-emerald-700'
-                          : 'bg-slate-50 hover:bg-slate-100 text-slate-600 border-2 border-transparent'
+                          ? 'bg-secondary/10 border-2 border-secondary-400 text-secondary-400'
+                          : 'bg-cream-50 hover:bg-cream-100 text-[#6B5E4E] border-2 border-transparent'
                       }`}
                     >
                       <span className="text-xl">{occ.emoji}</span>
@@ -200,7 +200,7 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
         {/* Generate Button */}
         <button
           onClick={generateOutfits}
-          className="outfit-btn flex items-center gap-2 mb-8"
+          className="mystical-btn flex items-center gap-2 mb-8"
         >
           <RefreshCw className="w-5 h-5" />
           Decide My Outfit
@@ -209,50 +209,50 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
         {/* Generated Outfits */}
         {generatedOutfits.length > 0 ? (
           <div className="w-full max-w-4xl mb-6">
-            <h3 className="text-lg font-semibold text-slate-800 mb-4 text-center">
+            <h3 className="text-lg font-semibold text-ink-800 font-display mb-4 text-center">
               {vibes.find(v => v.id === selectedVibe)?.name} Outfits for {weather.find(w => w.id === selectedWeather)?.name} Weather
             </h3>
             <div className="grid md:grid-cols-2 gap-4">
               {generatedOutfits.map((outfit, index) => (
                 <div
                   key={index}
-                  className="mystical-card p-6 hover:shadow-lg transition-all"
+                  className="mystical-card p-6 hover:border-secondary-400 transition-all"
                 >
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-2xl">👗</span>
-                    <span className="font-semibold text-slate-700 capitalize">{outfit.style}</span>
+                    <span className="font-semibold text-ink-800 capitalize">{outfit.style}</span>
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <span className="text-lg">👕</span>
                       <div>
-                        <p className="text-xs text-slate-400 uppercase">Top</p>
-                        <p className="text-slate-700">{outfit.top[Math.floor(Math.random() * outfit.top.length)]}</p>
+                        <p className="text-xs text-[#A09080] uppercase">Top</p>
+                        <p className="text-ink-800">{outfit.top[Math.floor(Math.random() * outfit.top.length)]}</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <span className="text-lg">👖</span>
                       <div>
-                        <p className="text-xs text-slate-400 uppercase">Bottom</p>
-                        <p className="text-slate-700">{outfit.bottom[Math.floor(Math.random() * outfit.bottom.length)]}</p>
+                        <p className="text-xs text-[#A09080] uppercase">Bottom</p>
+                        <p className="text-ink-800">{outfit.bottom[Math.floor(Math.random() * outfit.bottom.length)]}</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <span className="text-lg">👟</span>
                       <div>
-                        <p className="text-xs text-slate-400 uppercase">Shoes</p>
-                        <p className="text-slate-700">{outfit.shoes[Math.floor(Math.random() * outfit.shoes.length)]}</p>
+                        <p className="text-xs text-[#A09080] uppercase">Shoes</p>
+                        <p className="text-ink-800">{outfit.shoes[Math.floor(Math.random() * outfit.shoes.length)]}</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <span className="text-lg">✨</span>
                       <div>
-                        <p className="text-xs text-slate-400 uppercase">Accessories</p>
-                        <p className="text-slate-700">{outfit.accessories[Math.floor(Math.random() * outfit.accessories.length)]}</p>
+                        <p className="text-xs text-[#A09080] uppercase">Accessories</p>
+                        <p className="text-ink-800">{outfit.accessories[Math.floor(Math.random() * outfit.accessories.length)]}</p>
                       </div>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2 mt-4 pt-4 border-t border-slate-100">
+                  <div className="flex items-center gap-2 mt-4 pt-4 border-t border-cream-200">
                     <button
                       onClick={() => handleCopy(outfit, index)}
                       className="share-btn text-xs flex-1"
@@ -274,7 +274,7 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
           <div className="w-full max-w-lg mb-8">
             <div className="mystical-card p-8 text-center">
               <span className="text-5xl mb-4 block">👗</span>
-              <p className="text-slate-500">
+              <p className="text-[#A09080]">
                 Select your vibe, weather, and occasion above, then click to generate outfit ideas!
               </p>
             </div>
@@ -283,18 +283,18 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
 
         {/* Tips Section */}
         <div className="w-full max-w-2xl mb-8">
-          <div className="mystical-card p-6">
-            <h3 className="text-lg font-semibold text-slate-800 mb-4 flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-cyan-500" />
+          <div className="mystical-card p-6 rounded-2xl">
+            <h3 className="text-lg font-semibold text-ink-800 font-display mb-4 flex items-center gap-2">
+              <Sparkles className="w-5 h-5 text-secondary-400" />
               Outfit Styling Tips
             </h3>
-            <div className="grid md:grid-cols-2 gap-4 text-sm text-slate-600">
-              <div className="bg-slate-50 rounded-xl p-4">
-                <p className="font-medium text-slate-700 mb-2">☀️ Hot Weather</p>
+            <div className="grid md:grid-cols-2 gap-4 text-sm text-[#6B5E4E]">
+              <div className="bg-cream-50 rounded-2xl p-4">
+                <p className="font-semibold text-ink-800 font-display mb-2">☀️ Hot Weather</p>
                 <p>Opt for breathable fabrics like linen and cotton. Light colors reflect heat. Don't forget sunscreen!</p>
               </div>
-              <div className="bg-slate-50 rounded-xl p-4">
-                <p className="font-medium text-slate-700 mb-2">❄️ Cold Weather</p>
+              <div className="bg-cream-50 rounded-2xl p-4">
+                <p className="font-semibold text-ink-800 font-display mb-2">❄️ Cold Weather</p>
                 <p>Layer up with a quality jacket. Add thermal underlayers. Protect extremities with gloves and scarves.</p>
               </div>
             </div>
@@ -303,11 +303,11 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
 
         {/* Parent/Family Teaching Moment */}
         <div className="w-full max-w-2xl mb-12">
-          <div className="mystical-card p-6 bg-gradient-to-br from-cyan-50 to-teal-50 border border-cyan-200">
-            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+          <div className="mystical-card p-6 bg-secondary/10 border border-cream-300">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-4 text-center">
               Use the Outfit Picker to Teach Self-Expression and Confidence
             </h2>
-            <p className="text-slate-600 text-center mb-4">
+            <p className="text-[#6B5E4E] text-center mb-4">
               The Outfit Picker helps kids practice decision-making about self-expression. Fashion is a form of communication—discuss with your kids what their outfit choices say about how they want to present themselves. When the tool picks something unexpected, it opens conversations about stepping outside comfort zones and being open to new styles. This builds comfort with change and helps kids understand that identity isn't fixed—it's expressed through choices, including surprising ones.
             </p>
           </div>
@@ -315,7 +315,7 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
 
         {/* Related Tools */}
         <div className="w-full max-w-4xl mb-12">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-semibold font-display text-ink-800 mb-6 text-center">
             Try More Free Decision Tools
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -328,11 +328,11 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
               <button
                 key={tool.id}
                 onClick={() => onNavigate?.(tool.id)}
-                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-cyan-400 cursor-pointer bg-transparent"
+                className="mystical-card p-4 text-center hover:border-secondary-400 transition-all cursor-pointer bg-transparent"
               >
                 <span className="text-3xl mb-2 block">{tool.emoji}</span>
-                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
-                <p className="text-slate-500 text-xs">{tool.description}</p>
+                <h3 className="font-semibold font-display text-ink-800 mb-1">{tool.name}</h3>
+                <p className="text-[#A09080] text-xs">{tool.description}</p>
               </button>
             ))}
           </div>
@@ -340,21 +340,21 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
 
         {/* Lead Magnet CTA */}
         <div className="w-full max-w-2xl mb-8">
-          <div className="mystical-card p-8 text-center bg-gradient-to-br from-cyan-50 to-teal-50 border border-cyan-200">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-cyan-100 flex items-center justify-center">
-              <Sparkles className="w-8 h-8 text-cyan-600" />
+          <div className="mystical-card p-8 text-center bg-secondary/10 border border-cream-300">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-secondary-400" />
             </div>
-            <h2 className="text-xl font-bold text-slate-800 mb-3">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-3">
               Want to Help Kids Build Confidence in Self-Expression?
             </h2>
-            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
               Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
             </p>
             <a
               href="https://go.magicdecisions.com/dt1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-cyan-500/30"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-highlight-500 to-highlight-600 hover:from-highlight-600 hover:to-highlight-700 text-white rounded-full font-semibold transition-all hover:shadow-highlight-500/30"
             >
               Get the Free Decision Traps Guide
               <ArrowRight className="w-4 h-4" />
@@ -365,31 +365,6 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
         {/* Footer spacer */}
         <div className="h-24" />
       </div>
-
-      <style>{`
-        .outfit-btn {
-          padding: 1rem 2.5rem;
-          background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
-          border: none;
-          border-radius: 2rem;
-          color: white;
-          font-size: 1.1rem;
-          font-weight: 600;
-          font-family: 'Quicksand', sans-serif;
-          cursor: pointer;
-          transition: all 0.3s ease;
-          box-shadow: 0 4px 20px rgba(6, 182, 212, 0.4);
-        }
-
-        .outfit-btn:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 6px 30px rgba(6, 182, 212, 0.5);
-        }
-
-        .outfit-btn:active {
-          transform: translateY(0);
-        }
-      `}</style>
     </div>
   )
 }

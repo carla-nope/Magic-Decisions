@@ -76,28 +76,28 @@ If you have any questions about this Privacy Policy, please contact us using the
       <div className="relative z-10 max-w-4xl mx-auto px-4 py-12">
         <button
           onClick={() => onNavigate('home')}
-          className="flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors"
+          className="flex items-center gap-2 text-[#A09080] hover:text-ink-800 mb-8 transition-colors"
         >
           <Home className="w-4 h-4" />
           Back to Home
         </button>
 
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/20 border border-purple-500/30 text-purple-300 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-cream-300 text-secondary-400 text-sm mb-4">
             <Shield className="w-4 h-4" />
             Privacy & Legal
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-amber-400 bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-4 text-ink-800">
             Privacy Policy
           </h1>
-          <p className="text-gray-400">Last Updated: April 12, 2026</p>
+          <p className="text-[#6B5E4E]">Last Updated: April 12, 2026</p>
         </div>
 
         <div className="space-y-6">
           {sections.map((section) => (
-            <div key={section.id} className="mystical-card p-6">
-              <h3 className="text-lg font-semibold text-white mb-3">{section.title}</h3>
-              <div className="text-gray-400 leading-relaxed whitespace-pre-line">
+            <div key={section.id} className="mystical-card p-6 rounded-2xl">
+              <h3 className="text-lg font-semibold font-display text-ink-800 mb-3">{section.title}</h3>
+              <div className="text-[#6B5E4E] leading-relaxed whitespace-pre-line">
                 {section.content}
               </div>
             </div>
@@ -210,28 +210,28 @@ If any provision of these terms is found to be unenforceable, the remaining prov
       <div className="relative z-10 max-w-4xl mx-auto px-4 py-12">
         <button
           onClick={() => onNavigate('home')}
-          className="flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors"
+          className="flex items-center gap-2 text-[#A09080] hover:text-ink-800 mb-8 transition-colors"
         >
           <Home className="w-4 h-4" />
           Back to Home
         </button>
 
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-300 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-cream-300 text-primary-400 text-sm mb-4">
             <FileText className="w-4 h-4" />
             Legal
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-amber-400 via-orange-400 to-amber-400 bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-4 text-ink-800">
             Terms and Conditions
           </h1>
-          <p className="text-gray-400">Last Updated: April 12, 2026</p>
+          <p className="text-[#6B5E4E]">Last Updated: April 12, 2026</p>
         </div>
 
         <div className="space-y-6">
           {sections.map((section) => (
-            <div key={section.id} className="mystical-card p-6">
-              <h3 className="text-lg font-semibold text-white mb-3">{section.title}</h3>
-              <div className="text-gray-400 leading-relaxed whitespace-pre-line">
+            <div key={section.id} className="mystical-card p-6 rounded-2xl">
+              <h3 className="text-lg font-semibold font-display text-ink-800 mb-3">{section.title}</h3>
+              <div className="text-[#6B5E4E] leading-relaxed whitespace-pre-line">
                 {section.content}
               </div>
             </div>
@@ -254,10 +254,10 @@ function AboutPage({ onNavigate }: { onNavigate: (page: Tool) => void }) {
   ];
 
   const stats = [
-    { number: '15', label: 'Decision Tools', color: 'text-purple-400' },
-    { number: '100%', label: 'Free to Use', color: 'text-emerald-400' },
-    { number: '0', label: 'Required Sign-up', color: 'text-amber-400' },
-    { number: 'Family', label: 'Built with Heart', color: 'text-cyan-400' },
+    { number: '15', label: 'Decision Tools', color: 'text-secondary-400' },
+    { number: '100%', label: 'Free to Use', color: 'text-secondary-400' },
+    { number: '0', label: 'Required Sign-up', color: 'text-primary-400' },
+    { number: 'Family', label: 'Built with Heart', color: 'text-secondary-400' },
   ];
 
   return (
@@ -266,7 +266,7 @@ function AboutPage({ onNavigate }: { onNavigate: (page: Tool) => void }) {
       <div className="relative z-10 max-w-4xl mx-auto px-4 py-12">
         <button
           onClick={() => onNavigate('home')}
-          className="flex items-center gap-2 text-slate-400 hover:text-slate-600 mb-8 transition-colors"
+          className="flex items-center gap-2 text-[#A09080] hover:text-ink-800 mb-8 transition-colors"
         >
           <Home className="w-4 h-4" />
           Back to Home
@@ -274,131 +274,131 @@ function AboutPage({ onNavigate }: { onNavigate: (page: Tool) => void }) {
 
         {/* Hero */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-700 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-cream-300 text-secondary-400 text-sm mb-4">
             <Info className="w-4 h-4" />
             About Us
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-4 text-ink-800">
             About Magic Decisions
           </h1>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="text-xl text-[#6B5E4E] max-w-2xl mx-auto">
             Making everyday decisions easier, fairer, and a little more magical.
           </p>
         </div>
 
         {/* Introduction */}
-        <div className="mystical-card p-8 mb-8">
-          <p className="text-slate-600 leading-relaxed mb-4">
+        <div className="mystical-card p-8 mb-8 rounded-2xl">
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             Magic Decisions is a collection of free decision-making tools for kids, parents, families, classrooms, and anyone who occasionally gets stuck choosing what to do next.
           </p>
-          <p className="text-slate-600 leading-relaxed">
+          <p className="text-[#6B5E4E] leading-relaxed">
             We believe decision-making does not always have to feel heavy. Sometimes you need a fair coin flip, a quick spin wheel, a dice roll, or a playful prompt to help you move forward. For low-stakes everyday choices, a little bit of structure — and a little bit of magic — can make deciding feel easier.
           </p>
         </div>
 
         {/* Our Story */}
-        <div className="mystical-card p-8 mb-8">
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">Our Story</h2>
-          <p className="text-slate-600 leading-relaxed mb-4">
+        <div className="mystical-card p-8 mb-8 rounded-2xl">
+          <h2 className="text-2xl font-bold font-display text-ink-800 mb-4">Our Story</h2>
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             Magic Decisions started with a very real problem in our own home: decision-making is hard.
           </p>
-          <p className="text-slate-600 leading-relaxed mb-4">
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             I am Carla, a single mom who has struggled with decisions myself. I know what it feels like to overthink, second-guess, delay, and wish someone else would just pick already. Then I started noticing something familiar in my 10-year-old daughter. She was beginning to struggle with decisions too — small choices, everyday choices, the kind that can still feel surprisingly big when you are a kid.
           </p>
-          <p className="text-slate-600 leading-relaxed mb-4">
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             Instead of turning it into another lecture, we decided to turn it into a project.
           </p>
-          <p className="text-slate-600 leading-relaxed mb-4">
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             Magic Decisions became something we could build together: a fun website full of simple tools that help make low-stakes choices feel less stressful and more playful. Along the way, my daughter gets to learn about web design, SEO, online business, creativity, and how an idea can become something real on the internet.
           </p>
-          <p className="text-slate-600 leading-relaxed">
+          <p className="text-[#6B5E4E] leading-relaxed">
             So this site is part family project, part learning lab, and part practical toolkit for families like ours.
           </p>
         </div>
 
         {/* Why We Built This */}
-        <div className="mystical-card p-8 mb-8">
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">Why We Built This Site</h2>
-          <p className="text-slate-600 leading-relaxed mb-4">
+        <div className="mystical-card p-8 mb-8 rounded-2xl">
+          <h2 className="text-2xl font-bold font-display text-ink-800 mb-4">Why We Built This Site</h2>
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             We built Magic Decisions for the moments when a decision does not need to become a full family meeting.
           </p>
-          <p className="text-slate-600 leading-relaxed mb-4">
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             What should we eat? Which game should we play? Who goes first? What chore comes next? Which activity should we try today? Should we flip a coin and see how we feel about the result?
           </p>
-          <p className="text-slate-600 leading-relaxed mb-4">
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             These are not life-or-death decisions. They are everyday moments. But everyday moments are where kids get to practice noticing preferences, making choices, handling outcomes, and learning that not every decision has to be perfect.
           </p>
-          <p className="text-slate-600 leading-relaxed">
+          <p className="text-[#6B5E4E] leading-relaxed">
             Magic Decisions gives families a low-pressure way to practice those skills. The tools are free, fast, and easy to use. No accounts. No downloads. No complicated setup. Just simple decision tools that help you pick, play, laugh, and move on.
           </p>
         </div>
 
         {/* Who It's For */}
-        <div className="mystical-card p-8 mb-8">
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">Who Magic Decisions Is For</h2>
-          <p className="text-slate-600 leading-relaxed mb-4">
+        <div className="mystical-card p-8 mb-8 rounded-2xl">
+          <h2 className="text-2xl font-bold font-display text-ink-800 mb-4">Who Magic Decisions Is For</h2>
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             Magic Decisions is for parents who want to help their kids practice making choices without turning every decision into a battle. It is for kids who freeze when asked to choose, overthink simple options, say "I don't care" when they really do, or need a playful nudge to trust their own reaction.
           </p>
-          <p className="text-slate-600 leading-relaxed mb-4">
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             It is also for teachers, homeschool families, game-night planners, friend groups, and anyone who wants a fair, fun way to make small choices.
           </p>
-          <p className="text-slate-600 leading-relaxed">
+          <p className="text-[#6B5E4E] leading-relaxed">
             The site is designed for low-stakes decisions: choosing activities, assigning turns, picking prompts, making family routines more fun, or adding a little randomness to ordinary moments. It is not meant for medical, legal, financial, safety, or major life decisions.
           </p>
         </div>
 
         {/* What We Believe */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-slate-800 mb-6 text-center">What We Believe</h2>
+          <h2 className="text-2xl font-bold font-display text-ink-800 mb-6 text-center">What We Believe</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {beliefs.map((belief) => (
-              <div key={belief.title} className="mystical-card p-6">
-                <h3 className="text-lg font-bold text-slate-800 mb-2">{belief.title}</h3>
-                <p className="text-slate-600 text-sm">{belief.description}</p>
+              <div key={belief.title} className="mystical-card p-6 rounded-2xl">
+                <h3 className="text-lg font-bold font-display text-ink-800 mb-2">{belief.title}</h3>
+                <p className="text-[#6B5E4E] text-sm">{belief.description}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Stats */}
-        <div className="mystical-card p-8 mb-8">
-          <h2 className="text-2xl font-bold text-white mb-6 text-center">Magic by the Numbers</h2>
+        <div className="mystical-card p-8 mb-8 rounded-2xl">
+          <h2 className="text-2xl font-bold font-display text-ink-800 mb-6 text-center">Magic by the Numbers</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {stats.map((stat) => (
               <div key={stat.label}>
                 <p className={`text-4xl font-bold mb-1 ${stat.color}`}>{stat.number}</p>
-                <p className="text-slate-500 text-sm">{stat.label}</p>
+                <p className="text-[#6B5E4E] text-sm">{stat.label}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Our Mission */}
-        <div className="mystical-card p-8 mb-8">
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">Our Mission</h2>
-          <p className="text-slate-600 leading-relaxed mb-4">
+        <div className="mystical-card p-8 mb-8 rounded-2xl">
+          <h2 className="text-2xl font-bold font-display text-ink-800 mb-4">Our Mission</h2>
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             Our mission is to make decision-making feel less stressful and more approachable for kids and families.
           </p>
-          <p className="text-slate-600 leading-relaxed">
+          <p className="text-[#6B5E4E] leading-relaxed">
             We are not here to tell families what to choose. We are here to give them simple tools that make choosing easier. Sometimes the tool gives you an answer. Sometimes it helps you realize what you actually wanted all along. Either way, the goal is the same: less stuck, more action, and a little more confidence with every small choice.
           </p>
         </div>
 
         {/* Start with a Small Decision */}
-        <div className="mystical-card p-8 mb-8">
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">Start with a Small Decision</h2>
-          <p className="text-slate-600 leading-relaxed mb-4">
+        <div className="mystical-card p-8 mb-8 rounded-2xl">
+          <h2 className="text-2xl font-bold font-display text-ink-800 mb-4">Start with a Small Decision</h2>
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             If you or your child tends to overthink, freeze, or avoid small choices, start with something easy. Flip a coin. Spin a wheel. Roll a die. Try a prompt. Notice how the result feels.
           </p>
-          <p className="text-slate-600 leading-relaxed mb-4">
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             That tiny reaction — relief, disappointment, excitement, hesitation — can tell you a lot.
           </p>
-          <p className="text-slate-600 leading-relaxed mb-4">
+          <p className="text-[#6B5E4E] leading-relaxed mb-4">
             Ready to let a little magic guide your next low-stakes decision?
           </p>
           <button
             onClick={() => onNavigate('home')}
-            className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full text-white font-semibold hover:from-emerald-600 hover:to-teal-600 transition-all shadow-lg hover:shadow-emerald-500/30 inline-flex items-center gap-2"
+            className="mystical-btn inline-flex items-center gap-2"
           >
             Try Our Free Decision Tools
             <ArrowRight className="w-4 h-4" />
@@ -406,21 +406,21 @@ function AboutPage({ onNavigate }: { onNavigate: (page: Tool) => void }) {
         </div>
 
         {/* Lead Magnet CTA */}
-        <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
-          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
-            <Sparkles className="w-8 h-8 text-emerald-600" />
+        <div className="mystical-card p-8 text-center bg-cream-50 border border-cream-300 rounded-2xl">
+          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center">
+            <Sparkles className="w-8 h-8 text-secondary-400" />
           </div>
-          <h2 className="text-xl font-bold text-slate-800 mb-3">
+          <h2 className="text-xl font-bold font-display text-ink-800 mb-3">
             Want to Help Kids Practice Confident Choices?
           </h2>
-          <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+          <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
             Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
           </p>
           <a
             href="https://go.magicdecisions.com/dt1"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+            className="mystical-btn inline-flex items-center gap-2"
           >
             Get the Free Decision Traps Guide
             <ArrowRight className="w-4 h-4" />
@@ -503,21 +503,21 @@ function ContactPage({ onNavigate }: { onNavigate: (page: Tool) => void }) {
       <div className="relative z-10 max-w-4xl mx-auto px-4 py-12">
         <button
           onClick={() => onNavigate('home')}
-          className="flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors"
+          className="flex items-center gap-2 text-[#A09080] hover:text-ink-800 mb-8 transition-colors"
         >
           <Home className="w-4 h-4" />
           Back to Home
         </button>
 
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-cream-300 text-secondary-400 text-sm mb-4">
             <Mail className="w-4 h-4" />
             Contact Us
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-4 text-ink-800">
             Get in Touch
           </h1>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-[#6B5E4E] max-w-2xl mx-auto">
             Have a question or feedback? We'd love to hear from you.
           </p>
         </div>
@@ -525,21 +525,21 @@ function ContactPage({ onNavigate }: { onNavigate: (page: Tool) => void }) {
         {/* Response Times */}
         <div className="grid md:grid-cols-3 gap-4 mb-8">
           {contactMethods.map((method) => (
-            <div key={method.title} className="mystical-card p-5 text-center">
+            <div key={method.title} className="mystical-card p-5 text-center rounded-2xl">
               <span className="text-3xl mb-3 block">{method.emoji}</span>
-              <h3 className="font-semibold text-white mb-1">{method.title}</h3>
-              <p className="text-gray-500 text-sm mb-2">{method.description}</p>
-              <p className="text-cyan-400 text-xs">{method.response}</p>
+              <h3 className="font-semibold font-display text-ink-800 mb-1">{method.title}</h3>
+              <p className="text-[#6B5E4E] text-sm mb-2">{method.description}</p>
+              <p className="text-secondary-400 text-xs">{method.response}</p>
             </div>
           ))}
         </div>
 
         {/* Contact Form */}
         {submitted ? (
-          <div className="mystical-card p-8 text-center">
+          <div className="mystical-card p-8 text-center rounded-2xl">
             <span className="text-5xl mb-4 block">✨</span>
-            <h2 className="text-2xl font-bold text-white mb-3">Message Sent!</h2>
-            <p className="text-gray-400 mb-4">
+            <h2 className="text-2xl font-bold font-display text-ink-800 mb-3">Message Sent!</h2>
+            <p className="text-[#6B5E4E] mb-4">
               Thank you for reaching out. We'll get back to you soon.
             </p>
             <button
@@ -547,41 +547,41 @@ function ContactPage({ onNavigate }: { onNavigate: (page: Tool) => void }) {
                 setSubmitted(false);
                 setFormData({ name: '', email: '', subject: '', message: '' });
               }}
-              className="text-purple-400 hover:text-purple-300"
+              className="text-secondary-400 hover:text-secondary-500"
             >
               Send another message
             </button>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="mystical-card p-8">
+          <form onSubmit={handleSubmit} className="mystical-card p-8 rounded-2xl">
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div>
-                <label className="block text-gray-400 text-sm mb-2">Your Name</label>
+                <label className="block text-[#6B5E4E] text-sm mb-2">Your Name</label>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className={`mystical-input w-full ${errors.name ? 'border-red-500' : ''}`}
+                  className={`mystical-input w-full ${errors.name ? 'border-highlight-500' : ''}`}
                   placeholder="John Doe"
                 />
-                {errors.name && <p className="text-red-400 text-xs mt-1">{errors.name}</p>}
+                {errors.name && <p className="text-highlight-500 text-xs mt-1">{errors.name}</p>}
               </div>
               <div>
-                <label className="block text-gray-400 text-sm mb-2">Your Email</label>
+                <label className="block text-[#6B5E4E] text-sm mb-2">Your Email</label>
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`mystical-input w-full ${errors.email ? 'border-red-500' : ''}`}
+                  className={`mystical-input w-full ${errors.email ? 'border-highlight-500' : ''}`}
                   placeholder="john@example.com"
                 />
-                {errors.email && <p className="text-red-400 text-xs mt-1">{errors.email}</p>}
+                {errors.email && <p className="text-highlight-500 text-xs mt-1">{errors.email}</p>}
               </div>
             </div>
             <div className="mb-4">
-              <label className="block text-gray-400 text-sm mb-2">Subject</label>
+              <label className="block text-[#6B5E4E] text-sm mb-2">Subject</label>
               <select
                 name="subject"
                 value={formData.subject}
@@ -596,20 +596,20 @@ function ContactPage({ onNavigate }: { onNavigate: (page: Tool) => void }) {
               </select>
             </div>
             <div className="mb-6">
-              <label className="block text-gray-400 text-sm mb-2">Message</label>
+              <label className="block text-[#6B5E4E] text-sm mb-2">Message</label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 rows={5}
-                className={`mystical-input w-full resize-none ${errors.message ? 'border-red-500' : ''}`}
+                className={`mystical-input w-full resize-none ${errors.message ? 'border-highlight-500' : ''}`}
                 placeholder="How can we help you?"
               />
-              {errors.message && <p className="text-red-400 text-xs mt-1">{errors.message}</p>}
+              {errors.message && <p className="text-highlight-500 text-xs mt-1">{errors.message}</p>}
             </div>
             <button
               type="submit"
-              className="w-full py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl text-white font-semibold hover:from-purple-600 hover:to-pink-600 transition-all"
+              className="mystical-btn w-full"
             >
               Send Message
             </button>
@@ -618,19 +618,19 @@ function ContactPage({ onNavigate }: { onNavigate: (page: Tool) => void }) {
 
         {/* FAQ */}
         <div className="mt-12">
-          <h2 className="text-xl font-bold text-white mb-4 text-center">Frequently Asked Questions</h2>
+          <h2 className="text-xl font-bold font-display text-ink-800 mb-4 text-center">Frequently Asked Questions</h2>
           <div className="space-y-3">
-            <div className="mystical-card p-5">
-              <h3 className="font-semibold text-white mb-2">How quickly do you respond?</h3>
-              <p className="text-gray-400 text-sm">We typically respond within 24-48 hours on business days.</p>
+            <div className="mystical-card p-5 rounded-2xl">
+              <h3 className="font-semibold font-display text-ink-800 mb-2">How quickly do you respond?</h3>
+              <p className="text-[#6B5E4E] text-sm">We typically respond within 24-48 hours on business days.</p>
             </div>
-            <div className="mystical-card p-5">
-              <h3 className="font-semibold text-white mb-2">Can I request a new tool?</h3>
-              <p className="text-gray-400 text-sm">Absolutely! We review all feature requests and add popular tools when possible.</p>
+            <div className="mystical-card p-5 rounded-2xl">
+              <h3 className="font-semibold font-display text-ink-800 mb-2">Can I request a new tool?</h3>
+              <p className="text-[#6B5E4E] text-sm">Absolutely! We review all feature requests and add popular tools when possible.</p>
             </div>
-            <div className="mystical-card p-5">
-              <h3 className="font-semibold text-white mb-2">Is my data safe?</h3>
-              <p className="text-gray-400 text-sm">Yes. We don't store your personal information. See our Privacy Policy for details.</p>
+            <div className="mystical-card p-5 rounded-2xl">
+              <h3 className="font-semibold font-display text-ink-800 mb-2">Is my data safe?</h3>
+              <p className="text-[#6B5E4E] text-sm">Yes. We don't store your personal information. See our Privacy Policy for details.</p>
             </div>
           </div>
         </div>

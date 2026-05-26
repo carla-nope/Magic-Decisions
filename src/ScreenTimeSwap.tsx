@@ -205,7 +205,7 @@ const screenSwapOptions: ScreenSwapOption[] = [
       'Search for things that start with each letter of the alphabet',
       'Look for specific bugs, birds, or flowers on a nature walk'
     ]
-  }
+  },
 ]
 
 const screenTimeAmounts = [
@@ -282,36 +282,36 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
       <div className="relative z-10 min-h-screen flex flex-col items-center px-4 py-8">
 
         {/* Breadcrumb */}
-        <div className="flex items-center gap-2 text-sm text-slate-500 mb-6">
-          <button onClick={() => onNavigate('home')} className="hover:text-purple-600 transition-colors">Home</button>
+        <div className="flex items-center gap-2 text-sm text-[#A09080] mb-6">
+          <button onClick={() => onNavigate('home')} className="hover:text-highlight-500 transition-colors">Home</button>
           <ChevronRight className="w-4 h-4" />
-          <span className="text-slate-700 font-medium">Screen Time Swap</span>
+          <span className="text-ink-800 font-medium">Screen Time Swap</span>
         </div>
 
         {/* Hero Section */}
         <div className="w-full max-w-2xl mb-12">
           <div className="text-center mb-6">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-100 border border-cyan-200 text-cyan-700 text-sm mb-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-cream-300 text-secondary-400 text-sm mb-4">
               <Monitor className="w-4 h-4" />
               Screen Time Manager
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+            <h1 className="text-3xl md:text-4xl font-bold font-display mb-2 text-ink-800">
               Screen Time Swap
             </h1>
-            <p className="text-slate-500 max-w-md mx-auto text-center">
+            <p className="text-[#6B5E4E] max-w-md mx-auto text-center">
               Trade screen time for real-world adventures! Pick how much time and spin for an activity.
             </p>
           </div>
 
           {/* Tool Card */}
           <div className="mystical-card p-8 text-center">
-            <p className="text-slate-600 text-sm mb-6">
+            <p className="text-[#6B5E4E] text-sm mb-6">
               Can't decide what to do instead of screens? Pick how much screen time you want to swap and let the magic choose a fun activity for you!
             </p>
 
             {/* Amount Selector */}
             <div className="mb-8">
-              <label className="block text-sm font-semibold text-slate-700 mb-3">
+              <label className="block text-sm font-semibold text-ink-800 mb-3">
                 How much screen time are you swapping?
               </label>
               <div className="flex flex-wrap justify-center gap-2">
@@ -321,8 +321,8 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
                     onClick={() => setSelectedMinutes(amount)}
                     className={`px-4 py-2 rounded-full border-2 transition-all text-sm font-medium ${
                       selectedMinutes.minutes === amount.minutes
-                        ? 'border-emerald-500 bg-emerald-100 text-emerald-700'
-                        : 'border-slate-200 bg-white text-slate-600 hover:border-emerald-300'
+                        ? 'border-secondary-400 bg-secondary/10 text-secondary-400'
+                        : 'border-cream-300 bg-cream-50 text-[#6B5E4E] hover:border-secondary-400'
                     }`}
                   >
                     {amount.label}
@@ -333,14 +333,14 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
 
             {/* Swap Display */}
             <div className="relative mb-8">
-              <div className={`w-64 h-64 rounded-full bg-gradient-to-br from-cyan-100 to-teal-100 border-4 border-cyan-200 flex items-center justify-center mx-auto ${isSpinning ? 'animate-pulse' : ''}`}>
+              <div className={`w-64 h-64 rounded-full bg-secondary/10 border-4 border-cream-300 flex items-center justify-center mx-auto ${isSpinning ? 'animate-pulse' : ''}`}>
                 {currentSwap ? (
                   <div className="text-center animate-fade-in">
                     <span className="text-6xl mb-2 block">{currentSwap.icon}</span>
-                    <h3 className="font-bold text-slate-800 text-lg">{currentSwap.title}</h3>
+                    <h3 className="font-bold font-display text-ink-800 text-lg">{currentSwap.title}</h3>
                   </div>
                 ) : (
-                  <div className="text-center text-slate-400">
+                  <div className="text-center text-[#A09080]">
                     <Clock className="w-12 h-12 mx-auto mb-2" />
                     <p className="text-sm">Spin to pick an activity</p>
                   </div>
@@ -348,7 +348,7 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
               </div>
 
               {currentSwap && !isSpinning && (
-                <div className="absolute inset-0 rounded-full bg-cyan-400/20 blur-xl -z-10 animate-pulse" />
+                <div className="absolute inset-0 rounded-full bg-secondary-400/20 blur-xl -z-10 animate-pulse" />
               )}
             </div>
 
@@ -375,9 +375,9 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
             {currentSwap && !isSpinning && (
               <div className="mt-8 space-y-4 animate-fade-in">
                 {/* What is this? */}
-                <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl text-left">
-                  <p className="text-slate-700 text-sm">
-                    <span className="font-semibold text-cyan-700">What is it?</span> {currentSwap.kidDefinition}
+                <div className="p-4 bg-cream-100 border border-cream-300 rounded-2xl text-left">
+                  <p className="text-ink-800 text-sm">
+                    <span className="font-semibold text-secondary-400">What is it?</span> {currentSwap.kidDefinition}
                   </p>
                 </div>
 
@@ -385,7 +385,7 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
                 <div className="text-left">
                   <button
                     onClick={() => setShowExamples(!showExamples)}
-                    className="text-sm text-emerald-600 hover:text-emerald-700 font-medium flex items-center gap-1"
+                    className="text-sm text-secondary-400 hover:text-secondary-400 font-medium flex items-center gap-1"
                   >
                     {showExamples ? 'Hide examples' : 'Show examples of what this looks like'}
                     <ChevronRight className={`w-4 h-4 transition-transform ${showExamples ? 'rotate-90' : ''}`} />
@@ -393,8 +393,8 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
                   {showExamples && (
                     <ul className="mt-3 space-y-2">
                       {currentSwap.examples.map((example, i) => (
-                        <li key={i} className="flex items-start gap-2 text-slate-600 text-sm">
-                          <span className="text-emerald-500 mt-0.5">→</span>
+                        <li key={i} className="flex items-start gap-2 text-[#6B5E4E] text-sm">
+                          <span className="text-highlight-500 mt-0.5">→</span>
                           {example}
                         </li>
                       ))}
@@ -403,26 +403,26 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
                 </div>
 
                 {/* Swap Summary */}
-                <div className="mystical-card p-5 bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
+                <div className="mystical-card p-5 bg-cream-50 border border-cream-300">
                   <div className="flex items-center gap-4 mb-3">
-                    <div className="w-12 h-12 rounded-full bg-cyan-100 flex items-center justify-center">
-                      <Monitor className="w-6 h-6 text-cyan-600" />
+                    <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center">
+                      <Monitor className="w-6 h-6 text-secondary-400" />
                     </div>
                     <div className="flex-1 text-left">
-                      <p className="text-sm text-slate-500">Instead of</p>
-                      <p className="font-semibold text-slate-800">{selectedMinutes.label} screen time</p>
+                      <p className="text-sm text-[#6B5E4E]">Instead of</p>
+                      <p className="font-semibold text-ink-800">{selectedMinutes.label} screen time</p>
                     </div>
                   </div>
                   <div className="flex items-center justify-center my-2">
-                    <ArrowRight className="w-5 h-5 text-emerald-500" />
+                    <ArrowRight className="w-5 h-5 text-highlight-500" />
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-cyan-100 flex items-center justify-center text-3xl">
+                    <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-3xl">
                       {currentSwap.icon}
                     </div>
                     <div className="flex-1 text-left">
-                      <p className="text-sm text-slate-500">Try this instead</p>
-                      <p className="font-semibold text-slate-800">{currentSwap.title}</p>
+                      <p className="text-sm text-[#6B5E4E]">Try this instead</p>
+                      <p className="font-semibold text-ink-800">{currentSwap.title}</p>
                     </div>
                   </div>
                 </div>
@@ -434,10 +434,10 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
           {swapHistory.length > 0 && (
             <div className="w-full max-w-md mt-6">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="font-semibold text-slate-700">Recent Swaps</h3>
+                <h3 className="font-semibold font-display text-ink-800">Recent Swaps</h3>
                 <button
                   onClick={clearHistory}
-                  className="text-sm text-slate-400 hover:text-slate-600"
+                  className="text-sm text-[#A09080] hover:text-[#6B5E4E]"
                 >
                   Clear
                 </button>
@@ -447,8 +447,8 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
                   <div key={idx} className="mystical-card p-3 flex items-center gap-3">
                     <span className="text-2xl">{item.option.icon}</span>
                     <div className="flex-1 text-left">
-                      <p className="font-medium text-slate-800">{item.option.title}</p>
-                      <p className="text-xs text-slate-500">{item.minutes} min traded</p>
+                      <p className="font-semibold text-ink-800">{item.option.title}</p>
+                      <p className="text-xs text-[#A09080]">{item.minutes} min traded</p>
                     </div>
                   </div>
                 ))}
@@ -459,19 +459,19 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
 
         {/* Use Cases Section */}
         <div className="w-full max-w-4xl mb-12">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-semibold font-display text-ink-800 mb-6 text-center">
             Why Use Screen Time Swap?
           </h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {USE_CASES.map((useCase, index) => (
               <div key={index} className="mystical-card p-5">
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-cyan-100 flex items-center justify-center flex-shrink-0">
-                    <span className="text-cyan-600">{useCase.icon}</span>
+                  <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-secondary-400">{useCase.icon}</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-800 mb-1">{useCase.title}</h3>
-                    <p className="text-slate-500 text-sm">{useCase.description}</p>
+                    <h3 className="font-semibold text-ink-800 mb-1">{useCase.title}</h3>
+                    <p className="text-[#6B5E4E] text-sm">{useCase.description}</p>
                   </div>
                 </div>
               </div>
@@ -481,31 +481,31 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
 
         {/* Tips for Parents Section */}
         <div className="w-full max-w-2xl mb-12">
-          <div className="mystical-card p-8 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
-            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+          <div className="mystical-card p-8 bg-cream-50 border border-cream-300">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-4 text-center">
               Tips for Screen Time Swaps
             </h2>
-            <ul className="space-y-2 text-slate-600 text-sm">
+            <ul className="space-y-2 text-[#6B5E4E] text-sm">
               <li className="flex items-start gap-2">
-                <span className="text-purple-500">✨</span>
+                <span className="text-highlight-500">✨</span>
                 <span>Let kids pick from the wheel themselves — ownership increases cooperation</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-purple-500">✨</span>
+                <span className="text-highlight-500">✨</span>
                 <span>Make the swap feel like an exciting trade, not a punishment</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-purple-500">✨</span>
+                <span className="text-highlight-500">✨</span>
                 <span>Join in! Parents who participate create stronger family bonds</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-purple-500">✨</span>
+                <span className="text-highlight-500">✨</span>
                 <span>Build up to longer activities gradually — start with 15 minutes</span>
               </li>
             </ul>
-            <div className="flex items-start gap-2 p-3 bg-amber-50 border border-amber-200 rounded-lg mt-4">
-              <AlertCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-              <p className="text-slate-600 text-sm">
+            <div className="flex items-start gap-2 p-3 bg-primary/10 border border-cream-300 rounded-xl mt-4">
+              <AlertCircle className="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5" />
+              <p className="text-[#6B5E4E] text-sm">
                 The goal isn't to take away fun — it's to add more fun! Screen time and real-world activities can both be part of a healthy day.
               </p>
             </div>
@@ -514,7 +514,7 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
 
         {/* Related Tools Section */}
         <div className="w-full max-w-4xl mb-12">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-semibold font-display text-ink-800 mb-6 text-center">
             Try More Free Decision Tools
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -522,11 +522,11 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
               <button
                 key={tool.id}
                 onClick={() => onNavigate(tool.id)}
-                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+                className="mystical-card p-4 text-center transition-all cursor-pointer bg-transparent"
               >
                 <span className="text-3xl mb-2 block">{tool.emoji}</span>
-                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
-                <p className="text-slate-500 text-xs">{tool.description}</p>
+                <h3 className="font-semibold text-ink-800 mb-1">{tool.name}</h3>
+                <p className="text-[#6B5E4E] text-xs">{tool.description}</p>
               </button>
             ))}
           </div>
@@ -534,21 +534,21 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
 
         {/* Lead Magnet CTA */}
         <div className="w-full max-w-2xl mb-8">
-          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
-              <Sparkles className="w-8 h-8 text-emerald-600" />
+          <div className="mystical-card p-8 text-center bg-cream-50 border border-cream-300">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-secondary-400" />
             </div>
-            <h2 className="text-xl font-bold text-slate-800 mb-3">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-3">
               Want Help Balancing Screen Time?
             </h2>
-            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
               Get the free Screen Time Balance Guide with tips, age-appropriate guidelines, and swap ideas the whole family will love.
             </p>
             <a
               href="https://go.magicdecisions.com/st1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+              className="mystical-btn inline-flex items-center gap-2"
             >
               Get the Free Screen Time Guide
               <ArrowRight className="w-4 h-4" />

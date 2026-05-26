@@ -164,17 +164,17 @@ function MaximizerQuiz({ onNavigate }: MaximizerQuizProps) {
       <div className="stars-bg" />
       <div className="fixed inset-0 stars pointer-events-none opacity-50" />
 
-      <div className="relative z-10 min-h-screen flex flex-col items-center px-4 py-8">
+      <div className="relative z-10 min-h-screen flex flex-col items-center px-4 py-8 bg-cream-50">
         {/* Header */}
         <div className="text-center mb-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 border border-purple-200 text-purple-700 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-cream-300 text-secondary-400 text-sm mb-4">
             <Brain className="w-4 h-4" />
             Decision Style Quiz
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-2 text-ink-800">
             Maximizer or Satisficer?
           </h1>
-          <p className="text-slate-500 max-w-md mx-auto">
+          <p className="text-[#A09080] max-w-md mx-auto">
             Discover your decision-making style based on Barry Schwartz's psychology research
           </p>
         </div>
@@ -182,13 +182,13 @@ function MaximizerQuiz({ onNavigate }: MaximizerQuizProps) {
         {/* Progress Bar */}
         {!showResult && (
           <div className="w-full max-w-2xl mb-6">
-            <div className="flex items-center justify-between text-sm text-slate-500 mb-2">
+            <div className="flex items-center justify-between text-sm text-[#A09080] mb-2">
               <span>Question {currentQuestion + 1} of {questions.length}</span>
               <span>{Math.round(((currentQuestion + 1) / questions.length) * 100)}% Complete</span>
             </div>
-            <div className="w-full h-2 bg-slate-200 rounded-full overflow-hidden">
+            <div className="w-full h-2 bg-cream-100 rounded-full overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-500"
+                className="h-full bg-gradient-to-r from-primary to-highlight transition-all duration-500"
                 style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
               />
             </div>
@@ -199,30 +199,30 @@ function MaximizerQuiz({ onNavigate }: MaximizerQuizProps) {
         {!showResult ? (
           <div className="w-full max-w-2xl">
             <div className="mystical-card p-6">
-              <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+              <h2 className="text-xl font-semibold font-display text-ink-800 mb-6 text-center">
                 {questions[currentQuestion].text}
               </h2>
               <div className="space-y-3">
                 <button
                   onClick={() => handleAnswer(true)}
-                  className="w-full p-4 text-left rounded-xl border-2 border-slate-200 hover:border-purple-400 hover:bg-purple-50 transition-all group"
+                  className="w-full p-4 text-left rounded-2xl border-2 border-cream-300 hover:border-secondary-400 hover:bg-secondary/10 transition-all group"
                 >
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 group-hover:bg-purple-200">
-                      <TrendingUp className="w-4 h-4 text-purple-600" />
+                    <div className="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-secondary/20">
+                      <TrendingUp className="w-4 h-4 text-secondary-400" />
                     </div>
-                    <p className="text-slate-700 flex-1">{questions[currentQuestion].maximizerOption}</p>
+                    <p className="text-ink-800 flex-1">{questions[currentQuestion].maximizerOption}</p>
                   </div>
                 </button>
                 <button
                   onClick={() => handleAnswer(false)}
-                  className="w-full p-4 text-left rounded-xl border-2 border-slate-200 hover:border-emerald-400 hover:bg-emerald-50 transition-all group"
+                  className="w-full p-4 text-left rounded-2xl border-2 border-cream-300 hover:border-secondary-400 hover:bg-secondary/10 transition-all group"
                 >
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 group-hover:bg-emerald-200">
-                      <Target className="w-4 h-4 text-emerald-600" />
+                    <div className="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-secondary/20">
+                      <Target className="w-4 h-4 text-secondary-400" />
                     </div>
-                    <p className="text-slate-700 flex-1">{questions[currentQuestion].satisficerOption}</p>
+                    <p className="text-ink-800 flex-1">{questions[currentQuestion].satisficerOption}</p>
                   </div>
                 </button>
               </div>
@@ -234,62 +234,62 @@ function MaximizerQuiz({ onNavigate }: MaximizerQuizProps) {
             <div className="mystical-card p-6">
               <div className="text-center mb-6">
                 <span className="text-6xl mb-4 block">{result.emoji}</span>
-                <h2 className="text-2xl font-bold text-slate-800 mb-2">{result.title}</h2>
+                <h2 className="text-2xl font-bold font-display text-ink-800 mb-2">{result.title}</h2>
               </div>
 
               {/* Score Bar */}
               <div className="mb-6">
                 <div className="flex items-center justify-between text-sm mb-2">
-                  <span className="text-purple-600 font-medium">Maximizer {maximizerPercent}%</span>
-                  <span className="text-emerald-600 font-medium">Satisficer {satisficerPercent}%</span>
+                  <span className="text-secondary-400 font-medium">Maximizer {maximizerPercent}%</span>
+                  <span className="text-secondary-400 font-medium">Satisficer {satisficerPercent}%</span>
                 </div>
-                <div className="w-full h-4 rounded-full overflow-hidden bg-slate-200">
-                  <div className="h-full bg-gradient-to-r from-purple-500 via-pink-500 to-emerald-500" style={{ width: '100%' }} />
+                <div className="w-full h-4 rounded-full overflow-hidden bg-cream-100">
+                  <div className="h-full bg-gradient-to-r from-primary via-highlight to-secondary-400" style={{ width: '100%' }} />
                   <div
-                    className="h-full bg-purple-500"
+                    className="h-full bg-secondary-400"
                     style={{ width: `${maximizerPercent}%`, marginTop: '-16px' }}
                   />
                 </div>
               </div>
 
               {/* Description */}
-              <p className="text-slate-600 mb-6 text-center leading-relaxed">
+              <p className="text-[#6B5E4E] mb-6 text-center leading-relaxed">
                 {result.description}
               </p>
 
               {/* Insights */}
               <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <div className="bg-purple-50 rounded-xl p-4">
-                  <p className="text-sm font-semibold text-purple-700 mb-1">Your Strength</p>
-                  <p className="text-sm text-slate-600">{result.strength}</p>
+                <div className="bg-secondary/10 rounded-2xl p-4">
+                  <p className="text-sm font-semibold text-secondary-400 mb-1">Your Strength</p>
+                  <p className="text-sm text-[#6B5E4E]">{result.strength}</p>
                 </div>
-                <div className="bg-amber-50 rounded-xl p-4">
-                  <p className="text-sm font-semibold text-amber-700 mb-1">Watch Out For</p>
-                  <p className="text-sm text-slate-600">{result.weakness}</p>
+                <div className="bg-primary/10 rounded-2xl p-4">
+                  <p className="text-sm font-semibold text-primary-400 mb-1">Watch Out For</p>
+                  <p className="text-sm text-[#6B5E4E]">{result.weakness}</p>
                 </div>
               </div>
 
               {/* Tip */}
-              <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-xl p-4 mb-6">
-                <p className="text-sm font-semibold text-purple-800 mb-1 flex items-center gap-2">
+              <div className="bg-gradient-to-r from-secondary/10 to-highlight/10 rounded-2xl p-4 mb-6">
+                <p className="text-sm font-semibold text-secondary-500 mb-1 flex items-center gap-2">
                   <Sparkles className="w-4 h-4" />
                   Quick Tip
                 </p>
-                <p className="text-sm text-slate-600">{result.tip}</p>
+                <p className="text-sm text-[#6B5E4E]">{result.tip}</p>
               </div>
 
               {/* Actions */}
               <div className="flex items-center justify-center gap-3">
                 <button
                   onClick={resetQuiz}
-                  className="flex items-center gap-2 px-6 py-3 bg-slate-100 hover:bg-slate-200 rounded-full text-slate-700 font-medium transition-colors"
+                  className="mystical-btn flex items-center gap-2 px-6 py-3"
                 >
                   <RefreshCw className="w-4 h-4" />
                   Retake Quiz
                 </button>
                 <button
                   onClick={handleShare}
-                  className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-full text-white font-medium transition-all shadow-lg hover:shadow-purple-500/30"
+                  className="mystical-btn flex items-center gap-2 px-6 py-3"
                 >
                   <Share2 className="w-4 h-4" />
                   {copied ? 'Copied!' : 'Share Results'}
@@ -299,32 +299,32 @@ function MaximizerQuiz({ onNavigate }: MaximizerQuizProps) {
 
             {/* More About Maximizers */}
             <div className="mystical-card p-6 mt-6">
-              <h3 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
-                <Brain className="w-5 h-5 text-purple-500" />
+              <h3 className="text-lg font-semibold font-display text-ink-800 mb-3 flex items-center gap-2">
+                <Brain className="w-5 h-5 text-secondary-400" />
                 About This Quiz
               </h3>
-              <p className="text-slate-600 text-sm mb-3">
+              <p className="text-[#6B5E4E] text-sm mb-3">
                 The Maximizer vs Satisficer concept comes from psychologist Barry Schwartz's research on decision-making. Maximizers seek the absolute best option, while Satisficers look for options that meet their criteria—regardless of whether better ones exist.
               </p>
-              <p className="text-slate-600 text-sm">
+              <p className="text-[#6B5E4E] text-sm">
                 Research shows that while maximizers often achieve objectively better outcomes, they tend to be less happy with their choices and more prone to decision fatigue. Satificers, on the other hand, report higher satisfaction and less regret.
               </p>
             </div>
 
             {/* Related Tools */}
             <div className="mystical-card p-6 mt-6">
-              <h3 className="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
-                <ArrowRight className="w-5 h-5 text-emerald-500" />
+              <h3 className="text-lg font-semibold font-display text-ink-800 mb-3 flex items-center gap-2">
+                <ArrowRight className="w-5 h-5 text-secondary-400" />
                 Try Another Tool
               </h3>
               <div className="grid grid-cols-2 gap-3">
-                <button className="p-3 rounded-xl bg-slate-50 hover:bg-slate-100 text-left transition-colors">
-                  <p className="font-medium text-slate-700 text-sm">Cognitive Bias Test</p>
-                  <p className="text-xs text-slate-500">Discover your mental shortcuts</p>
+                <button className="tool-card p-3 rounded-2xl bg-cream-100 hover:bg-cream-50 text-left transition-colors">
+                  <p className="font-semibold text-ink-800 text-sm">Cognitive Bias Test</p>
+                  <p className="text-[#A09080] text-xs">Discover your mental shortcuts</p>
                 </button>
-                <button className="p-3 rounded-xl bg-slate-50 hover:bg-slate-100 text-left transition-colors">
-                  <p className="font-medium text-slate-700 text-sm">Yes No Oracle</p>
-                  <p className="text-xs text-slate-500">Can't decide? Ask the crystal ball</p>
+                <button className="tool-card p-3 rounded-2xl bg-cream-100 hover:bg-cream-50 text-left transition-colors">
+                  <p className="font-semibold text-ink-800 text-sm">Yes No Oracle</p>
+                  <p className="text-[#A09080] text-xs">Can't decide? Ask the crystal ball</p>
                 </button>
               </div>
             </div>
@@ -336,11 +336,11 @@ function MaximizerQuiz({ onNavigate }: MaximizerQuizProps) {
 
         {/* Parent/Family Teaching Moment */}
         <div className="w-full max-w-2xl mb-12">
-          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200">
-            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+          <div className="mystical-card p-6 bg-gradient-to-br from-secondary/10 to-highlight/10 border border-cream-300">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-4 text-center">
               Use the Maximizer vs Satisficer Quiz to Teach Decision Quality Awareness
             </h2>
-            <p className="text-slate-600 text-center mb-4">
+            <p className="text-[#6B5E4E] text-center mb-4">
               This quiz helps kids understand that different decision-making styles exist and neither is "wrong." Maximizers (who seek the best option) and Satisficers (who seek good-enough options) both can make great decisions. Talk about when each approach makes sense—low-stakes daily decisions might not need maximum research, while bigger decisions might benefit from more analysis. This builds metacognitive awareness about their own thinking patterns.
             </p>
           </div>
@@ -348,7 +348,7 @@ function MaximizerQuiz({ onNavigate }: MaximizerQuizProps) {
 
         {/* Related Tools */}
         <div className="w-full max-w-4xl mb-12">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-semibold font-display text-ink-800 mb-6 text-center">
             Try More Free Decision Tools
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -361,11 +361,11 @@ function MaximizerQuiz({ onNavigate }: MaximizerQuizProps) {
               <button
                 key={tool.id}
                 onClick={() => onNavigate?.(tool.id)}
-                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-purple-400 cursor-pointer bg-transparent"
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-secondary-400 cursor-pointer bg-transparent"
               >
                 <span className="text-3xl mb-2 block">{tool.emoji}</span>
-                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
-                <p className="text-slate-500 text-xs">{tool.description}</p>
+                <h3 className="font-semibold font-display text-ink-800 mb-1">{tool.name}</h3>
+                <p className="text-[#A09080] text-xs">{tool.description}</p>
               </button>
             ))}
           </div>
@@ -373,21 +373,21 @@ function MaximizerQuiz({ onNavigate }: MaximizerQuizProps) {
 
         {/* Lead Magnet CTA */}
         <div className="w-full max-w-2xl mb-8">
-          <div className="mystical-card p-8 text-center bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-100 flex items-center justify-center">
-              <Sparkles className="w-8 h-8 text-purple-600" />
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-secondary/10 to-highlight/10 border border-cream-300">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-secondary-400" />
             </div>
-            <h2 className="text-xl font-bold text-slate-800 mb-3">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-3">
               Want to Help Kids Make Better Decisions?
             </h2>
-            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
               Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
             </p>
             <a
               href="https://go.magicdecisions.com/dt1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-purple-500/30"
+              className="mystical-btn inline-flex items-center gap-2 px-6 py-3"
             >
               Get the Free Decision Traps Guide
               <ArrowRight className="w-4 h-4" />

@@ -113,22 +113,22 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
       <div className="relative z-10 min-h-screen flex flex-col items-center px-4 py-8">
         {/* Header */}
         <div className="text-center mb-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 border border-purple-200 text-purple-700 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-cream-300 text-secondary-400 text-sm mb-4">
             <Wand2 className="w-4 h-4" />
             Decision Maker
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-2 text-ink-800">
             Perfect Username Picker
           </h1>
-          <p className="text-slate-500 max-w-md mx-auto">
+          <p className="text-[#A09080] max-w-md mx-auto">
             Can't decide on a username? Let fate choose for you! Get unique handles for TikTok, gaming, or social media in seconds.
           </p>
         </div>
 
         {/* Category Selection */}
         <div className="mb-6 w-full max-w-2xl">
-          <div className="mystical-card p-4">
-            <h3 className="text-lg font-semibold text-slate-800 mb-4 text-center">Choose a Category</h3>
+          <div className="mystical-card rounded-2xl p-4">
+            <h3 className="text-lg font-bold font-display text-ink-800 mb-4 text-center">Choose a Category</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {categories.map((cat) => {
                 const Icon = cat.icon
@@ -138,8 +138,8 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
                     onClick={() => setSelectedCategory(cat.id)}
                     className={`p-4 rounded-xl transition-all flex flex-col items-center gap-2 ${
                       selectedCategory === cat.id
-                        ? 'bg-purple-100 border-2 border-purple-400 text-purple-700'
-                        : 'bg-slate-50 hover:bg-slate-100 text-slate-600 border-2 border-transparent'
+                        ? 'bg-secondary/10 border-2 border-secondary-400 text-secondary-400'
+                        : 'bg-cream-50 hover:bg-cream-100 text-[#6B5E4E] border-2 border-transparent'
                     }`}
                   >
                     <span className="text-2xl">{cat.emoji}</span>
@@ -154,7 +154,7 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
         {/* Generate Button */}
         <button
           onClick={generateUsername}
-          className="generate-btn flex items-center gap-2 mb-8"
+          className="mystical-btn flex items-center gap-2 mb-8"
         >
           <Wand2 className="w-5 h-5" />
           Pick Usernames
@@ -164,15 +164,15 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
         {displayUsernames.length > 0 ? (
           <div className="w-full max-w-3xl mb-6">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold text-slate-800">
+              <h3 className="text-lg font-bold font-display text-ink-800">
                 {showFavorites ? `Saved Favorites (${favorites.length})` : 'Generated Usernames'}
               </h3>
               <button
                 onClick={() => setShowFavorites(!showFavorites)}
                 className={`text-sm px-3 py-1 rounded-full transition-colors ${
                   showFavorites
-                    ? 'bg-purple-100 text-purple-700'
-                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                    ? 'bg-secondary/10 text-secondary-400'
+                    : 'bg-cream-100 text-[#6B5E4E] hover:bg-cream-50'
                 }`}
               >
                 {showFavorites ? `Show All (${generatedUsernames.length})` : `Saved (${favorites.length})`}
@@ -182,9 +182,9 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
               {displayUsernames.map((username, index) => (
                 <div
                   key={`${username}-${index}`}
-                  className="mystical-card p-4 hover:shadow-lg transition-all group relative"
+                  className="mystical-card rounded-2xl p-4 hover:shadow-lg transition-all group relative"
                 >
-                  <p className="text-lg font-semibold text-slate-800 text-center mb-3">@{username}</p>
+                  <p className="text-lg font-bold text-ink-800 text-center mb-3">@{username}</p>
                   <div className="flex items-center justify-center gap-2">
                     <button
                       onClick={() => handleCopy(username, index)}
@@ -202,7 +202,7 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
                     </button>
                     <button
                       onClick={() => toggleFavorite(username)}
-                      className={`share-btn text-xs py-1.5 px-2 ${favorites.includes(username) ? 'text-rose-500' : ''}`}
+                      className={`share-btn text-xs py-1.5 px-2 ${favorites.includes(username) ? 'text-highlight-500' : ''}`}
                       title={favorites.includes(username) ? 'Remove from favorites' : 'Save to favorites'}
                     >
                       {favorites.includes(username) ? '★' : '☆'}
@@ -214,9 +214,9 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
           </div>
         ) : (
           <div className="w-full max-w-lg mb-8">
-            <div className="mystical-card p-8 text-center">
+            <div className="mystical-card rounded-2xl p-8 text-center">
               <span className="text-5xl mb-4 block">✨</span>
-              <p className="text-slate-500">
+              <p className="text-[#A09080]">
                 Click the button above to generate unique usernames
               </p>
             </div>
@@ -225,22 +225,22 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
 
         {/* Tips Section */}
         <div className="w-full max-w-2xl mb-8">
-          <div className="mystical-card p-6">
-            <h3 className="text-lg font-semibold text-slate-800 mb-4 flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-purple-500" />
+          <div className="mystical-card rounded-2xl p-6">
+            <h3 className="text-lg font-bold font-display text-ink-800 mb-4 flex items-center gap-2">
+              <Sparkles className="w-5 h-5 text-secondary-400" />
               Username Tips
             </h3>
-            <div className="grid md:grid-cols-3 gap-4 text-sm text-slate-600">
-              <div className="bg-slate-50 rounded-xl p-4">
-                <p className="font-medium text-slate-700 mb-2">📱 For TikTok</p>
+            <div className="grid md:grid-cols-3 gap-4 text-sm text-[#6B5E4E]">
+              <div className="bg-cream-50 rounded-2xl p-4">
+                <p className="font-bold text-ink-800 mb-2">📱 For TikTok</p>
                 <p>Use short, catchy names that are easy to remember and spell. Avoid numbers if possible.</p>
               </div>
-              <div className="bg-slate-50 rounded-xl p-4">
-                <p className="font-medium text-slate-700 mb-2">🎮 For Gaming</p>
+              <div className="bg-cream-50 rounded-2xl p-4">
+                <p className="font-bold text-ink-800 mb-1">🎮 For Gaming</p>
                 <p>Pick something edgy or cool. Numbers at the end (like _x or 99) help avoid duplicates.</p>
               </div>
-              <div className="bg-slate-50 rounded-xl p-4">
-                <p className="font-medium text-slate-700 mb-2">✨ For Aesthetic</p>
+              <div className="bg-cream-50 rounded-2xl p-4">
+                <p className="font-bold text-ink-800 mb-2">✨ For Aesthetic</p>
                 <p>Focus on vibe words and mood. Mix in some symbols or spellings to make it unique.</p>
               </div>
             </div>
@@ -249,11 +249,11 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
 
         {/* Parent/Family Teaching Moment */}
         <div className="w-full max-w-2xl mb-12">
-          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-violet-50 border border-purple-200">
-            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+          <div className="mystical-card rounded-2xl p-6 bg-cream-50 border border-cream-300">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-4 text-center">
               Use the Username Generator to Teach Identity and Self-Expression
             </h2>
-            <p className="text-slate-600 text-center mb-4">
+            <p className="text-[#6B5E4E] text-center mb-4">
               The Username Generator opens conversations about online identity and self-expression. Have kids discuss why they like certain usernames—what does their choice say about how they want to present themselves? This tool helps families talk about the difference between anonymity, privacy, and authenticity online. Kids learn that usernames are a first impression, and making a choice through randomization helps them step outside their comfort zone and try new forms of expression.
             </p>
           </div>
@@ -261,7 +261,7 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
 
         {/* Related Tools */}
         <div className="w-full max-w-4xl mb-12">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-bold font-display text-ink-800 mb-6 text-center">
             Try More Free Decision Tools
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -274,11 +274,11 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
               <button
                 key={tool.id}
                 onClick={() => onNavigate?.(tool.id)}
-                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-purple-400 cursor-pointer bg-transparent"
+                className="tool-card mystical-card rounded-2xl p-4 text-center hover:shadow-md transition-all cursor-pointer"
               >
                 <span className="text-3xl mb-2 block">{tool.emoji}</span>
-                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
-                <p className="text-slate-500 text-xs">{tool.description}</p>
+                <h3 className="font-bold font-display text-ink-800 mb-1">{tool.name}</h3>
+                <p className="text-[#A09080] text-xs">{tool.description}</p>
               </button>
             ))}
           </div>
@@ -286,21 +286,21 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
 
         {/* Lead Magnet CTA */}
         <div className="w-full max-w-2xl mb-8">
-          <div className="mystical-card p-8 text-center bg-gradient-to-br from-purple-50 to-violet-50 border border-purple-200">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-100 flex items-center justify-center">
-              <Sparkles className="w-8 h-8 text-purple-600" />
+          <div className="mystical-card rounded-2xl p-8 text-center bg-cream-50 border border-cream-300">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-primary-400" />
             </div>
-            <h2 className="text-xl font-bold text-slate-800 mb-3">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-3">
               Want to Help Kids Make Confident Identity Choices?
             </h2>
-            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
               Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
             </p>
             <a
               href="https://go.magicdecisions.com/dt1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-violet-500 hover:from-purple-600 hover:to-violet-600 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-purple-500/30"
+              className="mystical-btn inline-flex items-center gap-2 px-6 py-3"
             >
               Get the Free Decision Traps Guide
               <ArrowRight className="w-4 h-4" />
@@ -313,27 +313,19 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
       </div>
 
       <style>{`
-        .generate-btn {
-          padding: 1rem 2.5rem;
-          background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
-          border: none;
-          border-radius: 2rem;
-          color: white;
-          font-size: 1.1rem;
-          font-weight: 600;
-          font-family: 'Quicksand', sans-serif;
+        .share-btn {
+          padding: 0.375rem 0.5rem;
+          background: #FFFBF7;
+          border: 1px solid #D4C9B9;
+          border-radius: 0.5rem;
+          color: #6B5E4E;
+          font-size: 0.75rem;
           cursor: pointer;
-          transition: all 0.3s ease;
-          box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+          transition: all 0.2s ease;
         }
 
-        .generate-btn:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 6px 30px rgba(139, 92, 246, 0.5);
-        }
-
-        .generate-btn:active {
-          transform: translateY(0);
+        .share-btn:hover {
+          background: #F5EDE2;
         }
       `}</style>
     </div>

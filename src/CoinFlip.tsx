@@ -96,22 +96,22 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
       <div className="relative z-10 min-h-screen flex flex-col items-center px-4 py-8">
 
         {/* Breadcrumb */}
-        <div className="flex items-center gap-2 text-sm text-slate-500 mb-6">
-          <button onClick={() => onNavigate && onNavigate('home')} className="hover:text-purple-600 transition-colors">Home</button>
+        <div className="flex items-center gap-2 text-sm text-[#A09080] mb-6">
+          <button onClick={() => onNavigate && onNavigate('home')} className="hover:text-secondary-400 transition-colors">Home</button>
           <ChevronRight className="w-4 h-4" />
-          <span className="text-slate-700 font-medium">Coin Flip</span>
+          <span className="text-ink-800 font-medium">Coin Flip</span>
         </div>
 
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200 text-blue-700 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/20 text-secondary-400 text-sm mb-4">
             <Sparkles className="w-4 h-4" />
             Random Outcome
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+          <h1 className="text-3xl md:text-4xl font-bold font-display mb-2 text-ink-800">
             Flip the Coin!
           </h1>
-          <p className="text-slate-500 max-w-md mx-auto">
+          <p className="text-[#A09080] max-w-md mx-auto">
             Heads or tails? Let fate decide. Perfect for making quick decisions!
           </p>
         </div>
@@ -138,7 +138,7 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
           </div>
 
           {!result && !isFlipping && (
-            <p className="text-center text-slate-400 text-sm mt-4">
+            <p className="text-center text-[#A09080] text-sm mt-4">
               Click the coin to flip!
             </p>
           )}
@@ -147,9 +147,9 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
         {/* Result */}
         {result && !isFlipping && (
           <div className="text-center mb-6 animate-bounce-in">
-            <div className="px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-100 to-cyan-100 border border-blue-200">
-              <p className="text-sm text-slate-500 mb-1">The coin landed on...</p>
-              <p className="text-3xl md:text-4xl font-bold text-slate-800">
+            <div className="px-8 py-4 rounded-2xl bg-gradient-to-r from-secondary/10 to-secondary/10 border border-cream-300">
+              <p className="text-sm text-[#6B5E4E] mb-1">The coin landed on...</p>
+              <p className="text-3xl md:text-4xl font-bold font-display text-ink-800">
                 {result === 'heads' ? 'HEADS' : 'TAILS'}!
               </p>
             </div>
@@ -174,7 +174,7 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
         <button
           onClick={flipCoin}
           disabled={isFlipping}
-          className="coin-btn flex items-center gap-2 mb-8"
+          className="mystical-btn flex items-center gap-2 mb-8"
         >
           <RotateCcw className={`w-5 h-5 ${isFlipping ? 'animate-spin' : ''}`} />
           {isFlipping ? 'Flipping...' : 'Flip the Coin'}
@@ -184,35 +184,35 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
         {stats.total > 0 && (
           <div className="w-full max-w-sm">
             <div className="mystical-card p-4">
-              <h3 className="text-lg font-semibold text-slate-800 mb-4 text-center">
+              <h3 className="text-lg font-semibold font-display text-ink-800 mb-4 text-center">
                 Your Statistics
               </h3>
-              <div className="flex justify-between text-sm text-slate-600 mb-3">
+              <div className="flex justify-between text-sm text-[#6B5E4E] mb-3">
                 <span>Total Flips: {stats.total}</span>
                 <span>{Math.round((stats.heads / stats.total) * 100)}% / {Math.round((stats.tails / stats.total) * 100)}%</span>
               </div>
-              <div className="h-4 bg-slate-200 rounded-full overflow-hidden flex">
+              <div className="h-4 bg-cream-200 rounded-full overflow-hidden flex">
                 <div
-                  className="h-full bg-gradient-to-r from-blue-500 to-blue-400 transition-all duration-300"
+                  className="h-full bg-gradient-to-r from-secondary-500 to-secondary-400 transition-all duration-300"
                   style={{ width: `${headsPercent}%` }}
                 />
                 <div
-                  className="h-full bg-gradient-to-r from-amber-500 to-amber-400 transition-all duration-300"
+                  className="h-full bg-gradient-to-r from-primary-500 to-primary-400 transition-all duration-300"
                   style={{ width: `${tailsPercent}%` }}
                 />
               </div>
               <div className="flex justify-between mt-2 text-xs">
-                <span className="text-blue-600">Heads: {stats.heads}</span>
-                <span className="text-amber-600">Tails: {stats.tails}</span>
+                <span className="text-secondary-400">Heads: {stats.heads}</span>
+                <span className="text-primary-400">Tails: {stats.tails}</span>
               </div>
               {history.length > 0 && (
-                <div className="mt-4 pt-4 border-t border-slate-200">
-                  <p className="text-xs text-slate-400 text-center">Recent flips</p>
+                <div className="mt-4 pt-4 border-t border-cream-300">
+                  <p className="text-xs text-[#A09080] text-center">Recent flips</p>
                   <div className="flex flex-wrap justify-center gap-1 mt-2">
                     {history.slice(0, 20).map((item, i) => (
                       <span
                         key={i}
-                        className={`text-lg ${item.side === 'heads' ? 'text-blue-600' : 'text-amber-600'}`}
+                        className={`text-lg ${item.side === 'heads' ? 'text-secondary-400' : 'text-primary-400'}`}
                         title={new Date(item.timestamp).toLocaleTimeString()}
                       >
                         {item.side === 'heads' ? '🪙' : '🪙'}
@@ -226,17 +226,17 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
         )}
 
         {/* Footer */}
-        <div className="mt-auto pt-12 text-center text-slate-400 text-sm">
+        <div className="mt-auto pt-12 text-center text-[#A09080] text-sm">
           <p>Let the coin guide your decisions</p>
         </div>
 
         {/* Parent/Family Teaching Moment */}
         <div className="w-full max-w-2xl mb-12">
-          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
-            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+          <div className="mystical-card p-6 bg-gradient-to-br from-secondary/10 to-secondary/10 border border-cream-300">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-4 text-center">
               Use Coin Flip to Teach Fairness and Probability
             </h2>
-            <p className="text-slate-600 text-center mb-4">
+            <p className="text-[#6B5E4E] text-center mb-4">
               The coin flip is a perfect tool for teaching kids about fairness, chance, and decision-making. When you and your child can't agree, let the coin decide. This removes parent-vs-child conflict and teaches that some decisions don't require deep analysis—they just need a 50/50 chance. It's also a great way to introduce basic probability and statistics in a hands-on, visual way.
             </p>
           </div>
@@ -244,7 +244,7 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
 
         {/* Related Tools */}
         <div className="w-full max-w-4xl mb-12">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-semibold font-display text-ink-800 mb-6 text-center">
             Try More Free Decision Tools
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -257,11 +257,11 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
               <button
                 key={tool.id}
                 onClick={() => onNavigate?.(tool.id)}
-                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-secondary-400 cursor-pointer bg-transparent"
               >
                 <span className="text-3xl mb-2 block">{tool.emoji}</span>
-                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
-                <p className="text-slate-500 text-xs">{tool.description}</p>
+                <h3 className="font-semibold text-ink-800 mb-1">{tool.name}</h3>
+                <p className="text-[#A09080] text-xs">{tool.description}</p>
               </button>
             ))}
           </div>
@@ -269,21 +269,21 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
 
         {/* Lead Magnet CTA */}
         <div className="w-full max-w-2xl mb-8">
-          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
-              <Sparkles className="w-8 h-8 text-emerald-600" />
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-primary/10 to-primary/10 border border-cream-300">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-primary-500" />
             </div>
-            <h2 className="text-xl font-bold text-slate-800 mb-3">
+            <h2 className="text-xl font-bold font-display text-ink-800 mb-3">
               Want to Help Kids Practice Confident Choices?
             </h2>
-            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
               Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
             </p>
             <a
               href="https://go.magicdecisions.com/dt1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+              className="mystical-btn inline-flex items-center gap-2"
             >
               Get the Free Decision Traps Guide
               <ArrowRight className="w-4 h-4" />
@@ -334,19 +334,19 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
           justify-content: center;
           border-radius: 50%;
           box-shadow:
-            0 0 30px rgba(59, 130, 246, 0.5),
+            0 0 30px rgba(217, 165, 32, 0.5),
             inset 0 -5px 20px rgba(0, 0, 0, 0.3),
             inset 0 5px 20px rgba(255, 255, 255, 0.2);
         }
 
         .coin-heads {
-          background: linear-gradient(145deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
-          border: 4px solid #92400e;
+          background: linear-gradient(145deg, #d4a574 0%, #c4956a 50%, #b8845f 100%);
+          border: 4px solid #8b6544;
         }
 
         .coin-tails {
-          background: linear-gradient(145deg, #60a5fa 0%, #3b82f6 50%, #2563eb 100%);
-          border: 4px solid #1e40af;
+          background: linear-gradient(145deg, #a08060 0%, #8b7054 50%, #756048 100%);
+          border: 4px solid #5a4a3a;
           transform: rotateY(180deg);
         }
 
@@ -370,7 +370,7 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
 
         .coin-btn {
           padding: 1rem 2.5rem;
-          background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+          background: linear-gradient(135deg, #d4a574 0%, #c4956a 100%);
           border: none;
           border-radius: 2rem;
           color: white;
@@ -379,12 +379,12 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
           font-family: 'Quicksand', sans-serif;
           cursor: pointer;
           transition: all 0.3s ease;
-          box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+          box-shadow: 0 4px 20px rgba(212, 165, 116, 0.4);
         }
 
         .coin-btn:hover {
           transform: translateY(-2px);
-          box-shadow: 0 6px 30px rgba(59, 130, 246, 0.5);
+          box-shadow: 0 6px 30px rgba(212, 165, 116, 0.5);
         }
 
         .coin-btn:active {

@@ -228,14 +228,14 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-8">
         {/* Header */}
         <div className="text-center mb-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 border border-amber-200 text-amber-700 text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-cream-300 text-primary-500 text-sm mb-4">
             <RefreshCw className="w-4 h-4" />
             Decision Maker
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-slate-800">
+          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-ink-800 font-display">
             Spin to Decide!
           </h1>
-          <p className="text-slate-500 max-w-md mx-auto">
+          <p className="text-[#A09080] max-w-md mx-auto">
             Add your options and let the wheel decide. Perfect for choices, giveaways, and picking winners!
           </p>
         </div>
@@ -272,7 +272,7 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
 
           {/* Click hint */}
           {!isSpinning && !selectedSegment && (
-            <p className="text-center text-slate-400 text-sm mt-4">
+            <p className="text-center text-[#A09080] text-sm mt-4">
               Click the wheel to spin!
             </p>
           )}
@@ -281,9 +281,9 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
         {/* Result Display */}
         {selectedSegment && !isSpinning && (
           <div className="text-center mb-6 animate-bounce-in">
-            <div className="px-8 py-4 rounded-2xl bg-gradient-to-r from-amber-100 to-orange-100 border border-amber-200">
-              <p className="text-sm text-slate-500 mb-1">The wheel chose...</p>
-              <p className="text-2xl md:text-3xl font-bold text-slate-800">
+            <div className="px-8 py-4 rounded-2xl bg-gradient-to-r from-primary/10 to-highlight/10 border border-cream-300">
+              <p className="text-sm text-[#A09080] mb-1">The wheel chose...</p>
+              <p className="text-2xl md:text-3xl font-bold text-ink-800">
                 {selectedSegment.label}
               </p>
             </div>
@@ -317,14 +317,14 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
         {/* Options Editor */}
         <div className="w-full max-w-md">
           <div className="mystical-card p-4">
-            <h3 className="text-lg font-semibold text-slate-800 mb-4 flex items-center gap-2">
+            <h3 className="text-lg font-semibold text-ink-800 mb-4 flex items-center gap-2">
               <span>Options ({segments.length})</span>
               <button
                 onClick={() => setSoundEnabled(!soundEnabled)}
-                className="p-2 rounded-lg hover:bg-slate-100 transition-colors ml-auto"
+                className="p-2 rounded-xl hover:bg-secondary/10 transition-colors ml-auto"
                 title={soundEnabled ? 'Mute sounds' : 'Enable sounds'}
               >
-                {soundEnabled ? <Volume2 className="w-5 h-5 text-slate-500" /> : <VolumeX className="w-5 h-5 text-slate-400" />}
+                {soundEnabled ? <Volume2 className="w-5 h-5 text-[#A09080]" /> : <VolumeX className="w-5 h-5 text-[#A09080]" />}
               </button>
             </h3>
 
@@ -348,7 +348,7 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
               {segments.map((segment, index) => (
                 <div
                   key={segment.id}
-                  className="flex items-center gap-3 p-3 rounded-xl bg-slate-50 hover:bg-slate-100 transition-colors"
+                  className="flex items-center gap-3 p-3 rounded-xl bg-secondary/10 hover:bg-secondary/20 transition-colors"
                 >
                   <div
                     className="w-4 h-4 rounded-full flex-shrink-0"
@@ -358,15 +358,15 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
                     type="text"
                     value={segment.label}
                     onChange={(e) => updateSegmentLabel(segment.id, e.target.value)}
-                    className="flex-1 bg-transparent border-none text-slate-700 focus:outline-none text-sm"
+                    className="flex-1 bg-transparent border-none text-[#5C5046] focus:outline-none text-sm"
                   />
                   <button
                     onClick={() => removeSegment(segment.id)}
                     disabled={segments.length <= 2}
-                    className={`p-1.5 rounded-lg transition-colors ${
+                    className={`p-1.5 rounded-xl transition-colors ${
                       segments.length <= 2
                         ? 'opacity-30 cursor-not-allowed'
-                        : 'hover:bg-red-100 text-red-500'
+                        : 'hover:bg-highlight/10 text-highlight-500'
                     }`}
                   >
                     <Trash2 className="w-4 h-4" />
@@ -376,7 +376,7 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
             </div>
 
             {segments.length < 2 && (
-              <p className="text-center text-amber-600 text-sm mt-3">
+              <p className="text-center text-primary-400 text-sm mt-3">
                 Add at least 2 options to spin
               </p>
             )}
@@ -386,13 +386,13 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
         {/* Content Section for SEO */}
         <div className="w-full max-w-3xl mt-16 mb-8">
           <div className="mystical-card p-6">
-            <h2 className="text-xl font-bold text-slate-800 mb-4">What is a Spin Wheel?</h2>
-            <p className="text-slate-600 mb-4">
+            <h2 className="text-xl font-bold text-ink-800 mb-4 font-display">What is a Spin Wheel?</h2>
+            <p className="text-[#6B5E4E] mb-4">
               A Spin Wheel is a customizable random selection tool that lets you create a wheel with any options you want. Just add your choices, give it a spin, and let fate decide. Perfect for making decisions fun and fair—whether you're picking a restaurant, choosing a game, or settling any debate.
             </p>
 
-            <h3 className="text-lg font-semibold text-slate-800 mb-3">When to Use the Spin Wheel</h3>
-            <ul className="text-slate-600 space-y-2 mb-4">
+            <h3 className="text-lg font-semibold text-ink-800 mb-3">When to Use the Spin Wheel</h3>
+            <ul className="text-[#6B5E4E] space-y-2 mb-4">
               <li>• Group decisions where everyone wants a fair chance</li>
               <li>• Choosing from multiple options without bias</li>
               <li>• Making boring decisions more exciting</li>
@@ -402,8 +402,8 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
 
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div>
-                <h3 className="text-lg font-semibold text-emerald-600 mb-2">Pros</h3>
-                <ul className="text-slate-600 text-sm space-y-1">
+                <h3 className="text-lg font-semibold text-secondary-400 mb-2">Pros</h3>
+                <ul className="text-[#6B5E4E] text-sm space-y-1">
                   <li>✓ Fully customizable with your own options</li>
                   <li>✓ Visual excitement makes decisions fun</li>
                   <li>✓ Fair and transparent selection process</li>
@@ -412,8 +412,8 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-orange-500 mb-2">Considerations</h3>
-                <ul className="text-slate-600 text-sm space-y-1">
+                <h3 className="text-lg font-semibold text-highlight-500 mb-2">Considerations</h3>
+                <ul className="text-[#6B5E4E] text-sm space-y-1">
                   <li>• Results are random, not based on logic</li>
                   <li>• Best for low-stakes decisions</li>
                   <li>• May need to re-spin if same result repeats</li>
@@ -422,36 +422,36 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
               </div>
             </div>
 
-            <h3 className="text-lg font-semibold text-slate-800 mb-3">Frequently Asked Questions</h3>
+            <h3 className="text-lg font-semibold text-ink-800 mb-3">Frequently Asked Questions</h3>
             <div className="space-y-3">
               <div>
-                <p className="text-slate-700 font-medium text-sm">How do I create a custom wheel?</p>
-                <p className="text-slate-600 text-sm">Type your option in the input field and click "Add" or press Enter. You can add as many options as you like. Each option will appear as a colored segment on the wheel.</p>
+                <p className="text-[#5C5046] font-medium text-sm">How do I create a custom wheel?</p>
+                <p className="text-[#6B5E4E] text-sm">Type your option in the input field and click "Add" or press Enter. You can add as many options as you like. Each option will appear as a colored segment on the wheel.</p>
               </div>
               <div>
-                <p className="text-slate-700 font-medium text-sm">Can I edit options after creating the wheel?</p>
-                <p className="text-slate-600 text-sm">Yes! Click on any option text in the list to edit it. Changes will be reflected on the wheel immediately. You can also delete options by clicking the trash icon.</p>
+                <p className="text-[#5C5046] font-medium text-sm">Can I edit options after creating the wheel?</p>
+                <p className="text-[#6B5E4E] text-sm">Yes! Click on any option text in the list to edit it. Changes will be reflected on the wheel immediately. You can also delete options by clicking the trash icon.</p>
               </div>
               <div>
-                <p className="text-slate-700 font-medium text-sm">How fair is the spin?</p>
-                <p className="text-slate-600 text-sm">The wheel uses a random spin animation that makes it difficult to predict the outcome. The final result is determined by where the wheel stops, which is influenced by the initial spin force and physics.</p>
+                <p className="text-[#5C5046] font-medium text-sm">How fair is the spin?</p>
+                <p className="text-[#6B5E4E] text-sm">The wheel uses a random spin animation that makes it difficult to predict the outcome. The final result is determined by where the wheel stops, which is influenced by the initial spin force and physics.</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="mt-auto pt-12 text-center text-slate-400 text-sm">
+        <div className="mt-auto pt-12 text-center text-[#A09080] text-sm">
           <p>Let the wheel guide your decisions</p>
         </div>
 
         {/* Parent/Family Teaching Moment */}
         <div className="w-full max-w-2xl mb-12">
-          <div className="mystical-card p-6 bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200">
-            <h2 className="text-xl font-bold text-slate-800 mb-4 text-center">
+          <div className="mystical-card p-6 bg-gradient-to-br from-secondary/10 to-secondary/10 border border-cream-300 rounded-2xl">
+            <h2 className="text-xl font-bold text-ink-800 mb-4 text-center font-display">
               Use the Spin Wheel to Teach Decision-Making
             </h2>
-            <p className="text-slate-600 text-center mb-4">
+            <p className="text-[#6B5E4E] text-center mb-4">
               The Spin Wheel isn't just for decisions—it's a tool for teaching kids how to make choices. Let them add their own options, discuss why they chose them, and see what happens when choice is made for them. This builds flexibility, reduces decision fatigue, and makes the process less personal. When the wheel decides, it's not Mom's fault or Dad's preference—it's just chance. That's a valuable lesson in letting go of control.
             </p>
           </div>
@@ -459,7 +459,7 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
 
         {/* Related Tools */}
         <div className="w-full max-w-4xl mb-12">
-          <h2 className="text-xl font-semibold text-slate-800 mb-6 text-center">
+          <h2 className="text-xl font-semibold text-ink-800 mb-6 text-center font-display">
             Try More Free Decision Tools
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -472,11 +472,11 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
               <button
                 key={tool.id}
                 onClick={() => onNavigate?.(tool.id)}
-                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-emerald-400 cursor-pointer bg-transparent"
+                className="mystical-card p-4 text-center hover:shadow-md transition-all hover:border-secondary-400 cursor-pointer bg-transparent rounded-2xl"
               >
                 <span className="text-3xl mb-2 block">{tool.emoji}</span>
-                <h3 className="font-semibold text-slate-800 mb-1">{tool.name}</h3>
-                <p className="text-slate-500 text-xs">{tool.description}</p>
+                <h3 className="font-semibold text-ink-800 mb-1">{tool.name}</h3>
+                <p className="text-[#A09080] text-xs">{tool.description}</p>
               </button>
             ))}
           </div>
@@ -484,21 +484,21 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
 
         {/* Lead Magnet CTA */}
         <div className="w-full max-w-2xl mb-8">
-          <div className="mystical-card p-8 text-center bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-100 flex items-center justify-center">
-              <Sparkles className="w-8 h-8 text-emerald-600" />
+          <div className="mystical-card p-8 text-center bg-gradient-to-br from-secondary/10 to-secondary/10 border border-cream-300 rounded-2xl">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary/20 flex items-center justify-center">
+              <Sparkles className="w-8 h-8 text-secondary-400" />
             </div>
-            <h2 className="text-xl font-bold text-slate-800 mb-3">
+            <h2 className="text-xl font-bold text-ink-800 mb-3 font-display">
               Want to Help Kids Practice Confident Choices?
             </h2>
-            <p className="text-slate-600 text-sm mb-6 max-w-md mx-auto">
+            <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
               Get the free Decision Traps Guide and learn five common ways kids get stuck when making choices — plus simple prompts that make everyday decisions easier to practice.
             </p>
             <a
               href="https://go.magicdecisions.com/dt1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-emerald-500/30"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-highlight-500 to-highlight-600 hover:from-highlight-600 hover:to-highlight-700 text-white rounded-xl font-semibold transition-all shadow-lg hover:shadow-highlight-500/30"
             >
               Get the Free Decision Traps Guide
               <ArrowRight className="w-4 h-4" />
