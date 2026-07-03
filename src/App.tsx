@@ -21,10 +21,23 @@ import D20Roller from './D20Roller'
 import ScreenTimeSwap from './ScreenTimeSwap'
 import SEOContent from './SEOContent'
 import { PrivacyPolicy, TermsConditions, AboutPage, ContactPage } from './LegalPages'
+import { pathToTool, toolToPath, metaForPath } from './seo-meta'
 import { useTheme } from './contexts/ThemeContext'
 import './index.css'
 
 type Tool = 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner' | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit' | 'chores' | 'd20' | 'screentime' | 'blog' | 'blogpost' | 'privacy' | 'terms' | 'about' | 'contact'
+
+// Resolve the active tool (and optional blog slug) from the current URL.
+// During prerendering there is no window, so the path is supplied via
+// globalThis.__SSR_PATH__ by entry-server.tsx.
+function parseLocation(): { tool: Tool; slug: string | null } {
+  const rawPath = typeof window !== 'undefined'
+    ? window.location.pathname
+    : ((globalThis as { __SSR_PATH__?: string }).__SSR_PATH__ ?? '/');
+  const path = rawPath.replace(/^\/|\/$/g, '');
+  if (path.startsWith('blog/')) return { tool: 'blogpost', slug: path.slice(5) };
+  return { tool: (pathToTool[path] as Tool) || 'home', slug: null };
+}
 
 interface HistoryItem {
   id: number;
@@ -397,26 +410,36 @@ function YesNoOracle() {
 
 function App() {
   const { theme, toggleTheme, soundEnabled, toggleSound } = useTheme();
-  const [activeTool, setActiveTool] = useState<Tool>('home');
+  const initialLocation = parseLocation();
+  const [activeTool, setActiveTool] = useState<Tool>(initialLocation.tool);
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
-  const [blogPostSlug, setBlogPostSlug] = useState<string | null>(null);
+  const [blogPostSlug, setBlogPostSlug] = useState<string | null>(initialLocation.slug);
 
-  // Sync activeTool from URL on mount and browser back/forward
+  // Keep URL, document title, meta description, and canonical in sync
   useEffect(() => {
-    const path = window.location.pathname.replace(/^\/|\/$/g, '');
-    const initial = pathToTool[path] || 'home';
-    setActiveTool(initial);
-  }, []);
-
-  // Update URL when activeTool changes
-  useEffect(() => {
-    const path = toolToPath[activeTool];
-    if (path) {
-      window.history.replaceState(null, '', '/' + path);
-    } else {
-      window.history.replaceState(null, '', '/');
+    const path = activeTool === 'blogpost' && blogPostSlug
+      ? 'blog/' + blogPostSlug
+      : toolToPath[activeTool];
+    const target = path ? '/' + path : '/';
+    if (window.location.pathname !== target) {
+      window.history.pushState(null, '', target);
     }
-  }, [activeTool]);
+    const meta = metaForPath(path);
+    document.title = meta.title;
+    document.querySelector('meta[name="description"]')?.setAttribute('content', meta.description);
+    document.querySelector('link[rel="canonical"]')?.setAttribute('href', 'https://magicdecisions.com' + target);
+  }, [activeTool, blogPostSlug]);
+
+  // Browser back/forward support
+  useEffect(() => {
+    const onPop = () => {
+      const loc = parseLocation();
+      setActiveTool(loc.tool);
+      setBlogPostSlug(loc.slug);
+    };
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
 
   const toolCategories = [
     {
@@ -483,53 +506,6 @@ function App() {
     }
   ];
 
-const pathToTool: Record<string, Tool> = {
-  'yes-no-oracle': 'oracle',
-  'spin-the-wheel': 'spin',
-  'coin-flip': 'coin',
-  'random-picker': 'picker',
-  'random-activity-picker': 'activity',
-  'what-to-eat-randomizer': 'dinner',
-  'rock-paper-scissors': 'rps',
-  'random-name-generator': 'names',
-  'random-username-generator': 'username',
-  'what-to-wear-randomizer': 'outfit',
-  'magic-chores-list': 'chores',
-  'screen-time-swap': 'screentime',
-  'decision-maximizer': 'maximizer',
-  'cognitive-bias-checker': 'bias',
-  'should-i-buy-it-calculator': 'buyit',
-  'about-us': 'about',
-  'privacy-policy': 'privacy',
-  'terms-of-service': 'terms',
-  'd20-roller': 'd20',
-};
-
-const toolToPath: Record<Tool, string> = {
-  oracle: 'yes-no-oracle',
-  spin: 'spin-the-wheel',
-  coin: 'coin-flip',
-  picker: 'random-picker',
-  activity: 'random-activity-picker',
-  dinner: 'what-to-eat-randomizer',
-  rps: 'rock-paper-scissors',
-  names: 'random-name-generator',
-  username: 'random-username-generator',
-  outfit: 'what-to-wear-randomizer',
-  chores: 'magic-chores-list',
-  screentime: 'screen-time-swap',
-  maximizer: 'decision-maximizer',
-  bias: 'cognitive-bias-checker',
-  buyit: 'should-i-buy-it-calculator',
-  about: 'about-us',
-  privacy: 'privacy-policy',
-  terms: 'terms-of-service',
-  d20: 'd20-roller',
-  home: '',
-  contact: 'contact',
-  blog: 'blog',
-  blogpost: 'blog',
-};
 
   const getColorClasses = (color: string) => {
     const colors: Record<string, { bg: string; border: string; text: string; hover: string }> = {

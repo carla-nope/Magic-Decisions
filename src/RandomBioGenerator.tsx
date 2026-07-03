@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react'
 import { FileText, RefreshCw, Copy, Check, Share2, Sparkles, Heart, Briefcase, Instagram, Calendar } from 'lucide-react'
-import { playReveal, playClick } from '../lib/sounds'
+import { playReveal, playClick } from './lib/sounds'
 import './index.css'
 
 const bioCategories = [

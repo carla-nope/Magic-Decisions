@@ -1,6 +1,6 @@
 import FAQSection, { type FAQItem } from './FAQSection'
 import { Search, Sparkles, ThumbsUp, ThumbsDown, ArrowRight } from 'lucide-react'
-import { playClick } from '../lib/sounds'
+import { playClick } from './lib/sounds'
 import { useCallback } from 'react'
 
 interface SEOContentProps {

@@ -84,10 +84,11 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
     }
   };
 
+  const canStore = typeof window !== 'undefined';
   const stats = {
-    total: parseInt(localStorage.getItem('coinFlipTotal') || '0'),
-    heads: parseInt(localStorage.getItem('coinFlipHeads') || '0'),
-    tails: parseInt(localStorage.getItem('coinFlipTails') || '0'),
+    total: canStore ? parseInt(localStorage.getItem('coinFlipTotal') || '0') : 0,
+    heads: canStore ? parseInt(localStorage.getItem('coinFlipHeads') || '0') : 0,
+    tails: canStore ? parseInt(localStorage.getItem('coinFlipTails') || '0') : 0,
   };
 
   const headsPercent = stats.total > 0 ? Math.round((stats.heads / stats.total) * 100) : 50;

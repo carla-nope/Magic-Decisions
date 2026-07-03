@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { ChevronDown, ChevronUp, HelpCircle } from 'lucide-react'
-import { playClick } from '../lib/sounds'
+import { playClick } from './lib/sounds'
 import { useCallback } from 'react'
 
 interface FAQItem {
