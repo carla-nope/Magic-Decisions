@@ -10,7 +10,8 @@
     "lint": "pnpm install --prefer-offline && eslint .",
     "preview": "pnpm install --prefer-offline && vite preview",
     "install-deps": "pnpm install --prefer-offline",
-    "clean": "rm -rf node_modules .pnpm-store pnpm-lock.yaml && pnpm store prune"
+    "clean": "rm -rf node_modules .pnpm-store pnpm-lock.yaml && pnpm store prune",
+    "build:prerender": "pnpm install --prefer-offline && rm -rf node_modules/.vite-temp && tsc -b && BUILD_MODE=prod vite build && BUILD_MODE=prod vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -74,7 +75,7 @@
     "eslint": "^9.15.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
-    "globals": "^15.12.0",    
+    "globals": "^15.12.0",
     "postcss": "8.4.49",
     "tailwindcss": "v3.4.16",
     "typescript": "~5.6.2",
