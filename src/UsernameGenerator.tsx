@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react'
 import { Hash, Gamepad2, Sparkles, RefreshCw, Copy, Check, Share2, Shuffle, Wand2, ArrowRight } from 'lucide-react'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 const categories = [
   { id: 'tiktok', name: 'TikTok', icon: Hash, emoji: '📱' },
@@ -309,6 +310,8 @@ function UsernameGenerator({ onNavigate }: UsernameGeneratorProps) {
         </div>
 
         {/* Footer spacer */}
+        <ToolFaq route="random-username-generator" />
+
         <div className="h-24" />
       </div>
 

@@ -2,6 +2,7 @@ import { useState, useCallback } from 'react'
 import { Lightbulb, RefreshCw, Copy, Check, Share2, Sun, Moon, Coffee, BookOpen, Dumbbell, Palette, Music, Gamepad2, Users, Utensils, Sparkles, ArrowRight } from 'lucide-react'
 import { playClick, playReveal } from './lib/sounds'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 interface ActivityPickerProps {
   onNavigate?: (toolId: string) => void
@@ -458,6 +459,8 @@ function ActivityPicker({ onNavigate }: ActivityPickerProps) {
         </div>
 
         {/* Footer spacer */}
+        <ToolFaq route="random-activity-picker" />
+
         <div className="h-24" />
       </div>
 

@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react'
 import { Brain, Sparkles, RefreshCw, Share2, Copy, Check, Target, ArrowRight, TrendingUp } from 'lucide-react'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 interface Question {
   id: number;
@@ -332,6 +333,8 @@ function MaximizerQuiz({ onNavigate }: MaximizerQuizProps) {
         )}
 
         {/* Footer spacer */}
+        <ToolFaq route="decision-maximizer" />
+
         <div className="h-24" />
 
         {/* Parent/Family Teaching Moment */}

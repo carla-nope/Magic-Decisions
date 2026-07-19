@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react'
 import { Shirt, RefreshCw, Copy, Check, Share2, Sun, Cloud, CloudRain, Snowflake, Wind, Thermometer, Sparkles, PartyPopper, Briefcase, Heart, Coffee, ArrowRight } from 'lucide-react'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 const vibes = [
   { id: 'casual', name: 'Casual', emoji: '☕', desc: 'Relaxed & comfy' },
@@ -363,6 +364,8 @@ function OutfitIdeaGenerator({ onNavigate }: OutfitIdeaGeneratorProps) {
         </div>
 
         {/* Footer spacer */}
+        <ToolFaq route="what-to-wear-randomizer" />
+
         <div className="h-24" />
       </div>
     </div>

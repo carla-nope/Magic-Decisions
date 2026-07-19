@@ -1,26 +1,298 @@
 {
   "keep-or-toss": [
-    { "q": "How do I get my kid to declutter toys without a meltdown?", "a": "Take the decision off both of you. The Sorting Hat asks three concrete questions per toy — did you play with it recently, is it broken, does it make you smile big — and delivers the verdict itself. Kids accept the hat's answer far more easily than a parent's, because the hat is a neutral referee, not someone choosing against them." },
-    { "q": "What questions help kids decide whether to keep or toss a toy?", "a": "Three work best: Have you used it in the last month? Is it broken or missing pieces? Does it make you genuinely happy when you hold it? Recent use and real joy point to keeping; broken means a thank-you and the bin; everything else is a great candidate to donate to a younger kid." },
-    { "q": "What ages is the Sorting Hat good for?", "a": "Roughly ages 4 and up with a parent reading the questions aloud, and independently from about age 7. Teens and adults use it too — the three questions cut through indecision at any age." },
-    { "q": "Is the Sorting Hat free?", "a": "Completely free, no signup, and it works on any phone, tablet, or computer. After sorting three or more things, kids earn a shareable Declutter Hero badge." }
+    {
+      "q": "How do I get my kid to declutter toys without a meltdown?",
+      "a": "Take the decision off both of you. The Sorting Hat asks three concrete questions per toy — did you play with it recently, is it broken, does it make you smile big — and delivers the verdict itself. Kids accept the hat's answer far more easily than a parent's, because the hat is a neutral referee, not someone choosing against them."
+    },
+    {
+      "q": "What questions help kids decide whether to keep or toss a toy?",
+      "a": "Three work best: Have you used it in the last month? Is it broken or missing pieces? Does it make you genuinely happy when you hold it? Recent use and real joy point to keeping; broken means a thank-you and the bin; everything else is a great candidate to donate to a younger kid."
+    },
+    {
+      "q": "What ages is the Sorting Hat good for?",
+      "a": "Roughly ages 4 and up with a parent reading the questions aloud, and independently from about age 7. Teens and adults use it too — the three questions cut through indecision at any age."
+    },
+    {
+      "q": "Is the Sorting Hat free?",
+      "a": "Completely free, no signup, and it works on any phone, tablet, or computer. After sorting three or more things, kids earn a shareable Declutter Hero badge."
+    }
   ],
   "should-i-keep-it": [
-    { "q": "How do I decide whether to keep something or throw it away?", "a": "If you already know you love it, keep it — this wheel is only for fence-sitters. For those, spin and accept one of six fair outcomes: donate it, put it in a one-week maybe box, keep it if it fits your bin, toss it with a thank-you, sell it, or photograph it and let the picture keep the memory." },
-    { "q": "What is a maybe box and does it work?", "a": "A maybe box is a dated box for items you can't decide on. If nobody asks for the item within a week, it goes to donation without a second debate. It works because it separates the decision from the goodbye — most things in a maybe box are never missed." },
-    { "q": "Why does a random wheel make decluttering easier?", "a": "Fence-sitter items burn energy because both choices feel defensible. Randomness ends the debate fairly — and because nobody chose against you, the verdict is easy to accept. Kids especially respect the wheel's answer in a way they'd never respect a parent's." },
-    { "q": "Is the Should-I-Keep-It wheel free?", "a": "Yes — free, no signup, works on any device. Pile up ten fence-sitters and spin through them in one sitting for best results." }
+    {
+      "q": "How do I decide whether to keep something or throw it away?",
+      "a": "If you already know you love it, keep it — this wheel is only for fence-sitters. For those, spin and accept one of six fair outcomes: donate it, put it in a one-week maybe box, keep it if it fits your bin, toss it with a thank-you, sell it, or photograph it and let the picture keep the memory."
+    },
+    {
+      "q": "What is a maybe box and does it work?",
+      "a": "A maybe box is a dated box for items you can't decide on. If nobody asks for the item within a week, it goes to donation without a second debate. It works because it separates the decision from the goodbye — most things in a maybe box are never missed."
+    },
+    {
+      "q": "Why does a random wheel make decluttering easier?",
+      "a": "Fence-sitter items burn energy because both choices feel defensible. Randomness ends the debate fairly — and because nobody chose against you, the verdict is easy to accept. Kids especially respect the wheel's answer in a way they'd never respect a parent's."
+    },
+    {
+      "q": "Is the Should-I-Keep-It wheel free?",
+      "a": "Yes — free, no signup, works on any device. Pile up ten fence-sitters and spin through them in one sitting for best results."
+    }
   ],
   "toy-farewell": [
-    { "q": "How do I help my child say goodbye to toys they've outgrown?", "a": "Give the goodbye a shape. A short farewell ceremony — a funny speech, a moment of thanks, a certificate on the fridge — lets the attachment land somewhere. The toy is honored, the memory is spoken out loud, and the ending feels chosen rather than imposed." },
-    { "q": "What is a toy farewell ceremony?", "a": "A playful send-off for a toy that's moving on: the generator writes a short, funny eulogy from the toy's name, type, and one favorite memory, then awards a printable Certificate of Honorable Service. Kids read the speech, everyone laughs, and the toy goes in the donate bag with a smile." },
-    { "q": "Why does thanking a toy help kids let go?", "a": "Thanking an object — the idea behind the KonMari method — gives closure to the relationship a child actually has with a beloved toy. Gratitude replaces guilt, and humor teaches that endings can be warm instead of sad." },
-    { "q": "Can I print the farewell certificate?", "a": "Yes — one click prints just the Certificate of Honorable Service, ready for the fridge or the donation box lid. The tool is free with no signup." }
+    {
+      "q": "How do I help my child say goodbye to toys they've outgrown?",
+      "a": "Give the goodbye a shape. A short farewell ceremony — a funny speech, a moment of thanks, a certificate on the fridge — lets the attachment land somewhere. The toy is honored, the memory is spoken out loud, and the ending feels chosen rather than imposed."
+    },
+    {
+      "q": "What is a toy farewell ceremony?",
+      "a": "A playful send-off for a toy that's moving on: the generator writes a short, funny eulogy from the toy's name, type, and one favorite memory, then awards a printable Certificate of Honorable Service. Kids read the speech, everyone laughs, and the toy goes in the donate bag with a smile."
+    },
+    {
+      "q": "Why does thanking a toy help kids let go?",
+      "a": "Thanking an object — the idea behind the KonMari method — gives closure to the relationship a child actually has with a beloved toy. Gratitude replaces guilt, and humor teaches that endings can be warm instead of sad."
+    },
+    {
+      "q": "Can I print the farewell certificate?",
+      "a": "Yes — one click prints just the Certificate of Honorable Service, ready for the fridge or the donation box lid. The tool is free with no signup."
+    }
   ],
   "clutter-monster": [
-    { "q": "How do I make cleaning fun for kids?", "a": "Give the mess a face. In the Clutter Monster Battle, a 5, 10, or 15-minute cleanup becomes a fight against the Sock Gobbler or the Lego Leviathan: the monster's health drains as kids clean, and a Power Strike button lands bonus damage after every item put away. Same room, same ten minutes — completely different energy." },
-    { "q": "How long should a kid's cleanup session be?", "a": "Short and winnable. Five to fifteen focused minutes beats an open-ended 'clean your room' every time — kids can see the end, the monster can be beaten, and stopping while it's still fun means they'll fight again tomorrow." },
-    { "q": "What is a gamified cleaning timer?", "a": "A countdown timer wrapped in game mechanics: an enemy with a health bar, damage dealt by real-world tidying, reward bursts mid-task, and a victory report at the end. The game layer supplies the motivation that a plain timer doesn't." },
-    { "q": "Is the Clutter Monster Battle free?", "a": "Yes — free, no signup, works on any device, and ends with a shareable Battle Report showing minutes fought, power strikes landed, and your Cleaning Power Level." }
+    {
+      "q": "How do I make cleaning fun for kids?",
+      "a": "Give the mess a face. In the Clutter Monster Battle, a 5, 10, or 15-minute cleanup becomes a fight against the Sock Gobbler or the Lego Leviathan: the monster's health drains as kids clean, and a Power Strike button lands bonus damage after every item put away. Same room, same ten minutes — completely different energy."
+    },
+    {
+      "q": "How long should a kid's cleanup session be?",
+      "a": "Short and winnable. Five to fifteen focused minutes beats an open-ended 'clean your room' every time — kids can see the end, the monster can be beaten, and stopping while it's still fun means they'll fight again tomorrow."
+    },
+    {
+      "q": "What is a gamified cleaning timer?",
+      "a": "A countdown timer wrapped in game mechanics: an enemy with a health bar, damage dealt by real-world tidying, reward bursts mid-task, and a victory report at the end. The game layer supplies the motivation that a plain timer doesn't."
+    },
+    {
+      "q": "Is the Clutter Monster Battle free?",
+      "a": "Yes — free, no signup, works on any device, and ends with a shareable Battle Report showing minutes fought, power strikes landed, and your Cleaning Power Level."
+    }
+  ],
+  "yes-no-oracle": [
+    {
+      "q": "Is a yes-or-no oracle a real way to make decisions?",
+      "a": "For low-stakes choices, yes — and not because it's magic. When the oracle answers, your gut reaction tells you what you actually wanted. Relief means yes; disappointment means no. The crystal ball is really a mirror for your own preference."
+    },
+    {
+      "q": "How does the yes/no oracle help kids?",
+      "a": "It gives kids a playful, pressure-free way to practice asking a clear question and living with an answer. Parents can follow up with 'how do you feel about that answer?' — which turns a toy into a tiny intuition lesson."
+    },
+    {
+      "q": "Is the yes/no oracle free?",
+      "a": "Completely free, no signup, works on any phone or tablet. Your questions stay on your device — nothing is stored or sent anywhere."
+    }
+  ],
+  "spin-the-wheel": [
+    {
+      "q": "How do I make a custom spinning wheel for decisions?",
+      "a": "Type your options into the list, and each one becomes a slice of the wheel. Add as many as you like — dinner choices, chore assignments, movie picks — then spin. The wheel chooses fairly and plays a little celebration when it lands."
+    },
+    {
+      "q": "Why do kids accept the wheel's answer so easily?",
+      "a": "Because random is fair. When a parent picks, someone feels chosen against; when the wheel picks, nobody does. Families use it for who-goes-first, what's-for-dinner, and whose-turn-to-choose arguments that used to take twenty minutes."
+    },
+    {
+      "q": "Is the spin wheel free and private?",
+      "a": "Yes — free, no signup, no account. Your options live only in your browser, and you can spin as many times as you like."
+    }
+  ],
+  "coin-flip": [
+    {
+      "q": "Is an online coin flip really 50/50?",
+      "a": "Yes — the flip uses your browser's random number generator, which is as close to a true 50/50 as a physical coin. No streaks are remembered and nothing influences the next toss."
+    },
+    {
+      "q": "When should we use a coin flip instead of talking it out?",
+      "a": "For two-option choices where both answers are fine: which restaurant, who goes first, which movie. If a choice deserves real discussion, discuss it — the coin is for ending the small standoffs that eat family evenings."
+    },
+    {
+      "q": "What if we don't like the coin's answer?",
+      "a": "That's useful information! The flash of disappointment when the coin lands is your real preference revealing itself. Psychologists call it the coin-flip trick: flip, notice how you feel, then choose with confidence."
+    }
+  ],
+  "random-picker": [
+    {
+      "q": "How does the random picker choose?",
+      "a": "Paste or type your list — names, options, anything — and the picker selects one at random using your browser's random number generator. Every entry has an exactly equal chance, every time."
+    },
+    {
+      "q": "What do families use the random picker for?",
+      "a": "Picking who sets the table, which kid chooses the show, prize drawings, classroom turns, and 'we can't decide' restaurant lists. Anywhere fairness matters more than preference, the picker settles it in one tap."
+    },
+    {
+      "q": "Is the random picker free?",
+      "a": "Free, no signup, works everywhere. Your list stays in your browser and is never uploaded."
+    }
+  ],
+  "random-activity-picker": [
+    {
+      "q": "What should we do today when nobody has ideas?",
+      "a": "That 'I don't know, what do YOU want to do' loop is a choice problem, not a boredom problem. The activity picker offers a concrete suggestion to react to — and even a 'no, not that' brings you one step closer to what everyone actually wants."
+    },
+    {
+      "q": "Are the activities kid-friendly?",
+      "a": "Yes — the picker draws from family-friendly indoor and outdoor activities that need little or no equipment. Spin again as often as you like until something sparks."
+    },
+    {
+      "q": "Is the activity picker free?",
+      "a": "Free, no signup, on any device. Great for rainy Saturdays, school breaks, and the witching hour before dinner."
+    }
+  ],
+  "what-to-eat-randomizer": [
+    {
+      "q": "How do I stop the what's-for-dinner argument?",
+      "a": "Stop asking an open question. The dinner decider narrows infinite options to one concrete suggestion the family reacts to — and reacting is far easier than choosing. Most families find dinner decided in under a minute."
+    },
+    {
+      "q": "Can I use my own meal list?",
+      "a": "Yes — load it with your family's real rotation and let it pick from meals everyone already accepts. That turns the nightly debate into a fair draw from pre-approved options."
+    },
+    {
+      "q": "Is the dinner decider free?",
+      "a": "Free, no signup, works on the phone already in your kitchen. Pairs beautifully with a weekly meal rotation for the nights you didn't plan."
+    }
+  ],
+  "rock-paper-scissors": [
+    {
+      "q": "Is rock paper scissors a fair way to settle decisions?",
+      "a": "Against our computer opponent, yes — it picks randomly, so every round is fair. Between kids, it beats arguing because both players agreed to the rules before the outcome existed. That's why it has settled disputes for centuries."
+    },
+    {
+      "q": "Why do kids accept losing at rock paper scissors?",
+      "a": "Because the loss comes from the game, not from a person. Nobody overruled them — the rules did. It's one of the earliest ways kids practice accepting an outcome they didn't want, three seconds at a time."
+    },
+    {
+      "q": "Is this rock paper scissors game free?",
+      "a": "Free, instant, no signup. Play best-of-three against the computer or use it as the official referee for household disputes."
+    }
+  ],
+  "random-name-generator": [
+    {
+      "q": "How do I pick a name from a list fairly?",
+      "a": "Enter the names and draw — every name has an equal chance, and everyone can see it happen. Perfect for gift exchanges, classroom turns, team captains, and who-gets-the-front-seat."
+    },
+    {
+      "q": "Can I split people into teams?",
+      "a": "Yes — the name picker can draw names one at a time, which makes fair team assignment simple: alternate draws until the list is empty. No accusations of stacked teams."
+    },
+    {
+      "q": "Is the name picker free and private?",
+      "a": "Free, no signup, and the names never leave your browser — nothing is stored or shared."
+    }
+  ],
+  "random-username-generator": [
+    {
+      "q": "How do I pick a safe username for a kid?",
+      "a": "Use a generated name with no real name, birthday, or location in it — exactly what this tool makes. Playful themed usernames give kids an identity they love without leaking who they are."
+    },
+    {
+      "q": "Why use a username generator instead of making one up?",
+      "a": "Because the name a kid invents is usually taken, and attempt number twelve is when real names and birth years sneak in. The generator supplies endless fresh, safe options until one clicks."
+    },
+    {
+      "q": "Is the username generator free?",
+      "a": "Free, unlimited generations, no signup. Regenerate until you find one that makes your kid grin."
+    }
+  ],
+  "what-to-wear-randomizer": [
+    {
+      "q": "How does an outfit picker help an indecisive kid?",
+      "a": "Morning outfit paralysis is a too-many-options problem. The picker turns getting dressed into a game with a single suggestion to react to — and 'no, not that one' from a kid is progress, because now they know something about what they want."
+    },
+    {
+      "q": "Does it work for adults staring at a full closet?",
+      "a": "Completely. The staring-at-a-full-closet freeze is the same psychology at any age. Let the picker choose a direction and edit from there — editing is easier than deciding."
+    },
+    {
+      "q": "Is the outfit picker free?",
+      "a": "Free, no signup, no photos of your closet needed — it works with playful suggestions, not surveillance."
+    }
+  ],
+  "magic-chores-list": [
+    {
+      "q": "How do I get kids to do chores without nagging?",
+      "a": "Change the game, not the kid. Magic Chores turns tasks into quests with rewards, so the motivation comes from the system instead of your voice. Kids check off quests to earn rewards you set together."
+    },
+    {
+      "q": "What rewards work best for a chore game?",
+      "a": "Small, frequent, and experience-based beats big and distant: 20 minutes of screen time, picking dinner, staying up 15 minutes later. The reward menu is yours — the tool supplies the structure and the fun."
+    },
+    {
+      "q": "Is Magic Chores free?",
+      "a": "Free, no signup, works on any device. Set it up once and let the quest board do the nagging for you."
+    }
+  ],
+  "screen-time-swap": [
+    {
+      "q": "How do I manage screen time without daily battles?",
+      "a": "Make the trade explicit. Screen Time Swap turns screen minutes into a currency kids earn through real-world activities — reading, chores, outside play. The negotiation disappears because the exchange rate was agreed on in advance."
+    },
+    {
+      "q": "What's a fair screen time exchange rate?",
+      "a": "Many families start at one-to-one — 20 minutes of reading earns 20 minutes of screens — and adjust from there. The magic isn't the exact rate; it's that kids control their own earning, which ends the begging cycle."
+    },
+    {
+      "q": "Is Screen Time Swap free?",
+      "a": "Free, no signup, no tracking — it's a family agreement tool, not a surveillance app. Everything stays on your device."
+    }
+  ],
+  "decision-maximizer": [
+    {
+      "q": "What is a maximizer vs a satisficer?",
+      "a": "Maximizers keep searching for the best possible option; satisficers pick the first option that's good enough and move on. Research links heavy maximizing with more stress and less satisfaction — even when maximizers objectively choose well."
+    },
+    {
+      "q": "Why does my decision style matter?",
+      "a": "Because knowing your style tells you which advice you need. Maximizers benefit from deadlines and 'good enough' rules; satisficers occasionally need a nudge to slow down on decisions that genuinely deserve research."
+    },
+    {
+      "q": "Is the decision style quiz free?",
+      "a": "Free, quick, no signup, and your answers stay on your device. Great conversation starter for couples and teens, too."
+    }
+  ],
+  "cognitive-bias-checker": [
+    {
+      "q": "What is a cognitive bias in simple terms?",
+      "a": "A mental shortcut that usually helps but sometimes fools you — like trusting the first price you see (anchoring) or only noticing evidence you agree with (confirmation bias). Everyone has them; the advantage goes to people who can catch their own."
+    },
+    {
+      "q": "Can kids learn about cognitive biases?",
+      "a": "Absolutely — kids as young as ten enjoy catching biases in themselves and (especially) in their parents. Naming the shortcut is the first step to thinking past it, and the quiz makes it a game rather than a lecture."
+    },
+    {
+      "q": "Is the cognitive bias test free?",
+      "a": "Free, no signup, a few minutes long. Take it as a family and compare which shortcuts each of you leans on."
+    }
+  ],
+  "should-i-buy-it-calculator": [
+    {
+      "q": "How do I decide if a purchase is worth it?",
+      "a": "Run it through a few honest questions: cost per use, whether you'd still want it next week, what else the money could do, and whether you're buying the thing or the feeling. The calculator walks you through exactly that."
+    },
+    {
+      "q": "Does this help teach kids about money?",
+      "a": "It's one of the easiest ways in. A kid deciding on a purchase with their own money gets a friendly, neutral checklist instead of a parental lecture — and the calculator's verdict lands softer than 'no' from you."
+    },
+    {
+      "q": "Is the Should I Buy It calculator free?",
+      "a": "Free, no signup, and it never sees your bank account — it just asks the questions a wise friend would ask before you tap 'buy now.'"
+    }
+  ],
+  "d20-roller": [
+    {
+      "q": "What is a D20 roller used for?",
+      "a": "Anything that needs a number from 1 to 20: tabletop games, random picks from a numbered list, deciding how many minutes of cleanup, or adding drama to any family decision. Roll high, celebrate; roll low, laugh."
+    },
+    {
+      "q": "Is the online D20 fair?",
+      "a": "Yes — every face has an exactly equal 5% chance on every roll, using your browser's random number generator. No loaded dice, no memory of past rolls."
+    },
+    {
+      "q": "Is the D20 roller free?",
+      "a": "Free, instant, no signup — with a satisfying roll animation and sound. Critical hits included at no extra charge."
+    }
   ]
 }

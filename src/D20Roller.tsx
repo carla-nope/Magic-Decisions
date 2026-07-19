@@ -3,6 +3,7 @@ import { Dices, RefreshCw, Sparkles, ArrowRight, Lightbulb, Users, BookOpen, Pen
 import SEOContent from './SEOContent'
 import { playD20Roll, playFanfare } from './lib/sounds'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 // Decision prompts mapped to 1-20
 const DECISION_PROMPTS: Record<number, string> = {
@@ -247,6 +248,8 @@ export default function D20Roller({ onNavigate }: D20RollerProps) {
         </div>
 
         {/* Footer spacer */}
+        <ToolFaq route="d20-roller" />
+
         <div className="h-24" />
       </div>
 

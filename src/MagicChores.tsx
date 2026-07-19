@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { Sparkles, Wand2, Plus, Trash2, Check, Clock, Star, Crown, Flame, ChevronDown, ChevronUp, Castle, Shield, Swords, Timer, Gift, Info, RefreshCw, ArrowRight } from 'lucide-react'
 import { playChoreSpin, playClick } from './lib/sounds'
 import './index.css'
+import ToolFaq from './ToolFaq'
 // ============================================
 // MOTIVATIONAL QUOTES (Magical + Plain)
 // ============================================
@@ -794,6 +795,8 @@ export default function MagicChores({ onNavigate }: MagicChoresProps) {
       </div>
 
       {/* Footer spacer */}
+      <ToolFaq route="magic-chores-list" />
+
       <div className="h-24" />
     </div>
   )

@@ -3,6 +3,7 @@ import { Monitor, Clock, ArrowRight, RotateCcw, Sparkles, ChevronRight, Info, Al
 import { useTheme } from './contexts/ThemeContext'
 import { playMagicChime } from './lib/sounds'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 interface ScreenSwapOption {
   id: string
@@ -533,28 +534,31 @@ export default function ScreenTimeSwap({ onNavigate }: ScreenTimeSwapProps) {
         </div>
 
         {/* Lead Magnet CTA */}
-        <div className="w-full max-w-2xl mb-8">
-          <div className="mystical-card p-8 text-center bg-cream-50 border border-cream-300">
+        {/* Lead Magnet CTA */}
+        <div className="w-full max-w-2xl mb-8 px-4 mx-auto">
+          <div className="mystical-card p-8 text-center bg-cream-50 border-cream-300">
             <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center">
               <Sparkles className="w-8 h-8 text-secondary-400" />
             </div>
-            <h2 className="text-xl font-bold font-display text-ink-800 mb-3">
-              Want Help Balancing Screen Time?
+            <h2 className="text-xl font-bold text-ink-800 mb-3 font-display">
+              Screen Time Is a Decision Skill Too
             </h2>
             <p className="text-[#6B5E4E] text-sm mb-6 max-w-md mx-auto">
-              Get the free Screen Time Balance Guide with tips, age-appropriate guidelines, and swap ideas the whole family will love.
+              Get the free Decision Traps Guide — five patterns that make everyday choices feel huge for kids, and a playful fix for each one.
             </p>
             <a
-              href="https://go.magicdecisions.com/st1"
+              href="https://go.magicdecisions.com/dt1"
               target="_blank"
               rel="noopener noreferrer"
-              className="mystical-btn inline-flex items-center gap-2"
+              className="inline-flex items-center gap-2 px-6 py-3 mystical-btn"
             >
-              Get the Free Screen Time Guide
+              Get the Free Guide
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         </div>
+
+        <ToolFaq route="screen-time-swap" />
 
         <div className="h-24" />
       </div>

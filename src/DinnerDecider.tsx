@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react'
 import { UtensilsCrossed, RefreshCw, Copy, Check, Share2, Clock, Flame, Leaf, Plus, Trash2, Info, BookOpen, Sparkles, ArrowRight } from 'lucide-react'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 interface DinnerDeciderProps {
   onNavigate?: (toolId: string) => void
@@ -566,6 +567,8 @@ function DinnerDecider({ onNavigate }: DinnerDeciderProps) {
         </div>
 
         {/* Footer spacer */}
+        <ToolFaq route="what-to-eat-randomizer" />
+
         <div className="h-24" />
       </div>
 

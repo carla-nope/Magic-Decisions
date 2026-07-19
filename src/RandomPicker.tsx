@@ -2,6 +2,7 @@ import { useState, useCallback, useRef } from 'react'
 import { Plus, Trash2, Shuffle, Copy, Check, Share2, Volume2, VolumeX, Sparkles, ArrowRight } from 'lucide-react'
 import { playReveal, playClick } from './lib/sounds'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 interface RandomPickerProps {
   onNavigate?: (toolId: string) => void
@@ -368,6 +369,8 @@ function RandomPicker({ onNavigate }: RandomPickerProps) {
         </div>
 
         {/* Footer spacer */}
+        <ToolFaq route="random-picker" />
+
         <div className="h-24" />
       </div>
 

@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react'
 import { CreditCard, Calculator, Sparkles, RefreshCw, Share2, Copy, Check, AlertTriangle, CheckCircle, XCircle, TrendingDown, DollarSign, Heart, Brain, ArrowRight } from 'lucide-react'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 interface Question {
   id: string;
@@ -433,6 +434,8 @@ function ShouldIBuyItCalculator({ onNavigate }: ShouldIBuyItCalculatorProps) {
         </div>
 
         {/* Footer spacer */}
+        <ToolFaq route="should-i-buy-it-calculator" />
+
         <div className="h-24" />
 
         {/* Parent/Family Teaching Moment */}

@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { Copy, Check, Share2, RotateCcw, Sparkles, ArrowRight, ChevronRight } from 'lucide-react'
 import { playCoinFlip, playMagicChime, playClick } from './lib/sounds'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 interface CoinFlipProps {
   onNavigate?: (toolId: string) => void
@@ -296,6 +297,8 @@ function CoinFlip({ onNavigate }: CoinFlipProps) {
         </div>
 
         {/* Footer spacer */}
+        <ToolFaq route="coin-flip" />
+
         <div className="h-24" />
       </div>
 

@@ -2,6 +2,7 @@ import { useState, useCallback } from 'react'
 import { User, Plus, Trash2, RefreshCw, Copy, Check, Share2, Shuffle, Users, Sparkles, ArrowRight } from 'lucide-react'
 import { playReveal, playClick } from './lib/sounds'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 interface NamePickerProps {
   onNavigate?: (toolId: string) => void
@@ -553,6 +554,8 @@ function NamePicker({ onNavigate }: NamePickerProps) {
         </div>
 
         {/* Footer spacer */}
+        <ToolFaq route="random-name-generator" />
+
         <div className="h-24" />
       </div>
 

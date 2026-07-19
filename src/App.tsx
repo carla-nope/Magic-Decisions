@@ -24,6 +24,7 @@ import KeepItWheel from './KeepItWheel'
 import ToyFarewell from './ToyFarewell'
 import ClutterMonster from './ClutterMonster'
 import SEOContent from './SEOContent'
+import ToolFaq from './ToolFaq'
 import { PrivacyPolicy, TermsConditions, AboutPage, ContactPage } from './LegalPages'
 import { pathToTool, toolToPath, metaForPath } from './seo-meta'
 import { useTheme } from './contexts/ThemeContext'
@@ -404,6 +405,8 @@ function YesNoOracle() {
             </a>
           </div>
         </div>
+
+        <ToolFaq route="yes-no-oracle" />
 
         {/* Footer spacer */}
         <div className="h-24" />

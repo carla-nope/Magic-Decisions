@@ -2,6 +2,7 @@ import { useState, useCallback } from 'react'
 import { Hand, RefreshCw, Copy, Check, Share2, Trophy, Target, Zap, Sparkles, ArrowRight } from 'lucide-react'
 import { playRPSSting, playClick } from './lib/sounds'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 interface RockPaperScissorsProps {
   onNavigate?: (toolId: string) => void
@@ -443,6 +444,8 @@ function RockPaperScissors({ onNavigate }: RockPaperScissorsProps) {
         </div>
 
         {/* Footer spacer */}
+        <ToolFaq route="rock-paper-scissors" />
+
         <div className="h-24" />
       </div>
 

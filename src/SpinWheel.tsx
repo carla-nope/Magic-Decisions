@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import { Plus, Trash2, RefreshCw, Share2, Copy, Check, Volume2, VolumeX, Sparkles, ArrowRight } from 'lucide-react'
 import { playWheelSpin, playMagicChime, playClick } from './lib/sounds'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 interface SpinWheelProps {
   onNavigate?: (toolId: string) => void
@@ -510,6 +511,8 @@ function SpinWheel({ onNavigate }: SpinWheelProps) {
         </div>
 
         {/* Footer spacer */}
+        <ToolFaq route="spin-the-wheel" />
+
         <div className="h-24" />
       </div>
     </div>

@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react'
 import { Brain, Sparkles, RefreshCw, Share2, Copy, Check, AlertTriangle, CheckCircle, XCircle, ArrowRight } from 'lucide-react'
 import './index.css'
+import ToolFaq from './ToolFaq'
 
 interface BiasScenario {
   id: number;
@@ -454,6 +455,8 @@ function CognitiveBiasTest({ onNavigate }: CognitiveBiasTestProps) {
         </div>
 
         {/* Footer spacer */}
+        <ToolFaq route="cognitive-bias-checker" />
+
         <div className="h-24" />
 
         {/* Parent/Family Teaching Moment */}
