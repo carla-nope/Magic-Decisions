@@ -21,13 +21,14 @@ import D20Roller from './D20Roller'
 import ScreenTimeSwap from './ScreenTimeSwap'
 import SortingHat from './SortingHat'
 import KeepItWheel from './KeepItWheel'
+import ToyFarewell from './ToyFarewell'
 import SEOContent from './SEOContent'
 import { PrivacyPolicy, TermsConditions, AboutPage, ContactPage } from './LegalPages'
 import { pathToTool, toolToPath, metaForPath } from './seo-meta'
 import { useTheme } from './contexts/ThemeContext'
 import './index.css'
 
-type Tool = 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner' | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit' | 'chores' | 'd20' | 'screentime' | 'sortinghat' | 'keepit' | 'blog' | 'blogpost' | 'privacy' | 'terms' | 'about' | 'contact'
+type Tool = 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner' | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit' | 'chores' | 'd20' | 'screentime' | 'sortinghat' | 'keepit' | 'farewell' | 'blog' | 'blogpost' | 'privacy' | 'terms' | 'about' | 'contact'
 
 // Resolve the active tool (and optional blog slug) from the current URL.
 // During prerendering there is no window, so the path is supplied via
@@ -500,6 +501,7 @@ function App() {
       tools: [
         { id: 'sortinghat' as Tool, name: 'Sorting Hat', icon: Wand2, color: 'gold' },
         { id: 'keepit' as Tool, name: 'Should I Keep It?', icon: RefreshCw, color: 'teal' },
+        { id: 'farewell' as Tool, name: 'Toy Farewell', icon: Sparkles, color: 'coral' },
       ]
     },
     {
@@ -648,6 +650,7 @@ function App() {
 {activeTool === 'screentime' && <ScreenTimeSwap onNavigate={(id) => setActiveTool(id as Tool)} />}
         {activeTool === 'sortinghat' && <SortingHat onNavigate={(id) => setActiveTool(id as Tool)} />}
         {activeTool === 'keepit' && <KeepItWheel onNavigate={(id) => setActiveTool(id as Tool)} />}
+        {activeTool === 'farewell' && <ToyFarewell onNavigate={(id) => setActiveTool(id as Tool)} />}
         {activeTool === 'blog' && <BlogPage onNavigateToPost={(slug) => { setBlogPostSlug(slug); setActiveTool('blogpost'); }} />}
         {activeTool === 'blogpost' && blogPostSlug && <BlogPost slug={blogPostSlug} onBack={() => { setActiveTool('blog'); setBlogPostSlug(null); }} />}
         {activeTool === 'privacy' && <PrivacyPolicy onNavigate={setActiveTool} />}

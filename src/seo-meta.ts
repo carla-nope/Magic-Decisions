@@ -5,7 +5,7 @@
 export type Tool =
   | 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner'
   | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit'
-  | 'chores' | 'd20' | 'sortinghat' | 'keepit' | 'screentime' | 'blog' | 'blogpost' | 'privacy'
+  | 'chores' | 'd20' | 'sortinghat' | 'keepit' | 'farewell' | 'screentime' | 'blog' | 'blogpost' | 'privacy'
   | 'terms' | 'about' | 'contact';
 
 export const pathToTool: Record<string, Tool> = {
@@ -30,6 +30,7 @@ export const pathToTool: Record<string, Tool> = {
   'd20-roller': 'd20',
   'keep-or-toss': 'sortinghat',
   'should-i-keep-it': 'keepit',
+  'toy-farewell': 'farewell',
   'blog': 'blog',
   'contact': 'contact',
 };
@@ -56,6 +57,7 @@ export const toolToPath: Record<Tool, string> = {
   d20: 'd20-roller',
   sortinghat: 'keep-or-toss',
   keepit: 'should-i-keep-it',
+  farewell: 'toy-farewell',
   home: '',
   contact: 'contact',
   blog: 'blog',
@@ -71,6 +73,12 @@ export interface RouteMeta {
 // family/kids positioning; individual tool pages stay broad
 // for search intent.
 export const routeMeta: Record<string, RouteMeta> = {
+  'toy-farewell': {
+    title: 'Toy Farewell Ceremony \u2014 Funny Goodbye Speeches for Outgrown Toys | Magic Decisions',
+    description:
+      'Help kids let go of outgrown toys with a funny, sweet farewell speech and a printable Certificate of Honorable Service. Free ceremony generator \u2014 no signup.',
+  },
+
   'should-i-keep-it': {
     title: 'Should I Keep It? Free Declutter Decision Wheel | Magic Decisions',
     description:

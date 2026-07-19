@@ -20,6 +20,7 @@ const tools = [
   { id: 'buyit',   name: 'Should I Buy It?',       icon: CreditCard,     color: 'teal',    emoji: '🛒', description: 'Make smarter purchasing decisions',                              keyword: 'should I buy it calculator' },
   { id: 'sortinghat', name: 'Sorting Hat',          icon: Wand2,          color: 'gold',    emoji: '🎩', description: 'Keep, toss, or donate? Let the hat decide',                    keyword: 'declutter toys with kids' },
   { id: 'keepit',  name: 'Should I Keep It?',      icon: RefreshCw,      color: 'teal',    emoji: '📦', description: 'Spin the wheel for on-the-fence stuff',                        keyword: 'should I keep it' },
+  { id: 'farewell', name: 'Toy Farewell',          icon: Sparkles,       color: 'coral',   emoji: '🎖️', description: 'A funny goodbye ceremony for outgrown toys',                  keyword: 'toy farewell ceremony' },
 ]
 
 // Warm color mapping for tool cards
@@ -37,7 +38,7 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
     'Activity Picker': 'activity', 'Dinner Decider': 'dinner', 'Username Picker': 'username',
     'Outfit Picker': 'outfit', 'Name Picker': 'names', 'Magic Chores': 'chores',
     'Screen Time Swap': 'screentime', 'Decision Style Quiz': 'maximizer',
-    'Cognitive Bias Test': 'bias', 'Should I Buy It': 'buyit', 'Sorting Hat': 'sortinghat', 'Should I Keep It?': 'keepit',
+    'Cognitive Bias Test': 'bias', 'Should I Buy It': 'buyit', 'Sorting Hat': 'sortinghat', 'Should I Keep It?': 'keepit', 'Toy Farewell': 'farewell',
   }
 
   return (
@@ -60,7 +61,7 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
               </p>
               <div className="flex items-center justify-center gap-2 text-[#A09080] text-sm">
                 <Zap className="w-4 h-4 text-primary-400" />
-                <span>18 free tools</span>
+                <span>19 free tools</span>
                 <span>•</span>
                 <Globe className="w-4 h-4" />
                 <span>Works everywhere</span>
@@ -197,7 +198,7 @@ function LandingPage({ onSelectTool }: { onSelectTool: (toolId: any) => void }) 
           {/* Statistics */}
           <div className="flex flex-wrap justify-center gap-8 py-6 border-y border-cream-300 mt-12">
             <div className="text-center">
-              <p className="text-3xl font-bold font-display text-secondary-500">18</p>
+              <p className="text-3xl font-bold font-display text-secondary-500">19</p>
               <p className="text-[#A09080] text-sm">Decision Tools</p>
             </div>
             <div className="text-center">
