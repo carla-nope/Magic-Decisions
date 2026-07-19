@@ -98,6 +98,44 @@ for (const route of routes) {
     }
   }
 
+  // Structured data for blog posts: Article (+ FAQPage when the post has an FAQ section)
+  if (route.startsWith('blog/')) {
+    const slug = route.slice(5)
+    const post = loadPost(slug)
+    if (post) {
+      const heroUrl = 'https://magicdecisions.com/blog-images/' + slug + '.png'
+      const article = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: post.title,
+        description: post.seo?.meta_description || post.excerpt || '',
+        datePublished: post.date,
+        image: existsSync(resolve(root, 'public/blog-images', slug + '.png')) ? [heroUrl] : undefined,
+        author: { '@type': 'Person', name: 'Carla', url: 'https://magicdecisions.com/about-us' },
+        publisher: { '@type': 'Organization', name: 'Magic Decisions', url: 'https://magicdecisions.com' },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+        articleSection: post.category,
+      }
+      const scripts = [`<script id="article-schema" type="application/ld+json">${JSON.stringify(article)}<\/script>`]
+
+      // FAQPage schema: parse "### question?" blocks inside an FAQ-titled section
+      const faqMatch = post.body.match(/^## .*FAQ.*$([\s\S]*?)(?=^## |$(?![\s\S]))/mi)
+      if (faqMatch) {
+        const qa = []
+        const rx = /^### (.+\?)\s*\n([\s\S]*?)(?=^### |$(?![\s\S]))/gm
+        let m
+        while ((m = rx.exec(faqMatch[1])) !== null) {
+          const answer = m[2].replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/[*_>#]/g, '').replace(/\s+/g, ' ').trim()
+          if (answer) qa.push({ '@type': 'Question', name: m[1].trim(), acceptedAnswer: { '@type': 'Answer', text: answer } })
+        }
+        if (qa.length >= 2) {
+          scripts.push(`<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: qa })}<\/script>`)
+        }
+      }
+      html = html.replace('</head>', scripts.join('\n') + '\n</head>')
+    }
+  }
+
   const outFile = route ? resolve(dist, route, 'index.html') : resolve(dist, 'index.html')
   mkdirSync(dirname(outFile), { recursive: true })
   writeFileSync(outFile, html)

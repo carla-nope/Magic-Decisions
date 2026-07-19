@@ -465,7 +465,6 @@ function App() {
         { id: 'rps' as Tool, name: 'Rock Paper Scissors', icon: Hand, color: 'coral' },
         { id: 'coin' as Tool, name: 'Coin Flip', icon: Circle, color: 'teal' },
         { id: 'picker' as Tool, name: 'Random Picker', icon: CircleDot, color: 'teal' },
-        { id: 'screentime' as Tool, name: 'Screen Swap', icon: Monitor, color: 'teal' },
       ]
     },
     {
