@@ -5,7 +5,7 @@
 export type Tool =
   | 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner'
   | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit'
-  | 'chores' | 'd20' | 'sortinghat' | 'screentime' | 'blog' | 'blogpost' | 'privacy'
+  | 'chores' | 'd20' | 'sortinghat' | 'keepit' | 'screentime' | 'blog' | 'blogpost' | 'privacy'
   | 'terms' | 'about' | 'contact';
 
 export const pathToTool: Record<string, Tool> = {
@@ -29,6 +29,7 @@ export const pathToTool: Record<string, Tool> = {
   'terms-of-service': 'terms',
   'd20-roller': 'd20',
   'keep-or-toss': 'sortinghat',
+  'should-i-keep-it': 'keepit',
   'blog': 'blog',
   'contact': 'contact',
 };
@@ -54,6 +55,7 @@ export const toolToPath: Record<Tool, string> = {
   terms: 'terms-of-service',
   d20: 'd20-roller',
   sortinghat: 'keep-or-toss',
+  keepit: 'should-i-keep-it',
   home: '',
   contact: 'contact',
   blog: 'blog',
@@ -69,6 +71,12 @@ export interface RouteMeta {
 // family/kids positioning; individual tool pages stay broad
 // for search intent.
 export const routeMeta: Record<string, RouteMeta> = {
+  'should-i-keep-it': {
+    title: 'Should I Keep It? Free Declutter Decision Wheel | Magic Decisions',
+    description:
+      'On the fence about keeping something? Spin the free Should-I-Keep-It wheel: donate, maybe box, keep, sell, toss, or photo-and-release. A fast, fair way to declutter \u2014 no signup.',
+  },
+
   'keep-or-toss': {
     title: 'Keep or Toss? Free Declutter Sorting Hat for Kids | Magic Decisions',
     description:
