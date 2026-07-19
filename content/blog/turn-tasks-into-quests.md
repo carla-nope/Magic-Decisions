@@ -15,6 +15,8 @@ July 1, 2026 &bull; Gamified Productivity
 
 Chores. The word itself can trigger groans and eye-rolls from even the most cooperative children. But what if tidying their room or washing dishes felt less like a burden and more like an epic adventure? By reframing everyday tasks as exciting quests, you can tap into your child's natural desire for play, progress, and reward, transforming household duties into engaging challenges.
 
+The psychology holds up: [self-determination theory](https://selfdeterminationtheory.org/theory/) finds motivation sticks when people feel autonomy and progress — exactly what quest structures provide.
+
 
 ## The Psychology of Quest Framing: Why It Works
 
@@ -167,3 +169,9 @@ By continuously evolving the system and keeping it aligned with your child's int
 Explore our fun, interactive tools designed to help your family make choices faster and with less stress.
 
  [Discover Magic Decisions Tools](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

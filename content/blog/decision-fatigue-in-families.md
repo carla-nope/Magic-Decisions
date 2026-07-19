@@ -17,7 +17,7 @@ seo:
 It's 3:15 PM. Your kid is melting down over the color of their cup. Your partner snaps at you for asking what they want for snack. And you? You're hiding in the pantry, eating chocolate chips straight from the bag.
 
 
-    Sound familiar? You might think everyone is just tired or hungry. But there's something else at play: **decision fatigue**. And it's probably running your household more than you realize.
+    Sound familiar? You might think everyone is just tired or hungry. But there's something else at play: **[decision fatigue](https://health.clevelandclinic.org/decision-fatigue)**. And it's probably running your household more than you realize.
 
 
 ## What is Decision Fatigue, Exactly?
@@ -25,7 +25,7 @@ It's 3:15 PM. Your kid is melting down over the color of their cup. Your partner
 *Learn more: [APA: The Costs of Decision Fatigue](https://www.apa.org/monitor/2012/03/decision-fatigue)*
 
 
-    Decision fatigue is what happens when your brain gets worn out from making too many choices. Every decision you make, from tiny to big, costs a little bit of mental energy. By the end of the day, that energy account can be empty.
+    Decision fatigue is what happens when your brain gets worn out from making [too many choices](https://www.ted.com/talks/barry_schwartz_the_paradox_of_choice). Every decision you make, from tiny to big, costs a little bit of mental energy. By the end of the day, that energy account can be empty.
 
 
     This isn't about being weak-willed or lazy. It's simple brain science. Your prefrontal cortex (the part that handles choices and self-control) gets tired, just like a muscle after a workout. When it's exhausted, everything feels harder.
@@ -79,7 +79,7 @@ It's 3:15 PM. Your kid is melting down over the color of their cup. Your partner
 
 ### 2. Use Random Helpers
 
-    For those moments when nobody can decide, let a tool help. A [spin wheel](/tools/spin-wheel) can pick who's first, what game to play, or which chore is next. A [coin flip](/tools/coin-flip) settles "who's turn is it" debates instantly. The randomness takes the pressure off everyone.
+    For those moments when nobody can decide, let a tool help. A [spin wheel](/spin-the-wheel) can pick who's first, what game to play, or which chore is next. A [coin flip](/coin-flip) settles "who's turn is it" debates instantly. The randomness takes the pressure off everyone.
 
 
 ### 3. Batch Decisions Together
@@ -119,7 +119,7 @@ It's 3:15 PM. Your kid is melting down over the color of their cup. Your partner
     When you notice everyone is getting cranky, pause and ask: Does this decision actually matter? Does it need to be made right now? Who cares which cup we use? Who cares what order we put on pajamas?
 
 
-    Save the big choices for when everyone's fresh. Automate the small ones. And when you need a tiebreaker, [use a tool](/tools) to make it instant and fair.
+    Save the big choices for when everyone's fresh. Automate the small ones. And when you need a tiebreaker, [use a tool](/) to make it instant and fair.
 
 
     Your family's energy is worth protecting. And it starts with recognizing that not every decision deserves your brain power.

@@ -13,7 +13,9 @@ readTime: "9 min read"
 Practical Solutions • 11 min read [Building Decision Confidence Kids](/blog/building-decision-confidence-kids)
 
 
-Every has battlegrounds: the homework wars, the chore mutiny, the screen time showdown. What if the solution wasn't more negotiation, more rules, or more willpower,but a spin wheel? Decision wheels can solve them.
+Every has battlegrounds: the homework wars, the chore mutiny, the [screen time](https://www.healthychildren.org/English/fmp/Pages/MediaPlan.aspx) showdown. What if the solution wasn't more negotiation, more rules, or more willpower,but a spin wheel? Decision wheels can solve them.
+
+And when the wheel picks something nobody wanted? That's a feature: learning to roll with an outcome is [flexible thinking](https://childmind.org/article/helping-kids-with-flexible-thinking/) in miniature.
 
 You're tired. You've negotiated, begged, bribed, threatened, and reasoned your way through countless disputes. You've spent more mental energy on "who does the dishes" than on your actual career. And yet, the battles keep coming. [Yes No Decision Maker Kids](/blog/yes-no-decision-maker-kids)
 
@@ -224,3 +226,9 @@ By the end of a month, you could have wheels handling homework approach, chore r
 Create free spin wheels for homework, chores, screen time, and all your challenges.
 
 [Try Spin Wheel Free →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

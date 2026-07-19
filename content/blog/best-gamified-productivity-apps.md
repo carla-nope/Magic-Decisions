@@ -206,3 +206,9 @@ Gamified productivity apps offer a fresh and effective way to manage family resp
 Try our free, fun decision-making tools today!
 
  [Explore MagicDecisions.com](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

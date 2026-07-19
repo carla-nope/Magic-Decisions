@@ -14,6 +14,8 @@ most of the decisions that drain your mental energy don't matter. Flip a [coin](
 
 You spent 15 minutes choosing a restaurant last week. Or agonizing over which streaming service show to start. Perhaps you're experiencing [decision paralysis](/blog/decision-paralysis). Or debating whether to use the self-checkout or the regular checkout. None of that time was worth it. The decision didn't change your life. It stole your attention.
 
+Psychologist Barry Schwartz calls the weight of endless small options the [paradox of choice](https://www.ted.com/talks/barry_schwartz_the_paradox_of_choice) — more options, less satisfaction. This list is the antidote.
+
 some decisions are tiny. They deserve seconds of thought, not minutes. They deserve a coin flip, not a committee meeting. And when you learn to recognize these tiny decisions and let them go, your brain gets freed up for the things that matter.
 
 Save this list. Refer to it when you feel yourself spiraling. Use our [spin wheel](/blog/spin-wheel-family-arguments) or [coin flip](/blog/coin-flip-decisions-family) to make these. Then use your saved brain power for something important.
@@ -84,7 +86,7 @@ Save this list. Refer to it when you feel yourself spiraling. Use our [spin whee
 
 **30.** Which sponge to use
 
-📱 Entertainment & Screen Time
+📱 Entertainment & [Screen Time](https://www.healthychildren.org/English/fmp/Pages/MediaPlan.aspx)
 
 **31.** Which TV show to start watching
 
@@ -264,3 +266,9 @@ And when you need help making those tiny decisions? Spin the wheel. Flip the coi
 Stop overthinking the small stuff. Use our free spin wheel and coin flip to decide in seconds.
 
 [Try Decision Tools Free →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Decision Style Quiz](/decision-maximizer): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

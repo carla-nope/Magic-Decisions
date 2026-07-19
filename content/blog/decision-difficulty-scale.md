@@ -20,7 +20,7 @@ Both are "decisions." But one requires analysis, and one requires picking someth
 
 ## Understanding the Decision Difficulty Scale
 
-The decision difficulty scale gives every choice a rating from 1 to 5. Once your family learns to use it, arguments decrease, decision fatigue lifts, and everyone starts making better choices faster. The scale works like this:
+The decision difficulty scale gives every choice a rating from 1 to 5. Once your family learns to use it, arguments decrease, [decision fatigue](https://health.clevelandclinic.org/decision-fatigue) lifts, and everyone starts making better choices faster. The scale works like this:
 
 1
 
@@ -114,3 +114,11 @@ And when you hit level 1 decisions? Let the spin wheel decide. Our free decision
 Use our free spin wheel, coin flip, and random picker to handle trivial decisions instantly.
 
 [Try Decision Tools Free →](/)
+
+For choices that rate low on the scale, deciding fast isn't reckless — it's what the [Child Mind Institute recommends](https://childmind.org/article/helping-kids-make-decisions/) for building a child's decision muscle safely.
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Decision Style Quiz](/decision-maximizer): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

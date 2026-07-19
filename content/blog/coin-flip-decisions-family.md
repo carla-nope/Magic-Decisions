@@ -15,6 +15,8 @@ The humble coin flip is one of the oldest decision tools in human history,and it
 
 Two kids. One controller. Twenty minutes of arguing. Then someone says "flip for it," and within seconds, it's over. The loser accepts because the universe decided, not because their sibling won. That's the power of a coin flip. But the same tool that solves one dispute can fail in another situation. This is how to use coin flips effectively in your family. For more insights into the psychology behind such choices, read about [the psychology of coin flips](/blog/coin-flip-psychology).
 
+Child development experts back this up: the [Child Mind Institute's guidance on helping kids make decisions](https://childmind.org/article/helping-kids-make-decisions/) points to exactly this kind of small, low-stakes practice as the way the skill actually grows.
+
 ## The Science of Why Coin Flips Work
 
 When you mediate a sibling dispute, something interesting happens: one child "wins" and one "loses." The losing child often doesn't just accept the loss,they feel like the parent played favorites, or didn't understand, or was manipulated by the "winning" sibling's argument. Resentment builds.
@@ -133,3 +135,11 @@ This shifts the entire dynamic of sibling disputes. The coin isn't a last resort
 Free instant coin flip with full visibility. Perfect for resolving disputes .
 
 [Try Coin Flip Free →](/)
+
+And when the coin lands on the option nobody secretly wanted, that tiny disappointment is useful too — kids build [resilience](https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/default.aspx) by surviving outcomes they didn't choose.
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Coin Flip](/coin-flip): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

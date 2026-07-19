@@ -15,6 +15,8 @@ July 1, 2026 &bull; Child Psychology
 
 Children, much like adults, are susceptible to cognitive biases – systematic errors in thinking that influence their decisions. Understanding these common mental shortcuts can help parents and educators guide kids toward more rational and thoughtful choices, fostering critical thinking from a young age.
 
+For a deeper dive into the machinery behind these shortcuts, the [Child Mind Institute's work on flexible thinking](https://childmind.org/article/helping-kids-with-flexible-thinking/) explains how kids learn to catch and correct their own mental habits.
+
 
 From refusing to try a new food to insisting on a familiar game, children's decisions are often shaped by underlying cognitive biases. These aren't signs of stubbornness but rather natural patterns of thought. Recognizing them allows us to gently intervene and teach valuable decision-making skills. As children grow, these early lessons can help them navigate complex choices, avoiding pitfalls like [decision paralysis](/blog/decision-paralysis) and fostering a more balanced perspective.
 
@@ -136,3 +138,9 @@ Did you know? Cognitive biases are often unconscious mental shortcuts that help 
 Explore our fun and effective decision-making tools for kids and parents.
 
  [Discover Magic Decisions](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Cognitive Bias Test](/cognitive-bias-checker): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

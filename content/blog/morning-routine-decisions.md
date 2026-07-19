@@ -50,7 +50,7 @@ While every family has its unique triggers, certain decisions consistently lead 
 ## Introducing the Morning Choice Menu System
 
 
-One highly effective strategy to combat morning decision fatigue is to implement a "Morning Choice Menu." This system pre-selects a limited number of acceptable options for common decisions, giving children a sense of autonomy without overwhelming them.
+One highly effective strategy to combat morning [decision fatigue](https://health.clevelandclinic.org/decision-fatigue) is to implement a "Morning Choice Menu." This system pre-selects a limited number of acceptable options for common decisions, giving children a sense of autonomy without overwhelming them.
 
 
 #### 💡 Tip: Create a Visual Menu
@@ -118,7 +118,7 @@ A simple chart can use pictures or icons to represent tasks like "get dressed," 
 
 ## Embracing a Calmer Morning
 
- By proactively addressing the decision points that lead to morning chaos, families can transform their before-school routine. Reducing the number of choices, preparing the night before, and utilizing visual aids empowers children and alleviates parental stress. This shift not only makes mornings more pleasant but also teaches valuable life skills in planning and independence.
+ By proactively addressing the decision points that lead to morning chaos, families can transform their before-school routine. Reducing the number of choices, preparing the night before, and utilizing visual aids empowers children and alleviates parental stress. This shift not only makes mornings more pleasant but also teaches valuable life skills in planning and [independence](https://www.healthychildren.org/English/ages-stages/preschool/Pages/Growing-Independence-Tips-for-Parents-of-Young-Children.aspx).
  For more strategies on simplifying family decisions, explore our tools like [decision wheels](/blog/decision-wheels-daily-challenges), which can make even mundane choices fun and engaging.
 
 
@@ -140,3 +140,9 @@ A simple chart can use pictures or icons to represent tasks like "get dressed," 
 Explore our fun, interactive tools designed to help your family make faster, less stressful decisions every day.
 
  [Discover Magic Decisions Tools](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

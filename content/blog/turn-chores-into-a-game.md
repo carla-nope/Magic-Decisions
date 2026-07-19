@@ -19,7 +19,7 @@ Tired of the daily chore battle? Imagine a household where tasks are met with en
 ## Why Gamification Works for Chores
 
 
-The secret to turning chore-time frowns upside down lies in understanding human motivation. Gamification taps into our innate desire for achievement, recognition, and progress. When applied to chores, it shifts the focus from obligation to opportunity, making tasks feel less like work and more like a playful challenge.
+The secret to turning chore-time frowns upside down lies in understanding human [motivation](https://selfdeterminationtheory.org/theory/). Gamification taps into our innate desire for achievement, recognition, and progress. When applied to chores, it shifts the focus from obligation to opportunity, making tasks feel less like work and more like a playful challenge.
 
 
  - **Dopamine Boost:** Completing a task and earning a point or moving a marker provides a small burst of dopamine, reinforcing positive behavior. This natural reward system encourages repetition and builds good habits.
@@ -74,7 +74,7 @@ Similar to the wheel, chore cards offer a tactile way to assign tasks. Write eac
 ### 3. Points and Reward Chart
 
 
-This system assigns points to chores based on difficulty or time required. Children earn points for completed tasks, which can then be "cashed in" for agreed-upon rewards (e.g., screen time, a small toy, a family outing). This is excellent for teaching basic economics and goal setting.
+This system assigns points to chores based on difficulty or time required. Children earn points for completed tasks, which can then be "cashed in" for agreed-upon rewards (e.g., [screen time](https://www.healthychildren.org/English/fmp/Pages/MediaPlan.aspx), a small toy, a family outing). This is excellent for teaching basic economics and goal setting.
 
 
 **How it works:** Create a chart with chores and their point values. Track points daily or weekly. Establish a clear reward menu. This system is highly customizable and can grow with your children, offering more complex rewards for higher point totals.
@@ -101,7 +101,7 @@ Add an element of surprise with mystery envelopes. Each envelope contains a chor
 ## Introducing the System Without Resistance
 
 
-The key to success is involving your family in the process. Present the idea as a fun experiment, not a new rule. Discuss the different game systems and let everyone vote or contribute ideas. Start small, celebrate successes, and be flexible.
+The key to success is involving your family in the process. Present the idea as a fun experiment, not a new rule. Discuss the different game systems and let everyone vote or contribute ideas. Start small, celebrate successes, and be [flexible](https://childmind.org/article/helping-kids-with-flexible-thinking/).
 
 
  - **Family Meeting:** Gather everyone to discuss the current chore challenges and propose gamification as a solution.
@@ -140,3 +140,9 @@ Gamifying chores is not just about getting tasks done. It teaches task ownership
 Explore our interactive tools designed to bring clarity and fun to every choice.
 
  [Discover MagicDecisions Tools](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

@@ -28,9 +28,9 @@ Meanwhile, the consequences of bad decisions, cyberbullying, peer pressure leadi
 
 ### The Paradox of Modern Childhood
 
-Kids have more options but less practice making decisions. Parents helicopter. Schools structure every minute. Screen time fills leisure hours. By the time they're 18, many young adults have had thousands of hours of content consumed but minimal practice making real choices with real stakes.
+Kids have more options but less practice making decisions. Parents helicopter. Schools structure every minute. [Screen time](https://www.healthychildren.org/English/fmp/Pages/MediaPlan.aspx) fills leisure hours. By the time they're 18, many young adults have had thousands of hours of content consumed but minimal practice making real choices with real stakes.
 
-This is we see anxiety spikes in young adults. They know what they "should" want (because they've seen it modeled online), but they've never practiced tuning into their own judgment. They freeze when asked what they want for dinner, let alone what they want to study or who they want to become.
+This is we see [anxiety](https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/) spikes in young adults. They know what they "should" want (because they've seen it modeled online), but they've never practiced tuning into their own judgment. They freeze when asked what they want for dinner, let alone what they want to study or who they want to become.
 
 ## What Decision Skills Look Like
 
@@ -108,3 +108,9 @@ And need neutral help, like when two kids both want to choose, use tools like sp
 Free tools like spin wheels and coin flips make practicing decisions fun and fair for kids.
 
 [Try Decision Tools Free →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

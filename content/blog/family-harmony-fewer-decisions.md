@@ -100,11 +100,11 @@ Some decisions need a tiebreaker. Who picks the movie? Whose turn is it? Which a
 
 A coin flip for two options. A spin wheel for multiple options. A random picker for a group decision. These tools remove the conflict entirely. Nobody "won" , the tool decided. It's fair by definition.
 
-Find[free decision tools](/tools)at MagicDecisions.com. They're great for these moments.
+Find[free decision tools](/)at MagicDecisions.com. They're great for these moments.
 
 ## The Ripple Effect
 
-When you reduce decision fatigue in your family, Situations change. Mornings are smoother. Dinners are calmer. Bedtime is easier. You have more energy for meaningful conversations, fun activities, and genuine connection.
+When you reduce [decision fatigue](https://health.clevelandclinic.org/decision-fatigue) in your family, Situations change. Mornings are smoother. Dinners are calmer. Bedtime is easier. You have more energy for meaningful conversations, fun activities, and genuine connection.
 
 It's not about being rigid or controlling. It's about being thoughtful. When you protect your family's mental energy, you create space for the things that matter.
 
@@ -119,3 +119,11 @@ Start small. Pick one area , maybe mornings or dinners , and create a system. Se
  - [Best Decision Tools for Families](/blog/best-decision-tools-families)
 
  - [Family Meeting Decision-Making: A Guide](/blog/family-meeting-decision-making)
+
+Fewer decisions also means fewer standoffs about them — and more of the calm, connected time the [AAP links to family resilience](https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/default.aspx).
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

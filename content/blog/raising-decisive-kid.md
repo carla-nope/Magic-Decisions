@@ -81,7 +81,7 @@ When parents constantly step in to make decisions for their children or immediat
 ### Perfectionism Modeling
 
 
-If parents model an intense fear of making mistakes or strive for unattainable perfection in their own choices, children may internalize this pressure. They might become paralyzed by the fear of making the "wrong" decision, leading to indecision. It's important to show that mistakes are learning opportunities.
+If parents model an intense fear of making [mistakes](https://childmind.org/article/how-to-help-kids-learn-to-fail/) or strive for unattainable perfection in their own choices, children may internalize this pressure. They might become paralyzed by the fear of making the "wrong" decision, leading to indecision. It's important to show that mistakes are learning opportunities.
 
 
 #### 💡 Parenting Tip: Embrace Imperfection
@@ -109,7 +109,7 @@ Cultivating decisiveness is a marathon, not a sprint. Integrate these habits int
  - **Celebrate Effort and Learning:** Focus on the process of decision-making and the lessons learned, rather than just the "right" outcome. "That was a tough choice, and you thought it through really well."
 
 
-Raising a decisive child is an investment in their future. It equips them with the confidence and skills to navigate an increasingly complex world, making them resilient, adaptable, and self-reliant individuals. By embracing this long game, you're not just raising a child; you're fostering a future leader of their own life.
+Raising a decisive child is an investment in their future. It equips them with the confidence and skills to navigate an increasingly complex world, making them [resilient](https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/default.aspx), adaptable, and self-reliant individuals. By embracing this long game, you're not just raising a child; you're fostering a future leader of their own life.
 
 
 ### Related Posts
@@ -130,3 +130,9 @@ Raising a decisive child is an investment in their future. It equips them with t
 Explore our fun, interactive tools designed to make family decision-making easy and engaging.
 
  [Discover Magic Decisions Tools](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

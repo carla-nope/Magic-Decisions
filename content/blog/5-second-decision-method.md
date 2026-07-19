@@ -24,7 +24,7 @@ Kids freeze because they feel they need to find the "right" answer. The countdow
 
 ### The Psychology Behind It
 
-Counting backward activates the prefrontal cortex, the part of the brain responsible for action and decision-making, while short-circuiting the amygdala, which handles fear and anxiety. By the time you reach "one," the decision-making part of the brain has won the race against the anxiety center.
+Counting backward activates the prefrontal cortex, the part of the brain responsible for action and decision-making, while short-circuiting the amygdala, which handles fear and [anxiety](https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/). By the time you reach "one," the decision-making part of the brain has won the race against the anxiety center.
 
 You're rewiring your child's brain to respond to decision triggers differently. Instead of freezing, they learn to act. Over time, the countdown becomes internalized. They stop needing it externally because the skill becomes automatic.
 
@@ -108,7 +108,7 @@ Don't overuse it. If you're counting down for every decision, it loses power. Sa
 
 ## What Happens When It Works
 
-When your child learns to decide quickly, even imperfectly, their confidence grows. They stop needing you to make every choice for them. They develop a sense of agency over their own life.
+When your child learns to decide quickly, even imperfectly, [their confidence](https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Helping-Your-Child-Develop-A-Healthy-Sense-of-Self-Esteem.aspx) grows. They stop needing you to make every choice for them. They develop a sense of agency over their own life.
 
 You may hear them muttering "five, four, three, two, one" to themselves when they're stuck. That's the skill working. That's what internalization looks like.
 
@@ -129,3 +129,9 @@ The 5-second method isn't about speed for its own sake. It's about building the 
 Use our [spin wheel](/) or coin flip alongside the 5-second method for decisions with multiple options.
 
 [Try Decision Tools Free →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

@@ -45,7 +45,7 @@ Decision anxiety isn't about being lazy or stubborn. It's about the brain's fear
 
 Explain (, ) that most decisions don't have wrong answers. "See these two cereals? Either one is fine. You can't make a bad choice here. It's cereal."
 
- Kids with decision anxiety need explicit permission to get it wrong. They need to hear that the world won't end.
+ Kids with decision [anxiety](https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/) need explicit permission to get it wrong. They need to hear that the world won't end.
 
 
 ### 2. Make Options Visually Obvious
@@ -101,7 +101,7 @@ For genuine freeze moments, use a coin flip or spin wheel. Yes, it removes the p
 
 ## The Long View
 
- Decision anxiety doesn't disappear overnight. But with patience, practice, and the right approach, kids can build confidence. They can learn that most decisions are reversible, low-stakes, and nothing to fear.
+ Decision anxiety doesn't disappear overnight. But with patience, practice, and the right approach, kids can [build confidence](https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Helping-Your-Child-Develop-A-Healthy-Sense-of-Self-Esteem.aspx). They can learn that most decisions are reversible, low-stakes, and nothing to fear.
 
 
  Your job is to be steady, patient, and calming. You can't fix their anxiety, but you can be a steady presence while they learn to manage it themselves.
@@ -122,3 +122,29 @@ For genuine freeze moments, use a coin flip or spin wheel. Yes, it removes the p
 Explore our free tools and resources designed for families.
 
 [Get Started with MagicDecisions](/)
+
+> **Script to use:** "This is a small decision. Small decisions get ten seconds. Big decisions get a family meeting. This one's a ten-second one — want me to count?" Sorting choices into sizes out loud teaches the skill their anxiety skips: calibration.
+
+## FAQ: Decision Anxiety, Answered
+
+### How is decision anxiety different from just being careful?
+
+Careful looks like weighing options and then choosing. Anxiety looks like weighing options on a loop — with distress rising and no decision arriving. The tell is the body, not the pace: tears, stomachaches, or panic around ordinary choices means the fear is doing the deciding.
+
+### Should we avoid giving choices to an anxious child?
+
+The opposite — but shrink them radically. Removing all choices confirms the fear that deciding is dangerous. Two options, low stakes, guaranteed-fine outcomes ("both of these are good choices; there's no wrong door") gives the anxiety nowhere to grip while the practice accumulates.
+
+### When does this need professional help?
+
+If choice-related distress is intense, spreading into more areas, or interfering with school, friendships, or sleep — talk to your pediatrician or a child therapist. Decision anxiety often travels with broader anxiety, and the [Child Mind Institute's guidance on anxious kids](https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/) is a good bridge while you find support.
+
+### Do random decision tools help or just avoid the problem?
+
+Used right, they're exposure with training wheels: the wheel decides, the child survives the outcome, and the nervous system logs the evidence that deciding didn't hurt. The goal is to gradually need them less — from the wheel choosing, to the wheel suggesting, to the child just choosing.
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

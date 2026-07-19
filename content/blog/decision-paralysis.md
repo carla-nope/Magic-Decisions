@@ -14,7 +14,9 @@ Why You Keep Overthinking Small Decisions | Magic Decisions
  - 🔮">
 
 
- You stand in the cereal aisle for ten minutes. Your child needs lunch. Your spouse waits for you to pick a restaurant. You cannot decide between two cereal boxes. This is not indecision; it is a common trap for parents.
+ You stand in the cereal aisle for ten minutes. Your child needs lunch. Your spouse waits for you to pick a restaurant. You cannot decide between two cereal boxes. This is not [indecision](https://www.psychologytoday.com/us/blog/growing-friendships/201906/when-your-child-can-t-decide); it is a common trap for parents.
+
+Barry Schwartz's famous TED talk on the [paradox of choice](https://www.ted.com/talks/barry_schwartz_the_paradox_of_choice) explains the trap: past a certain point, more options don't free us — they freeze us.
 
 
  It is Tuesday evening. You are exhausted. Your 7-year-old asks what to wear for picture day. Your teenager asks where to eat dinner. You must pick the movie. You have no mental energy left. Your brain refuses to rest, looping endlessly through every possible outcome.
@@ -103,3 +105,9 @@ Why You Keep Overthinking Small Decisions | Magic Decisions
 Use our free spin wheel, coin flip, and random picker to let your family decide faster and stress less.
 
  [Try Decision Tools Free →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

@@ -12,7 +12,7 @@ readTime: "6 min read"
 
 "I don't know what I want!" Sound familiar? Every parent hears this daily. Your child is not broken. They have not learned how to decide yet. You can teach them.
 
-It's Saturday morning. You ask your 8-year-old what she wants to do today. She freezes, eyes wide, listing possibilities: the park, the library, grandma's house, the museum. Ten minutes later she's crying because she can't decide and now nothing sounds fun anymore.
+It's Saturday morning. You ask your 8-year-old what she wants to do today. She freezes, eyes wide, listing possibilities: the park, the library, grandma's house, the museum. Ten minutes later she's crying because she [can't decide](https://www.psychologytoday.com/us/blog/growing-friendships/201906/when-your-child-can-t-decide) and now nothing sounds fun anymore.
 
 Your kid is not dramatic or broken. They are missing a skill. Decision-making is learned.
 
@@ -70,11 +70,11 @@ But rescuing them teaches them they can't handle decisions alone. Instead of mak
 
 ### Giving Too Many Options
 
-Research shows that more choices lead to more anxiety. If your kid has 20 toys to choose from for a car trip, they'll freeze. Give them three options maximum. When they get better at deciding, you can expand.
+Research shows that more choices lead to more [anxiety](https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/). If your kid has 20 toys to choose from for a car trip, they'll freeze. Give them three options maximum. When they get better at deciding, you can expand.
 
 ### Criticizing Bad Outcomes
 
-"See? I told you that restaurant was bad." This kills decision confidence. Even when a choice leads to a suboptimal result, stay positive. "That didn't work out great, but you picked fast and we learned something. Next decision!"
+"See? I told you that restaurant was bad." This kills [decision confidence](https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Helping-Your-Child-Develop-A-Healthy-Sense-of-Self-Esteem.aspx). Even when a choice leads to a suboptimal result, stay positive. "That didn't work out great, but you picked fast and we learned something. Next decision!"
 
 > "The goal isn't to help them make perfect choices. The goal is to help them trust their ability to handle whatever choice they make."
 
@@ -112,3 +112,9 @@ And Our free decision tools give kids a neutral way to choose between options. I
 Free spin wheels, coin flips, and random pickers make learning to decide fun and fair.
 
 [Try Decision Tools Free →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

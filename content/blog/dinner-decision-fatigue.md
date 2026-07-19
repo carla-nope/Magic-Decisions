@@ -23,7 +23,7 @@ readTime: "3 min read"
 
 The problem isn't the food , it's the decision. Every day, at roughly the same time, you're expected to come up with an answer to a question nobody can agree on.
 
- Add decision fatigue at the end of the day, and you've got a perfect storm. Nobody wants to make a choice. Nobody wants to be blamed for a bad choice. So everyone passes the decision to someone else, and nobody catches it.
+ Add [decision fatigue](https://health.clevelandclinic.org/decision-fatigue) at the end of the day, and you've got a perfect storm. Nobody wants to make a choice. Nobody wants to be blamed for a bad choice. So everyone passes the decision to someone else, and nobody catches it.
 
 
 ## The Solution: Meal Routines
@@ -62,7 +62,7 @@ Sometimes you need input. Maybe you're deciding between two options, or someone 
 
 ### Use a Dinner Picker
 
- Put your meal options on a [spin wheel](/tools/spin-wheel). Spin and eat what lands. This works especially well for "I don't care" nights when nobody wants to decide.
+ Put your meal options on a [spin wheel](/spin-the-wheel). Spin and eat what lands. This works especially well for "I don't care" nights when nobody wants to decide.
 
 
 ## The "Pick Your Poison" Approach
@@ -114,3 +114,31 @@ When you solve dinner decisions, .. You have less stress in the evening. Kids ea
  - [Family Harmony Through Fewer Decisions](/blog/family-harmony-fewer-decisions)
 
  - [Spin Wheel for Family Arguments](/blog/spin-wheel-family-arguments)
+
+If dinner is a nightly standoff with an indecisive kid, Eileen Kennedy-Moore's piece on [when your child can't decide](https://www.psychologytoday.com/us/blog/growing-friendships/201906/when-your-child-can-t-decide) has scripts that pair well with a rotation.
+
+> **Try this tonight:** Announce tomorrow's dinner at tonight's table. One sentence, decision made 24 hours early — and notice how different 5 PM feels when the question is already answered.
+
+## Dinner Decision FAQ
+
+### How do I start a rotation when my family can't even agree on seven meals?
+
+Don't aim for seven. Start with three anchored nights — say, pasta Monday, tacos Wednesday, leftovers Friday — and leave the rest open. Three fixed nights removes almost half the weekly negotiating on its own, and you can grow the rotation as favorites emerge.
+
+### What about picky eaters who veto everything?
+
+Give the pickiest eater one official veto per week — used whenever they want, but once it's gone, it's gone. It flips the dynamic: instead of fighting every meal, they're strategizing about which one is worth the veto. The rest of the week, the rotation stands.
+
+### Isn't a rotation boring?
+
+Less than you'd think. The rotation covers the *decision*, not the recipe — "pasta night" can be spaghetti, baked ziti, or whatever's on sale. And most families quietly eat the same 8–10 dinners on repeat anyway; the rotation just admits it and stops paying the nightly decision tax for it.
+
+### Who decides on the open nights?
+
+Rotate the decider, one person per night, no debates — or let the [Dinner Decider](/what-to-eat-randomizer) make the call. Kids accept a random pick far more gracefully than a parental one, because random is fair.
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Dinner Decider](/what-to-eat-randomizer): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

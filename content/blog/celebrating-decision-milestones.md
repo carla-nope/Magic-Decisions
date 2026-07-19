@@ -12,7 +12,7 @@ readTime: "9 min read"
 
 [5 Minute Decision Exercises KidsEvery time your child makes a decision,even a tiny one,they're building a skill that will serve them for life. But are you recognizing and celebrating those moments? Research shows that how we acknowledge decisions shapes how confident kids become as decision-makers.](/blog/5-minute-decision-exercises-kids)
 
-Your 6-year-old picks a cereal box at the store. "Great choice!" you say. Is that the end of it? Or is that a tiny brick being laid in the foundation of decision confidence?
+Your 6-year-old picks a cereal box at the store. "Great choice!" you say. Is that the end of it? Or is that a tiny brick being laid in the foundation of [decision confidence](https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Helping-Your-Child-Develop-A-Healthy-Sense-of-Self-Esteem.aspx)?
 
 Decision confidence isn't built through one big moment. It's built through thousands of tiny moments, each one showing a child that they can choose, commit, and handle outcomes. Each of those moments is an opportunity to celebrate, or to miss.
 
@@ -32,7 +32,7 @@ Outcome praise: "You picked the perfect restaurant!" This feels good, but it tie
 
 [5 Minute Decision Exercises KidsProcess praise: "You decided and stuck with your choice!" This ties confidence to the decision-making process, which kids can repeat regardless of outcome.](/blog/5-minute-decision-exercises-kids)
 
-Research shows that process praise builds more resilient confidence than outcome praise. Kids praised for "working hard" outperform kids praised for "being smart" because effort is controllable, but intelligence isn't. , kids praised for "deciding " outperform kids praised for "making good choices" because deciding is repeatable, but good outcomes aren't guaranteed.
+Research shows that process praise builds more [resilient](https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/default.aspx) confidence than outcome praise. Kids praised for "working hard" outperform kids praised for "being smart" because effort is controllable, but intelligence isn't. , kids praised for "deciding " outperform kids praised for "making good choices" because deciding is repeatable, but good outcomes aren't guaranteed.
 
 > "Celebrate the decision itself, not the perfection of the decision. The goal is confident decision-makers, not perfect decision-makers."
 
@@ -74,7 +74,7 @@ When your child makes a choice that wasn't easy,telling a friend no, choosing so
 
 #### The Self-Initiated Decision
 
-When your child makes a choice without prompting. "You decided to organize your toys all by yourself! You didn't wait for me to ask!" This celebrates independent decision-making.
+When your child makes a choice without prompting. "You decided to organize your toys all by yourself! You didn't wait for me to ask!" This celebrates [independent](https://www.healthychildren.org/English/ages-stages/preschool/Pages/Growing-Independence-Tips-for-Parents-of-Young-Children.aspx) decision-making.
 
 ## How to Celebrate
 
@@ -175,3 +175,9 @@ Do this three times today. Tomorrow, do it three more times. Within a week, you'
 Use our free decision tools to create moments you can celebrate with your kids.
 
 [Try Decision Tools Free →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

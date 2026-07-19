@@ -16,7 +16,7 @@ Chores are not just about keeping the house clean. They are one of the most reli
 
 Marty Rossmann, a researcher at the University of Minnesota, conducted a 25-year longitudinal study tracking children from age 3 or 4 into their mid-20s. The finding that stood out: kids who did chores starting at age 3 or 4 were more likely to have good relationships, achieve academic and early career success, and become self-sufficient adults, compared to children who did not have chores or who started chores as teenagers.
 
-The mechanism is not mysterious. Chores require kids to plan, sequence, self-monitor, and adjust. Those are the same cognitive processes involved in decision-making. Every time a child figures out the order to clean their room, decides whether to do the easy task or the hard one first, or chooses which chore to tackle from a list, they are practicing executive function — the mental system that governs decisions, impulse control, and goal-directed behavior.
+The mechanism is not mysterious. Chores require kids to plan, sequence, self-monitor, and adjust. Those are the same cognitive processes involved in decision-making. Every time a child figures out the order to clean their room, decides whether to do the easy task or the hard one first, or chooses which chore to tackle from a list, they are practicing [executive function](https://www.understood.org/en/articles/what-is-executive-function) — the mental system that governs decisions, impulse control, and goal-directed behavior.
 
  🧠
 
@@ -68,7 +68,7 @@ This is why the research on chores and life outcomes is so consistent. It is not
 
 ## What to Avoid
 
-The research benefit disappears when chores become purely coercive — done only under threat, with no autonomy, and with no acknowledgment of completion. Chores that feel like punishment do not build decision-making skills; they build resentment and avoidance. The goal is to structure chores so that kids experience genuine agency within clear expectations.
+The research benefit disappears when chores become purely coercive — done only under threat, with no autonomy, and with no acknowledgment of completion. Chores that feel like punishment do not build [decision-making skills](https://childmind.org/article/helping-kids-make-decisions/); they build resentment and avoidance. The goal is to structure chores so that kids experience genuine agency within clear expectations.
 
 Avoid rescuing. When a child does a chore imperfectly, the instinct is to redo it. Resist this. An imperfectly folded towel that the child folded is worth more developmentally than a perfectly folded towel the parent refolded. The decision to try, and the experience of completing the task, is the point. See [Teaching Decision-Making as a Life Skill](/blog/teaching-decision-life-skills) for more on this principle.
 
@@ -93,3 +93,9 @@ Avoid rescuing. When a child does a chore imperfectly, the instinct is to redo i
 Free spin wheel, coin flip, and random picker — no signup required. Kids accept random outcomes better than parental assignments.
 
  [Try the Spin Wheel Free →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

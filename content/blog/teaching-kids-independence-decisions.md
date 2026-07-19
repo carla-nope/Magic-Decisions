@@ -16,7 +16,7 @@ Goal: Raise kids who can think for themselves, solve problems, and trust their j
  How do you get there? Through hundreds of small decisions, made day, with your support.
 
 
- Independence isn't something you grant all at once. It's built , through experience. And the daily decisions in your home are the training ground.
+ [Independence](https://www.healthychildren.org/English/ages-stages/preschool/Pages/Growing-Independence-Tips-for-Parents-of-Young-Children.aspx) isn't something you grant all at once. It's built , through experience. And the daily decisions in your home are the training ground.
 
 
 ## Why Decisions Build Independence
@@ -124,7 +124,7 @@ Goal: Raise kids who can think for themselves, solve problems, and trust their j
 
 ### Rescuing Too
 
- When they make a bad decision, resist the urge to fix it. Ask: "What happened? What would you do next time?" This turns mistakes into learning.
+ When they make a bad decision, resist the urge to fix it. Ask: "What happened? What would you do next time?" This turns [mistakes](https://childmind.org/article/how-to-help-kids-learn-to-fail/) into learning.
 
 
 ### Second-Guessing Their Choices
@@ -134,7 +134,7 @@ Goal: Raise kids who can think for themselves, solve problems, and trust their j
 
 ## When to Use Tools
 
- Sometimes kids need a tiebreaker. That's okay. [Decision tools](/tools) like spin wheels and coin flips aren't shortcuts — they're training wheels.
+ Sometimes kids need a tiebreaker. That's okay. [Decision tools](/) like spin wheels and coin flips aren't shortcuts — they're training wheels.
 
 
  Using a tool to break a tie teaches them that there is always a way forward. Eventually they will not need the tool. For now, it is a bridge to independence.
@@ -149,3 +149,29 @@ Goal: Raise kids who can think for themselves, solve problems, and trust their j
 
 
  That's the goal. And it starts with one small choice at a time.
+
+> **Script to use:** Instead of "Are you sure?", try "Walk me through your thinking." The first question teaches them to doubt themselves; the second teaches them to trust their reasoning — and shows you where the reasoning actually is.
+
+## FAQ: Independence Without the Free-Fall
+
+### How do I know when my child is ready for a bigger decision?
+
+Watch how they handle the current tier, not their age. A child who can pick their outfit, own the result, and shrug off a mismatch is ready for the next rung — planning a Saturday, spending birthday money. A child still melting down over cereal choices needs more reps at cereal level, and that's fine.
+
+### What if they make a genuinely bad choice?
+
+If it's not dangerous, expensive, or permanent — let it play out. Wearing the costume to the grocery store, spending allowance on junk that breaks: these are cheap tuition. The rule of thumb: protect them from harm, not from information.
+
+### My child WANTS me to decide everything. Is that a problem?
+
+It's comfortable, not harmful — but comfort compounds. Start returning the smallest decisions with warmth: "That one's yours. I'll love whatever you pick." Expect protest for a week or two; deferring is a habit, and habits complain when they're changed.
+
+### Doesn't all this independence talk conflict with having family rules?
+
+No — rules are the walls, decisions are the furniture. Kids don't get to decide *whether* homework happens, but they can own *when* and *in what order*. Independence grows fastest inside a structure that's clearly held.
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

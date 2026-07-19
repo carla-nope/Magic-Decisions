@@ -15,6 +15,8 @@ Decision Making • July 1, 2026
 
 Small decisions eat up more time than they should. The 2-Minute Rule is a simple fix: make low-stakes, reversible decisions immediately instead of deliberating over them.
 
+Speed has a hidden benefit: every decision you don't drag out spares mental energy, which [Cleveland Clinic notes](https://health.clevelandclinic.org/decision-fatigue) is exactly what decision fatigue drains away.
+
 
 In our fast-paced world, it’s easy to get bogged down by even the smallest choices. What to wear? What to eat for dinner? Which movie to watch? While these might seem trivial, the cumulative effect of delaying these micro-decisions can lead to significant stress and wasted time. This is where the **2-Minute Rule for Decisions** comes in—a straightforward principle designed to inject efficiency and confidence into your daily life, especially within the family dynamic.
 
@@ -108,3 +110,9 @@ Embracing the 2-Minute Rule is a simple yet profound shift. It’s about recogni
 Explore our fun, interactive tools designed to help your family decide with ease.
 
  [Try Our Decision Tools!](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

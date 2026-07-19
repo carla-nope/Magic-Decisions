@@ -221,7 +221,7 @@ readTime: "8 min read"
 ## Beyond Homework: The Wheel as Life Tool
 
 
- The skills learned with homework wheels transfer to other areas. Once kids get comfortable with wheels making decisions, they start accepting randomness in other contexts: chores, screen time, activity selection. The wheel becomes part of your decision-making vocabulary.
+ The skills learned with homework wheels transfer to other areas. Once kids get comfortable with wheels making decisions, they start accepting randomness in other contexts: chores, [screen time](https://www.healthychildren.org/English/fmp/Pages/MediaPlan.aspx), activity selection. The wheel becomes part of your decision-making vocabulary.
 
 
  And here\'s the beautiful part: , they won\'t need the wheel as much. They\'ll internalize the lesson, that decisions need to be made, that following a plan is better than debating forever, that accepting outcomes is a sign of maturity. The wheel is scaffolding, and , the skill stands on its own.
@@ -248,7 +248,7 @@ readTime: "8 min read"
  ](/blog/teach-kids-fast-decisions)
 
  - [
- Building Decision Confidence in Kids
+ Building [Decision Confidence](https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Helping-Your-Child-Develop-A-Healthy-Sense-of-Self-Esteem.aspx) in Kids
  ](/blog/building-decision-confidence-kids)
 
 
@@ -261,3 +261,9 @@ readTime: "8 min read"
  [
  Build Homework Wheels Free →
  ](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

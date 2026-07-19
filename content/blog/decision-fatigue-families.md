@@ -10,7 +10,7 @@ readTime: "10 min read"
 
 ![Decision Fatigue: Why Families Fall Apart by Evening (And What to Do About It) — MagicDecisions](/blog-images/decision-fatigue-families.png)
 
-You pick the kids up from school. Everyone's fine. Three hours later, your kindergartener is sobbing over a sock touching their toe and your partner is snapping about the dishes. The answer isn't bad attitudes. It's decision fatigue — and it affects every member of the family.
+You pick the kids up from school. Everyone's fine. Three hours later, your kindergartener is sobbing over a sock touching their toe and your partner is snapping about the dishes. The answer isn't bad attitudes. It's [decision fatigue](https://health.clevelandclinic.org/decision-fatigue) — and it affects every member of the family.
 
 It's 6 PM. You've made dozens of decisions since waking up — what to wear, what to make for breakfast, which route to drive, whether to respond to that email, call the pediatrician, decide not to call the pediatrician — and now you can't choose what to watch on TV. You scroll for twenty minutes, paralyzed, because every option seems fine and terrible at the same time.
 
@@ -44,7 +44,7 @@ Parents carry a particular kind of decision overload. Consider a single morning:
 
 - Who needs rides?
 
-That's before 8 AM. Then it continues: lunch choices, sibling disputes, screen time limits, dinner options, bedtime negotiations. A parent can make hundreds of decisions before noon. Kids feel this too — they've been making choices all day at school and come home with their tanks nearly empty.
+That's before 8 AM. Then it continues: lunch choices, sibling disputes, [screen time](https://www.healthychildren.org/English/fmp/Pages/MediaPlan.aspx) limits, dinner options, bedtime negotiations. A parent can make hundreds of decisions before noon. Kids feel this too — they've been making choices all day at school and come home with their tanks nearly empty.
 
 > "I noticed my son would freeze up over the smallest things around 4 PM. I thought he was being difficult. Then I realized he was running on empty, just like me." — A mom in our community
 
@@ -92,7 +92,7 @@ Instead of "What do you want for lunch?" try "Pasta or sandwich?" Two options is
 
 ### 3. Use Randomness as a Tool
 
-When the family is tired and can't agree, a [spin wheel](/tools/spin-wheel) or [coin flip](/tools/coin-flip) doesn't just solve the immediate conflict — it preserves mental energy. Instead of twenty minutes of negotiation, one second of flipping. The decision gets made, the kids learn to accept outcomes, and everyone moves on. The saved energy goes toward things that matter.
+When the family is tired and can't agree, a [spin wheel](/spin-the-wheel) or [coin flip](/coin-flip) doesn't just solve the immediate conflict — it preserves mental energy. Instead of twenty minutes of negotiation, one second of flipping. The decision gets made, the kids learn to accept outcomes, and everyone moves on. The saved energy goes toward things that matter.
 
 This isn't lazy parenting. It's strategic energy management. See also: [How to Use Randomization to End Sibling Disputes](/blog/randomization-sibling-disputes).
 
@@ -110,7 +110,7 @@ Say it plainly: "I'm getting decision fatigue — I need to make this choice bef
 
 - **6 PM: Low-Effort Dinner.** Have a default plan. Rotate who "decides" but keep it simple — leftovers, a recurring meal, or a takeout rotation.
 
-- **7 PM: Randomize Entertainment.** Use a [spin wheel](/tools/spin-wheel) or random picker for TV and movie selection. The "universe decided" removes the negotiation cost entirely.
+- **7 PM: Randomize Entertainment.** Use a [spin wheel](/spin-the-wheel) or random picker for TV and movie selection. The "universe decided" removes the negotiation cost entirely.
 
 - **8 PM: Routines, Not Decisions.** Bedtime routines should be scripted enough that they don't require choices. Brush teeth (always), read one book (rotating who picks), lights out.
 
@@ -145,3 +145,9 @@ Your family's energy is worth protecting. It starts with recognizing that not ev
 Free spin wheel, coin flip, and random picker — no signup required.
 
 [Try Decision Tools Free →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

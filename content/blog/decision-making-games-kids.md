@@ -16,6 +16,8 @@ The best way to teach [decision-making](/blog/teaching-kids-independence-decisio
 
 **How to play:** One person says "I think I'll..." and picks an activity. The next person has to decide: "Great idea! Now I think I'll..." and picks something different. Continue the chain.
 
+This isn't just fun-and-games logic — the [Child Mind Institute recommends](https://childmind.org/article/helping-kids-make-decisions/) giving kids frequent, low-pressure chances to choose, which is precisely what decision games deliver.
+
 
 **Why it works:** It trains [quick decisions](/blog/quick-decision-skills-kids) under social pressure. Plus, it's hilarious to see where the chain goes.
 
@@ -122,3 +124,31 @@ Five minutes here and there adds up. Before you know it, your kids will be makin
 Explore our tools and resources to simplify choices and boost confidence.
 
 [Start Your Decision Journey](/)
+
+Games also teach graceful losing: handling a result you didn't want is [flexible thinking](https://childmind.org/article/helping-kids-with-flexible-thinking/) practice disguised as play.
+
+> **Try this tonight:** Play "Would You Rather" at dinner, but add one rule — after each answer, ask "why?" The choosing is fun; the *reasons* are where kids discover they actually have preferences worth trusting.
+
+## FAQ: Getting the Most From Decision Games
+
+### My kids argue over the games themselves. Ironic — what do I do?
+
+Use a meta-game: the [Spin Wheel](/spin-the-wheel) picks which game you play, and whoever's turn it is accepts the result. You're modeling the exact skill the games teach — and the argument about choosing becomes part of the practice.
+
+### Are these games too babyish for a 12-year-old?
+
+Swap the content, keep the mechanics. "Would You Rather" becomes moral dilemmas and gross-out hypotheticals; the 10-Second Challenge becomes real choices with real follow-through ("10 seconds: which subject do you tackle first tonight?"). Tweens reject baby framing, not fast-decision practice.
+
+### How often should we play?
+
+Little and often beats game night. Two minutes in the car, one round at dinner — decision reps compound like reading minutes do. A game that happens daily for 3 minutes outperforms a weekly 30-minute session.
+
+### My child gets genuinely upset when they "lose" a choice. Should we stop?
+
+Don't stop — shrink. Losing a hypothetical is the safest possible place to practice disappointment. Drop to the lowest stakes ("which sticker?"), stay matter-of-fact about outcomes, and let the [resilience](https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/default.aspx) build one tiny letdown at a time.
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

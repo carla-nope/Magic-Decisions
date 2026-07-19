@@ -54,7 +54,7 @@ Our [spin wheel for family arguments](/blog/spin-wheel-family-arguments) can be 
 ### 4. Team vs. Individual Systems
 
 
-This category focuses on the social structure of chore completion. In individual systems, each child has their own set of responsibilities and earns rewards independently. This can be effective for fostering personal accountability. Team systems, conversely, involve the whole family working together towards a common goal, with rewards earned collectively. This promotes cooperation and a shared sense of responsibility for the household.
+This category focuses on the social structure of chore completion. In individual systems, each child has their own set of responsibilities and earns rewards [independent](https://www.healthychildren.org/English/ages-stages/preschool/Pages/Growing-Independence-Tips-for-Parents-of-Young-Children.aspx)ly. This can be effective for fostering personal accountability. Team systems, conversely, involve the whole family working together towards a common goal, with rewards earned collectively. This promotes cooperation and a shared sense of responsibility for the household.
 
 
 Many families find a hybrid approach works best, combining individual responsibilities with occasional family-wide projects or challenges. The choice often depends on family dynamics and the age of the children.
@@ -69,7 +69,7 @@ A critical consideration in gamified chore systems is the balance between extrin
 #### 💡 Tip: Focus on Autonomy and Competence
 
 
-To encourage intrinsic motivation, give children choices about which chores they do (autonomy) and provide clear instructions and praise for their efforts (competence). Frame chores as contributions to the family, fostering a sense of relatedness.
+To encourage [intrinsic motivation](https://selfdeterminationtheory.org/theory/), give children choices about which chores they do (autonomy) and provide clear instructions and praise for their efforts (competence). Frame chores as contributions to the family, fostering a sense of relatedness.
 
 
 ## Avoiding the 'Reward Trap'
@@ -130,3 +130,9 @@ Ultimately, the goal is to cultivate a sense of responsibility and contribution,
 Explore our tools and resources to bring harmony and efficiency to your home.
 
  [Discover MagicDecisions Tools](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

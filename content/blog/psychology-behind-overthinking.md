@@ -18,7 +18,7 @@ readTime: "6 min read"
 
 ## The Psychology of Decision-Making
 
- Your brain makes decisions using a combination of logic and emotion. The prefrontal cortex handles the rational analysis: weighing pros and cons, considering consequences, planning ahead. The amygdala handles the emotional response: fear of making a mistake, desire for the "right" outcome, anxiety about judgment.
+ Your brain makes decisions using a combination of logic and emotion. The prefrontal cortex handles the rational analysis: weighing pros and cons, considering consequences, planning ahead. The amygdala handles the emotional response: fear of making a mistake, desire for the "right" outcome, [anxiety](https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/) about judgment.
 
 
 For big, important decisions, this system works well. It helps you evaluate choices that matter. But when this same system kicks in for small decisions, what shirt to wear, what to eat for lunch, it causes problems.
@@ -33,7 +33,7 @@ That's why picking a restaurant can feel like you're closing a door forever. You
 
 ### Analysis Paralysis
 
-When we have too many options or too much information, we freeze. Your brain is trying to process everything, compare everything, and find the "best" choice. But with too many variables, the brain can't complete the task. So it... stops.
+When we have [too many options](https://www.ted.com/talks/barry_schwartz_the_paradox_of_choice) or too much information, we freeze. Your brain is trying to process everything, compare everything, and find the "best" choice. But with too many variables, the brain can't complete the task. So it... stops.
 
  This is why menus with 50 items take longer to choose from than menus with 5 items. More options don't help us decide. They overwhelm us.
 
@@ -111,3 +111,9 @@ Overthinking isn't a personality trait, it's a habit, and habits can change. The
 Stop overthinking and start doing. Try our free decision tools today!
 
  [Make a Decision Now](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

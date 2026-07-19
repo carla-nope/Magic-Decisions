@@ -14,6 +14,8 @@ Make most decisions in seconds, with less regret, and more confidence? The secre
 
 Most decisions can be changed. The restaurant you chose? You can leave. The movie you picked? You can stop watching. The cereal you bought? You can eat something else tomorrow. The vast majority of "decisions" we agonize over are reversible. Once you accept that, decision-making gets much easier.
 
+The method also builds a bigger muscle: research collected by the [AAP on resilience](https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/default.aspx) shows that recovering from imperfect outcomes — not avoiding them — is what makes kids (and adults) sturdier.
+
 The "decide and adjust" method is simple: make the best choice you can with the information you have, commit to it, and be ready to adjust if needed. Instead of trying to make perfect decisions, you make good decisions and refine along the way. This is how it works.
 
 ## The Core Philosophy: Decisions Are Editable
@@ -26,7 +28,7 @@ We treat every decision like it matters as much as choosing a career or a life p
 
 Most advice says "make a decision and stick with it." This is good advice for major decisions but terrible advice for minor ones. The decide-and-adjust method adds a crucial element: the willingness to change course if the decision doesn't work out.
 
-This isn't waffling. This isn't being indecisive. This is strategic flexibility. You make the best choice you can. You commit to it. But if new information shows you made the wrong call, you adjust. Quick course corrections beat slow, painful stuck-ness.
+This isn't waffling. This isn't being indecisive. This is strategic [flexibility](https://childmind.org/article/helping-kids-with-flexible-thinking/). You make the best choice you can. You commit to it. But if new information shows you made the wrong call, you adjust. Quick course corrections beat slow, painful stuck-ness.
 
 ### The Decide and Adjust Framework
 
@@ -128,3 +130,9 @@ The goal isn't to stop caring about decisions. It's to care about them different
 Use our free decision tools to make quick choices and keep moving forward. Speed + commitment = confidence.
 
 [Try Decision Tools Free →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

@@ -32,7 +32,7 @@ say "I think you should do it," your child can argue: "But Mom, maybe you're wro
 
 Kids, and adults, often struggle with decisions because they fear being wrong. When you make a choice, you own it. If it goes badly, you chose wrong. But when an external force decides, the responsibility is shared. The oracle chose, not me. If it goes badly, the oracle was wrong.
 
-This isn't about avoiding responsibility, it's about removing the pressure that prevents kids from deciding at all. For indecisive children, the oracle is a pressure-release valve. They still get to act; they don't have to carry the full weight of the choice.
+This isn't about avoiding responsibility, it's about removing the pressure that prevents kids from deciding at all. For [indecisive](https://www.psychologytoday.com/us/blog/growing-friendships/201906/when-your-child-can-t-decide) children, the oracle is a pressure-release valve. They still get to act; they don't have to carry the full weight of the choice.
 
 > "The oracle doesn't make the decision for them, it makes the decision external so they can make it internal with less fear."
 
@@ -76,7 +76,7 @@ Start by using the oracle together. "Let's ask the oracle." Watch the magic work
 
 - **Stage 4:** Kid asks oracle internally ("my gut says yes") without external tool
 
-This progression builds intuition. By the end, the oracle isn't a tool anymore, it's internal decision confidence wearing a fun hat.
+This progression builds intuition. By the end, the oracle isn't a tool anymore, it's internal [decision confidence](https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Helping-Your-Child-Develop-A-Healthy-Sense-of-Self-Esteem.aspx) wearing a fun hat.
 
 ## The "No" Answer Problem
 
@@ -136,3 +136,9 @@ Try it tonight. When your kid is stuck on a yes/no question, offer to ask the or
 Let fate decide. Use our free oracle tool to help your kids make binary decisions with confidence.
 
 [Try the Yes/No Oracle →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

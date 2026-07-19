@@ -14,7 +14,7 @@ readTime: "9 min read"
  ](/blog)
 
 
- Your quiet child stands frozen while louder siblings grab what they want. "Say what you want!" you encourage. They shrug. But inside, they're deciding: should I speak up or stay silent? These strategies help the shy child build decision confidence.
+ Your quiet child stands frozen while louder siblings grab what they want. "Say what you want!" you encourage. They shrug. But inside, they're deciding: should I speak up or stay silent? These strategies help the shy child build [decision confidence](https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Helping-Your-Child-Develop-A-Healthy-Sense-of-Self-Esteem.aspx).
 
 
  Meet the Chen family. Their 8-year-old daughter Lily is sweet, thoughtful, and quiet. Her brother Max is loud, confident, and always first to speak up. At the dinner table, Max says "I want spaghetti!" and Lily says "...whatever." At the playground, Max runs to claim the swing while Lily waits and waits.
@@ -184,11 +184,11 @@ readTime: "9 min read"
  ](/blog/building-decision-confidence-kids)
 
  - [
- Decision Anxiety Kids
+ Decision [Anxiety](https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/) Kids
  ](/blog/decision-anxiety-kids)
 
  - [
- Teaching Kids Independence Decisions
+ Teaching Kids [Independence](https://www.healthychildren.org/English/ages-stages/preschool/Pages/Growing-Independence-Tips-for-Parents-of-Young-Children.aspx) Decisions
  ](/blog/teaching-kids-independence-decisions)
 
  - [
@@ -209,3 +209,9 @@ readTime: "9 min read"
  [
  Try Decision Tools Free →
  ](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

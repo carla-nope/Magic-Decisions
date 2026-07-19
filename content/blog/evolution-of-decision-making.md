@@ -38,7 +38,7 @@ Decision environment: Limited options, limited information, limited speed. When 
 
 Your Generation
 
-Decision environment: Expanding options, emerging internet, increasing pace. You grew up during the transition,part analog childhood, part digital awakening. You remember life before smartphones but grew up with them. Your decision-making skills developed during a period of rapid change.
+Decision environment: Expanding options, emerging internet, increasing pace. You grew up during the transition,part analog childhood, part digital awakening. You remember life before smartphones but grew up with them. Your [decision-making skills](https://childmind.org/article/helping-kids-make-decisions/) developed during a period of rapid change.
 
 - **Decision pace:** Medium. You still had time to think, but options were increasing.
 
@@ -90,7 +90,7 @@ In an environment of infinite options and instant response, the ability to decid
 
 ### Resilience Over Avoidance
 
-Because decisions feel higher-stakes, kids are tempted to avoid them. "Whatever you want" becomes a survival strategy. But avoidance doesn't build decision confidence,it builds decision anxiety. Kids need to practice deciding even when it's scary, and they need to learn that bad outcomes are survivable and learnable from.
+Because decisions feel higher-stakes, kids are tempted to avoid them. "Whatever you want" becomes a survival strategy. But avoidance doesn't build [decision confidence](https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Helping-Your-Child-Develop-A-Healthy-Sense-of-Self-Esteem.aspx),it builds decision anxiety. Kids need to practice deciding even when it's scary, and they need to learn that bad outcomes are survivable and learnable from.
 
 ### Filtering Over Consuming
 
@@ -128,7 +128,7 @@ Spin wheels, coin flips, and random pickers are training wheels for the modern d
 
 We don't know what decision environment your children will face as adults. AI will change things. New technologies will create new challenges. But the fundamental skills,deciding, committing, adjusting, learning,will remain valuable.
 
-The goal isn't to prepare your kids for the world as it is. It's to prepare them to thrive in the world as it will be. And that world will require confident, resilient decision-makers who can navigate complexity without freezing.
+The goal isn't to prepare your kids for the world as it is. It's to prepare them to thrive in the world as it will be. And that world will require confident, [resilient](https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/default.aspx) decision-makers who can navigate complexity without freezing.
 
 You're equipping your children with skills that will serve them for their entire lives. Every time you help them practice deciding, you're building capacity they'll use in contexts we can't even imagine yet. That's powerful work.
 
@@ -148,3 +148,9 @@ You're equipping your children with skills that will serve them for their entire
 Build your child's decision confidence today with free tools that make decision practice fun and accessible.
 
 [Try Decision Tools Free →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Cognitive Bias Test](/cognitive-bias-checker): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

@@ -15,6 +15,8 @@ Your 9-year-old needs to decide between two activities. Your 7-year-old is stuck
 
  These sound like small problems. Kids who learn to decide quickly and with confidence grow into adults who handle pressure, manage time, and solve problems. The skill starts young.
 
+The [Child Mind Institute's advice for building decision skills](https://childmind.org/article/helping-kids-make-decisions/) echoes this: start with small, structured choices and let kids feel ownership of the result.
+
 
 ## Why Decision-Making is a Life Skill
 
@@ -75,7 +77,7 @@ For more fun ways to practice, check out our [decision-making games for kids](/b
  Sometimes kids get stuck, and that is fine. It happens to adults too. The key is having tools ready so they do not spiral.
 
 
- Coin flips work for two options. Spin wheels work for multiple options. At MagicDecisions.com, we built [free decision tools](/tools) for exactly this moment. When kids use a tool, they are not "cheating" — they are learning that there are ways to move forward when stuck.
+ Coin flips work for two options. Spin wheels work for multiple options. At MagicDecisions.com, we built [free decision tools](/) for exactly this moment. When kids use a tool, they are not "cheating" — they are learning that there are ways to move forward when stuck.
 
 
  The goal is for kids to eventually not need tools. Tools help kids experience the relief of deciding and moving on, which makes them want to do it themselves next time.
@@ -134,3 +136,11 @@ For more fun ways to practice, check out our [decision-making games for kids](/b
 Explore our tools and guides to make every choice a confident one.
 
 [Start Your Journey](/)
+
+Quick doesn't mean careless: deciding fast on small things protects the energy budget that [decision fatigue](https://health.clevelandclinic.org/decision-fatigue) quietly drains all day.
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

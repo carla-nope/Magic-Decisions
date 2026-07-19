@@ -12,7 +12,7 @@ readTime: "6 min read"
 
 "Can I play video games?" "How much longer?" " five more minutes!" "But I was about to beat the level!"
 
-Sound familiar? Screen time negotiations are one of the most exhausting parts of parenting. day, multiple times a day, you're the arbiter of your kid's screen time. It wears on you.
+Sound familiar? [Screen time](https://www.healthychildren.org/English/fmp/Pages/MediaPlan.aspx) negotiations are one of the most exhausting parts of parenting. day, multiple times a day, you're the arbiter of your kid's screen time. It wears on you.
 
 But it doesn't have to be this way. With some simple systems, you can eliminate the battles and make screen time decisions that everyone understands.
 
@@ -34,7 +34,7 @@ Kids do better with clear expectations. Vague rules like "a little bit of screen
  here.
 
 When kids know what the screen time rule is, they stop trying to negotiate. They're not happy about it, . But they accept it because it's clear. Read more about <a href="/blog/building-decision-confidence-kids">
- Building Decision Confidence in Kids
+ Building [Decision Confidence](https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Helping-Your-Child-Develop-A-Healthy-Sense-of-Self-Esteem.aspx) in Kids
 </a>
  here.
 
@@ -124,3 +124,9 @@ Explore our tools and resources to simplify your choices.
 - [Decision-Making Games for Kids](/blog/decision-making-games-kids)
 
 - [Family Harmony with Fewer Decisions](/blog/family-harmony-fewer-decisions)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Screen Time Swap](/screen-time-swap): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

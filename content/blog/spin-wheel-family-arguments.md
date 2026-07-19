@@ -80,9 +80,9 @@ Now that we have the wheel, the temptation is to spin for many things. We don't.
 
 ## The Unexpected Lesson
 
-I didn't expect: using the spin wheel taught my kids that not many decision deserves deep thought. We spend much energy worrying about getting it "right," but most choices are reversible, flexible, or low-stakes. A movie choice leads to two hours of entertainment either way. A fruit choice leads to vitamins either way. Learning to let randomness handle the small stuff freed up mental space for the things that matter.
+I didn't expect: using the spin wheel taught my kids that not many decision deserves deep thought. We spend much energy worrying about getting it "right," but most choices are reversible, [flexible](https://childmind.org/article/helping-kids-with-flexible-thinking/), or low-stakes. A movie choice leads to two hours of entertainment either way. A fruit choice leads to vitamins either way. Learning to let randomness handle the small stuff freed up mental space for the things that matter.
 
-Max, who used to be the most indecisive kid ("I don't know what I want... wait, maybe that... no, maybe something else"), now makes small decisions in seconds. He's not perfect, he still freezes sometimes. But now he has a strategy. "Can I spin for it?" He's learned that having a fallback makes initial decisions easier.
+Max, who used to be the most [indecisive](https://www.psychologytoday.com/us/blog/growing-friendships/201906/when-your-child-can-t-decide) kid ("I don't know what I want... wait, maybe that... no, maybe something else"), now makes small decisions in seconds. He's not perfect, he still freezes sometimes. But now he has a strategy. "Can I spin for it?" He's learned that having a fallback makes initial decisions easier.
 
 Lily, who used to "win" many argument by sheer persistence, has learned to accept outcomes she didn't choose. When the wheel picked Max's show, she didn't feel like she lost to him. She lost to chance. That distinction matters.
 
@@ -97,3 +97,9 @@ You don't need an expensive purchased wheel. You don't need many fancy. You just
 Our free spin wheel has ended thousands of family arguments. Give it a try, it might change your home too.
 
 [Try the Spin Wheel Free →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

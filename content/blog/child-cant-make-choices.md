@@ -10,7 +10,7 @@ readTime: "5 min read"
 
 ![When Your Child Can't Make Simple Choices — MagicDecisions](/blog-images/child-cant-make-choices.png)
 
-Your kid stands paralyzed by a choice that should take seconds. A cereal box. A t-shirt. Which friend to invite. It doesn't matter, they can't decide.
+Your kid stands paralyzed by a choice that should take seconds. A cereal box. A t-shirt. Which friend to invite. It doesn't matter, they [can't decide](https://www.psychologytoday.com/us/blog/growing-friendships/201906/when-your-child-can-t-decide).
 
  If you've been there, you know how frustrating it is. And you might be wondering: is something wrong?
 
@@ -93,7 +93,7 @@ When you make decisions out loud, narrate it. "Hmm, should I do laundry or go to
 
 - Persists despite trying the strategies above
 
- In these cases, talk to your pediatrician. There may be an underlying anxiety disorder or something else worth addressing with professional support.
+ In these cases, talk to your pediatrician. There may be an underlying [anxiety](https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/) disorder or something else worth addressing with professional support.
 
 
 ## The Bottom Line
@@ -115,6 +115,32 @@ Most kids who "can't make decisions" are dealing with something underneath: fear
 
 ### Ready to make decisions easier for your family?
 
-Explore our free tools and resources designed to build decision confidence in kids.
+Explore our free tools and resources designed to build [decision confidence](https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Helping-Your-Child-Develop-A-Healthy-Sense-of-Self-Esteem.aspx) in kids.
 
 [Get Started Now](/)
+
+> **Script to use:** "There's no wrong answer here. I'm going to count to five, and you say whichever one you're leaning toward. Ready?" Then accept whatever they say — even a shrug toward one option counts. You're rewarding the deciding, not the decision.
+
+## FAQ: When Choosing Is the Battle
+
+### Is this normal, or should I be worried?
+
+Some hesitation is developmentally normal — filtering options is a skill the brain learns slowly. It's worth a closer look if the freeze comes with real distress (tears, panic, sleep trouble) or shows up everywhere, not just at choice time. In that case, start with your pediatrician; for everyday stuck-ness, practice and lower stakes fix most of it.
+
+### Should I just decide for them when we're in a hurry?
+
+Sometimes, yes — real life has school buses. But say what you're doing: "I'm picking today because we're late; you pick tomorrow." That keeps the decision muscle theirs, just deferred, instead of quietly teaching them that stalling means someone else takes over.
+
+### What if they pick and then immediately want to switch?
+
+One switch is allowed; after that, the choice stands until tomorrow. Instant regret is part of learning what they actually prefer — the rule just stops it from becoming an endless loop. Afterward, name it gently: "You thought you wanted the blue cup. Now you know."
+
+### Does letting a coin or wheel decide teach them anything?
+
+More than it seems. Random tools take the pressure off the moment of choosing, but the learning happens right after — ask "how do you feel about that answer?" and they discover their own preference by how they react to it.
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

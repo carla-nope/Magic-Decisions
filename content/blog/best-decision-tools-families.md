@@ -128,7 +128,7 @@ Sometimes you need more than one tool. Three approaches worth knowing:
 
 ### Two-Stage Randomization
 
-When the decision has multiple layers, use two tools in sequence. Example: Can't decide where to eat AND what to eat when you get there? First, spin a wheel for the restaurant category (Italian, Mexican, Asian). Second, spin another wheel for the specific dish or restaurant within that category.
+When the decision has multiple layers, use two tools in sequence. Example: [Can't decide](https://www.psychologytoday.com/us/blog/growing-friendships/201906/when-your-child-can-t-decide) where to eat AND what to eat when you get there? First, spin a wheel for the restaurant category (Italian, Mexican, Asian). Second, spin another wheel for the specific dish or restaurant within that category.
 
 ### Filtered Randomization
 
@@ -201,3 +201,11 @@ Over time, your kids will internalize the randomization concept. They'll start s
 Free spin wheels, coin flips, random pickers, and more,all in one place. Bookmark it and use it .
 
 [Try All Decision Tools Free →](/)
+
+Whichever tool you pick, the win is the same one the [Child Mind Institute describes](https://childmind.org/article/helping-kids-make-decisions/): more reps at low-stakes choosing, with less parental refereeing.
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

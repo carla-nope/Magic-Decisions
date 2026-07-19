@@ -16,7 +16,7 @@ Think about the most decisive person you know. They don't hesitate. They weigh o
 
 Now think about someone who struggles with decisions. They agonize. They second-guess. They ask for opinions and still feel uncertain. They might be brilliant, talented, capable,but something in their decision-making confidence never developed. And that gap affects every area of their life. Learn more about [decision making](/blog/coin-flip-psychology).
 
-As parents, we have the opportunity to give our kids the gift of decision confidence. But it doesn't happen by accident. It requires intentional practice, supportive environments, and specific strategies. This guide covers it all.
+As parents, we have the opportunity to give our kids the gift of [decision confidence](https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Helping-Your-Child-Develop-A-Healthy-Sense-of-Self-Esteem.aspx). But it doesn't happen by accident. It requires intentional practice, supportive environments, and specific strategies. This guide covers it all.
 
 ## Why Decision Confidence Matters
 
@@ -34,7 +34,7 @@ Kids with strong decision confidence:
 
 - Handle transitions (new school, new job) with less anxiety
 
-Kids with weak decision confidence often struggle with anxiety, people-pleasing, analysis paralysis, and avoidance. They let others decide because it feels safer than risking a wrong choice. And as they become adults, this pattern limits their potential.
+Kids with weak decision confidence often struggle with [anxiety](https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/), people-pleasing, analysis paralysis, and avoidance. They let others decide because it feels safer than risking a wrong choice. And as they become adults, this pattern limits their potential.
 
 ## The Decision Confidence Building Blocks
 
@@ -94,7 +94,7 @@ Many parents wait until their child seems "ready" to make decisions. But readine
 
 ### Praise the Process, Not Just Outcomes
 
-"You made a great choice!" focuses on outcome. "You decided and stuck with it!" focuses on the decision process. Kids who hear only outcome-based praise become afraid to choose when outcomes might be uncertain. Process praise builds resilient confidence.
+"You made a great choice!" focuses on outcome. "You decided and stuck with it!" focuses on the decision process. Kids who hear only outcome-based praise become afraid to choose when outcomes might be uncertain. Process praise builds [resilient](https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/default.aspx) confidence.
 
 ### Don't Rescue Too
 
@@ -165,3 +165,9 @@ And remember: you're modeling too. Your own decision-making habits shape your ch
 Use our free spin wheel, coin flip, and decision tools to practice decision-making with your kids every day.
 
 [Try Decision Tools Free →](/)
+
+## Make the next decision the easy kind
+
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+
+> **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.
