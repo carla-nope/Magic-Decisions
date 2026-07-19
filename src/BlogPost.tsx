@@ -80,10 +80,24 @@ function formatDate(dateStr: string): string {
 // Simple markdown to HTML converter
 function simpleMarkdownToHtml(markdown: string): string {
   let html = markdown
+    // Images (must run before links): ![alt](src) → branded, lazy-loaded figure
+    .replace(
+      /!\[([^\]]*)\]\(([^)\s]+)\)/g,
+      '<figure class="blog-figure"><img src="$2" alt="$1" loading="lazy" decoding="async" /></figure>'
+    )
     // Headers
     .replace(/^### (.*$)/gm, '<h3>$1</h3>')
     .replace(/^## (.*$)/gm, '<h2>$1</h2>')
     .replace(/^# (.*$)/gm, '<h1>$1</h1>')
+    // Blockquote callouts: consecutive "> " lines become one blockquote
+    .replace(/^(?:>[ \t]?.*(?:\n|$))+/gm, (block) => {
+      const inner = block
+        .split('\n')
+        .filter((l) => l.trim().length > 0)
+        .map((l) => l.replace(/^>[ \t]?/, ''))
+        .join('<br>')
+      return `<blockquote>${inner}</blockquote>\n\n`
+    })
     // Bold
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
     // Italic
@@ -101,7 +115,13 @@ function simpleMarkdownToHtml(markdown: string): string {
     .map(p => p.trim())
     .filter(p => p.length > 0)
     .map(p => {
-      if (p.startsWith('<h') || p.startsWith('<li') || p.startsWith('<pre')) {
+      if (
+        p.startsWith('<h') ||
+        p.startsWith('<li') ||
+        p.startsWith('<pre') ||
+        p.startsWith('<blockquote') ||
+        p.startsWith('<figure')
+      ) {
         return p
       }
       // Convert single line breaks to <br> within paragraphs
@@ -342,6 +362,21 @@ function BlogPost({ slug, onBack }: BlogPostProps) {
                   prose-pre:bg-[#1A1A2E] prose-pre:text-[#F0EBE3]"
                 dangerouslySetInnerHTML={{ __html: post.body }}
               />
+
+              {/* Author box */}
+              <div className="mt-10 p-6 rounded-2xl bg-cream-50 border border-cream-300 flex items-start gap-4">
+                <div className="w-14 h-14 rounded-full bg-secondary/10 border border-cream-300 flex items-center justify-center text-3xl flex-shrink-0" aria-hidden="true">
+                  🔮
+                </div>
+                <div>
+                  <p className="font-semibold font-display text-[#1A1A2E] mb-1">Written by Carla</p>
+                  <p className="text-sm text-[#6B5E4E] leading-relaxed">
+                    I'm a single mom building MagicDecisions with my 10-year-old daughter — part family
+                    project, part learning lab. Everything here comes from real battles at our own kitchen
+                    table. All our decision tools are free, with no signup.
+                  </p>
+                </div>
+              </div>
 
               {/* Share */}
               <div className="mt-8 pt-6 border-t border-[#E5DDD1] flex items-center justify-between">

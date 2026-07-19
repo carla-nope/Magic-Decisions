@@ -1,0 +1,45 @@
+name: Link check
+
+on:
+  schedule:
+    - cron: '0 13 * * 1'   # Mondays 13:00 UTC (~9am ET)
+  workflow_dispatch: {}
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check links in blog posts and key pages
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --max-concurrency 4
+            --timeout 20
+            --max-retries 2
+            --retry-wait-time 5
+            --accept 200,201,202,203,204,206,301,302,303,307,308,403,429
+            --exclude-path node_modules
+            --exclude-path dist
+            'content/blog/**/*.md'
+            'index.html'
+          fail: true
+
+      - name: Create issue when links are dead
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Dead links found in blog posts (' + new Date().toISOString().slice(0,10) + ')';
+            const open = await github.rest.issues.listForRepo({ owner: context.repo.owner, repo: context.repo.repo, state: 'open', labels: 'dead-links' });
+            if (open.data.length === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                labels: ['dead-links'],
+                body: 'The weekly lychee link check failed. See the workflow run for the list of dead links: https://github.com/' + context.repo.owner + '/' + context.repo.repo + '/actions'
+              });
+            }

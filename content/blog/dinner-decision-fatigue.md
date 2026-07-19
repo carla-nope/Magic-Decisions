@@ -28,6 +28,8 @@ The problem isn't the food , it's the decision. Every day, at roughly the same t
 
 The easiest fix is to create a meal rotation. You don't decide what's for dinner , the week decides.
 
+> **Try this tonight:** Don't build the whole rotation yet. Just pick tomorrow's dinner right now — one decision, made a day early — and notice how much lighter 5 PM feels.
+
 ### The Basic Rotation
 
 - Monday: Pasta

@@ -649,3 +649,15 @@ textarea:focus-visible {
     color: #1A1A2E;
   }
 }
+/* Blog post figures — branded frame for in-post images */
+.blog-figure {
+  margin: 2rem 0;
+}
+.blog-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  border: 1px solid #E5DDD1;
+  box-shadow: 0 8px 24px rgba(107, 94, 78, 0.12);
+  display: block;
+}
