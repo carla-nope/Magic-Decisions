@@ -1,5 +1,5 @@
 ---
-title: "Untitled Post"
+title: "Decision Fatigue in Families: Why Everyone Seems Cranky by 3 PM"
 slug: "decision-fatigue-in-families"
 date: "2026-04-20"
 excerpt: "It's 3:15 PM. Your kid is melting down over the color of their cup. Your partner snaps at you for asking what they want for snack. And you? You're hiding in the pantry, eating chocolate chips..."

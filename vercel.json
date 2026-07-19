@@ -2,6 +2,19 @@
   "framework": "vite",
   "buildCommand": "npm run build:prerender",
   "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/blog/decision-fatigue", "destination": "/blog/decision-fatigue-families", "permanent": true },
+    { "source": "/blog/what-is-decision-fatigue-signs-and-fixes", "destination": "/blog/decision-fatigue-families", "permanent": true },
+    { "source": "/blog/psychology-behind-decision-fatigue", "destination": "/blog/psychology-behind-overthinking", "permanent": true },
+    { "source": "/blog/fast-decisions", "destination": "/blog/decide-and-adjust-method", "permanent": true },
+    { "source": "/blog/how-to-make-decisions-faster", "destination": "/blog/decide-and-adjust-method", "permanent": true },
+    { "source": "/blog/2-minute-rule-for-faster-decisions", "destination": "/blog/2-minute-rule-decisions", "permanent": true },
+    { "source": "/blog/best-yes-no-decision-maker-online", "destination": "/blog/yes-no-decision-maker-kids", "permanent": true },
+    { "source": "/blog/should-i-do-it-decide-in-seconds", "destination": "/blog/yes-no-decision-maker-kids", "permanent": true },
+    { "source": "/blog/how-to-stop-second-guessing-yourself", "destination": "/blog/decision-paralysis", "permanent": true },
+    { "source": "/blog/random-decision-generator-guide", "destination": "/blog/best-decision-tools-families", "permanent": true },
+    { "source": "/blog/when-you-cant-decide-use-this-trick", "destination": "/blog/5-second-decision-method", "permanent": true }
+  ],
   "rewrites": [
     {
       "source": "/admin/:path*",
