@@ -428,7 +428,18 @@ function App() {
     document.title = meta.title;
     document.querySelector('meta[name="description"]')?.setAttribute('content', meta.description);
     document.querySelector('link[rel="canonical"]')?.setAttribute('href', 'https://magicdecisions.com' + target);
+    // Always start each page at the top — without this, switching tools
+    // keeps the previous page's scroll position (often the bottom).
+    window.scrollTo(0, 0);
   }, [activeTool, blogPostSlug]);
+
+  // Take over scroll handling so reloads don't restore an old (bottom)
+  // scroll position on the freshly loaded page.
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+  }, []);
 
   // Browser back/forward support
   useEffect(() => {

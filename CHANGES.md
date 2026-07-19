@@ -53,3 +53,30 @@ New build script: `build:prerender` (vercel.json now uses it).
    request indexing for the homepage and /about-us.
 3. Set the non-www domain as primary in Vercel (canonical is non-www).
 4. Test a share preview (paste the URL in a DM to yourself).
+
+---
+
+# v2 additions — AdSense + blog publishing (July 3)
+
+## Blog: all 48 posts published (was 5)
+`content/blog/` held 48 finished articles but only 5 were in the manifest,
+and the blog fetched posts live from the GitHub API in the browser (rate-
+limited at 60 req/hr, invisible to crawlers). New build step
+`scripts/build-blog.mjs` publishes every markdown post to
+`public/blog-manifest.json` + `public/blog-content/<slug>.json`;
+BlogPage/BlogPost now load local JSON, and blog routes prerender with the
+full article text and per-post SEO titles. 70 pages total now ship as
+static HTML. Review flagged: `decision-fatigue` vs
+`what-is-decision-fatigue-signs-and-fixes` look like duplicates — merge.
+
+## AdSense integration
+- AdSense loader (`ca-pub-4005623306172939`) added to the head — present
+  on every prerendered page.
+- `public/ads.txt` added: `google.com, pub-4005623306172939, DIRECT, f08c47fec0942fa0`
+- Do not request re-review until Search Console shows the new pages
+  indexed (see GROWTH-SOP.md, Phase 2).
+
+## Sitemap now generated at build
+`sitemap.xml` is produced by the prerenderer from the real route list
+(70 URLs incl. all blog posts) — it can never drift from the site again.
+Static sitemap files removed.

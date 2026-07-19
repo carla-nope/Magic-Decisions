@@ -116,48 +116,23 @@ function BlogPostCard({ post, onClick }: { post: BlogPost; onClick: () => void }
 }
 
 function BlogPage({ onNavigateToPost }: { onNavigateToPost?: (slug: string) => void }) {
-  const [posts, setPosts] = useState<BlogPost[]>([])
-  const [loading, setLoading] = useState(true)
+  // During prerendering the manifest is preloaded via a global so the blog
+  // index ships as real HTML. In the browser it fetches the local manifest.
+  const preloaded = (globalThis as { __SSR_BLOG_MANIFEST__?: BlogPost[] }).__SSR_BLOG_MANIFEST__
+  const [posts, setPosts] = useState<BlogPost[]>(preloaded ?? [])
+  const [loading, setLoading] = useState(!preloaded)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
+    if (preloaded) return
     async function fetchPosts() {
       try {
-        // Fetch the directory listing from GitHub API
-        const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${CONTENT_PATH}`
-        const response = await fetch(apiUrl)
-
+        const response = await fetch('/blog-manifest.json')
         if (!response.ok) {
           throw new Error('Failed to fetch posts')
         }
-
-        const files = await response.json()
-        const markdownFiles = files.filter((f: any) => f.name.endsWith('.md') || f.name.endsWith('.mdx'))
-
-        // Fetch each post's content
-        const postsData = await Promise.all(
-          markdownFiles.map(async (file: any) => {
-            const contentResponse = await fetch(file.download_url)
-            const content = await contentResponse.text()
-            const { data, body } = parseFrontmatter(content)
-
-            return {
-              slug: file.name.replace(/\.mdx?$/, ''),
-              title: data.title || 'Untitled',
-              date: data.date || new Date().toISOString().split('T')[0],
-              excerpt: data.excerpt || '',
-              category: data.category || 'General',
-              featured: data.featured || false,
-              author: data.author || 'MagicDecisions',
-              readTime: calculateReadTime(body),
-            }
-          })
-        )
-
-        // Sort by date, newest first
-        postsData.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-
-        setPosts(postsData)
+        const manifest = await response.json()
+        setPosts(manifest.posts ?? [])
         setLoading(false)
       } catch (err) {
         console.error('Error fetching posts:', err)

@@ -120,42 +120,53 @@ interface BlogPostProps {
   onBack: () => void
 }
 
+interface BlogContentFile {
+  slug: string
+  title: string
+  date: string
+  excerpt: string
+  category: string
+  featured: boolean
+  author: string
+  readTime: string
+  seo?: { meta_title?: string; meta_description?: string }
+  body: string
+}
+
+function toPostData(file: BlogContentFile): PostData {
+  return {
+    title: file.title,
+    date: file.date,
+    excerpt: file.excerpt,
+    category: file.category,
+    featured: file.featured,
+    author: file.author,
+    body: simpleMarkdownToHtml(file.body),
+    readTime: file.readTime,
+  }
+}
+
 function BlogPost({ slug, onBack }: BlogPostProps) {
-  const [post, setPost] = useState<PostData | null>(null)
-  const [loading, setLoading] = useState(true)
+  // During prerendering the post content is preloaded via a global so the
+  // full article ships as real HTML. In the browser it fetches local JSON.
+  const preloaded = (globalThis as { __SSR_BLOG_POST__?: BlogContentFile }).__SSR_BLOG_POST__
+  const ssrPost = preloaded && preloaded.slug === slug ? preloaded : undefined
+  const [post, setPost] = useState<PostData | null>(ssrPost ? toPostData(ssrPost) : null)
+  const [loading, setLoading] = useState(!ssrPost)
   const [error, setError] = useState<string | null>(null)
   const [copied, setCopied] = useState(false)
 
   useEffect(() => {
+    if (ssrPost) return
     async function fetchPost() {
       try {
-        const fileName = `${slug}.md`
-        const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${CONTENT_PATH}/${encodeURIComponent(fileName)}`
-
-        const response = await fetch(apiUrl)
+        const response = await fetch(`/blog-content/${encodeURIComponent(slug)}.json`)
         if (!response.ok) {
           throw new Error('Post not found')
         }
-
-        const file = await response.json()
-        const contentResponse = await fetch(file.download_url)
-        const content = await contentResponse.text()
-
-        const { data, body } = parseFrontmatter(content)
-
-        const htmlContent = simpleMarkdownToHtml(body)
-
-        setPost({
-          title: String(data.title || 'Untitled'),
-          date: String(data.date || new Date().toISOString().split('T')[0]),
-          excerpt: String(data.excerpt || ''),
-          category: String(data.category || 'General'),
-          featured: Boolean(data.featured || false),
-          author: String(data.author || 'MagicDecisions'),
-          body: htmlContent,
-          readTime: calculateReadTime(body),
-        })
-
+        const file: BlogContentFile = await response.json()
+        setPost(toPostData(file))
+        if (file.seo?.meta_title) document.title = `${file.seo.meta_title} | Magic Decisions`
         setLoading(false)
       } catch (err) {
         console.error('Error fetching post:', err)

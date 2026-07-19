@@ -38,10 +38,25 @@ try {
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;')
 
+// Load blog data so blog routes render with full article content and
+// post-specific metadata.
+let manifest = { posts: [] }
+try {
+  manifest = JSON.parse(readFileSync(resolve(root, 'public/blog-manifest.json'), 'utf-8'))
+} catch { /* no blog */ }
+const loadPost = (slug) => {
+  try {
+    return JSON.parse(readFileSync(resolve(root, `public/blog-content/${slug}.json`), 'utf-8'))
+  } catch { return undefined }
+}
+
 let ok = 0
 let fallback = 0
 for (const route of routes) {
   const urlPath = route ? '/' + route : '/'
+  // Preload blog data for blog routes so effects-free SSR still has content
+  globalThis.__SSR_BLOG_MANIFEST__ = route === 'blog' ? manifest.posts : undefined
+  globalThis.__SSR_BLOG_POST__ = route.startsWith('blog/') ? loadPost(route.slice(5)) : undefined
   let appHtml = ''
   try {
     appHtml = render(urlPath)
@@ -53,7 +68,14 @@ for (const route of routes) {
     fallback++
   }
 
-  const meta = metaForPath(route)
+  let meta = metaForPath(route)
+  const post = globalThis.__SSR_BLOG_POST__
+  if (post) {
+    meta = {
+      title: `${post.seo?.meta_title || post.title} | Magic Decisions`,
+      description: post.seo?.meta_description || post.excerpt || meta.description,
+    }
+  }
   const canonical = 'https://magicdecisions.com' + (route ? '/' + route : '/')
 
   let html = template.replace('<!--app-html-->', appHtml)
@@ -71,6 +93,20 @@ for (const route of routes) {
   writeFileSync(outFile, html)
   console.log(`  ✓ ${urlPath}`)
 }
+
+// Generate sitemap.xml from the actual route list so it never drifts
+const today = new Date().toISOString().slice(0, 10)
+const smUrl = (route) => {
+  const loc = 'https://magicdecisions.com' + (route ? '/' + route : '')
+  const prio = route === '' ? '1.0' : route.startsWith('blog/') ? '0.6'
+    : ['privacy-policy', 'terms-of-service', 'contact'].includes(route) ? '0.3' : '0.8'
+  const lastmod = route.startsWith('blog/') ? (loadPost(route.slice(5))?.date || today) : today
+  return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${prio}</priority>\n  </url>`
+}
+writeFileSync(resolve(dist, 'sitemap.xml'),
+  '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+  routes.map(smUrl).join('\n') + '\n</urlset>\n')
+console.log(`Sitemap: ${routes.length} URLs written to dist/sitemap.xml`)
 
 rmSync(resolve(root, 'dist-ssr'), { recursive: true, force: true })
 console.log(`\nPrerendered ${ok} routes with full HTML` + (fallback ? `, ${fallback} meta-only` : '') + '.')
