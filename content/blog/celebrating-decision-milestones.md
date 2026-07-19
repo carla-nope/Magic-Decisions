@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "9 min read"
 ---
 
+![Celebrating Decision Milestones: How to Build Decision Confidence Through Positive Reinforcement — MagicDecisions](/blog-images/celebrating-decision-milestones.png)
+
 [5 Minute Decision Exercises KidsEvery time your child makes a decision,even a tiny one,they're building a skill that will serve them for life. But are you recognizing and celebrating those moments? Research shows that how we acknowledge decisions shapes how confident kids become as decision-makers.](/blog/5-minute-decision-exercises-kids)
 
 Your 6-year-old picks a cereal box at the store. "Great choice!" you say. Is that the end of it? Or is that a tiny brick being laid in the foundation of decision confidence?

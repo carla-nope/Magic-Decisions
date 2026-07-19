@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "9 min read"
 ---
 
+![How a Spin Wheel Fixed Our Family Arguments (A Real Story) — MagicDecisions](/blog-images/spin-wheel-family-arguments.png)
+
 Six months ago, I was ready to throw my hands up. Every evening ended the same way: my kids bickering over something trivial, me playing referee, everyone frustrated, dinner burned, bedtime chaos. Then my 8-year-old grabbed a toy spin wheel from her art supplies and said "let's spin!" That moment changed our situation.
 
 I'm Sarah, married to David, mom to Lily (10) and Max (7). We thought we were a normal family until we realized we were spending roughly 3 hours per week arbitrating disputes between our children. Three hours! That's a full work afternoon of refereeing arguments about who sat in which seat, who got to choose the TV show, and who had to be the "evil pirate" in their made-up game.

@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "8 min read"
 ---
 
+![Coin Flips for Family Decisions: When They Work and When They Don't — MagicDecisions](/blog-images/coin-flip-decisions-family.png)
+
 The humble coin flip is one of the oldest decision tools in human history,and it remains one of the most powerful. But using it requires knowing when it helps and when it falls short.
 
 

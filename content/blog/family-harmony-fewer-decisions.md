@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "6 min read"
 ---
 
+![Family Harmony: How Fewer Decisions Lead to Happier Homes — MagicDecisions](/blog-images/family-harmony-fewer-decisions.png)
+
 one of the best things you could do for your family's peace was to make fewer decisions.
 
 Sounds backwards, right? Shouldn't we be teaching kids to make MORE decisions to build [confidence](/blog/building-decision-confidence-kids)? , no. Not every decision needs to be made. Some decisions are noise that wastes energy and creates conflict.

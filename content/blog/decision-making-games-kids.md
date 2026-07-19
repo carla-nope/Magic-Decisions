@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "5 min read"
 ---
 
+![Making Decisions Fun: Games That Teach Choice-Making — MagicDecisions](/blog-images/decision-making-games-kids.png)
+
 The best way to teach [decision-making](/blog/teaching-kids-independence-decisions)? Make it a game. Kids learn fastest when they're having fun, and these games turn "learning to decide" into something they enjoy. For more quick activities, check out [5-Minute Decision Exercises for Kids](/blog/5-minute-decision-exercises-kids).
 
 ## Game 1: The Decision Chain

@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "8 min read"
 ---
 
+![The Evolution of Decision-Making: How Growing Up Today Differs from 50 Years Ago — MagicDecisions](/blog-images/evolution-of-decision-making.png)
+
 Your grandparents made decisions than you do. Your kids make them still. Understanding how decision-making has changed,and why,helps us raise children who thrive in the modern world.
 
 Let's play a quick game. Imagine your 8-year-old self, circa whenever you grew up. What decisions did you make on a typical day? Now imagine a typical 8-year-old today. What decisions do they face?

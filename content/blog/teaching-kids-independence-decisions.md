@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "3 min read"
 ---
 
+![The Complete Guide to Teaching Kids Independence Through Decisions — MagicDecisions](/blog-images/teaching-kids-independence-decisions.png)
+
 Goal: Raise kids who can think for themselves, solve problems, and trust their judgment.
 
 

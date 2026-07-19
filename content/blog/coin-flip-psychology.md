@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "8 min read"
 ---
 
+![Coin Flip Psychology: Why Random Decisions Feel Fair (Even When They're Not) — MagicDecisions](/blog-images/coin-flip-psychology.png)
+
 Two kids fighting over who gets the last cookie. A family that can't decide where to eat. A group of friends arguing about movie selection. What's the universal solution? Flip a coin. Nobody questions why a coin flip feels fair. That feeling isn't random, it's psychology.
 
 Say you're the referee in a sibling dispute. Your 8-year-old says "I was here first" and your 5-year-old says "but I want it more." You could analyze their arguments for an hour, or you could flip a coin and know that both kids will probably accept the outcome.

@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "8 min read"
 ---
 
+![The Best Decision Tools for Families (And When to Use Each One) — MagicDecisions](/blog-images/best-decision-tools-families.png)
+
 Spin wheels, coin flips, random pickers, dice rollers,the world of decision tools is richer than most people realize. The "best" tool depends on the situation. Match the tool to the decision and analysis paralysis stops being a problem.
 
 Every has moments when decisions feel impossible. The dinner debate. The movie standoff. The "who has to do the yucky chore" battle. And every reinvented the wheel () trying to solve these problems,until someone realized that simple randomization tools could end the arguments almost .

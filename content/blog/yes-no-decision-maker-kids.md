@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "7 min read"
 ---
 
+![The Yes/No Oracle: Teaching Kids Binary Decision Skills — MagicDecisions](/blog-images/yes-no-decision-maker-kids.png)
+
 "Should I do it or not?" "Is this a good idea?" "Should I say something?" Sometimes kids need a push. The yes/no oracle gives them that push, without you being the bad guy.
 
 Your 9-year-old is agonized over whether to invite a classmate to her birthday party. She likes them, but she's not sure if they like her. She's asked you for advice three times in the last hour, and every time you give it, she overthinks it. "But what if they say no?" "But what if they come and don't have fun?" "But what if..."

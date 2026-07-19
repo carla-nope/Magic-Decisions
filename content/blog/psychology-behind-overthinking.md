@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "6 min read"
 ---
 
+![The Psychology Behind Why We Overthink (And How to Fix It) — MagicDecisions](/blog-images/psychology-behind-overthinking.png)
+
  You spent 45 minutes deciding what to watch. You almost bought three different jackets. You\'re still thinking about that email you sent three days ago.
 
 

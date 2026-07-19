@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "6 min read"
 ---
 
+![Why You Keep Overthinking Small Decisions — MagicDecisions](/blog-images/decision-paralysis.png)
+
 Why You Keep Overthinking Small Decisions | Magic Decisions
  - 🔮">
 

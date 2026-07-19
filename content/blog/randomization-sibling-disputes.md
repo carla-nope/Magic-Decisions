@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "8 min read"
 ---
 
+![How to Use Randomization to End Sibling Disputes (Without Being the Referee) — MagicDecisions](/blog-images/randomization-sibling-disputes.png)
+
 html
 
 

@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "6 min read"
 ---
 
+![Making Screen Time Decisions Without Daily Battles — MagicDecisions](/blog-images/screen-time-decisions-parents.png)
+
 "Can I play video games?" "How much longer?" " five more minutes!" "But I was about to beat the level!"
 
 Sound familiar? Screen time negotiations are one of the most exhausting parts of parenting. day, multiple times a day, you're the arbiter of your kid's screen time. It wears on you.

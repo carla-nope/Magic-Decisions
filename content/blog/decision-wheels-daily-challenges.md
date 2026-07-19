@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "9 min read"
 ---
 
+![Decision Wheels for Daily Family Challenges: Homework, Chores, Screen Time, and More — MagicDecisions](/blog-images/decision-wheels-daily-challenges.png)
+
 Practical Solutions • 11 min read [Building Decision Confidence Kids](/blog/building-decision-confidence-kids)
 
 

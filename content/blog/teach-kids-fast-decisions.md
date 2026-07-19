@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "6 min read"
 ---
 
+![How to Teach Kids to Make Fast Decisions (Without the Drama) — MagicDecisions](/blog-images/teach-kids-fast-decisions.png)
+
 "I don't know what I want!" Sound familiar? Every parent hears this daily. Your child is not broken. They have not learned how to decide yet. You can teach them.
 
 It's Saturday morning. You ask your 8-year-old what she wants to do today. She freezes, eyes wide, listing possibilities: the park, the library, grandma's house, the museum. Ten minutes later she's crying because she can't decide and now nothing sounds fun anymore.

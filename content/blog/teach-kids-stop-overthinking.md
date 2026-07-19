@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "4 min read"
 ---
 
+![How to Teach Kids to Stop Overthinking Small Decisions — MagicDecisions](/blog-images/teach-kids-stop-overthinking.png)
+
 Your 8-year-old staring at two t-shirts for five minutes. It's a shirt. But for them, it feels like the biggest decision of their life.
 
 Sound familiar? You're not alone. Many kids get stuck on tiny decisions, turning what should take seconds into what feels like a high-stakes moment. The good news: this is fixable with some simple tools and language.

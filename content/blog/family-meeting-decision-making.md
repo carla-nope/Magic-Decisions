@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "9 min read"
 ---
 
+![The Ultimate Guide to Meeting Decision-Making (That Kids Will Enjoy) — MagicDecisions](/blog-images/family-meeting-decision-making.png)
+
 Family meetings can feel like pulling teeth, or they can be the highlight of your week. The difference is learning to make decisions together in a way that engages everyone, including the kids.
 
 It's Sunday evening. The whole family is gathered around the kitchen table. A printed agenda sits in the center. Everyone has a role. Decisions get made, plans get set, and people listen to each other. Twenty minutes later, everyone leaves feeling heard and clear about the week ahead.

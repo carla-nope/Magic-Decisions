@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "5 min read"
 ---
 
+![5 Minute Decision Exercises That Build Kid Confidence — MagicDecisions](/blog-images/5-minute-decision-exercises-kids.png)
+
 Practice makes progress. And with these quick exercises, you can help your kid build decision confidence in five minutes a day.
 
  Decision-making is a skill. Like any skill, it improves with practice. The good news: you don't need long sessions or complex lessons. Five minutes is enough. Consistency beats intensity. For more insights, check out our post on [The Evolution of Decision Making](/blog/evolution-of-decision-making).

@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "5 min read"
 ---
 
+![When Your Child Can't Make Simple Choices — MagicDecisions](/blog-images/child-cant-make-choices.png)
+
 Your kid stands paralyzed by a choice that should take seconds. A cereal box. A t-shirt. Which friend to invite. It doesn't matter, they can't decide.
 
  If you've been there, you know how frustrating it is. And you might be wondering: is something wrong?

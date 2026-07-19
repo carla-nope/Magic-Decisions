@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "7 min read"
 ---
 
+![Cognitive Biases Kids Have and How to Gently Correct Them — MagicDecisions](/blog-images/cognitive-biases-kids.png)
+
 July 1, 2026 &bull; Child Psychology
 
 

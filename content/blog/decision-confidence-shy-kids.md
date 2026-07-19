@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "9 min read"
 ---
 
+![Decision Confidence Shy Kids — MagicDecisions](/blog-images/decision-confidence-shy-kids.png)
+
 [
  ](/blog)
 

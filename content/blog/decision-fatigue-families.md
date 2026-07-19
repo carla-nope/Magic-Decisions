@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "10 min read"
 ---
 
+![Decision Fatigue: Why Families Fall Apart by Evening (And What to Do About It) — MagicDecisions](/blog-images/decision-fatigue-families.png)
+
 You pick the kids up from school. Everyone's fine. Three hours later, your kindergartener is sobbing over a sock touching their toe and your partner is snapping about the dishes. The answer isn't bad attitudes. It's decision fatigue — and it affects every member of the family.
 
 It's 6 PM. You've made dozens of decisions since waking up — what to wear, what to make for breakfast, which route to drive, whether to respond to that email, call the pediatrician, decide not to call the pediatrician — and now you can't choose what to watch on TV. You scroll for twenty minutes, paralyzed, because every option seems fine and terrible at the same time.

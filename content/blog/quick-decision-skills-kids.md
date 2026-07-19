@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "6 min read"
 ---
 
+![Quick Decision-Making Skills Every Kid Ages 6-12 Needs — MagicDecisions](/blog-images/quick-decision-skills-kids.png)
+
 Your 9-year-old needs to decide between two activities. Your 7-year-old is stuck on which game to play. Your 11-year-old has been choosing a snack for five minutes.
 
 

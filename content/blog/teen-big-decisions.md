@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "7 min read"
 ---
 
+![How to Talk to Your Teen About a Big Decision (Without Them Shutting Down) — MagicDecisions](/blog-images/teen-big-decisions.png)
+
 Published: July 1, 2026 | Category: Parenting Teens
 
 

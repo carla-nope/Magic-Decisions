@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "7 min read"
 ---
 
+![The 2-Minute Rule for Faster Decisions — MagicDecisions](/blog-images/2-minute-rule-decisions.png)
+
 Decision Making • July 1, 2026
 
 

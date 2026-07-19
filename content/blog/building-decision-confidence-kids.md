@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "11 min read"
 ---
 
+![Building Decision-Making Confidence in Kids: The Complete Parent's Guide — MagicDecisions](/blog-images/building-decision-confidence-kids.png)
+
 The most successful adults aren't the ones who never made mistakes,they're the ones who learned to trust their decisions. And that skill starts in childhood. This covers what you need to raise a confident decider.
 
 Think about the most decisive person you know. They don't hesitate. They weigh options, make choices, and move forward. When they're wrong, they ad. When they're right, they build on it. They didn't develop this skill overnight,it was cultivated over years of practice, starting when they were young.

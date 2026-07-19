@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "6 min read"
 ---
 
+![Decision Anxiety in Kids: Signs and Simple Solutions — MagicDecisions](/blog-images/decision-anxiety-kids.png)
+
 Your child stands in front of the cereal aisle for ten minutes. They're not being difficult. They're distressed.
 
  Decision anxiety is real, and it's more common than most parents realize. It shows up as freezing, crying, asking the same question repeatedly, or avoiding choices altogether. If your kid struggles with this, you're not alone. For more insights, read about [when a child can't make choices](/blog/child-cant-make-choices).

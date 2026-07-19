@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "8 min read"
 ---
 
+![Turn Tasks Into Quests: Gamification for Kids Who Hate Chores — MagicDecisions](/blog-images/turn-tasks-into-quests.png)
+
 July 1, 2026 &bull; Gamified Productivity
 
 

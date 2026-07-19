@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "3 min read"
 ---
 
+![Dinner Decision Fatigue: How to End the \ — MagicDecisions](/blog-images/dinner-decision-fatigue.png)
+
 "What's for dinner?" "I don't know, what do you want?" "I don't care." "Me neither." *Silence*
 
 

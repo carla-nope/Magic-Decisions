@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "8 min read"
 ---
 
+![The Decision Difficulty Scale: Know When to Think and When to Let Go — MagicDecisions](/blog-images/decision-difficulty-scale.png)
+
 Should you spend twenty minutes choosing a restaurant or two seconds flipping a coin? The answer depends on one thing most people never consider,the actual difficulty of the decision.
 
 Imagine you're trying to pick a movie for family night. The options are: a Pixar animated film everyone has seen, or another Pixar animated film everyone has seen. You agonize for fifteen minutes. You read reviews. You check what's available on streaming. And ultimately, you pick something arbitrary because, honestly, it doesn't matter.

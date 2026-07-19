@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "8 min read"
 ---
 
+![Why Teaching Kids Decision Skills Is the Most Important Life Skill — MagicDecisions](/blog-images/teaching-decision-life-skills.png)
+
 We teach kids to read, to do math, to tie their shoes. But we rarely systematically teach them how to make decisions. And that's a huge miss, because decision-making might be the only skill they need for all situations they'll face in life.
 
 Think about it. What's the difference between a successful adult and one who struggles? It's rarely about what they know, it's about how they make choices. When to speak up, when to wait. What to pursue, what to let go. Who to trust, who to distance from. Every day is a cascade of decisions, and the quality of those decisions determines the quality of that life.

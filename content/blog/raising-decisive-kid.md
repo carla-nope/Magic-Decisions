@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "7 min read"
 ---
 
+![Raising a Decisive Kid: The Long Game Every Parent Should Play — MagicDecisions](/blog-images/raising-decisive-kid.png)
+
 Parenting | July 1, 2026
 
 

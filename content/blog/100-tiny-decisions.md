@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "8 min read"
 ---
 
+![100 Tiny Decisions You Don't Need to Overthink (Just Pick and Move On) — MagicDecisions](/blog-images/100-tiny-decisions.png)
+
 most of the decisions that drain your mental energy don't matter. Flip a [coin](/blog/coin-flip-psychology). Spin a [wheel](/blog/spin-wheel-family-arguments). Move on with your day.
 
 You spent 15 minutes choosing a restaurant last week. Or agonizing over which streaming service show to start. Perhaps you're experiencing [decision paralysis](/blog/decision-paralysis). Or debating whether to use the self-checkout or the regular checkout. None of that time was worth it. The decision didn't change your life. It stole your attention.

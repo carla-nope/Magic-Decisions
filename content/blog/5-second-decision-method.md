@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "7 min read"
 ---
 
+![The 5-Second Decision Method for Kids: End Decision Paralysis — MagicDecisions](/blog-images/5-second-decision-method.png)
+
 Your child stands frozen in front of the cereal aisle. Thirty seconds pass. Then a minute. You feel the frustration rising. Your kid isn't being difficult. They're missing a specific skill, and you can teach it in five seconds.
 
 It's a Tuesday morning. You have twelve minutes before the bus arrives. Your daughter still hasn't chosen a breakfast. She's staring at the cereal boxes like they're life-or-death decisions. You're about to step in and choose for her, as you've done a hundred times before.

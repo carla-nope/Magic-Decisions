@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "8 min read"
 ---
 
+![The Decide and Adjust Method: How to Make Faster Decisions Without Regret — MagicDecisions](/blog-images/decide-and-adjust-method.png)
+
 Make most decisions in seconds, with less regret, and more confidence? The secret isn't thinking longer,it's learning to decide and adjust instead of deciding and dwelling.
 
 Most decisions can be changed. The restaurant you chose? You can leave. The movie you picked? You can stop watching. The cereal you bought? You can eat something else tomorrow. The vast majority of "decisions" we agonize over are reversible. Once you accept that, decision-making gets much easier.

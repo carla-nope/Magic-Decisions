@@ -88,6 +88,16 @@ for (const route of routes) {
   html = html.replace(/(<meta name="twitter:title" content=")[^"]*(")/, `$1${esc(meta.title)}$2`)
   html = html.replace(/(<meta name="twitter:description" content=")[^"]*(")/, `$1${esc(meta.description)}$2`)
 
+  // Per-post social image: blog posts use their generated hero (1200x630)
+  if (route.startsWith('blog/')) {
+    const slug = route.slice(5)
+    if (existsSync(resolve(root, 'public/blog-images', slug + '.png'))) {
+      const heroUrl = 'https://magicdecisions.com/blog-images/' + slug + '.png'
+      html = html.replace(/(<meta property="og:image" content=")[^"]*(")/, `$1${heroUrl}$2`)
+      html = html.replace(/(<meta name="twitter:image" content=")[^"]*(")/, `$1${heroUrl}$2`)
+    }
+  }
+
   const outFile = route ? resolve(dist, route, 'index.html') : resolve(dist, 'index.html')
   mkdirSync(dirname(outFile), { recursive: true })
   writeFileSync(outFile, html)

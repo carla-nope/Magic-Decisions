@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "8 min read"
 ---
 
+![Spin Wheel Homework Decisions — MagicDecisions](/blog-images/spin-wheel-homework-decisions.png)
+
 [
  ](/blog)
 

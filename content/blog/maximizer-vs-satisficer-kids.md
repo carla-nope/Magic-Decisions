@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "8 min read"
 ---
 
+![Maximizer vs. Satisficer: Which Type of Decision Maker Is Your Child? — MagicDecisions](/blog-images/maximizer-vs-satisficer-kids.png)
+
 Child Development | July 1, 2026
 
 

@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "7 min read"
 ---
 
+![Morning Routine Decisions: Stop Before-School Chaos — MagicDecisions](/blog-images/morning-routine-decisions.png)
+
 Published: July 1, 2026 &bull; Category: Family Life
 
 

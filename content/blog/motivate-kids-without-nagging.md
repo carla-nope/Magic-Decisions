@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "7 min read"
 ---
 
+![How to Motivate Kids Without Nagging — MagicDecisions](/blog-images/motivate-kids-without-nagging.png)
+
 Published: July 1, 2026 | Category: Gamified Productivity
 
 

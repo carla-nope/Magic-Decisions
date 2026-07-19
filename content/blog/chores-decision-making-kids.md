@@ -8,6 +8,8 @@ author: "Magic Decisions"
 readTime: "7 min read"
 ---
 
+![How Chores Build Decision Making Skills in Kids (Backed by Research) — MagicDecisions](/blog-images/chores-decision-making-kids.png)
+
 Chores are not just about keeping the house clean. They are one of the most reliable ways to build the decision-making capacity kids will rely on for the rest of their lives, and the research on this is surprisingly strong.
 
 ## What the Research Actually Says
