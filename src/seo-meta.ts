@@ -5,7 +5,7 @@
 export type Tool =
   | 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner'
   | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit'
-  | 'chores' | 'd20' | 'screentime' | 'blog' | 'blogpost' | 'privacy'
+  | 'chores' | 'd20' | 'sortinghat' | 'screentime' | 'blog' | 'blogpost' | 'privacy'
   | 'terms' | 'about' | 'contact';
 
 export const pathToTool: Record<string, Tool> = {
@@ -28,6 +28,7 @@ export const pathToTool: Record<string, Tool> = {
   'privacy-policy': 'privacy',
   'terms-of-service': 'terms',
   'd20-roller': 'd20',
+  'keep-or-toss': 'sortinghat',
   'blog': 'blog',
   'contact': 'contact',
 };
@@ -52,6 +53,7 @@ export const toolToPath: Record<Tool, string> = {
   privacy: 'privacy-policy',
   terms: 'terms-of-service',
   d20: 'd20-roller',
+  sortinghat: 'keep-or-toss',
   home: '',
   contact: 'contact',
   blog: 'blog',
@@ -67,6 +69,12 @@ export interface RouteMeta {
 // family/kids positioning; individual tool pages stay broad
 // for search intent.
 export const routeMeta: Record<string, RouteMeta> = {
+  'keep-or-toss': {
+    title: 'Keep or Toss? Free Declutter Sorting Hat for Kids | Magic Decisions',
+    description:
+      'Can\u2019t decide what to keep, toss, or donate? The Magic Sorting Hat asks kids 3 quick questions per item and makes the call \u2014 a fun, shame-free way to declutter toys together. Free, no signup.',
+  },
+
   '': {
     title: 'Magic Decisions | Fun Decision-Making Tools for Kids & Families',
     description:

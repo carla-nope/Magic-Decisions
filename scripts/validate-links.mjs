@@ -11,7 +11,7 @@ const VALID_PATHS = new Set(['yes-no-oracle','spin-the-wheel','coin-flip','rando
   'random-activity-picker','what-to-eat-randomizer','rock-paper-scissors','random-name-generator',
   'random-username-generator','what-to-wear-randomizer','magic-chores-list','screen-time-swap',
   'decision-maximizer','cognitive-bias-checker','should-i-buy-it-calculator','about-us',
-  'privacy-policy','terms-of-service','d20-roller','blog','contact'])
+  'privacy-policy','terms-of-service','d20-roller','keep-or-toss','blog','contact'])
 const BANNED = ['htmlUrl:', '← Back to Blog', '- MagicDecisions"']
 
 const slugs = new Set(readdirSync(contentDir).filter(f => f.endsWith('.md')).map(f => f.slice(0, -3)))
