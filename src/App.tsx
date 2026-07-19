@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { Sparkles, History, Share2, Copy, Check, RefreshCw, Trash2, Circle, CircleDot, Lightbulb, UtensilsCrossed, Hand, User, Home, Shield, FileText, Info, Mail, BookOpen, Wand2, Shirt, Brain, Target, CreditCard, Flame, Dices, ArrowRight, Moon, Sun, Volume2, VolumeX, Monitor } from 'lucide-react'
 import { playEnchant, playClick } from './lib/sounds'
 import SpinWheel from './SpinWheel'
@@ -420,6 +420,22 @@ function App() {
   const initialLocation = parseLocation();
   const [activeTool, setActiveTool] = useState<Tool>(initialLocation.tool);
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
+  // Dropdown UX: a close delay so tiny mouse slips don't shut the menu,
+  // plus click-to-toggle for touchscreens and finicky trackpads.
+  const closeTimer = useRef<number | undefined>(undefined);
+  const openCategory = (id: string) => {
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    setHoveredCategory(id);
+  };
+  const scheduleClose = () => {
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    closeTimer.current = window.setTimeout(() => setHoveredCategory(null), 350);
+  };
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setHoveredCategory(null); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
   const [blogPostSlug, setBlogPostSlug] = useState<string | null>(initialLocation.slug);
 
   // Keep URL, document title, meta description, and canonical in sync
@@ -586,10 +602,12 @@ function App() {
                   <div
                     key={category.id}
                     className="relative"
-                    onMouseEnter={() => setHoveredCategory(category.id)}
-                    onMouseLeave={() => setHoveredCategory(null)}
+                    onMouseEnter={() => openCategory(category.id)}
+                    onMouseLeave={scheduleClose}
                   >
                     <button
+                      onClick={() => hoveredCategory === category.id ? setHoveredCategory(null) : openCategory(category.id)}
+                      aria-expanded={hoveredCategory === category.id}
                       className={`flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-semibold font-display transition-all ${
                         isActive
                           ? 'bg-primary/10 text-primary-600'
@@ -605,14 +623,15 @@ function App() {
 
                     {/* Dropdown Menu */}
                     {hoveredCategory === category.id && (
-                      <div className="absolute top-full left-0 mt-1 w-56 bg-cream-50 rounded-2xl shadow-warm-lg border border-cream-300 py-2 z-50 animate-fade-in">
+                      <div className="absolute top-full left-0 pt-1 z-50">
+                      <div className="w-56 bg-cream-50 rounded-2xl shadow-warm-lg border border-cream-300 py-2 animate-fade-in">
                         {category.tools.map((tool) => {
                           const ToolIcon = tool.icon
                           const colors = getColorClasses(tool.color)
                           return (
                             <button
                               key={tool.id}
-                              onClick={() => setActiveTool(tool.id)}
+                              onClick={() => { setActiveTool(tool.id); setHoveredCategory(null) }}
                               className={`w-full flex items-center gap-3 px-4 py-2.5 text-left text-sm transition-colors font-display ${
                                 activeTool === tool.id
                                   ? `${colors.bg} ${colors.text}`
@@ -624,6 +643,7 @@ function App() {
                             </button>
                           )
                         })}
+                      </div>
                       </div>
                     )}
                   </div>
