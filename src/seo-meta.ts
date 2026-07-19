@@ -5,7 +5,7 @@
 export type Tool =
   | 'home' | 'oracle' | 'spin' | 'coin' | 'picker' | 'activity' | 'dinner'
   | 'rps' | 'names' | 'username' | 'outfit' | 'maximizer' | 'bias' | 'buyit'
-  | 'chores' | 'd20' | 'sortinghat' | 'keepit' | 'farewell' | 'screentime' | 'blog' | 'blogpost' | 'privacy'
+  | 'chores' | 'd20' | 'sortinghat' | 'keepit' | 'farewell' | 'monster' | 'screentime' | 'blog' | 'blogpost' | 'privacy'
   | 'terms' | 'about' | 'contact';
 
 export const pathToTool: Record<string, Tool> = {
@@ -31,6 +31,7 @@ export const pathToTool: Record<string, Tool> = {
   'keep-or-toss': 'sortinghat',
   'should-i-keep-it': 'keepit',
   'toy-farewell': 'farewell',
+  'clutter-monster': 'monster',
   'blog': 'blog',
   'contact': 'contact',
 };
@@ -58,6 +59,7 @@ export const toolToPath: Record<Tool, string> = {
   sortinghat: 'keep-or-toss',
   keepit: 'should-i-keep-it',
   farewell: 'toy-farewell',
+  monster: 'clutter-monster',
   home: '',
   contact: 'contact',
   blog: 'blog',
@@ -73,6 +75,12 @@ export interface RouteMeta {
 // family/kids positioning; individual tool pages stay broad
 // for search intent.
 export const routeMeta: Record<string, RouteMeta> = {
+  'clutter-monster': {
+    title: 'Clutter Monster Battle \u2014 Gamified Cleanup Timer for Kids | Magic Decisions',
+    description:
+      'Turn a 10-minute cleanup into an epic battle. Pick a clutter monster, start the timer, land power strikes, and defeat the mess \u2014 free gamified cleaning timer for kids, no signup.',
+  },
+
   'toy-farewell': {
     title: 'Toy Farewell Ceremony \u2014 Funny Goodbye Speeches for Outgrown Toys | Magic Decisions',
     description:
