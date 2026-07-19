@@ -98,6 +98,19 @@ for (const route of routes) {
     }
   }
 
+  // FAQPage schema for tool pages that have FAQ content (single source: src/tool-faqs.json)
+  {
+    const toolFaqs = JSON.parse(readFileSync(resolve(root, 'src/tool-faqs.json'), 'utf-8'))
+    if (toolFaqs[route]) {
+      const qa = toolFaqs[route].map((f) => ({
+        '@type': 'Question', name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      }))
+      const faqScript = `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: qa })}<\/script>`
+      html = html.replace('</head>', faqScript + '\n</head>')
+    }
+  }
+
   // Structured data for blog posts: Article (+ FAQPage when the post has an FAQ section)
   if (route.startsWith('blog/')) {
     const slug = route.slice(5)

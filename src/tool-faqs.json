@@ -1,0 +1,26 @@
+{
+  "keep-or-toss": [
+    { "q": "How do I get my kid to declutter toys without a meltdown?", "a": "Take the decision off both of you. The Sorting Hat asks three concrete questions per toy — did you play with it recently, is it broken, does it make you smile big — and delivers the verdict itself. Kids accept the hat's answer far more easily than a parent's, because the hat is a neutral referee, not someone choosing against them." },
+    { "q": "What questions help kids decide whether to keep or toss a toy?", "a": "Three work best: Have you used it in the last month? Is it broken or missing pieces? Does it make you genuinely happy when you hold it? Recent use and real joy point to keeping; broken means a thank-you and the bin; everything else is a great candidate to donate to a younger kid." },
+    { "q": "What ages is the Sorting Hat good for?", "a": "Roughly ages 4 and up with a parent reading the questions aloud, and independently from about age 7. Teens and adults use it too — the three questions cut through indecision at any age." },
+    { "q": "Is the Sorting Hat free?", "a": "Completely free, no signup, and it works on any phone, tablet, or computer. After sorting three or more things, kids earn a shareable Declutter Hero badge." }
+  ],
+  "should-i-keep-it": [
+    { "q": "How do I decide whether to keep something or throw it away?", "a": "If you already know you love it, keep it — this wheel is only for fence-sitters. For those, spin and accept one of six fair outcomes: donate it, put it in a one-week maybe box, keep it if it fits your bin, toss it with a thank-you, sell it, or photograph it and let the picture keep the memory." },
+    { "q": "What is a maybe box and does it work?", "a": "A maybe box is a dated box for items you can't decide on. If nobody asks for the item within a week, it goes to donation without a second debate. It works because it separates the decision from the goodbye — most things in a maybe box are never missed." },
+    { "q": "Why does a random wheel make decluttering easier?", "a": "Fence-sitter items burn energy because both choices feel defensible. Randomness ends the debate fairly — and because nobody chose against you, the verdict is easy to accept. Kids especially respect the wheel's answer in a way they'd never respect a parent's." },
+    { "q": "Is the Should-I-Keep-It wheel free?", "a": "Yes — free, no signup, works on any device. Pile up ten fence-sitters and spin through them in one sitting for best results." }
+  ],
+  "toy-farewell": [
+    { "q": "How do I help my child say goodbye to toys they've outgrown?", "a": "Give the goodbye a shape. A short farewell ceremony — a funny speech, a moment of thanks, a certificate on the fridge — lets the attachment land somewhere. The toy is honored, the memory is spoken out loud, and the ending feels chosen rather than imposed." },
+    { "q": "What is a toy farewell ceremony?", "a": "A playful send-off for a toy that's moving on: the generator writes a short, funny eulogy from the toy's name, type, and one favorite memory, then awards a printable Certificate of Honorable Service. Kids read the speech, everyone laughs, and the toy goes in the donate bag with a smile." },
+    { "q": "Why does thanking a toy help kids let go?", "a": "Thanking an object — the idea behind the KonMari method — gives closure to the relationship a child actually has with a beloved toy. Gratitude replaces guilt, and humor teaches that endings can be warm instead of sad." },
+    { "q": "Can I print the farewell certificate?", "a": "Yes — one click prints just the Certificate of Honorable Service, ready for the fridge or the donation box lid. The tool is free with no signup." }
+  ],
+  "clutter-monster": [
+    { "q": "How do I make cleaning fun for kids?", "a": "Give the mess a face. In the Clutter Monster Battle, a 5, 10, or 15-minute cleanup becomes a fight against the Sock Gobbler or the Lego Leviathan: the monster's health drains as kids clean, and a Power Strike button lands bonus damage after every item put away. Same room, same ten minutes — completely different energy." },
+    { "q": "How long should a kid's cleanup session be?", "a": "Short and winnable. Five to fifteen focused minutes beats an open-ended 'clean your room' every time — kids can see the end, the monster can be beaten, and stopping while it's still fun means they'll fight again tomorrow." },
+    { "q": "What is a gamified cleaning timer?", "a": "A countdown timer wrapped in game mechanics: an enemy with a health bar, damage dealt by real-world tidying, reward bursts mid-task, and a victory report at the end. The game layer supplies the motivation that a plain timer doesn't." },
+    { "q": "Is the Clutter Monster Battle free?", "a": "Yes — free, no signup, works on any device, and ends with a shareable Battle Report showing minutes fought, power strikes landed, and your Cleaning Power Level." }
+  ]
+}

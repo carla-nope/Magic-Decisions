@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Sparkles, RefreshCw, Share2, Copy, Check, Printer, ArrowRight, Scroll } from 'lucide-react'
 import { playClick, playEnchant, playFanfare } from './lib/sounds'
+import toolFaqs from './tool-faqs.json'
 import './index.css'
 
 type ToyType = 'stuffed animal' | 'action figure' | 'doll' | 'building blocks' | 'toy car' | 'board game' | 'book' | 'costume' | 'other toy'
@@ -288,6 +289,21 @@ function ToyFarewell({ onNavigate }: { onNavigate?: (toolId: string) => void }) 
                 <h3 className="font-semibold text-ink-800 mb-1">{tool.name}</h3>
                 <p className="text-[#A09080] text-xs">{tool.description}</p>
               </button>
+            ))}
+          </div>
+        </div>
+
+        {/* FAQ */}
+        <div className="w-full max-w-2xl mb-12 px-4 print:hidden">
+          <h2 className="text-xl font-semibold text-ink-800 mb-6 text-center font-display">
+            Questions Parents Ask
+          </h2>
+          <div className="space-y-4">
+            {(toolFaqs as Record<string, { q: string; a: string }[]>)['toy-farewell'].map((f) => (
+              <div key={f.q} className="mystical-card p-5">
+                <h3 className="font-semibold text-ink-800 mb-2">{f.q}</h3>
+                <p className="text-[#6B5E4E] text-sm leading-relaxed">{f.a}</p>
+              </div>
             ))}
           </div>
         </div>
