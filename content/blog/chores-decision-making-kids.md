@@ -34,7 +34,7 @@ Chores also require anticipation. A child responsible for setting the dinner tab
 
 ## Age-Appropriate Chore Autonomy
 
-The decision-making benefit of chores scales with how much autonomy the child has over the task. A child who is simply told "go clean your room now" gets less cognitive benefit than a child who is told "your room needs to be clean by dinner — figure out how you want to do it."
+The decision-making benefit of chores scales with how much autonomy the child has over the task. A child who is told "go clean your room now" gets less cognitive benefit than a child who is told "your room needs to be clean by dinner — figure out how you want to do it."
 
 Age-appropriate autonomy looks different at each stage:
 
@@ -96,6 +96,6 @@ Free spin wheel, coin flip, and random picker — no signup required. Kids accep
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

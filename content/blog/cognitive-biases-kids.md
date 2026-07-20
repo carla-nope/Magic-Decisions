@@ -1,7 +1,7 @@
 ---
 title: "Cognitive Biases Kids Have and How to Gently Correct Them"
 date: "2026-05-28"
-excerpt: "Understand common cognitive biases in children like status quo, loss aversion, and confirmation bias. Learn practical techniques to gently guide kids towards better decision-making."
+excerpt: "The blue cup 'tastes better.' That's a cognitive bias — and kids run on them. Spot the big ones and coach your kid past them, no lecture needed."
 category: "Kids & Parenting"
 featured: true
 author: "Magic Decisions"
@@ -13,7 +13,7 @@ readTime: "7 min read"
 July 1, 2026 &bull; Child Psychology
 
 
-Children, much like adults, are susceptible to cognitive biases – systematic errors in thinking that influence their decisions. Understanding these common mental shortcuts can help parents and educators guide kids toward more rational and thoughtful choices, fostering critical thinking from a young age.
+Your kid insists the blue cup makes juice taste better. That's not stubbornness — that's a cognitive bias, one of the mental shortcuts every brain uses (yours included). Kids run on the same shortcuts adults do, just with less practice catching them. Learn to spot the big ones and you can coach your kid past them — usually with a laugh instead of a lecture.
 
 For a deeper dive into the machinery behind these shortcuts, the [Child Mind Institute's work on flexible thinking](https://childmind.org/article/helping-kids-with-flexible-thinking/) explains how kids learn to catch and correct their own mental habits.
 
@@ -75,7 +75,7 @@ Encourage brainstorming before settling on the first idea. Present multiple opti
 **Explanation:** This is the tendency to continue with an endeavor or investment because of resources (time, money, effort) already spent, rather than considering the current and future costs and benefits. It's about not wanting past efforts to be "wasted."
 
 
-**Kid-Friendly Example:** A child insists on finishing a difficult puzzle they aren't enjoying, simply because they've already spent a long time on it, even though they could be playing with something else fun.
+**Kid-Friendly Example:** A child insists on finishing a difficult puzzle they aren't enjoying, because they've already spent a long time on it, even though they could be playing with something else fun.
 
 
 #### Correction Technique: Emphasize Present Enjoyment & New Opportunities
@@ -105,13 +105,13 @@ Ask "What else could be true?" or "What evidence do you have for that?" Encourag
 **Explanation:** The bandwagon effect is the tendency to do or believe things because many other people do or believe the same. For children, this often manifests as wanting what their friends have or doing what their friends do.
 
 
-**Kid-Friendly Example:** A child wants a specific toy or game simply because all their friends have it, even if they haven't expressed interest in it before.
+**Kid-Friendly Example:** A child wants a specific toy or game because all their friends have it, even if they haven't expressed interest in it before.
 
 
 #### Correction Technique: Foster Independent Thought & Value Alignment
 
 
-Ask "Why do YOU want it?" or "Does that really make YOU happy?" Help them understand their own preferences and values. "It's great your friends like that, but what do you truly enjoy?" This builds confidence in their own choices, a key part of the [evolution of decision-making](/blog/evolution-of-decision-making).
+Ask "Why do YOU want it?" or "Does that make YOU happy?" Help them understand their own preferences and values. "It's great your friends like that, but what do you enjoy?" This builds confidence in their own choices, a key part of the [evolution of decision-making](/blog/evolution-of-decision-making).
 
 
 Understanding these cognitive biases in children is not about correcting every single instance, but about gently guiding them towards more thoughtful and independent decision-making. By providing tools and techniques, we empower them to navigate the complexities of choice with greater awareness and confidence. For further reading on how cognitive biases impact decision-making, you might find resources from the [American Psychological Association](https://www.apa.org/topics/cognitive-psychology) insightful.
@@ -141,6 +141,6 @@ Explore our fun and effective decision-making tools for kids and parents.
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Cognitive Bias Test](/cognitive-bias-checker): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Cognitive Bias Test](/cognitive-bias-checker): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

@@ -1,7 +1,7 @@
 ---
 title: "How to Teach Kids to Stop Overthinking Small Decisions"
 date: "2026-06-26"
-excerpt: "Learn about how to teach kids to stop overthinking small decisions and how to apply it in everyday family life."
+excerpt: "Your kid spent 20 minutes choosing a cereal. Teach the 'good enough' rule that stops small-decision overthinking for good."
 category: "Decision Anxiety"
 featured: false
 author: "Magic Decisions"
@@ -41,7 +41,7 @@ If adults in the house struggle with decisions or talk about "what if" scenarios
  "Most decisions are small. Pick one and move on."
 
 
- Sounds too simple? It works. The goal isn't to make every decision feel meaningless. It's to help kids build a mental radar that says: "This is not a big deal decision. I can decide fast."
+ Sounds too simple? It works. Kids don't need every decision to feel meaningless — they need a mental radar that says: "This is not a big deal decision. I can decide fast."
 
 
 ## The "Good Enough" Rule
@@ -68,7 +68,7 @@ When kids struggle with making a choice, a tool can help. because tools remove t
 
 ## The Language That Helps
 
-Sometimes what helps kids isn't a tool , it's what you say. Try these phrases:
+Sometimes what helps kids isn't a tool, it's what you say. Try these phrases:
 
 ### "Pick one. You can change next time."
 
@@ -136,6 +136,6 @@ Interrupt the spiral, but hand back the wheel: "Too much thinking for a small ch
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

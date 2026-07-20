@@ -36,7 +36,7 @@ This approach taps into several key psychological drivers:
  - **Autonomy and Choice:** While you set the overall quest, children can often choose how and when to tackle their tasks, fostering a sense of control and ownership.
 
 
-Research in fields like educational psychology and game-based learning consistently shows that framing activities as games can significantly increase engagement and intrinsic motivation. When children feel a sense of agency and see clear progress, they are more likely to participate willingly and develop a positive attitude towards responsibilities. For more on the broader impact of gamification, consider exploring studies from organizations like the [American Psychological Association](https://www.apa.org/) on motivation and learning.
+Research in fields like educational psychology and game-based learning consistently shows that framing activities as games can increase engagement and intrinsic motivation. When children feel a sense of agency and see clear progress, they are more likely to participate willingly and develop a positive attitude towards responsibilities. For more on the broader impact of gamification, consider exploring studies from organizations like the [American Psychological Association](https://www.apa.org/) on motivation and learning.
 
 
  💡
@@ -172,6 +172,6 @@ Explore our fun, interactive tools designed to help your family make choices fas
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

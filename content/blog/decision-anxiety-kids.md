@@ -34,7 +34,7 @@ Your child stands in front of the cereal aisle for ten minutes. They're not bein
 
 ## What's Happening
 
-Decision anxiety isn't about being lazy or stubborn. It's about the brain's fear response getting triggered. The child isn't thinking "This is easy, I'll pick." They're thinking "What if I pick wrong and something bad happens?" This often leads to [overthinking](/blog/teach-kids-stop-overthinking).
+Decision anxiety has nothing to do with lazy or stubborn. The brain's fear response is getting triggered. The child isn't thinking "This is easy, I'll pick." They're thinking "What if I pick wrong and something bad happens?" This often leads to [overthinking](/blog/teach-kids-stop-overthinking).
 
  Their brain is treating a simple choice like a threat. And when the brain sees a threat, it freezes. It's a safety mechanism, not a character flaw.
 
@@ -145,6 +145,6 @@ Used right, they're exposure with training wheels: the wheel decides, the child 
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

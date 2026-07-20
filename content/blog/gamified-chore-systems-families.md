@@ -19,7 +19,7 @@ Turning household chores into a game can transform daily routines from battles i
 ## The Four Main Types of Gamified Chore Systems
 
 
-Gamification in chores isn't just about adding stickers; it's about structuring tasks in a way that engages children's natural desire for play and achievement. Understanding the different approaches can help you tailor a system that truly resonates with your family.
+Gamification in chores isn't just about adding stickers; it's about structuring tasks in a way that engages children's natural desire for play and achievement. Understanding the different approaches can help you tailor a system that resonates with your family.
 
 
 ### 1. Point Systems
@@ -87,7 +87,7 @@ The "reward trap" occurs when children become so accustomed to external rewards 
  - **Connect Chores to Life Skills:** Explain how chores teach valuable skills for independence.
 
 
-For more on creating effective reward systems without falling into this trap, explore our insights on [reward systems that actually work](/blog/reward-systems-that-work).
+For more on creating effective reward systems without falling into this trap, explore our insights on [reward systems that work](/blog/reward-systems-that-work).
 
 
 ## Decision Framework: Choosing the Right System for Your Family
@@ -133,6 +133,6 @@ Explore our tools and resources to bring harmony and efficiency to your home.
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

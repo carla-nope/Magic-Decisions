@@ -1,7 +1,7 @@
 ---
 title: "How to Motivate Kids Without Nagging"
 date: "2026-06-16"
-excerpt: "Discover effective strategies to motivate kids without nagging. Learn about autonomy, competence, and connection, and implement systems like visual task boards and gamified check-ins."
+excerpt: "Nagging works until it doesn't — usually by breakfast. How to motivate kids with autonomy, visual boards, and gamified check-ins instead of your voice."
 category: "Gamification"
 featured: false
 author: "Magic Decisions"
@@ -125,6 +125,6 @@ Explore our tools designed to bring fun and fairness to every choice.
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

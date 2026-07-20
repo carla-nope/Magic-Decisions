@@ -127,7 +127,7 @@ Explore our tools and resources to simplify choices and boost confidence.
 
 Games also teach graceful losing: handling a result you didn't want is [flexible thinking](https://childmind.org/article/helping-kids-with-flexible-thinking/) practice disguised as play.
 
-> **Try this tonight:** Play "Would You Rather" at dinner, but add one rule — after each answer, ask "why?" The choosing is fun; the *reasons* are where kids discover they actually have preferences worth trusting.
+> **Try this tonight:** Play "Would You Rather" at dinner, but add one rule — after each answer, ask "why?" The choosing is fun; the *reasons* are where kids discover they have preferences worth trusting.
 
 ## FAQ: Getting the Most From Decision Games
 
@@ -149,6 +149,6 @@ Don't stop — shrink. Losing a hypothetical is the safest possible place to pra
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

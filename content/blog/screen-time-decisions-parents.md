@@ -1,7 +1,7 @@
 ---
 title: "Making Screen Time Decisions Without Daily Battles"
 date: "2026-06-22"
-excerpt: "Learn about making screen time decisions without daily battles and how to apply it in everyday family life."
+excerpt: "Stop renegotiating screen time every single night. A fair decision system kids accept — no more tiny lawyer arguments at 7 PM."
 category: "Kids & Parenting"
 featured: false
 author: "Magic Decisions"
@@ -24,7 +24,7 @@ But it doesn't have to be this way. With some simple systems, you can eliminate 
 </a>
  here.
 
-"Five more minutes" becomes ten more minutes becomes an argument becomes tears. The back-and-forth creates stress for everyone. And the decision feels settled , it's open for re-negotiation.
+"Five more minutes" becomes ten more minutes becomes an argument becomes tears. The back-and-forth creates stress for everyone. And the decision feels settled, it's open for re-negotiation.
 
 ## The Power of Clear Rules
 
@@ -58,7 +58,7 @@ Create a schedule with specific screen time windows. For example:
  Set a physical timer or use your phone. When the timer goes off, screen time is done. No arguments, no negotiation. The timer is the rule, not Mom or Dad.
 
 
-This removes the parent as the "bad guy." It's not Mom saying stop , it's the timer saying stop. Kids fight this less. Read more about <a href="/blog/child-cant-make-choices">
+This removes the parent as the "bad guy." It's not Mom saying stop, it's the timer saying stop. Kids fight this less. Read more about <a href="/blog/child-cant-make-choices">
  When Your Child Can't Make Choices
 </a>
  here.
@@ -68,7 +68,7 @@ This removes the parent as the "bad guy." It's not Mom saying stop , it's the ti
  Screen time is earned through completed tasks. Homework done = 30 minutes. Chores done = 15 minutes. This connects screen time to responsibility in a clear, tangible way.
 
 
-The bonus: kids become motivated to finish homework so they can earn screen time. You're not fighting them , they're helping themselves.
+The bonus: kids become motivated to finish homework so they can earn screen time. You're not fighting them, they're helping themselves.
 
 ## What About " One More Game"?
 
@@ -105,7 +105,7 @@ At MagicDecisions.com, ourfree spin wheelis perfect for this. Add the members' n
 
 ## The Bigger Picture
 
-Screen time isn't evil. It's how they connect with friends, unwind after school, and explore creativity. The goal isn't to eliminate it , it's to make it manageable.
+Screen time is how kids connect with friends, unwind after school, and explore creativity. You're not trying to eliminate it — you're trying to make it manageable.
 
 Clear systems reduce conflict. Consistent rules reduce stress. And when everyone knows the system, screen time stops being a battleground and becomes another part of the day.
 
@@ -127,6 +127,6 @@ Explore our tools and resources to simplify your choices.
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Screen Time Swap](/screen-time-swap): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Screen Time Swap](/screen-time-swap): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

@@ -31,7 +31,7 @@ The secret to turning chore-time frowns upside down lies in understanding human 
 
  🧠
 
-Research in gamification, such as studies by Yu-kai Chou, highlights how game elements like points, badges, and leaderboards can significantly increase engagement and motivation in non-game contexts. This applies directly to household chores.
+Research in gamification, such as studies by Yu-kai Chou, highlights how game elements like points, badges, and leaderboards can increase engagement and motivation in non-game contexts. This applies directly to household chores.
 
 
 ## 5 Chore Game Systems for Your Family
@@ -143,6 +143,6 @@ Explore our interactive tools designed to bring clarity and fun to every choice.
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

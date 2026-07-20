@@ -1,7 +1,7 @@
 ---
 title: "Reward Systems That Work (And the Ones That Backfire)"
 date: "2026-06-21"
-excerpt: "Discover evidence-based reward systems for kids that foster intrinsic motivation. Learn when rewards help, when they backfire, and how to design effective strategies for your family."
+excerpt: "Sticker charts die by Wednesday. Which reward systems work for kids, when rewards backfire, and how to build one your family sticks with."
 category: "Gamification"
 featured: false
 author: "Magic Decisions"
@@ -105,7 +105,7 @@ Even with the best intentions, reward systems can go awry. Watch out for these s
 Research by Alfie Kohn suggests that rewards often fail to produce lasting change and can even reduce interest in activities.
 
 
-If you observe these red flags, it's time to re-evaluate and adjust your approach. Sometimes, simply removing the reward system and focusing on natural consequences, logical reasoning, and fostering a sense of responsibility can be more effective.
+If you observe these red flags, it's time to re-evaluate and adjust your approach. Sometimes, removing the reward system and focusing on natural consequences, logical reasoning, and fostering a sense of responsibility can be more effective.
 
 
 ## Conclusion
@@ -135,6 +135,6 @@ Explore our tools and resources designed to bring fun and fairness to every choi
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

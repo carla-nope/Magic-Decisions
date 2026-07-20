@@ -17,7 +17,7 @@ You've been the referee for 47 minutes. SEVEN. You've heard every argument, cons
 
 There's a bonus here beyond peace and quiet: accepting an outcome you didn't pick is a small act of [flexible thinking](https://childmind.org/article/helping-kids-with-flexible-thinking/), a skill child psychologists consider central to emotional regulation.
 
-It starts with understanding why sibling disputes are so exhausting: they're not actually about the thing being disputed. A fight over the front seat isn't about the front seat. A war over the TV remote isn't about the TV remote. These are proxy battles for attention, autonomy, and the feeling that "I matter as much as my sibling."
+It starts with understanding why sibling disputes are so exhausting: they're not about the thing being disputed. A fight over the front seat isn't about the front seat. A war over the TV remote isn't about the TV remote. These are proxy battles for attention, autonomy, and the feeling that "I matter as much as my sibling."
 
 When you step in as judge, you make it worse. Someone "wins" and someone "loses." The loser resents you for not choosing them. The winner feels validated at their sibling's expense. And tomorrow, they'll argue about the same thing again, expecting the same intervention.
 
@@ -131,6 +131,6 @@ It also spares everyone the referee role that the [Child Mind Institute warns](h
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Rock Paper Scissors](/rock-paper-scissors): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Rock Paper Scissors](/rock-paper-scissors): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

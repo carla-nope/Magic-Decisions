@@ -1,7 +1,7 @@
 ---
 title: "The 5-Second Decision Method for Kids: End Decision Paralysis"
 date: "2026-05-21"
-excerpt: "Learn about the 5-second decision method for kids: end decision paralysis and how to apply it in everyday family life."
+excerpt: "Count down from five, decide, done. The 5-second decision method ends kid decision paralysis before the overthinking spiral starts."
 category: "Decision Anxiety"
 featured: false
 author: "Magic Decisions"
@@ -112,7 +112,7 @@ When your child learns to decide quickly, even imperfectly, [their confidence](h
 
 You may hear them muttering "five, four, three, two, one" to themselves when they're stuck. That's the skill working. That's what internalization looks like.
 
-The 5-second method isn't about speed for its own sake. It's about building the habit of commitment, teaching kids they can trust themselves to make choices and handle the results.
+Speed is just the vehicle. The real cargo is the habit of commitment — kids learning they can trust themselves to choose and handle whatever follows.
 
 ### Related Posts
 
@@ -132,6 +132,6 @@ Use our [spin wheel](/) or coin flip alongside the 5-second method for decisions
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

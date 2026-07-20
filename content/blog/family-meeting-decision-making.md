@@ -16,7 +16,7 @@ It's Sunday evening. The whole family is gathered around the kitchen table. A pr
 
 Letting kids weigh in isn't just nice — the [Child Mind Institute notes](https://childmind.org/article/helping-kids-make-decisions/) that participating in real family decisions is one of the strongest ways kids learn judgment.
 
-This isn't a fantasy. It's what successful meetings look like, and the key to making them work is understanding how to run the decision-making portion. A meeting where nothing gets decided is just a gathering, and those devolve into chaos.
+This is no fantasy — it's what successful meetings look like. The key is knowing how to run the decision-making portion. A meeting where nothing gets decided is just a gathering, and those devolve into chaos.
 
 The decision-making process is what makes meetings valuable. Run it well and your kids will look forward to them.
 
@@ -189,6 +189,6 @@ Use our free spin wheel and random picker to resolve tiebreakers and make decisi
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

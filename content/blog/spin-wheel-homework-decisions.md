@@ -1,7 +1,7 @@
 ---
 title: "Spin Wheel Homework Decisions"
 date: "2026-06-24"
-excerpt: "Learn about spin wheel homework decisions and how to apply it in everyday family life."
+excerpt: "Homework battles start before the homework does — with deciding. Let a spin wheel pick the order and watch the fight evaporate."
 category: "Decision Tools"
 featured: false
 author: "Magic Decisions"
@@ -37,7 +37,7 @@ readTime: "8 min read"
  - Creative project work
 
 
- \"Spin the wheel to decide order!\" , the argument isn\'t parent vs. child, it\'s child vs. wheel. They spin, the wheel chooses, and they accept it because the wheel is neutral. This one change can transform your entire homework routine.
+ \"Spin the wheel to decide order!\", the argument isn\'t parent vs. child, it\'s child vs. wheel. They spin, the wheel chooses, and they accept it because the wheel is neutral. This one change can transform your entire homework routine.
 
 
 ## Why Homework Sparks So Many Arguments
@@ -129,7 +129,7 @@ readTime: "8 min read"
 
  - Quick 5-min snack, then homework
 
- - Water , homework first
+ - Water, homework first
 
  - Snack during first break
 
@@ -224,7 +224,7 @@ readTime: "8 min read"
  The skills learned with homework wheels transfer to other areas. Once kids get comfortable with wheels making decisions, they start accepting randomness in other contexts: chores, [screen time](https://www.healthychildren.org/English/fmp/Pages/MediaPlan.aspx), activity selection. The wheel becomes part of your decision-making vocabulary.
 
 
- And here\'s the beautiful part: , they won\'t need the wheel as much. They\'ll internalize the lesson, that decisions need to be made, that following a plan is better than debating forever, that accepting outcomes is a sign of maturity. The wheel is scaffolding, and , the skill stands on its own.
+ And here\'s the beautiful part:, they won\'t need the wheel as much. They\'ll internalize the lesson, that decisions need to be made, that following a plan is better than debating forever, that accepting outcomes is a sign of maturity. The wheel is scaffolding, and, the skill stands on its own.
 
 
 ## Getting Started Tonight
@@ -264,6 +264,6 @@ readTime: "8 min read"
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

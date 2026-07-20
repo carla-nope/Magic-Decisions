@@ -13,7 +13,7 @@ readTime: "6 min read"
 Gamified Productivity | July 1, 2026
 
 
-Transforming mundane responsibilities into engaging adventures can significantly boost a child's [motivation](https://selfdeterminationtheory.org/theory/) and cooperation. Instead of constant nagging, discover practical strategies to infuse fun into everyday chores and homework, making them less of a battle and more of a game.
+Transforming mundane responsibilities into engaging adventures can boost a child's [motivation](https://selfdeterminationtheory.org/theory/) and cooperation. Instead of constant nagging, discover practical strategies to infuse fun into everyday chores and homework, making them less of a battle and more of a game.
 
 
 ## The Psychology of Play and Productivity
@@ -129,6 +129,6 @@ Start with the single stickiest task, not the whole routine. One timer race for 
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

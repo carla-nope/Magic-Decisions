@@ -10,7 +10,7 @@ readTime: "8 min read"
 
 ![The Evolution of Decision-Making: How Growing Up Today Differs from 50 Years Ago — MagicDecisions](/blog-images/evolution-of-decision-making.png)
 
-Your grandparents made decisions than you do. Your kids make them still. Understanding how decision-making has changed,and why,helps us raise children who thrive in the modern world.
+Your grandparents made decisions than you do. Your kids make them still. Understanding how decision-making has changed, and why, helps us raise children who thrive in the modern world.
 
 Let's play a quick game. Imagine your 8-year-old self, circa whenever you grew up. What decisions did you make on a typical day? Now imagine a typical 8-year-old today. What decisions do they face?
 
@@ -38,7 +38,7 @@ Decision environment: Limited options, limited information, limited speed. When 
 
 Your Generation
 
-Decision environment: Expanding options, emerging internet, increasing pace. You grew up during the transition,part analog childhood, part digital awakening. You remember life before smartphones but grew up with them. Your [decision-making skills](https://childmind.org/article/helping-kids-make-decisions/) developed during a period of rapid change.
+Decision environment: Expanding options, emerging internet, increasing pace. You grew up during the transition, part analog childhood, part digital awakening. You remember life before smartphones but grew up with them. Your [decision-making skills](https://childmind.org/article/helping-kids-make-decisions/) developed during a period of rapid change.
 
 - **Decision pace:** Medium. You still had time to think, but options were increasing.
 
@@ -76,7 +76,7 @@ A wrong choice in 1985 was fixable. You changed schools, moved on, nobody knew. 
 
 ### Social Pressure is Constant and Global
 
-When your decisions affected your neighborhood, social pressure was manageable. Now kids face social pressure from their entire peer network (and beyond) 24/7. Every decision is visible: what you wear, what you say, what you like, what you don't like. The pressure to conform,or the pressure to stand out if you're countercultural,is exhausting.
+When your decisions affected your neighborhood, social pressure was manageable. Now kids face social pressure from their entire peer network (and beyond) 24/7. Every decision is visible: what you wear, what you say, what you like, what you don't like. The pressure to conform, or the pressure to stand out if you're countercultural, is exhausting.
 
 > "The children growing up today are the first generation to have their entire decision history documented and accessible. This changes everything about how they approach choices."
 
@@ -94,11 +94,11 @@ Because decisions feel higher-stakes, kids are tempted to avoid them. "Whatever 
 
 ### Filtering Over Consuming
 
-In an information-saturated world, the ability to filter is essential. Kids need to learn: not everything is worth evaluating, not every option deserves consideration, sometimes less information leads to better decisions. The skill isn't knowing more,it's knowing what to ignore.
+In an information-saturated world, the ability to filter is essential. Kids need to learn: not everything is worth evaluating, not every option deserves consideration, sometimes less information leads to better decisions. The skill isn't knowing more, it's knowing what to ignore.
 
 ### Identity Over Imitation
 
-With global comparison at their fingertips, kids are tempted to build their identity based on what they see others doing. But authentic decision-making comes from knowing yourself,what you value, what you want, what you stand for. Kids need practice making decisions that align with their own values rather than following the crowd or rebelling from it.
+With global comparison at their fingertips, kids are tempted to build their identity based on what they see others doing. But authentic decision-making comes from knowing yourself, what you value, what you want, what you stand for. Kids need practice making decisions that align with their own values rather than following the crowd or rebelling from it.
 
 ## How Parents Can Help
 
@@ -106,11 +106,11 @@ Given the changed landscape, here are specific ways to help your kids develop mo
 
 ### Teach "Good Enough" Decision-Making
 
-teach that perfection isn't the goal. Share your own examples: "I spent 30 minutes choosing a restaurant last week, and , it wasn't worth it. The food was fine. The extra time was wasted." Help them see that decision quality and decision speed can both be high.
+teach that perfection isn't the goal. Share your own examples: "I spent 30 minutes choosing a restaurant last week, and, it wasn't worth it. The food was fine. The extra time was wasted." Help them see that decision quality and decision speed can both be high.
 
 ### Practice Reversibility
 
-When decisions turn out , help them see the reversibility: "That shirt didn't work out? Return it. The haircut grew out. The friendship can be rebuilt. Most decisions can be adjusted." This reduces the paralysis that comes from fear of permanent consequences.
+When decisions turn out, help them see the reversibility: "That shirt didn't work out? Return it. The haircut grew out. The friendship can be rebuilt. Most decisions can be adjusted." This reduces the paralysis that comes from fear of permanent consequences.
 
 ### Create Decision-Free Zones
 
@@ -126,9 +126,9 @@ Spin wheels, coin flips, and random pickers are training wheels for the modern d
 
 ## Looking Forward
 
-We don't know what decision environment your children will face as adults. AI will change things. New technologies will create new challenges. But the fundamental skills,deciding, committing, adjusting, learning,will remain valuable.
+We don't know what decision environment your children will face as adults. AI will change things. New technologies will create new challenges. But the fundamental skills, deciding, committing, adjusting, learning, will remain valuable.
 
-The goal isn't to prepare your kids for the world as it is. It's to prepare them to thrive in the world as it will be. And that world will require confident, [resilient](https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/default.aspx) decision-makers who can navigate complexity without freezing.
+Preparing kids for the world as it is sells them short. Prepare them to thrive in the world as it will be. And that world will require confident, [resilient](https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/default.aspx) decision-makers who can navigate complexity without freezing.
 
 You're equipping your children with skills that will serve them for their entire lives. Every time you help them practice deciding, you're building capacity they'll use in contexts we can't even imagine yet. That's powerful work.
 
@@ -151,6 +151,6 @@ Build your child's decision confidence today with free tools that make decision 
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Cognitive Bias Test](/cognitive-bias-checker): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Cognitive Bias Test](/cognitive-bias-checker): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

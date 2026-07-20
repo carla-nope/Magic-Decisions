@@ -133,7 +133,7 @@ Sometimes, yes — real life has school buses. But say what you're doing: "I'm p
 
 ### What if they pick and then immediately want to switch?
 
-One switch is allowed; after that, the choice stands until tomorrow. Instant regret is part of learning what they actually prefer — the rule just stops it from becoming an endless loop. Afterward, name it gently: "You thought you wanted the blue cup. Now you know."
+One switch is allowed; after that, the choice stands until tomorrow. Instant regret is part of learning what they prefer — the rule just stops it from becoming an endless loop. Afterward, name it gently: "You thought you wanted the blue cup. Now you know."
 
 ### Does letting a coin or wheel decide teach them anything?
 
@@ -141,6 +141,6 @@ More than it seems. Random tools take the pressure off the moment of choosing, b
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

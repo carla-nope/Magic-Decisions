@@ -1,7 +1,7 @@
 ---
 title: "Maximizer vs. Satisficer: Which Type of Decision Maker Is Your Child?"
 date: "2026-06-14"
-excerpt: "Child Development | July 1, 2026 Understanding how your child approaches decisions can unlock insights into their happiness and resilience. Are they constantly striving for the..."
+excerpt: "Does your kid agonize over every option or grab the first one? Maximizer vs satisficer, why it matters, and how to help each style choose happier."
 category: "Kids & Parenting"
 featured: false
 author: "Magic Decisions"
@@ -103,7 +103,7 @@ While satisficers generally have an easier time, it's important to ensure they d
 
  - **Discuss Consequences:** Help them think through the potential outcomes of their choices, both positive and negative, without instilling fear.
 
- - **Value Proposition:** Teach them to identify what truly matters in a decision, rather than just picking the first acceptable option.
+ - **Value Proposition:** Teach them to identify what matters in a decision, rather than just picking the first acceptable option.
 
  - **Model Deliberation:** Show them how you thoughtfully approach important decisions, explaining your reasoning process.
 
@@ -144,6 +144,6 @@ Explore our fun, interactive tools designed to help families make choices quickl
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Decision Style Quiz](/decision-maximizer): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Decision Style Quiz](/decision-maximizer): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

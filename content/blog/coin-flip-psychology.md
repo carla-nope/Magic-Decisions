@@ -36,7 +36,7 @@ That purity creates trust. Even in a heated argument, when someone suggests "let
 
 ### The Illusion of Control
 
-People often *feel* like they can influence coin flips. They have "lucky coins" and flip techniques. Some call the flip while it's in the air, believing their shout changes the outcome. The psychological benefits of coin flipping work whether or not people believe the coin is truly random.
+People often *feel* like they can influence coin flips. They have "lucky coins" and flip techniques. Some call the flip while it's in the air, believing their shout changes the outcome. The psychological benefits of coin flipping work whether or not people believe the coin is random.
 
 Even the belief in lucky coins doesn't undermine procedural fairness. Why? Because the "I tried my best and luck wasn't on my side" feeling is still less painful than "my sibling manipulated our parent and I lost." Random loss feels like external bad luck; sibling-mediated loss feels like internal unfairness.
 
@@ -121,6 +121,6 @@ Our free coin flip and spin wheel tools harness this psychological power. Try th
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Coin Flip](/coin-flip): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Coin Flip](/coin-flip): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

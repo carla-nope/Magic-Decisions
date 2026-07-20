@@ -10,7 +10,7 @@ readTime: "8 min read"
 
 ![The Decide and Adjust Method: How to Make Faster Decisions Without Regret — MagicDecisions](/blog-images/decide-and-adjust-method.png)
 
-Make most decisions in seconds, with less regret, and more confidence? The secret isn't thinking longer,it's learning to decide and adjust instead of deciding and dwelling.
+Make most decisions in seconds, with less regret, and more confidence? The secret isn't thinking longer, it's learning to decide and adjust instead of deciding and dwelling.
 
 Most decisions can be changed. The restaurant you chose? You can leave. The movie you picked? You can stop watching. The cereal you bought? You can eat something else tomorrow. The vast majority of "decisions" we agonize over are reversible. Once you accept that, decision-making gets much easier.
 
@@ -52,7 +52,7 @@ This isn't waffling. This isn't being indecisive. This is strategic [flexibility
 
 The decide-and-adjust method reduces decision regret. Why? Because regret usually comes from two sources: (1) making a bad choice and suffering, and (2) not making a choice and wondering "what if?" This is closely related to [the psychology behind overthinking](/blog/psychology-behind-overthinking), which often amplifies regret and indecision.
 
-The decide-and-adjust method reduces both. By making quick decisions with the willingness to adjust, you reduce suffering (because you're monitoring and course-correcting). And you reduce "what if" thinking (because you made the choice,you didn't stay paralyzed).
+The decide-and-adjust method reduces both. By making quick decisions with the willingness to adjust, you reduce suffering (because you're monitoring and course-correcting). And you reduce "what if" thinking (because you made the choice, you didn't stay paralyzed).
 
 > "A decision made and adjusted is worth more than a perfect decision that never got made."
 
@@ -64,7 +64,7 @@ Instead of spending 20 minutes debating restaurants, use the decide-and-adjust m
 
 ### Weekend Activities
 
-Pick an activity for the morning. Commit to it fully. If it's not working out, adjust in the afternoon. Don't spend Friday night agonizing over Saturday's plan,make a quick choice and refine as you go.
+Pick an activity for the morning. Commit to it fully. If it's not working out, adjust in the afternoon. Don't spend Friday night agonizing over Saturday's plan, make a quick choice and refine as you go.
 
 ### Kids' Decisions
 
@@ -72,7 +72,7 @@ Teach your kids this method: "Pick something. Give it a try. If it's not good, w
 
 ### Household Decisions
 
-Arrange the furniture? Try it one way for a week. If it doesn't work, change it. Buy a new organizational system? Test it for a month. If it's not helping, return it. Most home decisions are easily reversible,the only thing you lose is the time you spent deliberating instead of experimenting.
+Arrange the furniture? Try it one way for a week. If it doesn't work, change it. Buy a new organizational system? Test it for a month. If it's not helping, return it. Most home decisions are easily reversible, the only thing you lose is the time you spent deliberating instead of experimenting.
 
 ## When to Use the Full Method vs. Quick Decisions
 
@@ -86,7 +86,7 @@ Not every decision needs the full decide-and-adjust treatment. A quick guide:
 
 ## The Speed-Accuracy Tradeoff
 
-Speed and accuracy are often inversely related in daily life. The longer you deliberate, the better your decision might be,but the time you spend deliberating is rarely worth the marginal improvement in the decision's quality.
+Speed and accuracy are often inversely related in daily life. The longer you deliberate, the better your decision might be, but the time you spend deliberating is rarely worth the marginal improvement in the decision's quality.
 
 Example: You spend 30 minutes choosing a restaurant. You pick one that might be slightly better than if you'd spent 5 minutes choosing. But you've now spent 25 extra minutes deliberating, which you'll never get back, for a restaurant meal that you'll forget about in a week. Is that worth it?
 
@@ -94,13 +94,13 @@ The decide-and-adjust method inverts the tradeoff. You save time by deciding fas
 
 ## Teaching Kids to Decide and Adjust
 
-The decide-and-adjust method is perfect for [teaching kids to make fast decisions](/blog/teach-kids-fast-decisions) because it makes decision-making feel safe. They can try things, adjust, try again,without pressure of permanent consequences. Introduce it this way:
+The decide-and-adjust method is perfect for [teaching kids to make fast decisions](/blog/teach-kids-fast-decisions) because it makes decision-making feel safe. They can try things, adjust, try again, without pressure of permanent consequences. Introduce it this way:
 
 - "Pick something to play with."
 
 - "Great! Now give it a try."
 
-- "Not feeling it? No problem,pick something else."
+- "Not feeling it? No problem, pick something else."
 
 - Repeat. The lesson: decisions are experiments, not verdicts.
 
@@ -108,11 +108,11 @@ This works for food choices, activity choices, friend choices, hobby choices. Wh
 
 ## Your First Practice Session
 
-Tomorrow, try this: pick one decision you'll face and apply the decide-and-adjust method. It could be dinner, an activity, a purchase,anything. Make the choice quickly (set a 10-second timer if you need to). Commit to it. Notice your urge to second-guess. Don't act on it. If the decision works, great. If it doesn't, adjust.
+Tomorrow, try this: pick one decision you'll face and apply the decide-and-adjust method. It could be dinner, an activity, a purchase, anything. Make the choice quickly (set a 10-second timer if you need to). Commit to it. Notice your urge to second-guess. Don't act on it. If the decision works, great. If it doesn't, adjust.
 
 Do this three times in one day. By the end, you'll have proven to yourself that most decisions can be made fast, lived with, and adjusted if needed.
 
-The goal isn't to stop caring about decisions. It's to care about them differently,less about making the perfect choice, more about making choices and making them work. Decide and adjust. That's the whole method.
+You don't stop caring about decisions. You care about them differently — less about the perfect choice, more about making choices and making them work. Decide and adjust. That's the whole method.
 
 
 ### Related Posts
@@ -133,6 +133,6 @@ Use our free decision tools to make quick choices and keep moving forward. Speed
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

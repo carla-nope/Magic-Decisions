@@ -242,7 +242,7 @@ Save this list. Refer to it when you feel yourself spiraling. Use our [spin whee
 
 ## The Takeaway
 
-This list isn't about being reckless. It's about recognizing that your attention is finite. all minute you spend debating cereal brands is a minute not spent on things that matter to you and your .
+This list is about one thing: your attention is finite. Every minute spent debating cereal brands is a minute you never get back for the stuff that matters.
 
 > "The goal isn't to stop making decisions. The goal is to stop making some decisions mean more than they do."
 
@@ -269,6 +269,6 @@ Stop overthinking the small stuff. Use our free spin wheel and coin flip to deci
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Decision Style Quiz](/decision-maximizer): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Decision Style Quiz](/decision-maximizer): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

@@ -21,7 +21,7 @@ It helps to remember what the stakes teach: as the [Child Mind Institute puts it
 ## Understanding the Teenage Mindset: Why They Shut Down
 
 
-Teenagers are in a crucial developmental stage, striving for [independence](https://www.healthychildren.org/English/ages-stages/preschool/Pages/Growing-Independence-Tips-for-Parents-of-Young-Children.aspx) and a sense of self. When parents approach big decisions with a perceived agenda or an overly directive tone, it can feel like a direct threat to their burgeoning autonomy. This often leads to defensiveness, withdrawal, or outright shutting down. They might fear judgment, making the "wrong" choice, or simply not being understood. Recognizing these underlying anxieties is the first step toward more productive conversations.
+Teenagers are in a crucial developmental stage, striving for [independence](https://www.healthychildren.org/English/ages-stages/preschool/Pages/Growing-Independence-Tips-for-Parents-of-Young-Children.aspx) and a sense of self. When parents approach big decisions with a perceived agenda or an overly directive tone, it can feel like a direct threat to their burgeoning autonomy. This often leads to defensiveness, withdrawal, or outright shutting down. They might fear judgment, making the "wrong" choice, or not being understood. Recognizing these underlying anxieties is the first step toward more productive conversations.
 
 
 The desire for autonomy is a powerful force during adolescence. When teens feel their choices are being dictated, they naturally push back. This isn't defiance for its own sake, but a healthy assertion of their developing identity. Understanding this can help parents reframe their approach from telling to guiding. For more on building confidence, see [Building Decision Confidence in Kids](/blog/building-decision-confidence-kids).
@@ -77,10 +77,10 @@ You might say, "It looks like this is a lot right now. I'm going to give you som
 ## Depressurizing Conversations with Neutral Tools
 
 
-For particularly contentious or overwhelming decisions, introducing a neutral tool can significantly reduce tension. Tools like pros/cons lists, decision matrices, or a simple decision wheel can externalize the decision-making process, making it less about parental influence and more about objective evaluation.
+For particularly contentious or overwhelming decisions, introducing a neutral tool can reduce tension. Tools like pros/cons lists, decision matrices, or a simple decision wheel can externalize the decision-making process, making it less about parental influence and more about objective evaluation.
 
 
-For example, when discussing a new activity, you could suggest, "Let's make a pros and cons list together. What are the good things about joining, and what are the potential downsides?" Or, for a choice between two options, "How about we put these options on a decision wheel? Sometimes seeing it randomly chosen can help clarify how you truly feel." These tools provide a structured, impartial way to explore options, allowing your teen to engage with the decision without feeling directly challenged by you. This can also be a great way to teach [decision life skills](/blog/teaching-decision-life-skills).
+For example, when discussing a new activity, you could suggest, "Let's make a pros and cons list together. What are the good things about joining, and what are the potential downsides?" Or, for a choice between two options, "How about we put these options on a decision wheel? Sometimes seeing it randomly chosen can help clarify how you feel." These tools provide a structured, impartial way to explore options, allowing your teen to engage with the decision without feeling directly challenged by you. This can also be a great way to teach [decision life skills](/blog/teaching-decision-life-skills).
 
 
  📊
@@ -118,6 +118,6 @@ Explore our fun, interactive tools designed to help families make choices with c
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

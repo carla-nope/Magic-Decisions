@@ -2,7 +2,7 @@
 title: "Decision Fatigue in Families: Why Everyone Seems Cranky by 3 PM"
 slug: "decision-fatigue-in-families"
 date: "2026-04-20"
-excerpt: "It's 3:15 PM. Your kid is melting down over the color of their cup. Your partner snaps at you for asking what they want for snack. And you? You're hiding in the pantry, eating chocolate chips..."
+excerpt: "It's 3:15 PM and your kid is melting down over a cup color. That's decision fatigue — here's why everyone's cranky and how to fix the family crash."
 category: "Gamified Productivity"
 featured: false
 author: "MagicDecisions"
@@ -108,15 +108,15 @@ It's 3:15 PM. Your kid is melting down over the color of their cup. Your partner
     There's no shame in taking the decision load off your family when it's too much. If dinner isn't getting decided, just say, "We're having tacos tonight." If nobody can agree on a movie, pick one and own it.
 
 
-    Kids actually feel *safer* with clear direction sometimes. They're relieved when an adult says "Here's the plan" instead of "What do you want to do?" It takes the pressure off them to perform.
+    Kids feel *safer* with clear direction sometimes. They're relieved when an adult says "Here's the plan" instead of "What do you want to do?" It takes the pressure off them to perform.
 
 
 ## The Goal Isn't Zero Decisions
 
-    We're not trying to eliminate choice from family life. Decisions are actually good for kids — they build confidence and teach problem-solving. The goal is to cut the unnecessary ones.
+    We're not trying to eliminate choice from family life. Decisions are good for kids — they build confidence and teach problem-solving. The goal is to cut the unnecessary ones.
 
 
-    When you notice everyone is getting cranky, pause and ask: Does this decision actually matter? Does it need to be made right now? Who cares which cup we use? Who cares what order we put on pajamas?
+    When you notice everyone is getting cranky, pause and ask: Does this decision matter? Does it need to be made right now? Who cares which cup we use? Who cares what order we put on pajamas?
 
 
     Save the big choices for when everyone's fresh. Automate the small ones. And when you need a tiebreaker, [use a tool](/) to make it instant and fair.

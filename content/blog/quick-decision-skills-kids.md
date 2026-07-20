@@ -1,7 +1,7 @@
 ---
 title: "Quick Decision-Making Skills Every Kid Ages 6-12 Needs"
 date: "2026-06-18"
-excerpt: "Learn about quick decision-making skills every kid ages 6-12 needs and how to apply it in everyday family life."
+excerpt: "Fast, confident choosing is a skill, not a personality. The quick decision skills every kid ages 6-12 needs, and how to practice them."
 category: "Building Confidence"
 featured: false
 author: "Magic Decisions"
@@ -141,6 +141,6 @@ Quick doesn't mean careless: deciding fast on small things protects the energy b
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Yes/No Oracle](/yes-no-oracle): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

@@ -19,7 +19,7 @@ In today's busy family life, managing chores, homework, and daily routines can f
 ## Why Gamify Family Productivity?
 
 
-The concept of gamification leverages elements typically found in games—like points, badges, leaderboards, and rewards—to encourage engagement and motivation in non-game contexts. For families, this means transforming chores and responsibilities into a system that feels less like work and more like play. This approach can significantly reduce friction around household tasks and foster a sense of accomplishment in children. It also teaches valuable life skills, such as goal setting and responsibility, in an enjoyable way. For more on making decisions fun, see our post on [best decision tools for families](/blog/best-decision-tools-families).
+The concept of gamification leverages elements typically found in games—like points, badges, leaderboards, and rewards—to encourage engagement and motivation in non-game contexts. For families, this means transforming chores and responsibilities into a system that feels less like work and more like play. This approach can reduce friction around household tasks and foster a sense of accomplishment in children. It also teaches valuable life skills, such as goal setting and responsibility, in an enjoyable way. For more on making decisions fun, see our post on [best decision tools for families](/blog/best-decision-tools-families).
 
 
  💡
@@ -176,7 +176,7 @@ With so many options, selecting the best app depends on your family's unique nee
  - **Integration:** Consider how well the app integrates with your existing family routines and other digital tools.
 
 
-Remember, the goal is to reduce stress and increase cooperation. The best app is one that your family will actually use consistently. For more ideas on making tasks engaging, check out our article on [how to turn chores into a game](/blog/turn-chores-into-a-game).
+Remember, the goal is to reduce stress and increase cooperation. The best app is one that your family will use consistently. For more ideas on making tasks engaging, check out our article on [how to turn chores into a game](/blog/turn-chores-into-a-game).
 
 
 MagicDecisions.com offers free tools like spin wheels and coin flips that can complement any of these apps by helping with in-the-moment random decisions, such as "Who does the dishes tonight?" or "What game should we play after chores?"
@@ -209,6 +209,6 @@ Try our free, fun decision-making tools today!
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Magic Chores](/magic-chores-list): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

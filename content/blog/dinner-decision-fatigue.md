@@ -21,14 +21,14 @@ readTime: "3 min read"
 
 ## Why "What's for Dinner?" Is So Hard
 
-The problem isn't the food , it's the decision. Every day, at roughly the same time, you're expected to come up with an answer to a question nobody can agree on.
+The problem isn't the food, it's the decision. Every day, at roughly the same time, you're expected to come up with an answer to a question nobody can agree on.
 
  Add [decision fatigue](https://health.clevelandclinic.org/decision-fatigue) at the end of the day, and you've got a perfect storm. Nobody wants to make a choice. Nobody wants to be blamed for a bad choice. So everyone passes the decision to someone else, and nobody catches it.
 
 
 ## The Solution: Meal Routines
 
-The easiest fix is to create a meal rotation. You don't decide what's for dinner , the week decides.
+The easiest fix is to create a meal rotation. You don't decide what's for dinner, the week decides.
 
 > **Try this tonight:** Don't build the whole rotation yet. Just pick tomorrow's dinner right now — one decision, made a day early — and notice how much lighter 5 PM feels.
 
@@ -53,7 +53,7 @@ The easiest fix is to create a meal rotation. You don't decide what's for dinner
 
 ## When You Need to Choose
 
-Sometimes you need input. Maybe you're deciding between two options, or someone wants to request something. In these cases, don't make it a debate , make it a choice.
+Sometimes you need input. Maybe you're deciding between two options, or someone wants to request something. In these cases, don't make it a debate, make it a choice.
 
 ### Option A or Option B
 
@@ -139,6 +139,6 @@ Rotate the decider, one person per night, no debates — or let the [Dinner Deci
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Dinner Decider](/what-to-eat-randomizer): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Dinner Decider](/what-to-eat-randomizer): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

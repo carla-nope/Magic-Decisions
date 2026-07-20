@@ -12,7 +12,7 @@ readTime: "6 min read"
 
 one of the best things you could do for your family's peace was to make fewer decisions.
 
-Sounds backwards, right? Shouldn't we be teaching kids to make MORE decisions to build [confidence](/blog/building-decision-confidence-kids)? , no. Not every decision needs to be made. Some decisions are noise that wastes energy and creates conflict.
+Sounds backwards, right? Shouldn't we be teaching kids to make MORE decisions to build [confidence](/blog/building-decision-confidence-kids)?, no. Not every decision needs to be made. Some decisions are noise that wastes energy and creates conflict.
 
 ## The Decision Overload in Modern Families
 
@@ -92,13 +92,13 @@ Simplifying decisions does not make kids dependent. It makes them more capable:
 
 - They see problem-solving in action as you create systems.
 
-Eventually, they'll start creating their own systems. And they'll carry this lesson into adulthood , that less decision-making often leads to more peace.
+Eventually, they'll start creating their own systems. And they'll carry this lesson into adulthood, that less decision-making often leads to more peace.
 
 ## When to Use Random Decision-Makers
 
-Some decisions need a tiebreaker. Who picks the movie? Whose turn is it? Which activity today? For these moments, don't waste energy on negotiation , use a [random picker](/blog/coin-flip-decisions-family).
+Some decisions need a tiebreaker. Who picks the movie? Whose turn is it? Which activity today? For these moments, don't waste energy on negotiation, use a [random picker](/blog/coin-flip-decisions-family).
 
-A coin flip for two options. A spin wheel for multiple options. A random picker for a group decision. These tools remove the conflict entirely. Nobody "won" , the tool decided. It's fair by definition.
+A coin flip for two options. A spin wheel for multiple options. A random picker for a group decision. These tools remove the conflict entirely. Nobody "won", the tool decided. It's fair by definition.
 
 Find[free decision tools](/)at MagicDecisions.com. They're great for these moments.
 
@@ -108,7 +108,7 @@ When you reduce [decision fatigue](https://health.clevelandclinic.org/decision-f
 
 It's not about being rigid or controlling. It's about being thoughtful. When you protect your family's mental energy, you create space for the things that matter.
 
-Start small. Pick one area , maybe mornings or dinners , and create a system. See how it feels. Then try another area. Before you know it, your home will feel noticeably calmer.
+Start small. Pick one area, maybe mornings or dinners, and create a system. See how it feels. Then try another area. Before you know it, your home will feel noticeably calmer.
 
 
 ### Related Posts
@@ -124,6 +124,6 @@ Fewer decisions also means fewer standoffs about them — and more of the calm, 
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

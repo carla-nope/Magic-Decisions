@@ -1,7 +1,7 @@
 ---
 title: "Decision Fatigue: Why Families Fall Apart by Evening (And What to Do About It)"
 date: "2026-06-04"
-excerpt: "Learn about decision fatigue: why families fall apart by evening (and what to do about it) and how to apply it in everyday family life."
+excerpt: "It's 6 PM and everyone is crying about dinner. Decision fatigue is real — here's how to beat the end-of-day family crash."
 category: "Decision Fatigue"
 featured: true
 author: "Magic Decisions"
@@ -10,7 +10,7 @@ readTime: "10 min read"
 
 ![Decision Fatigue: Why Families Fall Apart by Evening (And What to Do About It) — MagicDecisions](/blog-images/decision-fatigue-families.png)
 
-You pick the kids up from school. Everyone's fine. Three hours later, your kindergartener is sobbing over a sock touching their toe and your partner is snapping about the dishes. The answer isn't bad attitudes. It's [decision fatigue](https://health.clevelandclinic.org/decision-fatigue) — and it affects every member of the family.
+You pick the kids up from school. Everyone's fine. Three hours later, your kindergartener is sobbing over a sock touching their toe and your partner is snapping about the dishes. They aren't being difficult. They have [decision fatigue](https://health.clevelandclinic.org/decision-fatigue) — and it hits every member of the family.
 
 It's 6 PM. You've made dozens of decisions since waking up — what to wear, what to make for breakfast, which route to drive, whether to respond to that email, call the pediatrician, decide not to call the pediatrician — and now you can't choose what to watch on TV. You scroll for twenty minutes, paralyzed, because every option seems fine and terrible at the same time.
 
@@ -26,7 +26,7 @@ Think of your decision-making capacity like a phone battery. You start the day a
 
 When decision fatigue hits, people don't stop making decisions — they start making worse ones. They become irritable because they can't think through consequences. They make impulsive choices and regret them. They avoid decisions entirely, which creates its own problems: passive aggression, avoidance, letting others choose by default.
 
-For kids, decision fatigue looks like meltdowns over nothing, inability to choose between two things they normally handle easily, and what parents describe as "falling apart at the seams" for minor reasons. For adults, it looks like short temper, analysis paralysis, and the familiar "I don't care, whatever you want" that actually means "I care too much and I can't handle one more choice."
+For kids, decision fatigue looks like meltdowns over nothing, inability to choose between two things they normally handle easily, and what parents describe as "falling apart at the seams" for minor reasons. For adults, it looks like short temper, analysis paralysis, and the familiar "I don't care, whatever you want" that means "I care too much and I can't handle one more choice."
 
 ## Why Families Hit the Wall Together
 
@@ -80,7 +80,7 @@ One parent comes home already drained. They make a snappy comment. The other par
 
 ### 1. Automate the Small Stuff
 
-The most effective families have routines that eliminate decision load. Monday is taco night — nobody decides, it just happens. Kids lay out clothes the night before, so morning-you doesn't have to think about it. These automations don't limit fun; they preserve decision energy for the moments that actually need it.
+The most effective families have routines that eliminate decision load. Monday is taco night — nobody decides, it just happens. Kids lay out clothes the night before, so morning-you doesn't have to think about it. These automations don't limit fun; they preserve decision energy for the moments that need it.
 
 #### Quick Win: The Meal Map
 
@@ -94,11 +94,11 @@ Instead of "What do you want for lunch?" try "Pasta or sandwich?" Two options is
 
 When the family is tired and can't agree, a [spin wheel](/spin-the-wheel) or [coin flip](/coin-flip) doesn't just solve the immediate conflict — it preserves mental energy. Instead of twenty minutes of negotiation, one second of flipping. The decision gets made, the kids learn to accept outcomes, and everyone moves on. The saved energy goes toward things that matter.
 
-This isn't lazy parenting. It's strategic energy management. See also: [How to Use Randomization to End Sibling Disputes](/blog/randomization-sibling-disputes).
+Call it what it is: strategic energy management, not lazy parenting. See also: [How to Use Randomization to End Sibling Disputes](/blog/randomization-sibling-disputes).
 
 ### 4. Create Low-Decision Zones
 
-Some families designate certain hours as "low decision" zones. After 7 PM, no major decisions get made unless it's an emergency. Dinner is pre-decided, bedtime routines are set, the evening TV choice is made by a rotating person rather than committee. This protects the family's collective energy for decisions that actually require thought.
+Some families designate certain hours as "low decision" zones. After 7 PM, no major decisions get made unless it's an emergency. Dinner is pre-decided, bedtime routines are set, the evening TV choice is made by a rotating person rather than committee. This protects the family's collective energy for decisions that require thought.
 
 ### 5. Model Recovery Out Loud
 
@@ -148,6 +148,6 @@ Free spin wheel, coin flip, and random picker — no signup required.
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Spin Wheel](/spin-the-wheel): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.

@@ -10,13 +10,13 @@ readTime: "8 min read"
 
 ![The Decision Difficulty Scale: Know When to Think and When to Let Go — MagicDecisions](/blog-images/decision-difficulty-scale.png)
 
-Should you spend twenty minutes choosing a restaurant or two seconds flipping a coin? The answer depends on one thing most people never consider,the actual difficulty of the decision.
+Should you spend twenty minutes choosing a restaurant or two seconds flipping a coin? The answer depends on one thing most people never consider, the actual difficulty of the decision.
 
 Imagine you're trying to pick a movie for family night. The options are: a Pixar animated film everyone has seen, or another Pixar animated film everyone has seen. You agonize for fifteen minutes. You read reviews. You check what's available on streaming. And ultimately, you pick something arbitrary because, honestly, it doesn't matter.
 
 Now imagine you're choosing a school for your child. You gather information, visit campuses, talk to other parents, weigh options carefully. This decision deserves time and thought.
 
-Both are "decisions." But one requires analysis, and one requires picking something. The problem is that most families treat all decisions the same,they overthink the small stuff and underthink the big stuff. The solution? A simple decision difficulty scale that teaches your whole family to invest mental energy wisely.
+Both are "decisions." But one requires analysis, and one requires picking something. The problem is that most families treat all decisions the same, they overthink the small stuff and underthink the big stuff. The solution? A simple decision difficulty scale that teaches your whole family to invest mental energy wisely.
 
 ## Understanding the Decision Difficulty Scale
 
@@ -78,15 +78,15 @@ Turn the scale into a fun exercise. At family meetings, go through upcoming deci
 
 ## When to Use Tools and When to Decide Alone
 
-Not every decision needs a tool. But for level 1 and 2 decisions, tools like spin wheels and coin flippers do something important: they make randomness feel fair. When two kids both want the same thing, a coin flip isn't a parent making a choice,it's the universe deciding. This removes parent from the equation and reduces "but that's not fair!" arguments.
+Not every decision needs a tool. But for level 1 and 2 decisions, tools like spin wheels and coin flippers do something important: they make randomness feel fair. When two kids both want the same thing, a coin flip isn't a parent making a choice, it's the universe deciding. This removes parent from the equation and reduces "but that's not fair!" arguments.
 
-For level 3 decisions, tools can still help when family members have equal say and equal stake. The key is recognizing that the goal isn't the perfect choice,it's moving forward without exhaustion.
+For level 3 decisions, tools can still help when family members have equal say and equal stake. The key is recognizing that the goal isn't the perfect choice, it's moving forward without exhaustion.
 
 You can also explore the [psychology behind coin flips](/blog/coin-flip-psychology) for decision-making, or learn about the [5-second decision method](/blog/teach-kids-fast-decisions) to help your kids make quick choices.
 
 ## What Changes When You Use the Scale
 
-Families who adopt the decision difficulty scale report remarkable changes within weeks. Dinner conversations become smoother because "what do you want to eat?" becomes "level 1 decision,random choice tonight!" Morning routines stop stalling because kids learn to make clothing choices in seconds instead of minutes.
+Families who adopt the decision difficulty scale report remarkable changes within weeks. Dinner conversations become smoother because "what do you want to eat?" becomes "level 1 decision, random choice tonight!" Morning routines stop stalling because kids learn to make clothing choices in seconds instead of minutes.
 
 More importantly, big decisions get the attention they deserve. When you stop wasting mental energy on where to go for a walk, you have more capacity for thinking through the important choices. Your brain stops being everywhere and starts being present where it matters.
 
@@ -119,6 +119,6 @@ For choices that rate low on the scale, deciding fast isn't reckless — it's wh
 
 ## Make the next decision the easy kind
 
-You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Decision Style Quiz](/decision-maximizer): no signup, works on any phone, and kids actually like using it.
+You don't need a system for everything — just a lighter way through the small stuff. Start with the free [Decision Style Quiz](/decision-maximizer): no signup, works on any phone, and kids like using it.
 
 > **Free guide for parents:** If your child freezes, overthinks, or says "I don't care" every time — grab the free [Decision Traps Guide](https://go.magicdecisions.com/dt1). Five patterns that keep kids stuck on everyday choices, and a simple fix for each one.
