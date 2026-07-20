@@ -31,7 +31,7 @@ When a coin decides, people invoke fate, destiny, luck, the universe. This isn't
 
 > "A coin flip doesn't just decide, it transforms the entire emotional context of who gets what."
 
-Understanding how to navigate family decisions can be tricky. If you're dealing with [decision fatigue in families](/blog/decision-fatigue-families), incorporating simple tools like coin flips can help.
+If your family hits the wall by dinnertime, that's [decision fatigue](/blog/decision-fatigue-families) — and a humble coin flip absorbs a surprising amount of it.
 
 ## When Coin Flips Work
 
@@ -115,7 +115,7 @@ For most families, digital works well because there's no possible trick, mostone
 
 ## Building a Coin Flip Culture
 
-The goal isn't to flip coins for most things, it's to establish coin flips as a normal, respected part of your family's conflict resolution system. When kids expect coin flips as an option, they negotiate better. Instead of fighting for victory, they work toward compromise, knowing the alternative is chance. For more ways to empower your children, explore [teaching kids independence in decisions](/blog/teaching-kids-independence-decisions).
+The goal isn't to flip coins for most things, it's to establish coin flips as a normal, respected part of your family's conflict resolution system. When kids expect coin flips as an option, they negotiate better. Instead of fighting for victory, they work toward compromise, knowing the alternative is chance. For the bigger picture on handing kids the reins, see [teaching kids independence through decisions](/blog/teaching-kids-independence-decisions).
 
 This shifts the entire dynamic of sibling disputes. The coin isn't a last resort, it's a respected third option that both kids know is available. And when it's often available, they use it less because the threat of it motivates compromise.
 

@@ -79,7 +79,7 @@ Not all decisions are created equal. The 2-Minute Rule is one tier in a broader 
  - **"Sleep-On-It" Decisions:** High stakes, significant consequences, or irreversible. These require more thought, research, and potentially external input. (e.g., "Should we move to a new city?") For these, allow time for reflection, discussion, and perhaps even a [decide-and-adjust approach](/blog/decide-and-adjust-method).
 
 
-Teaching your family this tiered approach helps everyone understand when to act fast and when to pause for deeper consideration. It builds a framework for responsible decision-making without fostering unnecessary delay.
+Teaching your family this tiered approach helps everyone understand when to act fast and when to pause for deeper consideration. It builds a framework for responsible decision-making without building unnecessary delay.
 
 
 ## Building Confidence Through Speed
@@ -88,7 +88,7 @@ Teaching your family this tiered approach helps everyone understand when to act 
 Every time you make a quick, low-stakes decision and it turns out fine (which most of them do), you reinforce a positive feedback loop. This practice builds "decision muscle." Over time, this increased confidence in small choices spills over into larger, more significant ones. You learn to trust your intuition and reduce the fear of imperfection.
 
 
-Conversely, delaying simple decisions can erode confidence, making you feel less capable of handling complex ones. The 2-Minute Rule is not just about efficiency; it's a strategic tool for personal and family growth, fostering a proactive mindset.
+Conversely, delaying simple decisions can erode confidence, making you feel less capable of handling complex ones. The 2-Minute Rule is not just about efficiency; it's a strategic tool for personal and family growth, building a proactive mindset.
 
 
 Embracing the 2-Minute Rule is a simple yet profound shift. It’s about recognizing the true value of your time and mental energy, and channeling it towards what matters. Start small, apply it consistently, and watch as your family becomes more decisive, confident, and less stressed by the daily deluge of choices. For more strategies on overcoming indecision, explore our post on the [5-Second Decision Method](/blog/5-second-decision-method).

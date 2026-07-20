@@ -78,7 +78,7 @@ Next time you make a small decision, say it out loud: "I'm choosing this restaur
 
 ## The Long-Term Impact
 
-Kids who develop strong decision skills carry advantages throughout their lives. They navigate career changes better because they're not paralyzed by "what if I choose wrong." They build healthier relationships because they can communicate their needs and boundaries. They handle failure more gracefully because they've practiced bouncing back from less-than-perfect outcomes.
+Kids who develop strong decision skills carry advantages throughout their lives. They handle career changes better because "what if I choose wrong" doesn't paralyze them. They build healthier relationships because they can communicate their needs and boundaries. They handle failure more gracefully because they've practiced bouncing back from less-than-perfect outcomes.
 
 They also tend to be less anxious. Anxiety often comes from feeling out of control. trust your ability to make decisions, to handle whatever comes, you feel more in control of your life even when circumstances are chaotic.
 

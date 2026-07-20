@@ -18,7 +18,7 @@ Your kid insists the blue cup makes juice taste better. That's not stubbornness 
 For a deeper dive into the machinery behind these shortcuts, the [Child Mind Institute's work on flexible thinking](https://childmind.org/article/helping-kids-with-flexible-thinking/) explains how kids learn to catch and correct their own mental habits.
 
 
-From refusing to try a new food to insisting on a familiar game, children's decisions are often shaped by underlying cognitive biases. These aren't signs of stubbornness but rather natural patterns of thought. Recognizing them allows us to gently intervene and teach valuable decision-making skills. As children grow, these early lessons can help them navigate complex choices, avoiding pitfalls like [decision paralysis](/blog/decision-paralysis) and fostering a more balanced perspective.
+From refusing to try a new food to insisting on a familiar game, children's decisions are often shaped by underlying cognitive biases. That's not stubbornness — it's how brains save energy. Once you can spot the pattern, you can coach past it in the moment, and kids who learn this early sidestep bigger traps later, like [decision paralysis](/blog/decision-paralysis).
 
 
 ## Understanding Common Biases in Childhood
@@ -114,7 +114,7 @@ Ask "What else could be true?" or "What evidence do you have for that?" Encourag
 Ask "Why do YOU want it?" or "Does that make YOU happy?" Help them understand their own preferences and values. "It's great your friends like that, but what do you enjoy?" This builds confidence in their own choices, a key part of the [evolution of decision-making](/blog/evolution-of-decision-making).
 
 
-Understanding these cognitive biases in children is not about correcting every single instance, but about gently guiding them towards more thoughtful and independent decision-making. By providing tools and techniques, we empower them to navigate the complexities of choice with greater awareness and confidence. For further reading on how cognitive biases impact decision-making, you might find resources from the [American Psychological Association](https://www.apa.org/topics/cognitive-psychology) insightful.
+You don't need to catch every bias every time — that would make dinner unbearable. The win is a kid who occasionally pauses and says "wait, am I just picking this because it's what I always pick?" That pause is the whole skill. For further reading on how cognitive biases impact decision-making, you might find resources from the [American Psychological Association](https://www.apa.org/topics/cognitive-psychology) insightful.
 
 
  🧠

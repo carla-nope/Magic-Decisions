@@ -1,7 +1,7 @@
 ---
 title: "Make Boring Tasks Fun: 10 Techniques That Work for Kids"
 date: "2026-06-13"
-excerpt: "Discover 10 effective techniques to transform mundane chores and homework into engaging activities for kids, fostering productivity and reducing resistance."
+excerpt: "Timer races, task pairing, playlists that end when the job should — 10 ways to make chores and homework something kids don't fight."
 category: "Gamification"
 featured: false
 author: "Magic Decisions"
@@ -87,7 +87,7 @@ Change the language around the task to make it sound more appealing. Instead of 
 
  💡
 
-Engaging children in decision-making processes, even for small tasks, builds their confidence and reduces decision fatigue. Consider using tools like [decision wheels for daily challenges](/blog/decision-wheels-daily-challenges) to empower them.
+Letting kids make the small calls builds confidence and burns less of everyone's decision budget. A [decision wheel](/blog/decision-wheels-daily-challenges) makes those calls feel like part of the game.
 
 
 ### Related Posts

@@ -14,9 +14,9 @@ Your grandparents made decisions than you do. Your kids make them still. Underst
 
 Let's play a quick game. Imagine your 8-year-old self, circa whenever you grew up. What decisions did you make on a typical day? Now imagine a typical 8-year-old today. What decisions do they face?
 
-If you're like most people, the second list is longer and more complex. The childhood decision landscape has changed in one or two generations, and our children are navigating terrain we're not prepared to guide them through.
+If you're like most people, the second list is longer and more complex. Childhood decisions have multiplied in a single generation, and our kids face choices we never practiced ourselves.
 
-This isn't about nostalgia or saying "kids these days have it harder." It's about understanding the landscape so we can better equip our children to make decisions in the world they live in.
+This isn't about nostalgia or saying "kids these days have it harder." It's about seeing clearly what's changed, so we can prepare kids for the world they live in — not the one we grew up in.
 
 ## The Decision Landscape: Then vs. Now
 
@@ -64,7 +64,7 @@ Decision environment: Infinite options, infinite information, infinite speed. Yo
 
 ## What This Means for Decision Skills
 
-The changing landscape has created new challenges for decision-making:
+All this change created problems our parents never had to solve:
 
 ### Analysis Paralysis is Easier Than Ever
 
@@ -102,7 +102,7 @@ With global comparison at their fingertips, kids are tempted to build their iden
 
 ## How Parents Can Help
 
-Given the changed landscape, here are specific ways to help your kids develop modern decision skills:
+Here's how to build modern decision skills for a modern amount of choice:
 
 ### Teach "Good Enough" Decision-Making
 

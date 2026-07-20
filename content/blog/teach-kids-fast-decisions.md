@@ -42,13 +42,13 @@ For tiny decisions, give them 10 seconds to answer. Say: "Pick one, apple or car
 
 Say: "Great! You decided fast. I like how you picked one." This teaches them that the action of deciding is good, not the specific outcome.
 
-This is crucial. If you only praise good outcomes, kids learn that decisions are risky. If you praise the act of deciding, they learn that confidence is valuable regardless of results.
+This is key. If you only praise good outcomes, kids learn that decisions are risky. If you praise the act of deciding, they learn that confidence is valuable regardless of results.
 
 ### Step 3: Give Bounded Choices
 
 Instead of "what do you want to do?" try "do you want the park or the library?" Or even better: "I'm picking the activity today, do you want to pick the snack or the music?" This gives them control in a way that's manageable.
 
-Bounded choices work because they limit the options to things you can live with. Your kid feels empowered. You don't end up at a theme park at 6pm with no dinner plan.
+Bounded choices work because every option is one you can live with. Your kid feels in charge. You don't end up at a theme park at 6 PM with no dinner plan.
 
 ### Step 4: Use Tools to Remove Emotion
 
@@ -92,7 +92,7 @@ Age shapes what decisions kids can handle:
 
 ## Practice Makes Progress
 
-Remember: decision-making is a skill, and skills take time to develop. Some kids learn fast, others need months of practice. That's normal. Keep offering opportunities, celebrating attempts, and modeling confidence.
+Decision-making is a skill, and skills take reps. Some kids get it in weeks, others need months — both are normal. Keep offering opportunities, celebrating attempts, and modeling confidence.
 
 And Our free decision tools give kids a neutral way to choose between options. It's not cheating, it's learning. They practice seeing a decision through to an outcome, and over time, they'll need the tool less and less.
 

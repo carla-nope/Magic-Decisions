@@ -24,9 +24,9 @@ We treat decisions like they're cast in stone. We imagine that whatever we choos
 
 We treat every decision like it matters as much as choosing a career or a life partner. We use the same mental energy for "which restaurant should we try?" as we do for "which mortgage should I sign?" No wonder we're exhausted.
 
-### The Adjust Part Is Crucial
+### The Adjust Part Is Key
 
-Most advice says "make a decision and stick with it." This is good advice for major decisions but terrible advice for minor ones. The decide-and-adjust method adds a crucial element: the willingness to change course if the decision doesn't work out.
+Most advice says "make a decision and stick with it." This is good advice for major decisions but terrible advice for minor ones. The decide-and-adjust method adds a key element: the willingness to change course if the decision doesn't work out.
 
 This isn't waffling. This isn't being indecisive. This is strategic [flexibility](https://childmind.org/article/helping-kids-with-flexible-thinking/). You make the best choice you can. You commit to it. But if new information shows you made the wrong call, you adjust. Quick course corrections beat slow, painful stuck-ness.
 

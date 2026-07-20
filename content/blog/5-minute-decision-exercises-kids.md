@@ -124,7 +124,7 @@ The goal is to build a habit of deciding quickly and confidently. The skill will
 ### Ready to make magic decisions?
 
 
-Explore our tools and guides to empower your family's decision-making journey.
+Our free tools do the game-running for you — open one tonight and let the practice start.
 
  [Start Your Journey](/)
 

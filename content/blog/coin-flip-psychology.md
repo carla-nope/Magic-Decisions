@@ -115,7 +115,7 @@ Next time you reach for a coin flip or spin wheel, you'll know exactly why it wo
 
 ### Use the Psychology of Randomness in Your Family
 
-Our free coin flip and spin wheel tools harness this psychological power. Try them for your next family decision.
+Our free coin flip and spin wheel run on exactly this psychology. Try one on your next family standoff.
 
 [Try Decision Tools Free →](/)
 
